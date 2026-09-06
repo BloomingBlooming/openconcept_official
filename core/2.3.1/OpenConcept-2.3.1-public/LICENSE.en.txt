@@ -1,0 +1,167 @@
+OpenConcept License Terms
+
+Version 1.1 (English Translation)
+
+Rights Holder and Licensor: SHINNA Service and Trading Company Limited
+
+Location: Ho Chi Minh City, Vietnam
+
+Copyright © SHINNA Service and Trading Company Limited.
+
+Introduction
+
+OpenConcept is a free application created to keep the source of truth for knowledge in Users' own hands.
+
+This License contains neither penalties nor provisions premised on litigation. We do not believe that clauses can bind people.
+
+However, the following three principles are the very reasons we make this application available free of charge.
+
+1. Do not sell the Core Software.
+2. Do not refuse to return the data Users have accumulated, or charge them for its return.
+3. Do not hide from Users that the Core Software is free of charge.
+
+If you determine that you cannot follow these principles, please do not use this application. The following conditions are set out so that those who intend to follow them can use it freely.
+
+The provisions below apply these three principles to practical situations.
+
+Article 1. Purpose and Application
+
+1. This License governs the use, modification, and redistribution of OpenConcept, and the handling of related data, where SHINNA Service and Trading Company Limited, located in Ho Chi Minh City, Vietnam (the "Licensor"), holds the relevant rights and provides OpenConcept under this License.
+
+2. The fundamental principles of this License are that the Core Software may be used and shared free of charge, and that Users can obtain the knowledge they have accumulated without being locked in by maintenance providers or administrators.
+
+3. The permissions granted by this License are limited to the scope of the Licensor's authority to grant them. Third-party libraries, software, materials, and other works are governed, in priority, by their respective applicable licenses.
+
+4. Because this License prohibits paid sales of the Core Software, it is not an open source license under the Open Source Initiative's definition. When introducing the Core Software, use descriptions such as "source code available" or "free application."
+
+Article 2. Definitions
+
+1. "Core Software" means the OpenConcept program provided under this License, copies of that program, and modified versions based on that program. It does not include independent programs that do not use the Core Software's code or components for which a separate license is expressly specified.
+
+2. "Plugin" means an extension program provided separately from the Core Software to add functionality to, or integrate with, the Core Software. Merely renaming or repackaging the Core Software or a modified version does not make it a Plugin.
+
+3. "User" means an individual, legal entity, or other organization that uses the Core Software. "Data Managing Entity" means an individual, legal entity, or other organization with legitimate authority to direct the acquisition, management, and use of the Covered Data. Merely holding an administrator account does not make a person or entity a Data Managing Entity.
+
+4. "Service Providers" means businesses or personnel that install, maintain, administer, operate, store data for, or perform other related services concerning the Core Software on behalf of a Data Managing Entity.
+
+5. "Covered Data" means data generated or accumulated in OpenConcept and managed by the relevant Data Managing Entity that is currently stored, including source-of-truth data, attachments, stored histories, associations, metadata, data for RAG, vector data, and RAG indexes.
+
+Article 3. Permission for Use and Modification Free of Charge
+
+1. The Licensor grants Users who comply with this License a non-exclusive, worldwide license, free of charge, to use, copy, modify, and redistribute the Core Software free of charge.
+
+2. Use of the Core Software is free of charge, whether the User is an individual or a legal entity, and whether the use is for profit or not for profit. No license fees for the Core Software arise based on the number of Users, the number of installations, or the volume of registered data. Server, communications, external API, and other external service costs are not included.
+
+3. Modification of the Core Software's functionality, screens, and processing is permitted. However, the rules on the logo, the redistribution conditions, and the obligation not to obstruct the Data Managing Entity's rights concerning acquisition and handover of data also apply to modified versions.
+
+4. This License does not require modifications to be reported to the Licensor, submitted to a public repository, or made publicly available.
+
+5. If a User sends modifications, fixes, additional code, or other work products (the "Contributions") to the Licensor for incorporation into the Core Software, that User is deemed to grant the Licensor permission, free of charge and without geographical limitation, to incorporate the Contributions into the Core Software and future distributions, and to use, copy, modify, and redistribute them under this License or other terms. The contributor represents that they hold the necessary rights in the Contributions or can lawfully grant such permission. This paragraph does not restrict the contributor's own right to use the Contributions for other purposes.
+
+Article 4. Redistribution of the Core Software and Prohibition of Paid Sales
+
+1. The Core Software and modified versions may be redistributed free of charge. When redistributing them, attach or include the full text of this License and the necessary copyright and other rights notices so that recipients can review them.
+
+2. Selling the Core Software or modified versions themselves for a fee, or providing them in exchange for payment for their acquisition or license to use them as such, is prohibited. This prohibition must not be circumvented by renaming them, changing their format, bundling them with other products, or similar means.
+
+3. When redistributing a modified version, clearly identify it as modified and do not mislead recipients into believing it is an official version provided or approved by the Licensor. Do not impose conditions on recipients that conflict with this License with respect to the Core Software portion.
+
+Article 5. Free and Paid Distribution of Plugins
+
+1. Plugins may be distributed free of charge or for a fee. Developers may determine the terms of use, pricing, and whether source code is disclosed for their own distinct Plugin portions that they have authority to license.
+
+2. If a Plugin contains code from the Core Software, this License continues to apply to that code and modifications to it. Paid sales of the Core Software must not be disguised as sales of a Plugin.
+
+3. Paid Plugins that handle Covered Data must also comply with the data protection conditions in Articles 8 through 11. Termination of a Plugin agreement must not be used as a reason to refuse handover of Covered Data already stored or to make such handover conditional on an additional purchase.
+
+Article 6. Permission to Charge for Services
+
+1. Services such as installation, configuration, maintenance, administration, operation, modification, technical support, environment adjustment, data conversion, and migration work concerning the Core Software may be provided for a fee.
+
+2. Providers of paid services must clearly inform Users that the Core Software is free of charge and identify the services to which the fees relate.
+
+3. Even when receiving payment for services, providers must not charge for handover of Covered Data itself or make handover conditional on purchasing or continuing paid services. Circumventing the prohibition on selling the Core Software or the data protection conditions merely by changing the description of a fee is prohibited.
+
+4. Providing third parties with an environment in which the Core Software is installed, or continuously providing operational services using the Core Software, falls within the services described in the preceding three paragraphs and may be done for a fee. Such providers are Service Providers and must comply with Articles 8 through 11. Regardless of how fees are described, the substance of the arrangement must not be payment for the license to use the Core Software itself.
+
+Article 7. Use of the Name and Logo
+
+1. No rights to use the OpenConcept name or the logo provided by the Licensor are granted beyond the scope expressly stated in this License.
+
+2. Existing display of the logo in the ordinary use of the Core Software, and inclusion and display of the logo in connection with free redistribution that complies with this License, are permitted. The logo's shape, lettering, colors, and composition must not be changed. Resizing that preserves the aspect ratio is permitted.
+
+3. Except for the uses permitted in the preceding paragraph and uses permitted by law, prior permission from the Licensor is required to use the logo. Using it as a mark for other products or services, or in a manner that falsely suggests official provision, affiliation, or approval, is prohibited.
+
+Article 8. Authority over Covered Data and Prohibition of Unauthorized Use
+
+1. Copyright and other rights in Covered Data do not transfer to the Licensor or Service Providers merely because the Core Software is used or administration services are commissioned.
+
+2. Service Providers must handle Covered Data only within the scope of legitimate business needs and authorization, and must not sell it, provide it to third parties, use it for other purposes, or dispose of it without the Data Managing Entity's permission.
+
+3. This License does not impose a blanket restriction on the Data Managing Entity's use or provision of data under its legitimate authority. Distribution free of charge is also permitted. However, third-party rights, confidentiality obligations, and applicable laws must be respected.
+
+Article 9. Acquisition and Handover of Covered Data
+
+1. Upon a request from the Data Managing Entity or a recipient legitimately designated by it, Service Providers must provide the Covered Data or enable its acquisition without undue delay. Identity verification must be limited to what is necessary and must not be used to obstruct handover.
+
+2. Handover must be carried out by copying and providing the Covered Data currently stored without omission. Providing only a list of body text, excerpts, or outputs such as CSV files that omit information must not substitute for handover of stored source-of-truth data, RAG indexes, and other Covered Data.
+
+3. Stored structural information, format information, associations, and configuration information needed to identify, obtain, and read the Covered Data must also be provided. Service Providers must not render handover meaningless through encryption they have applied, and must appropriately provide the necessary means of decryption.
+
+4. This Article does not require disclosure of other Users' data, confidential information of shared systems, or third-party programs themselves that are not part of the Covered Data. If these are intermingled, hand over the Covered Data by an appropriate method, such as separating it from the other information.
+
+5. This Article does not, of itself, require the generation of new data, recovery of data already lost, conversion for a destination environment, or rebuilding of RAG indexes. Deliberate deletion, concealment, or similar conduct cannot be used to evade the handover obligation.
+
+Article 10. Prohibition of Data Lock-In and Charges for Handover
+
+1. Service Providers must not charge additional fees for handover of Covered Data itself, whether described as return fees, termination fees, data charges, or otherwise. Charging for or disabling standard acquisition functionality to impose an equivalent burden is also prohibited.
+
+2. Acquisition or handover of Covered Data must not be made conditional on renewal or continuation of a maintenance agreement, abandonment of migration to another provider, entering into an additional agreement, payment of outstanding fees, or resolution of a fee dispute. Fees for services must be pursued separately from data handover.
+
+3. Work voluntarily requested by the Data Managing Entity, such as setting up a new environment, converting data, carrying out migration, or rebuilding indexes, may be provided for a fee under a separate agreement on the scope and price. Even if no such work is requested, acquisition and handover of the original Covered Data must not be obstructed.
+
+4. On termination of an agreement, notify the Data Managing Entity of the method and timing of acquisition and handover, and ensure a reasonable opportunity to obtain the data. Covered Data must not be deleted without providing that opportunity. This Article does not require indefinite operation of the former environment or indefinite data storage after termination.
+
+Article 11. Application to Service Providers and Relationship with Individual Agreements
+
+1. When Service Providers use, copy, modify, or redistribute the Core Software in performing their services, compliance with Articles 8 through 10 is a condition of the license granted under this License.
+
+2. Service Providers must not establish or apply terms in individual agreements with the Data Managing Entity that waive or limit these obligations. The existence of such an agreement does not exempt them from their obligations under this License.
+
+3. Before commencing services, Service Providers must present this License to the Data Managing Entity and expressly state in their administration services agreement or similar agreement that the Data Managing Entity may directly request acquisition and handover of the data. If services are subcontracted, equivalent obligations must be imposed on the subcontractor.
+
+4. When providing modified Core Software or Plugins for Users, the conditions prohibiting obstruction of data acquisition and handover must be maintained. This does not impose an obligation to retain any particular source code or implementation method.
+
+5. This Article does not require conduct contrary to obligations that cannot be excluded by law or to lawful orders of courts or other competent authorities. If handover is restricted for that reason, state the reason and the scope of the restriction to the extent that they may lawfully be explained, and do not unduly obstruct handover of the unrestricted portion.
+
+Article 12. Scope of Warranties and Liability
+
+1. To the extent permitted by law, the Licensor provides the Core Software as is. The Licensor does not warrant fitness for a particular purpose, absence of defects, uninterrupted operation, updates, maintenance, or compatibility with external services.
+
+2. To the extent permitted by law, the Licensor is not liable for damages arising from the use of, or inability to use, the Core Software. This exclusion does not apply to liability for the Licensor's intentional misconduct or gross negligence, or to liability that cannot be excluded or limited by law.
+
+3. The data protection conditions of this License establish an obligation not to unduly obstruct acquisition and handover of Covered Data; they do not guarantee restoration, compatibility, reusability, search results, or proper operation in a destination or changed environment. Corruption, malfunctions, and unavailability caused by differences or changes in the operating system, database, software, Plugins, vector-processing infrastructure, embedding model, configuration, or other aspects of the environment are not covered by any warranty or compensation under this License.
+
+4. The preceding three paragraphs do not excuse intentional deletion, alteration, concealment, omission of information, or refusal to hand over data. Warranties, maintenance, and other paid services separately offered by Service Providers are provided at their own responsibility, and this Article cannot be used to avoid obligations under Articles 8 through 11.
+
+Article 13. Use Contrary to the Intent of This License
+
+1. This License does not establish penalties for violations. Not selling the Core Software, not locking in Covered Data, and not concealing that the Core Software is free of charge are all entrusted to the good faith of Users and Service Providers.
+
+2. If use contrary to the intent of this License comes to light, the Licensor may request corrective action, make the facts public, or take other appropriate action. In the event of a serious infringement that is difficult to remedy, such as intentional data leakage or destruction, the Licensor may terminate that party's license.
+
+3. Even after a Service Provider's license is terminated, obligations to hand over Covered Data, refrain from unauthorized use, and otherwise protect data survive to the extent necessary. Termination of the license must not be used as a reason to delete Covered Data, suspend handover, or demand additional fees from the Data Managing Entity.
+
+4. A Service Provider's violation alone does not terminate the license of a Data Managing Entity that complies with this License.
+
+Article 14. General Provisions
+
+1. If any part of this License is held invalid or unenforceable under applicable law, the remaining provisions continue to apply to the extent possible.
+
+2. If the Licensor changes the terms of use for future distributions, it will specify the terms applicable to those versions. A change in terms alone will not result in retroactive fees or other new obligations for lawful use of versions already received.
+
+3. This License does not limit rights granted by law that cannot be excluded by contract.
+
+4. The Japanese version is the authoritative text of this License. Versions in other languages are translations for reference only, and the Japanese version prevails in the event of any discrepancy.
+
+OpenConcept is a free-of-charge application that aims to build an environment in which many people can manage knowledge freely and safely.

@@ -1,0 +1,9 @@
+{
+    "name": "简体中文",
+    "messages": {
+        "plugin.name": "翻译服务提供方",
+        "plugin.description": "将 OpenAI 或 OpenAI 兼容 API 连接到 Core 翻译功能。",
+        "provider.name": "翻译服务提供方",
+        "provider.description": "使用服务器上配置的服务提供方翻译结构化文本片段。"
+    }
+}

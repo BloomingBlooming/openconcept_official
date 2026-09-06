@@ -10,6 +10,7 @@ This repository publishes versioned OpenConcept application distributions and of
 
 | バージョン / Version | ダウンロード / Download | 検証値 / Checksum | 設置説明書 / Setup guide |
 | --- | --- | --- | --- |
+| 2.3.1 | [OpenConcept 2.3.1 ZIP](core/2.3.1/OpenConcept-2.3.1-public.zip) | [SHA-256](core/2.3.1/OpenConcept-2.3.1-public.zip.sha256) | [日本語・English](core/2.3.1/README.md) |
 | 2.3.0 | [OpenConcept 2.3.0 ZIP](core/2.3.0/OpenConcept-2.3.0-public.zip) | [SHA-256](core/2.3.0/OpenConcept-2.3.0-public.zip.sha256) | [日本語・English](core/2.3.0/README.md) |
 
 設置説明書には、HTTP/HTTPSサーバーへの配置ツリー、必要なPHP環境、Pluginの配置先、PostgreSQLとpgvectorが必要になる条件を記載しています。
@@ -24,14 +25,15 @@ openconcept_official/
 ├── LICENSE, LICENSE.*
 ├── core/                              本体をバージョン別に配置 / Versioned application distributions
 │   ├── README.md
-│   └── 2.3.0/
+│   ├── 2.3.0/                         旧版を保持 / Previous version retained
+│   └── 2.3.1/
 │       ├── README.md                  日英設置説明書 / Bilingual setup guide
-│       ├── OpenConcept-2.3.0-public.zip
-│       ├── OpenConcept-2.3.0-public.zip.sha256
-│       └── OpenConcept-2.3.0-public/   展開済み本体 / Unpacked application
+│       ├── OpenConcept-2.3.1-public.zip
+│       ├── OpenConcept-2.3.1-public.zip.sha256
+│       └── OpenConcept-2.3.1-public/   展開済み本体 / Unpacked application
 │           ├── public/
 │           ├── app/
-│           ├── plugins/              本体同梱Plugin / Plugins bundled with this version
+│           ├── plugins/              同梱5種・図面管理は別配布 / Five bundled plugins; drawings separate
 │           ├── HTTP-SERVER-SETUP.ja-en.md
 │           ├── DISTRIBUTION-MANIFEST.json
 │           └── ...
@@ -39,7 +41,12 @@ openconcept_official/
     ├── README.md
     ├── catalog.json                   配布カタログ / Distribution catalog
     └── packages/                      個別配布パッケージ / Standalone plugin packages
-        └── README.md
+        ├── README.md
+        └── drawing-manager/
+            └── 0.9.1/
+                ├── README.md
+                ├── drawing-manager-0.9.1.oc-plugin.json
+                └── drawing-manager-0.9.1.oc-plugin.json.sha256
 ```
 
 新しい本体バージョンは`core/<version>/`へ追加します。既存バージョンの配布物を別バージョンの内容で上書きしません。
@@ -52,9 +59,13 @@ Add new application versions under `core/<version>/`. Do not overwrite an existi
 
 The [official plugin directory](plugins/) and [catalog](plugins/catalog.json) distribute [Drawing Manager 0.9.1](plugins/packages/drawing-manager/0.9.1/README.md) separately. The copy bundled with application 2.3.0 is retained in that historical distribution.
 
-このリポジトリの準備だけでは、既存アプリの配布元URL固定や公式署名検証は有効になりません。それらは別途アプリ側で実装・設定する必要があります。SHA-256はファイルの一致確認に使用し、発行者の電子署名を意味しません。
+本体2.3.1では図面管理を同梱せず、「設定 > プラグイン > 公式ダウンロード」から追加します。ダウンロード直後は無効です。有効化すると図面管理メニューが表示されます。他の同梱プラグインは従来どおりです。
 
-Creating this repository does not enable a fixed official download source or publisher-signature verification in existing applications. Those require separate application changes and configuration. SHA-256 checks verify file integrity; they are not publisher signatures.
+Application 2.3.1 distributes Drawing Manager separately. Add it in Settings > Plugins > Official downloads, then enable it to show the drawing menu. Downloads are initially disabled. Other bundled plugins remain included.
+
+本体2.3.1の公式カタログとパッケージの取得先は、このリポジトリの`main/plugins/`内に固定しています。環境変数で別の配布元へ変更することはできません。HTTPSとSHA-256で取得先・ファイルの一致を確認します。発行者の電子署名検証は実装していません。
+
+Application 2.3.1 pins its official catalog and package URLs to this repository under `main/plugins/`. Environment variables cannot select a different publisher. HTTPS and SHA-256 check the source connection and file integrity; publisher-signature verification is not implemented.
 
 ## ライセンス / License
 
