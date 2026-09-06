@@ -1,0 +1,29 @@
+# Per-installation secrets and private configuration
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Runtime data must never enter the public distribution repository
+**/storage/*
+!**/storage/.htaccess
+**/published/*
+!**/published/.htaccess
+**/public/published/
+*.sqlite
+*.sqlite3
+*.db
+*.log
+*.lock
+**/tmp/
+
+# Local editor and operating-system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+__pycache__/
+*.py[cod]

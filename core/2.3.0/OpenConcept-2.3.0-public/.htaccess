@@ -1,0 +1,12 @@
+DirectoryIndex index.php
+
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{DOCUMENT_ROOT}/storage/.deployment-write-gate -f
+    RewriteRule ^(?:api\.php|public/api\.php)(?:/|$) - [R=503,L,NC]
+    RewriteRule ^(?:app|database|scripts|storage|tests|docs|mcp|plugins)(?:/|$) - [F,L,NC]
+</IfModule>

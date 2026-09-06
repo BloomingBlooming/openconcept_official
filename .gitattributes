@@ -1,0 +1,3 @@
+# Preserve reviewed distribution bytes and their recorded SHA-256 values.
+* -text
+*.zip binary

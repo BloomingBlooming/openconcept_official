@@ -1,0 +1,45 @@
+{
+    "schema_version": 1,
+    "id": "drawing-manager",
+    "name": "図面管理",
+    "version": "0.9.0",
+    "enabled": true,
+    "description": "図面番号・改訂番号・品名をAIで読み取り、未承認保存、管理者編集、訂正コメント、承認、検索、閲覧、削除（アーカイブ）を行います。",
+    "entry": "plugin.php",
+    "assets": {
+        "styles": [
+            "assets/plugin.css"
+        ],
+        "scripts": [
+            "assets/plugin.js"
+        ],
+        "resources": [
+            "vendor/pdfjs/build/pdf.min.mjs",
+            "vendor/pdfjs/build/pdf.worker.min.mjs",
+            "vendor/pdfjs/wasm/jbig2.wasm",
+            "vendor/pdfjs/wasm/openjpeg.wasm",
+            "vendor/pdfjs/wasm/qcms_bg.wasm",
+            "vendor/pdfjs/standard_fonts/FoxitDingbats.pfb",
+            "vendor/pdfjs/standard_fonts/FoxitFixed.pfb",
+            "vendor/pdfjs/standard_fonts/FoxitFixedBold.pfb",
+            "vendor/pdfjs/standard_fonts/FoxitFixedBoldItalic.pfb",
+            "vendor/pdfjs/standard_fonts/FoxitFixedItalic.pfb",
+            "vendor/pdfjs/standard_fonts/FoxitSerif.pfb",
+            "vendor/pdfjs/standard_fonts/FoxitSerifBold.pfb",
+            "vendor/pdfjs/standard_fonts/FoxitSerifBoldItalic.pfb",
+            "vendor/pdfjs/standard_fonts/FoxitSerifItalic.pfb",
+            "vendor/pdfjs/standard_fonts/FoxitSymbol.pfb",
+            "vendor/pdfjs/standard_fonts/LiberationSans-Bold.ttf",
+            "vendor/pdfjs/standard_fonts/LiberationSans-BoldItalic.ttf",
+            "vendor/pdfjs/standard_fonts/LiberationSans-Italic.ttf",
+            "vendor/pdfjs/standard_fonts/LiberationSans-Regular.ttf"
+        ]
+    },
+    "ui": {
+        "sidebar": {
+            "label": "図面管理",
+            "icon": "📐",
+            "placement": "default"
+        }
+    }
+}
