@@ -1,9 +1,0 @@
-{
-    "name": "English",
-    "messages": {
-        "plugin.name": "Translation Provider",
-        "plugin.description": "Connects OpenAI or an OpenAI-compatible API to Core translation.",
-        "provider.name": "Translation Provider",
-        "provider.description": "Translates structured text segments with the provider configured on the server."
-    }
-}

@@ -7,7 +7,6 @@ Application distributions are stored under `core/<version>/`. Each version conta
 | Version | 設置説明書 / Setup guide | ZIP | SHA-256 |
 | --- | --- | --- | --- |
 | 2.3.1 | [日本語・English](2.3.1/README.md) | [Download](2.3.1/OpenConcept-2.3.1-public.zip) | [Checksum](2.3.1/OpenConcept-2.3.1-public.zip.sha256) |
-| 2.3.0 | [日本語・English](2.3.0/README.md) | [Download](2.3.0/OpenConcept-2.3.0-public.zip) | [Checksum](2.3.0/OpenConcept-2.3.0-public.zip.sha256) |
 
 新しいバージョンは新しいフォルダーへ追加し、この一覧と[リポジトリ先頭の一覧](../README.md)を更新します。公開済みバージョンの内容変更が必要な場合は、新しい修正版のバージョンとして配布します。
 

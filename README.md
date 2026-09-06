@@ -11,7 +11,6 @@ This repository publishes versioned OpenConcept application distributions and of
 | バージョン / Version | ダウンロード / Download | 検証値 / Checksum | 設置説明書 / Setup guide |
 | --- | --- | --- | --- |
 | 2.3.1 | [OpenConcept 2.3.1 ZIP](core/2.3.1/OpenConcept-2.3.1-public.zip) | [SHA-256](core/2.3.1/OpenConcept-2.3.1-public.zip.sha256) | [日本語・English](core/2.3.1/README.md) |
-| 2.3.0 | [OpenConcept 2.3.0 ZIP](core/2.3.0/OpenConcept-2.3.0-public.zip) | [SHA-256](core/2.3.0/OpenConcept-2.3.0-public.zip.sha256) | [日本語・English](core/2.3.0/README.md) |
 
 設置説明書には、HTTP/HTTPSサーバーへの配置ツリー、必要なPHP環境、Pluginの配置先、PostgreSQLとpgvectorが必要になる条件を記載しています。
 
@@ -25,7 +24,6 @@ openconcept_official/
 ├── LICENSE, LICENSE.*
 ├── core/                              本体をバージョン別に配置 / Versioned application distributions
 │   ├── README.md
-│   ├── 2.3.0/                         旧版を保持 / Previous version retained
 │   └── 2.3.1/
 │       ├── README.md                  日英設置説明書 / Bilingual setup guide
 │       ├── OpenConcept-2.3.1-public.zip
@@ -55,9 +53,9 @@ Add new application versions under `core/<version>/`. Do not overwrite an existi
 
 ## 公式プラグイン / Official plugins
 
-[公式Plugin配布フォルダー](plugins/)と[カタログ](plugins/catalog.json)から、[図面管理0.9.1](plugins/packages/drawing-manager/0.9.1/README.md)を個別配布しています。本体2.3.0に同梱された図面管理は、旧バージョンの配布物として保持しています。
+[公式Plugin配布フォルダー](plugins/)と[カタログ](plugins/catalog.json)から、[図面管理0.9.1](plugins/packages/drawing-manager/0.9.1/README.md)を個別配布しています。
 
-The [official plugin directory](plugins/) and [catalog](plugins/catalog.json) distribute [Drawing Manager 0.9.1](plugins/packages/drawing-manager/0.9.1/README.md) separately. The copy bundled with application 2.3.0 is retained in that historical distribution.
+The [official plugin directory](plugins/) and [catalog](plugins/catalog.json) distribute [Drawing Manager 0.9.1](plugins/packages/drawing-manager/0.9.1/README.md) separately.
 
 本体2.3.1では図面管理を同梱せず、「設定 > プラグイン > 公式ダウンロード」から追加します。ダウンロード直後は無効です。有効化すると図面管理メニューが表示されます。他の同梱プラグインは従来どおりです。
 
