@@ -1,8 +1,8 @@
 # OpenConcept 公式配布 / Official Distribution
 
-OpenConcept本体をバージョン別に公開し、公式プラグインを配布するためのリポジトリです。
+OpenConcept本体と公式プラグインの公開用フォルダを管理するリポジトリです。交換用の最新の公開配布物のみを置きます。
 
-This repository publishes versioned OpenConcept application distributions and official plugins.
+This repository manages the public distribution folder for OpenConcept and its official plugins, keeping only the current distribution files for replacement.
 
 公式公開先 / Official repository: [BloomingBlooming/openconcept_official](https://github.com/BloomingBlooming/openconcept_official).
 
@@ -47,9 +47,9 @@ openconcept_official/
                 └── drawing-manager-0.9.1.oc-plugin.json.sha256
 ```
 
-新しい本体バージョンは`core/<version>/`へ追加します。既存バージョンの配布物を別バージョンの内容で上書きしません。
+更新済みの配布物は、OpenConceptプロジェクトの`Dist/`以下から手動、または管理者が指示したバージョンを取得して配置します。自動同期は行いません。本体は`core/<version>/`へ配置し、フォルダー名と内容のバージョンを一致させます。更新対象の旧配布物を置き換え、ダウンロード一覧やカタログも更新します。旧版や作業用ファイルは保管しません。
 
-Add new application versions under `core/<version>/`. Do not overwrite an existing version with the contents of another version.
+Updated distributions are copied manually, or at the version requested by the maintainer, from the OpenConcept project's `Dist/` folder. There is no automatic synchronization. Place application files under `core/<version>/`, matching the directory name to the contents. Replace superseded distributions and update download lists and catalogs. Do not retain old versions or working files.
 
 ## 公式プラグイン / Official plugins
 
