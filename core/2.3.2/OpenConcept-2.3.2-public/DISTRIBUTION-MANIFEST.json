@@ -2,14 +2,14 @@
     "manifest_version": 1,
     "package_type": "public-distribution",
     "product": "OpenConcept",
-    "product_version": "2.3.1",
+    "product_version": "2.3.2",
     "instance_configuration_included": false,
     "runtime_data_included": false,
     "sanitizations": [
         "OpenConcept.png: optional text, XMP, EXIF, and timestamp metadata removed"
     ],
     "file_count": 220,
-    "total_bytes": 7787703,
+    "total_bytes": 7789060,
     "files": [
         {
             "path": ".dockerignore",
@@ -29,7 +29,7 @@
         {
             "path": "HTTP-SERVER-SETUP.ja-en.md",
             "bytes": 34267,
-            "sha256": "ebebd826f88c74d42987a9a095000dae90034c48d7abe47b44849f2d8acd5f63"
+            "sha256": "10c9a8e2bbd98ecab51490371db6d28e9e7d400cbc8e7a9b00271864b014bfe5"
         },
         {
             "path": "LICENSE",
@@ -64,12 +64,12 @@
         {
             "path": "README.md",
             "bytes": 7697,
-            "sha256": "f57cfec9402e3183bd36dc32c60e1e0cf3a89a567bd6790849513e9c51c3845e"
+            "sha256": "559dad970c8cdfbf2b24c43fee2207026e6152b4e6e1a1c7fb171c98fb518e84"
         },
         {
             "path": "VERSION",
             "bytes": 6,
-            "sha256": "ad8650bc9057d9dfd809961b69dbad640c288d809fa44437d44d83d3b118c821"
+            "sha256": "e1d31f14bed34a1c7e6227931673f0bb4ec1e26ee4278d00dac169809c4d9539"
         },
         {
             "path": "api.php",
@@ -183,8 +183,8 @@
         },
         {
             "path": "app/DatabaseAdapterCoordinator.php",
-            "bytes": 55198,
-            "sha256": "2c8bcbc42d5100b7369cbd253d41b4d7ad26c7df89e0370f354e01fc165c54c1"
+            "bytes": 55503,
+            "sha256": "bd621e39f0f774536b9a58fec6a4445fb9725f85953f697cf609eae8c1bda080"
         },
         {
             "path": "app/DatabaseAdapterException.php",
@@ -248,8 +248,8 @@
         },
         {
             "path": "app/DatabasePrivilegeManager.php",
-            "bytes": 31935,
-            "sha256": "b13c441595d83cff87903f210408dde21e22b743493bdd36f7958e0a26d3eab8"
+            "bytes": 32987,
+            "sha256": "b465e0f7e34839fe4b7189555a8c77f6411c07f1eb267ab8fc06a9cf7c09b283"
         },
         {
             "path": "app/DatabaseSchemaInspector.php",
@@ -274,7 +274,7 @@
         {
             "path": "app/DefaultOperationManual.php",
             "bytes": 20408,
-            "sha256": "19591097487089180fa48a9ffbd2c3803a462c53458927f70d6e59957759ebbe"
+            "sha256": "d8c803c177218e4b5979944d1df8f997879a796b44aa9472a643beca0bc52ba6"
         },
         {
             "path": "app/DeploymentRequirementException.php",
@@ -534,7 +534,7 @@
         {
             "path": "assets/app.js",
             "bytes": 450670,
-            "sha256": "a2c91bbf1b28da091708f85ec127e65a2e9bb3d29a197a2337539f8b7b11abc2"
+            "sha256": "799a0902ad18114549865fbb070e8a061e6efe96ad98e6be77e2ad578e15931b"
         },
         {
             "path": "assets/rag-core.css",
@@ -549,7 +549,7 @@
         {
             "path": "compose.rag.yaml",
             "bytes": 5281,
-            "sha256": "c1050444d96d59e719508758106ebfd665645cfb5c0eb6a5b60e6a1abe81fc6d"
+            "sha256": "9f5d20a31c8324e23d20d7b65cc68036c8778272aae2ca75905e566880261c82"
         },
         {
             "path": "database/.htaccess",
@@ -634,7 +634,7 @@
         {
             "path": "docs/openconcept-operation-manual.ja.md",
             "bytes": 48043,
-            "sha256": "673bf27421d44a1bb20574eaf48c9926e26bd76a647cc1edd7f68cade4d4c4b0"
+            "sha256": "69b995afb568dcd5495525d19b6e027a397282e878bea4c9371439891bb40d83"
         },
         {
             "path": "export.php",
@@ -1009,7 +1009,7 @@
         {
             "path": "public/assets/app.js",
             "bytes": 450670,
-            "sha256": "a2c91bbf1b28da091708f85ec127e65a2e9bb3d29a197a2337539f8b7b11abc2"
+            "sha256": "799a0902ad18114549865fbb070e8a061e6efe96ad98e6be77e2ad578e15931b"
         },
         {
             "path": "public/assets/public-share.css",

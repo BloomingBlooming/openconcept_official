@@ -267,7 +267,7 @@
 
     const svg = (name, cls = '') => `<svg class="icon ${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icons[name] || icons.more}</svg>`;
     const brandLogo = (className = 'brand-mark', alt = '') => `<img class="${className}" src="app-icon.php" alt="${esc(alt)}" draggable="false">`;
-    const appVersion = '2.3.1';
+    const appVersion = '2.3.2';
     const esc = (value = '') => String(value).replace(/[&<>'"]/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
 
     function normalizePublicUrl(value) {

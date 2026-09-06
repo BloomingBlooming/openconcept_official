@@ -1,6 +1,6 @@
 # OpenConcept 詳細操作説明書
 
-OpenConceptは、ページを中心に社内の知識を作成・整理・検索・共有するナレッジベースです。この説明書はOpenConcept V2.3.1の実際の画面と操作に基づいています。
+OpenConceptは、ページを中心に社内の知識を作成・整理・検索・共有するナレッジベースです。この説明書はOpenConcept V2.3.2の実際の画面と操作に基づいています。
 
 > [!IMPORTANT] 表示されるボタンや実行できる操作は、役割、ページの閲覧範囲、管理者設定、プラグインの有効状態によって異なります。項目が見当たらない場合は「11 管理者：メンバーと権限」と「15 困ったとき」を確認してください。
 
@@ -495,7 +495,7 @@ PDFと画像だけを共通AI接続のVisionへ送り、図面番号、改訂番
 
 ## 13 管理者：データベース移行と安全な運用
 
-OpenConcept V2.3.1のネイティブ標準DBはSQLiteです。MySQLとPostgreSQLは、必要な環境だけが選ぶDatabase Adapter Pluginです。1ワークスペースで同時に使う正本DBは1つだけです。
+OpenConcept V2.3.2のネイティブ標準DBはSQLiteです。MySQLとPostgreSQLは、必要な環境だけが選ぶDatabase Adapter Pluginです。1ワークスペースで同時に使う正本DBは1つだけです。
 
 ### 基本方針
 

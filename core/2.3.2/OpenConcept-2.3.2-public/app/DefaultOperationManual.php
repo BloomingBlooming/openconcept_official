@@ -14,7 +14,7 @@ require_once __DIR__ . '/SafeHtml.php';
  */
 final class DefaultOperationManual
 {
-    public const VERSION = '2.3.1-ja-1';
+    public const VERSION = '2.3.2-ja-1';
     public const LOCALE = 'ja-JP';
     public const MARKER_KEY = 'default_content.operation_manual.ja-JP';
     public const SOURCE_FILE = 'openconcept-operation-manual.ja.md';
@@ -257,7 +257,7 @@ SQL;
         bool $favorite,
         bool $returnsInsertedId
     ): int {
-        $tags = ['OpenConcept', '操作説明書', 'V2.3.1'];
+        $tags = ['OpenConcept', '操作説明書', 'V2.3.2'];
         $tagsJson = json_encode($tags, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_THROW_ON_ERROR);
         $blocksJson = json_encode($blocks, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_THROW_ON_ERROR);
         $plainText = self::plainText($blocks);

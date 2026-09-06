@@ -1,6 +1,4 @@
-# OpenConcept 2.3.1 HTTPサーバー配置・必要環境 / HTTP Server Layout and Requirements
-
-配布ファイル / Distribution: [ZIP](OpenConcept-2.3.1-public.zip) · [SHA-256](OpenConcept-2.3.1-public.zip.sha256) · [展開済みフォルダー / Unpacked files](OpenConcept-2.3.1-public/)
+# OpenConcept 2.3.2 HTTPサーバー配置・必要環境 / HTTP Server Layout and Requirements
 
 本書は、公開配布版をHTTP/HTTPSサーバーへ設置するための説明書です。アプリ一式を同じフォルダーへ展開し、通常のDocument Rootはその中の **`public/`** に設定します。パスとホスト名はすべて例です。
 
@@ -9,12 +7,11 @@ This guide explains how to deploy the public distribution on an HTTP/HTTPS serve
 ## 1. 配布物からサーバーへの配置 / From distribution to server
 
 ```text
-core/2.3.1/
-├── README.md                           本書・GitHub表示用 / This guide, displayed on GitHub
-├── OpenConcept-2.3.1-public.zip          配布ZIP / Distribution archive
-├── OpenConcept-2.3.1-public.zip.sha256   ZIP検証値 / Archive checksum
-└── OpenConcept-2.3.1-public/             展開済み配布物 / Unpacked distribution
-    ├── HTTP-SERVER-SETUP.ja-en.md        同梱説明書 / Bundled guide
+dist/
+├── OpenConcept-2.3.2-public.zip          配布ZIP / Distribution archive
+├── OpenConcept-2.3.2-public.zip.sha256   ZIP検証値 / Archive checksum
+└── OpenConcept-2.3.2-public/             展開済み配布物 / Unpacked distribution
+    ├── HTTP-SERVER-SETUP.ja-en.md        本書 / This guide
     ├── README.md
     ├── DISTRIBUTION-MANIFEST.json       ファイル一覧・ハッシュ / File inventory and hashes
     └── ...                             アプリ一式 / Complete application
@@ -26,9 +23,9 @@ core/2.3.1/
 └── public/                             Document Root
 ```
 
-`OpenConcept-2.3.1-public/`の**内容全体**を、設置先の専用アプリルートへ転送します。`dist/`全体やZIPをDocument Rootにする必要はありません。`public/`だけを単独でコピーすると、親フォルダーのPHPコードや保存領域を参照できなくなります。隠しファイルも保持してください。
+`OpenConcept-2.3.2-public/`の**内容全体**を、設置先の専用アプリルートへ転送します。`dist/`全体やZIPをDocument Rootにする必要はありません。`public/`だけを単独でコピーすると、親フォルダーのPHPコードや保存領域を参照できなくなります。隠しファイルも保持してください。
 
-Transfer the **entire contents** of `OpenConcept-2.3.1-public/` into a dedicated application root. Neither `dist/` nor the ZIP is the document root. Copying only `public/` breaks access to PHP code and storage in its parent directory. Preserve hidden files as well.
+Transfer the **entire contents** of `OpenConcept-2.3.2-public/` into a dedicated application root. Neither `dist/` nor the ZIP is the document root. Copying only `public/` breaks access to PHP code and storage in its parent directory. Preserve hidden files as well.
 
 ## 2. HTTP公開範囲が分かる配置ツリー / Directory tree and HTTP exposure
 
@@ -240,9 +237,9 @@ Workers must share the web application's `storage/`, adapter state, keys, and co
 
 ### Nginx
 
-同梱の[`docs/nginx.conf`](OpenConcept-2.3.1-public/docs/nginx.conf)は`http` contextから読み込むサイト別`server`設定例です。global `nginx.conf`の置換用ではありません。アプリの絶対パス、`server_name`、`listen`とTLS、`fastcgi_pass`を変更し、アップロード上限とタイムアウトを調整してください。Nginxは`.htaccess`を解釈しません。
+同梱の[`docs/nginx.conf`](docs/nginx.conf)は`http` contextから読み込むサイト別`server`設定例です。global `nginx.conf`の置換用ではありません。アプリの絶対パス、`server_name`、`listen`とTLS、`fastcgi_pass`を変更し、アップロード上限とタイムアウトを調整してください。Nginxは`.htaccess`を解釈しません。
 
-The bundled [`docs/nginx.conf`](OpenConcept-2.3.1-public/docs/nginx.conf) is a virtual-host `server` example included from the `http` context, not a replacement for the global configuration. Adjust the application path, `server_name`, `listen` and TLS, `fastcgi_pass`, upload limits, and timeouts. Nginx does not interpret `.htaccess`.
+The bundled [`docs/nginx.conf`](docs/nginx.conf) is a virtual-host `server` example included from the `http` context, not a replacement for the global configuration. Adjust the application path, `server_name`, `listen` and TLS, `fastcgi_pass`, upload limits, and timeouts. Nginx does not interpret `.htaccess`.
 
 Nginxには`public/`と配信対象`published/`の読取り権限、ならびに配備停止判定用`storage/.deployment-write-gate`の存在確認権限が必要です。SQLiteや鍵の読取り権限をNginxへ広げないでください。設定例のTLSヘッダー継承に関するコメントも確認します。
 
@@ -322,4 +319,4 @@ DB、添付、`storage/`内の鍵・Adapter状態、発行済みサイトと署�
 
 Preserve databases, uploads, keys and adapter state in `storage/`, and published sites with signing keys as one recovery unit. Retain these across updates; do not copy or share them with other projects or track them in Git. Verify the distribution against `DISTRIBUTION-MANIFEST.json` before adding deployment-specific configuration and runtime data.
 
-操作方法 / User operations: [日本語操作説明書 / Japanese operation manual](OpenConcept-2.3.1-public/docs/openconcept-operation-manual.ja.md).
+操作方法 / User operations: [日本語操作説明書 / Japanese operation manual](docs/openconcept-operation-manual.ja.md).

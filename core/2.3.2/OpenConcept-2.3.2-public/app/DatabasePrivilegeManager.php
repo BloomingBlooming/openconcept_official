@@ -311,14 +311,33 @@ final class DatabasePrivilegeManager
         $user = substr($principal, 0, $separator);
         $host = substr($principal, $separator + 1);
         $grantee = "'" . str_replace("'", "''", $user) . "'@'" . str_replace("'", "''", $host) . "'";
+        $database = (string) $definition['database'];
+        // MySQL stores literal database-level grants with escaped wildcard
+        // characters (for example rental\\_app for the database rental_app).
+        $escapedDatabase = strtr($database, ['\\' => '\\\\', '_' => '\\_', '%' => '\\%']);
         try {
             $statement = $pdo->prepare(
-                'SELECT PRIVILEGE_TYPE FROM information_schema.USER_PRIVILEGES WHERE GRANTEE = ? '
-                . 'UNION SELECT PRIVILEGE_TYPE FROM information_schema.SCHEMA_PRIVILEGES '
-                . 'WHERE GRANTEE = ? AND TABLE_SCHEMA = ?'
+                'SELECT NULL AS schema_name, PRIVILEGE_TYPE AS privilege_type '
+                . 'FROM information_schema.USER_PRIVILEGES WHERE GRANTEE = ? '
+                . 'UNION ALL SELECT TABLE_SCHEMA AS schema_name, PRIVILEGE_TYPE AS privilege_type '
+                . 'FROM information_schema.SCHEMA_PRIVILEGES '
+                . 'WHERE GRANTEE = ? AND TABLE_SCHEMA IN (?, ?)'
             );
-            $statement->execute([$grantee, $grantee, (string) $definition['database']]);
-            $actual = array_fill_keys(array_map('strtoupper', array_map('strval', $statement->fetchAll(PDO::FETCH_COLUMN))), true);
+            $statement->execute([$grantee, $grantee, $database, $escapedDatabase]);
+            $global = [];
+            $schemas = [];
+            foreach ($statement->fetchAll(PDO::FETCH_ASSOC) as $row) {
+                $privilege = strtoupper((string) $row['privilege_type']);
+                if ($row['schema_name'] === null) {
+                    $global[$privilege] = true;
+                } else {
+                    $schemas[(string) $row['schema_name']][$privilege] = true;
+                }
+            }
+            // Use exact names, not LIKE or wildcard expansion. A literal
+            // escaped grant takes precedence over its unescaped pattern;
+            // combining both can report privileges that MySQL does not allow.
+            $actual = $global + ($schemas[$escapedDatabase] ?? $schemas[$database] ?? []);
         } catch (Throwable $exception) {
             throw new DatabaseAdapterException(
                 'MySQL grants could not be inspected.',

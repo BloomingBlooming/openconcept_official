@@ -480,6 +480,11 @@ final class DatabaseAdapterCoordinator
             $this->database->updateAdapterCutoverStage('connecting_destination');
             $this->database->throwIfAdapterCutoverCancelled();
             $destination = $adapter->connect($config, ['username' => $username, 'password' => $password]);
+            if ($adapterId === 'mysql') {
+                // Prove the same permission contract used at runtime before
+                // provisioning or committing the canonical backend switch.
+                $this->database->privilegeManager()->verify($destination, $adapterId, $config);
+            }
             if ($postgresqlReplacement) {
                 $this->assertDistinctPostgreSqlDestination($destination, $sourceEndpointConfig, $config);
                 if ($managedRetry) {

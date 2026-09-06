@@ -3,7 +3,7 @@ name: ${OPENCONCEPT_RAG_COMPOSE_PROJECT:-openconcept-v2-3-rag}
 services:
   openconcept-web:
     platform: linux/amd64
-    image: openconcept/rag-web:2.3.1
+    image: openconcept/rag-web:2.3.2
     build:
       context: .
       dockerfile: docker/openconcept/Dockerfile
@@ -46,7 +46,7 @@ services:
 
   openconcept-worker:
     platform: linux/amd64
-    image: openconcept/rag-web:2.3.1
+    image: openconcept/rag-web:2.3.2
     restart: unless-stopped
     environment:
       <<: *openconcept-environment
@@ -113,7 +113,7 @@ services:
   rag-stack-doctor:
     profiles: [tools]
     platform: linux/amd64
-    image: openconcept/rag-web:2.3.1
+    image: openconcept/rag-web:2.3.2
     environment:
       <<: *openconcept-environment
       POSTGRES_DB: ${POSTGRES_DB:-openconcept}
