@@ -1,8 +1,10 @@
 # 公式Pluginパッケージ / Official Plugin Packages
 
-個別配布するパッケージは`<plugin-id>/<version>/<plugin-id>-<version>.oc-plugin.json`へ配置します。現在は準備用フォルダーです。
+個別配布するパッケージは`<plugin-id>/<version>/<plugin-id>-<version>.oc-plugin.json`へ配置します。
 
-Store standalone packages at `<plugin-id>/<version>/<plugin-id>-<version>.oc-plugin.json`. This directory is currently a placeholder for future distribution.
+Store standalone packages at `<plugin-id>/<version>/<plugin-id>-<version>.oc-plugin.json`.
+
+- [図面管理 0.9.1 / Drawing Manager 0.9.1](drawing-manager/0.9.1/README.md)
 
 配布登録は[親フォルダーの説明](../README.md)に従い、[カタログ](../catalog.json)へ追加します。
 

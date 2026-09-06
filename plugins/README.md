@@ -1,8 +1,16 @@
 # 公式プラグイン / Official Plugins
 
-ここはOpenConcept公式プラグインの配布領域です。[配布カタログ](catalog.json)と[パッケージ保存先](packages/)を保持します。現在、個別配布するパッケージは登録していません。
+ここはOpenConcept公式プラグインの配布領域です。[配布カタログ](catalog.json)と[パッケージ保存先](packages/)を保持します。
 
-This directory holds the [distribution catalog](catalog.json) and [packages](packages/) for official OpenConcept plugins. No standalone packages are registered yet.
+This directory holds the [distribution catalog](catalog.json) and [packages](packages/) for official OpenConcept plugins.
+
+| Plugin | Version | 導入説明 / Installation guide |
+| --- | --- | --- |
+| 図面管理 / Drawing Manager | 0.9.1 | [日本語・English](packages/drawing-manager/0.9.1/README.md) |
+
+図面管理は2.3.1以降の本体配布から分離されています。必要な管理者が本体の「公式ダウンロード」から追加します。
+
+Drawing Manager is distributed separately from application 2.3.1 onward and can be added through Official downloads in the application.
 
 カタログのHTTPS配信先 / HTTPS catalog endpoint:
 

@@ -1,4 +1,14 @@
 {
     "schema_version": 1,
-    "plugins": []
+    "plugins": [
+        {
+            "id": "drawing-manager",
+            "name": "Drawing Manager / 図面管理",
+            "version": "0.9.1",
+            "description": "図面番号・改訂番号・品名をAIで読み取り、未承認保存、管理者編集、訂正コメント、承認、検索、閲覧、削除（アーカイブ）を行います。 Manage drawings, approvals and search. Download, then enable.",
+            "icon": "📐",
+            "download_url": "https://raw.githubusercontent.com/BloomingBlooming/openconcept_official/main/plugins/packages/drawing-manager/0.9.1/drawing-manager-0.9.1.oc-plugin.json",
+            "sha256": "9481347cfafa7fbf61988719cd57e8dfb622093b2c1089cb6821141c94076281"
+        }
+    ]
 }

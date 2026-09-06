@@ -48,9 +48,9 @@ Add new application versions under `core/<version>/`. Do not overwrite an existi
 
 ## 公式プラグイン / Official plugins
 
-[公式Plugin配布フォルダー](plugins/)と[カタログ](plugins/catalog.json)を用意しています。個別ダウンロード用のカタログは現在空です。本体2.3.0に含まれるPluginは、本体の配布パッケージ内にあります。
+[公式Plugin配布フォルダー](plugins/)と[カタログ](plugins/catalog.json)から、[図面管理0.9.1](plugins/packages/drawing-manager/0.9.1/README.md)を個別配布しています。本体2.3.0に同梱された図面管理は、旧バージョンの配布物として保持しています。
 
-The [official plugin directory](plugins/) and [catalog](plugins/catalog.json) are available. The standalone download catalog is currently empty. Plugins bundled with application version 2.3.0 are included in that application's distribution package.
+The [official plugin directory](plugins/) and [catalog](plugins/catalog.json) distribute [Drawing Manager 0.9.1](plugins/packages/drawing-manager/0.9.1/README.md) separately. The copy bundled with application 2.3.0 is retained in that historical distribution.
 
 このリポジトリの準備だけでは、既存アプリの配布元URL固定や公式署名検証は有効になりません。それらは別途アプリ側で実装・設定する必要があります。SHA-256はファイルの一致確認に使用し、発行者の電子署名を意味しません。
 
