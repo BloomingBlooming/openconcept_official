@@ -1,0 +1,343 @@
+{
+    "manifest_version": 1,
+    "package_type": "upgrade-distribution",
+    "product": "OpenConcept",
+    "from_version": "2.3.2",
+    "target_version": "2.3.3",
+    "product_version": "2.3.3",
+    "source_public_manifest_sha256": "077d7a7680f2a104e1aa7e3e2c1fd0f4bfee35bfbf49412eb73d4d422d84ac14",
+    "target_public_manifest_sha256": "fbfb4b8df97f48ed8d9ba9f438ca5eed810cc02d1275d083168dac2ef66d986a",
+    "install_mode": "merge-files-no-delete",
+    "database_schema_changed": false,
+    "instance_configuration_included": false,
+    "runtime_data_included": false,
+    "delete_files": [],
+    "changes": [
+        {
+            "path": "HTTP-SERVER-SETUP.ja-en.md",
+            "operation": "replace",
+            "from_sha256": "10c9a8e2bbd98ecab51490371db6d28e9e7d400cbc8e7a9b00271864b014bfe5",
+            "from_bytes": 34267,
+            "to_sha256": "578f83d8a2dd101fd6e8696d4cb05c9fe0b99328e75c158039cbc4b94e9b9b64",
+            "to_bytes": 34267,
+            "package_path": "files/HTTP-SERVER-SETUP.ja-en.md",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "README.md",
+            "operation": "replace",
+            "from_sha256": "559dad970c8cdfbf2b24c43fee2207026e6152b4e6e1a1c7fb171c98fb518e84",
+            "from_bytes": 7697,
+            "to_sha256": "23e6cb07b1f4a17566b95882d3a5706e26b2e4688f87fdc448c64466401ab49c",
+            "to_bytes": 9291,
+            "package_path": "files/README.md",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "VERSION",
+            "operation": "replace",
+            "from_sha256": "e1d31f14bed34a1c7e6227931673f0bb4ec1e26ee4278d00dac169809c4d9539",
+            "from_bytes": 6,
+            "to_sha256": "ef6949f5950f6f55fd1676a55619a3decdff9426d41a7d8078d3c4dab2e4449b",
+            "to_bytes": 6,
+            "package_path": "files/VERSION",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/DefaultOperationManual.php",
+            "operation": "replace",
+            "from_sha256": "d8c803c177218e4b5979944d1df8f997879a796b44aa9472a643beca0bc52ba6",
+            "from_bytes": 20408,
+            "to_sha256": "d6c7d9d6ddec5202f2ef5e9b7252b57ce09f2c5a6aa1d8603a86ee59ff621192",
+            "to_bytes": 20408,
+            "package_path": "files/app/DefaultOperationManual.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/JsonRequestBody.php",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "6de01adf4ae283644ed6b100fee2bd013d259f7bb9ec563f4073299d4517368d",
+            "to_bytes": 6732,
+            "package_path": "files/app/JsonRequestBody.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/PageSaveInput.php",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "1bca7e67719e087d6d68ec1978dc5632eed0854e516edfd49bde93d790dbd950",
+            "to_bytes": 10013,
+            "package_path": "files/app/PageSaveInput.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/bootstrap.php",
+            "operation": "replace",
+            "from_sha256": "0c89e618ef9d944588c853af3570f2095041e95fe1c230b72fcb228525dea792",
+            "from_bytes": 127543,
+            "to_sha256": "21400b9bf87c072c3e6eb8508b092fdd6f586600ef6baef78690196cff7f283d",
+            "to_bytes": 130049,
+            "package_path": "files/app/bootstrap.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "assets/app.css",
+            "operation": "replace",
+            "from_sha256": "4b3591753b162e361864df0eafee8c97b3457ff2b112ce53a9d70808a1c004ce",
+            "from_bytes": 122932,
+            "to_sha256": "43890e4a3d738ae9cfb0278c469a80c7e538eab6b4a7351b3b72c89b3d82faf1",
+            "to_bytes": 123698,
+            "package_path": "files/assets/app.css",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "assets/app.js",
+            "operation": "replace",
+            "from_sha256": "799a0902ad18114549865fbb070e8a061e6efe96ad98e6be77e2ad578e15931b",
+            "from_bytes": 450670,
+            "to_sha256": "6de93305130d3b5d3e389c3ff81db5bbcae0b04d799f3a2c06200574cee3c4e9",
+            "to_bytes": 461082,
+            "package_path": "files/assets/app.js",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "docs/openconcept-operation-manual.ja.md",
+            "operation": "replace",
+            "from_sha256": "69b995afb568dcd5495525d19b6e027a397282e878bea4c9371439891bb40d83",
+            "from_bytes": 48043,
+            "to_sha256": "5d463b00ca5d34336d2cf17c1833d486501e1e321580b66af092d34fa4a94c6c",
+            "to_bytes": 49830,
+            "package_path": "files/docs/openconcept-operation-manual.ja.md",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/en-US.json",
+            "operation": "replace",
+            "from_sha256": "345ab721ab688a7a11ebec3680a6bf7e076c4410b42f47e254c9da119bee5698",
+            "from_bytes": 52688,
+            "to_sha256": "b647cb5831b030573e7dccab0eac85a65016613e30361cc183abd94e479358e0",
+            "to_bytes": 54874,
+            "package_path": "files/locales/en-US.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/ja-JP.json",
+            "operation": "replace",
+            "from_sha256": "ab4587484e1edcd8507e61fa3b5cc265ccb7b43d6d2d15bbad108ad51524dbd2",
+            "from_bytes": 59875,
+            "to_sha256": "d1408860f97715375a999f927e667421cc6b646b975079c3cdb0caf50b18ee1e",
+            "to_bytes": 62545,
+            "package_path": "files/locales/ja-JP.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/ko-KR.json",
+            "operation": "replace",
+            "from_sha256": "8336c6ea24d131fa345c09d6aa55bd174d0d37be72d5c0cbad9dc38d269a2c00",
+            "from_bytes": 58550,
+            "to_sha256": "ae6ced6bc964d6fd4a13110ea06816ae5c281aa17e0224010bbfc060a2abf478",
+            "to_bytes": 61191,
+            "package_path": "files/locales/ko-KR.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/vi-VN.json",
+            "operation": "replace",
+            "from_sha256": "cb6de44bd3bd7384f8d40e9b812dcd232fea88e24c4c304adb861744289e7a4f",
+            "from_bytes": 60533,
+            "to_sha256": "d65aa4f57dd47b4ade30627233b0825233fc4a2cfe91a7c77ebab869a18890e1",
+            "to_bytes": 63146,
+            "package_path": "files/locales/vi-VN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/zh-CN.json",
+            "operation": "replace",
+            "from_sha256": "579fa8c43956fb13bbdc2f072aab861c1879b1dc280c47d8599c0b93928234fc",
+            "from_bytes": 51400,
+            "to_sha256": "1ba4876666868da5e2a4ad9453d7072df518d833540bf2904fe427efc46c65d9",
+            "to_bytes": 53426,
+            "package_path": "files/locales/zh-CN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "public/api.php",
+            "operation": "replace",
+            "from_sha256": "2b415b8ec4dd9cd9162f3c31e08155dc9e2b1009dbdee5e67893ff439e8c54cc",
+            "from_bytes": 177118,
+            "to_sha256": "9d01d4579a71e0ab7a60355f47cdd09a3954fb2187b0f0008a8d7acc26740281",
+            "to_bytes": 180696,
+            "package_path": "files/public/api.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "public/assets/app.css",
+            "operation": "replace",
+            "from_sha256": "4b3591753b162e361864df0eafee8c97b3457ff2b112ce53a9d70808a1c004ce",
+            "from_bytes": 122932,
+            "to_sha256": "43890e4a3d738ae9cfb0278c469a80c7e538eab6b4a7351b3b72c89b3d82faf1",
+            "to_bytes": 123698,
+            "package_path": "files/public/assets/app.css",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "public/assets/app.js",
+            "operation": "replace",
+            "from_sha256": "799a0902ad18114549865fbb070e8a061e6efe96ad98e6be77e2ad578e15931b",
+            "from_bytes": 450670,
+            "to_sha256": "6de93305130d3b5d3e389c3ff81db5bbcae0b04d799f3a2c06200574cee3c4e9",
+            "to_bytes": 461082,
+            "package_path": "files/public/assets/app.js",
+            "install_action": "merge-overwrite-file"
+        }
+    ],
+    "reference_files": [
+        {
+            "path": "compose.rag.yaml",
+            "operation": "replace",
+            "from_sha256": "9f5d20a31c8324e23d20d7b65cc68036c8778272aae2ca75905e566880261c82",
+            "from_bytes": 5281,
+            "to_sha256": "65fd312a3c3916ceb606f4ede70091f7d8b180ad538bbc85c2214931151838e0",
+            "to_bytes": 5281,
+            "package_path": "reference/compose.rag.yaml",
+            "install_action": "manual-merge-only"
+        }
+    ],
+    "file_count": 26,
+    "total_bytes": 2037493,
+    "files": [
+        {
+            "path": "LICENSE",
+            "bytes": 1090,
+            "sha256": "0b6f376a9a9ca41e60bddf668b53020a3d1d2f7aa0d9559987fb6248ca7fef16"
+        },
+        {
+            "path": "LICENSE.en.md",
+            "bytes": 17995,
+            "sha256": "a36b56756ded8b45ff27b43845ff6ee5625969452309a48ad1361604cb52f1a2"
+        },
+        {
+            "path": "LICENSE.en.txt",
+            "bytes": 17921,
+            "sha256": "8f17d8b250b91f649ff8367192d3585d7116c9bf9210093164459d3f82a4c49c"
+        },
+        {
+            "path": "LICENSE.ja.md",
+            "bytes": 19060,
+            "sha256": "f86093552100563de06f47f1feec0986535b569960c3f9b201d6cea363fd2b6c"
+        },
+        {
+            "path": "LICENSE.ja.txt",
+            "bytes": 18986,
+            "sha256": "5c0eced685837e693be5bcdc6d11efa2e72f9c92c861da0be6c5573b28058199"
+        },
+        {
+            "path": "README.ja-en.md",
+            "bytes": 8266,
+            "sha256": "02506fc5edbb909ea4b8733ecb9da9ee8ab9c466605908a33fa59e72209fc7bb"
+        },
+        {
+            "path": "files/DISTRIBUTION-MANIFEST.json",
+            "bytes": 42860,
+            "sha256": "fbfb4b8df97f48ed8d9ba9f438ca5eed810cc02d1275d083168dac2ef66d986a"
+        },
+        {
+            "path": "files/HTTP-SERVER-SETUP.ja-en.md",
+            "bytes": 34267,
+            "sha256": "578f83d8a2dd101fd6e8696d4cb05c9fe0b99328e75c158039cbc4b94e9b9b64"
+        },
+        {
+            "path": "files/README.md",
+            "bytes": 9291,
+            "sha256": "23e6cb07b1f4a17566b95882d3a5706e26b2e4688f87fdc448c64466401ab49c"
+        },
+        {
+            "path": "files/VERSION",
+            "bytes": 6,
+            "sha256": "ef6949f5950f6f55fd1676a55619a3decdff9426d41a7d8078d3c4dab2e4449b"
+        },
+        {
+            "path": "files/app/DefaultOperationManual.php",
+            "bytes": 20408,
+            "sha256": "d6c7d9d6ddec5202f2ef5e9b7252b57ce09f2c5a6aa1d8603a86ee59ff621192"
+        },
+        {
+            "path": "files/app/JsonRequestBody.php",
+            "bytes": 6732,
+            "sha256": "6de01adf4ae283644ed6b100fee2bd013d259f7bb9ec563f4073299d4517368d"
+        },
+        {
+            "path": "files/app/PageSaveInput.php",
+            "bytes": 10013,
+            "sha256": "1bca7e67719e087d6d68ec1978dc5632eed0854e516edfd49bde93d790dbd950"
+        },
+        {
+            "path": "files/app/bootstrap.php",
+            "bytes": 130049,
+            "sha256": "21400b9bf87c072c3e6eb8508b092fdd6f586600ef6baef78690196cff7f283d"
+        },
+        {
+            "path": "files/assets/app.css",
+            "bytes": 123698,
+            "sha256": "43890e4a3d738ae9cfb0278c469a80c7e538eab6b4a7351b3b72c89b3d82faf1"
+        },
+        {
+            "path": "files/assets/app.js",
+            "bytes": 461082,
+            "sha256": "6de93305130d3b5d3e389c3ff81db5bbcae0b04d799f3a2c06200574cee3c4e9"
+        },
+        {
+            "path": "files/docs/openconcept-operation-manual.ja.md",
+            "bytes": 49830,
+            "sha256": "5d463b00ca5d34336d2cf17c1833d486501e1e321580b66af092d34fa4a94c6c"
+        },
+        {
+            "path": "files/locales/en-US.json",
+            "bytes": 54874,
+            "sha256": "b647cb5831b030573e7dccab0eac85a65016613e30361cc183abd94e479358e0"
+        },
+        {
+            "path": "files/locales/ja-JP.json",
+            "bytes": 62545,
+            "sha256": "d1408860f97715375a999f927e667421cc6b646b975079c3cdb0caf50b18ee1e"
+        },
+        {
+            "path": "files/locales/ko-KR.json",
+            "bytes": 61191,
+            "sha256": "ae6ced6bc964d6fd4a13110ea06816ae5c281aa17e0224010bbfc060a2abf478"
+        },
+        {
+            "path": "files/locales/vi-VN.json",
+            "bytes": 63146,
+            "sha256": "d65aa4f57dd47b4ade30627233b0825233fc4a2cfe91a7c77ebab869a18890e1"
+        },
+        {
+            "path": "files/locales/zh-CN.json",
+            "bytes": 53426,
+            "sha256": "1ba4876666868da5e2a4ad9453d7072df518d833540bf2904fe427efc46c65d9"
+        },
+        {
+            "path": "files/public/api.php",
+            "bytes": 180696,
+            "sha256": "9d01d4579a71e0ab7a60355f47cdd09a3954fb2187b0f0008a8d7acc26740281"
+        },
+        {
+            "path": "files/public/assets/app.css",
+            "bytes": 123698,
+            "sha256": "43890e4a3d738ae9cfb0278c469a80c7e538eab6b4a7351b3b72c89b3d82faf1"
+        },
+        {
+            "path": "files/public/assets/app.js",
+            "bytes": 461082,
+            "sha256": "6de93305130d3b5d3e389c3ff81db5bbcae0b04d799f3a2c06200574cee3c4e9"
+        },
+        {
+            "path": "reference/compose.rag.yaml",
+            "bytes": 5281,
+            "sha256": "65fd312a3c3916ceb606f4ede70091f7d8b180ad538bbc85c2214931151838e0"
+        }
+    ]
+}

@@ -6,7 +6,8 @@ The current application distribution is stored under `core/<version>/`. It conta
 
 | Version | 設置説明書 / Setup guide | ZIP | SHA-256 |
 | --- | --- | --- | --- |
-| 2.3.2 | [日本語・English](2.3.2/README.md) | [Download](2.3.2/OpenConcept-2.3.2-public.zip) | [Checksum](2.3.2/OpenConcept-2.3.2-public.zip.sha256) |
+| 2.3.3 | [日本語・English](2.3.3/OpenConcept-2.3.3-public/HTTP-SERVER-SETUP.ja-en.md) | [Download](2.3.3/OpenConcept-2.3.3-public.zip) | [Checksum](2.3.3/OpenConcept-2.3.3-public.zip.sha256) |
+| 2.3.2 → 2.3.3 | [更新手順 / Upgrade instructions](2.3.3/OpenConcept-2.3.3-upgrade-from-2.3.2/README.ja-en.md) | [Download](2.3.3/OpenConcept-2.3.3-upgrade-from-2.3.2.zip) | [Checksum](2.3.3/OpenConcept-2.3.3-upgrade-from-2.3.2.zip.sha256) |
 
 更新時はOpenConceptプロジェクトの`Dist/`以下から、手動または管理者が指示したバージョンの配布物を取得します。対象バージョンのフォルダーへ配置して旧配布物を置き換え、この一覧と[リポジトリ先頭の一覧](../README.md)を更新します。このリポジトリで配布物を直接修正したり、旧版を保管したりしません。
 
