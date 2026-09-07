@@ -312,6 +312,7 @@
         "profile.title": "Hồ sơ",
         "profile.department": "Phòng ban",
         "profile.departmentHelp": "Phòng ban ảnh hưởng đến quyền truy cập. Hãy yêu cầu quản trị viên thay đổi.",
+        "profile.departmentAdminHelp": "Quản trị viên hệ thống có thể thay đổi phòng ban của mình. Nhập tên phòng ban và lưu.",
         "profile.icon": "Biểu tượng",
         "profile.iconHelp": "Sử dụng biểu tượng có sẵn hoặc ảnh.",
         "profile.initialsIcon": "Biểu tượng chữ cái",

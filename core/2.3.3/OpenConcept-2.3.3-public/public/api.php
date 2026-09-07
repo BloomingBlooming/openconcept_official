@@ -747,10 +747,17 @@ if ($action === 'update-profile' && $method === 'POST') {
             }
             $avatarValue = $existingPhoto;
         }
+        $department = (string) ($liveUser['department'] ?? '');
+        if ((string) $liveUser['role'] === 'admin' && array_key_exists('department', $_POST)) {
+            if (!is_string($_POST['department'])) {
+                throw new RuntimeException('部署名を確認してください。', 422);
+            }
+            $department = $_POST['department'];
+        }
         $updatedUser = updateUserProfile(
             $pdo,
             (int) $liveUser['id'],
-            (string) ($liveUser['department'] ?? ''),
+            $department,
             $avatarKind,
             $avatarValue
         );

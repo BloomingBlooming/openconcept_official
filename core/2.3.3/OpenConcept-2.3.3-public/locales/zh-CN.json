@@ -312,6 +312,7 @@
         "profile.title": "个人资料",
         "profile.department": "部门",
         "profile.departmentHelp": "部门会影响访问权限。如需更改，请联系管理员。",
+        "profile.departmentAdminHelp": "系统管理员可以更改自己的部门。请输入部门名称并保存。",
         "profile.icon": "图标",
         "profile.iconHelp": "使用提供的图标或照片。",
         "profile.initialsIcon": "姓名首字母图标",

@@ -9,7 +9,7 @@
         "OpenConcept.png: optional text, XMP, EXIF, and timestamp metadata removed"
     ],
     "file_count": 222,
-    "total_bytes": 7849762,
+    "total_bytes": 7853969,
     "files": [
         {
             "path": ".dockerignore",
@@ -528,8 +528,8 @@
         },
         {
             "path": "app/bootstrap.php",
-            "bytes": 130049,
-            "sha256": "21400b9bf87c072c3e6eb8508b092fdd6f586600ef6baef78690196cff7f283d"
+            "bytes": 130757,
+            "sha256": "d454404f712c1e627505ebd44462bfeed7a4c57be6f2726373a0d866ee4435b9"
         },
         {
             "path": "app/public-bootstrap.php",
@@ -543,8 +543,8 @@
         },
         {
             "path": "assets/app.js",
-            "bytes": 461082,
-            "sha256": "6de93305130d3b5d3e389c3ff81db5bbcae0b04d799f3a2c06200574cee3c4e9"
+            "bytes": 462183,
+            "sha256": "95b8bd7b08e2028c64314278fc1212719efd9affe792f55a23092485c1aea584"
         },
         {
             "path": "assets/rag-core.css",
@@ -643,8 +643,8 @@
         },
         {
             "path": "docs/openconcept-operation-manual.ja.md",
-            "bytes": 49830,
-            "sha256": "5d463b00ca5d34336d2cf17c1833d486501e1e321580b66af092d34fa4a94c6c"
+            "bytes": 50043,
+            "sha256": "be873b5a3b3c4ca18dac1c996c7123ec6dd5bb021b9133b5a11c20900cf5a83b"
         },
         {
             "path": "export.php",
@@ -658,18 +658,18 @@
         },
         {
             "path": "locales/en-US.json",
-            "bytes": 54874,
-            "sha256": "b647cb5831b030573e7dccab0eac85a65016613e30361cc183abd94e479358e0"
+            "bytes": 55008,
+            "sha256": "482ec4c28b3924f9c1be583bdc2e0f6b20b029acc12dfcf72d28d7f6f58569a6"
         },
         {
             "path": "locales/ja-JP.json",
-            "bytes": 62545,
-            "sha256": "d1408860f97715375a999f927e667421cc6b646b975079c3cdb0caf50b18ee1e"
+            "bytes": 62715,
+            "sha256": "3e56e3b00fb07298404987c9e10e0cf149b7e57fa53fbd96d563a052bcc36ac6"
         },
         {
             "path": "locales/ko-KR.json",
-            "bytes": 61191,
-            "sha256": "ae6ced6bc964d6fd4a13110ea06816ae5c281aa17e0224010bbfc060a2abf478"
+            "bytes": 61352,
+            "sha256": "2e2f46c285be03f7b9cf33a372557bfefe6f17a55c273fb389bcf4ae29d3d2e6"
         },
         {
             "path": "locales/rag-core/en-US.json",
@@ -698,13 +698,13 @@
         },
         {
             "path": "locales/vi-VN.json",
-            "bytes": 63146,
-            "sha256": "d65aa4f57dd47b4ade30627233b0825233fc4a2cfe91a7c77ebab869a18890e1"
+            "bytes": 63300,
+            "sha256": "4d58b70850a666cc6cd268f1d745f6c8cc8d5d20a5eaf8172e20fc1bb26308ff"
         },
         {
             "path": "locales/zh-CN.json",
-            "bytes": 53426,
-            "sha256": "1ba4876666868da5e2a4ad9453d7072df518d833540bf2904fe427efc46c65d9"
+            "bytes": 53548,
+            "sha256": "6cf6300988ac49653b66a544858e4188cc4bdc22cd0ce9b3cffabe1622a2e769"
         },
         {
             "path": "plugin-asset.php",
@@ -993,8 +993,8 @@
         },
         {
             "path": "public/api.php",
-            "bytes": 180696,
-            "sha256": "9d01d4579a71e0ab7a60355f47cdd09a3954fb2187b0f0008a8d7acc26740281"
+            "bytes": 181039,
+            "sha256": "434b4468b52c54bd8d6296a11d5fbe992bf62a671ec3658bdfaa5bc32bac5194"
         },
         {
             "path": "public/app-css.php",
@@ -1018,8 +1018,8 @@
         },
         {
             "path": "public/assets/app.js",
-            "bytes": 461082,
-            "sha256": "6de93305130d3b5d3e389c3ff81db5bbcae0b04d799f3a2c06200574cee3c4e9"
+            "bytes": 462183,
+            "sha256": "95b8bd7b08e2028c64314278fc1212719efd9affe792f55a23092485c1aea584"
         },
         {
             "path": "public/assets/public-share.css",

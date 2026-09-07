@@ -6,7 +6,7 @@
     "target_version": "2.3.3",
     "product_version": "2.3.3",
     "source_public_manifest_sha256": "077d7a7680f2a104e1aa7e3e2c1fd0f4bfee35bfbf49412eb73d4d422d84ac14",
-    "target_public_manifest_sha256": "fbfb4b8df97f48ed8d9ba9f438ca5eed810cc02d1275d083168dac2ef66d986a",
+    "target_public_manifest_sha256": "61373507221292601a11fb2a63474fec0ee3fd0c111128e5aeabd6d187bfbeb1",
     "install_mode": "merge-files-no-delete",
     "database_schema_changed": false,
     "instance_configuration_included": false,
@@ -78,8 +78,8 @@
             "operation": "replace",
             "from_sha256": "0c89e618ef9d944588c853af3570f2095041e95fe1c230b72fcb228525dea792",
             "from_bytes": 127543,
-            "to_sha256": "21400b9bf87c072c3e6eb8508b092fdd6f586600ef6baef78690196cff7f283d",
-            "to_bytes": 130049,
+            "to_sha256": "d454404f712c1e627505ebd44462bfeed7a4c57be6f2726373a0d866ee4435b9",
+            "to_bytes": 130757,
             "package_path": "files/app/bootstrap.php",
             "install_action": "merge-overwrite-file"
         },
@@ -98,8 +98,8 @@
             "operation": "replace",
             "from_sha256": "799a0902ad18114549865fbb070e8a061e6efe96ad98e6be77e2ad578e15931b",
             "from_bytes": 450670,
-            "to_sha256": "6de93305130d3b5d3e389c3ff81db5bbcae0b04d799f3a2c06200574cee3c4e9",
-            "to_bytes": 461082,
+            "to_sha256": "95b8bd7b08e2028c64314278fc1212719efd9affe792f55a23092485c1aea584",
+            "to_bytes": 462183,
             "package_path": "files/assets/app.js",
             "install_action": "merge-overwrite-file"
         },
@@ -108,8 +108,8 @@
             "operation": "replace",
             "from_sha256": "69b995afb568dcd5495525d19b6e027a397282e878bea4c9371439891bb40d83",
             "from_bytes": 48043,
-            "to_sha256": "5d463b00ca5d34336d2cf17c1833d486501e1e321580b66af092d34fa4a94c6c",
-            "to_bytes": 49830,
+            "to_sha256": "be873b5a3b3c4ca18dac1c996c7123ec6dd5bb021b9133b5a11c20900cf5a83b",
+            "to_bytes": 50043,
             "package_path": "files/docs/openconcept-operation-manual.ja.md",
             "install_action": "merge-overwrite-file"
         },
@@ -118,8 +118,8 @@
             "operation": "replace",
             "from_sha256": "345ab721ab688a7a11ebec3680a6bf7e076c4410b42f47e254c9da119bee5698",
             "from_bytes": 52688,
-            "to_sha256": "b647cb5831b030573e7dccab0eac85a65016613e30361cc183abd94e479358e0",
-            "to_bytes": 54874,
+            "to_sha256": "482ec4c28b3924f9c1be583bdc2e0f6b20b029acc12dfcf72d28d7f6f58569a6",
+            "to_bytes": 55008,
             "package_path": "files/locales/en-US.json",
             "install_action": "merge-overwrite-file"
         },
@@ -128,8 +128,8 @@
             "operation": "replace",
             "from_sha256": "ab4587484e1edcd8507e61fa3b5cc265ccb7b43d6d2d15bbad108ad51524dbd2",
             "from_bytes": 59875,
-            "to_sha256": "d1408860f97715375a999f927e667421cc6b646b975079c3cdb0caf50b18ee1e",
-            "to_bytes": 62545,
+            "to_sha256": "3e56e3b00fb07298404987c9e10e0cf149b7e57fa53fbd96d563a052bcc36ac6",
+            "to_bytes": 62715,
             "package_path": "files/locales/ja-JP.json",
             "install_action": "merge-overwrite-file"
         },
@@ -138,8 +138,8 @@
             "operation": "replace",
             "from_sha256": "8336c6ea24d131fa345c09d6aa55bd174d0d37be72d5c0cbad9dc38d269a2c00",
             "from_bytes": 58550,
-            "to_sha256": "ae6ced6bc964d6fd4a13110ea06816ae5c281aa17e0224010bbfc060a2abf478",
-            "to_bytes": 61191,
+            "to_sha256": "2e2f46c285be03f7b9cf33a372557bfefe6f17a55c273fb389bcf4ae29d3d2e6",
+            "to_bytes": 61352,
             "package_path": "files/locales/ko-KR.json",
             "install_action": "merge-overwrite-file"
         },
@@ -148,8 +148,8 @@
             "operation": "replace",
             "from_sha256": "cb6de44bd3bd7384f8d40e9b812dcd232fea88e24c4c304adb861744289e7a4f",
             "from_bytes": 60533,
-            "to_sha256": "d65aa4f57dd47b4ade30627233b0825233fc4a2cfe91a7c77ebab869a18890e1",
-            "to_bytes": 63146,
+            "to_sha256": "4d58b70850a666cc6cd268f1d745f6c8cc8d5d20a5eaf8172e20fc1bb26308ff",
+            "to_bytes": 63300,
             "package_path": "files/locales/vi-VN.json",
             "install_action": "merge-overwrite-file"
         },
@@ -158,8 +158,8 @@
             "operation": "replace",
             "from_sha256": "579fa8c43956fb13bbdc2f072aab861c1879b1dc280c47d8599c0b93928234fc",
             "from_bytes": 51400,
-            "to_sha256": "1ba4876666868da5e2a4ad9453d7072df518d833540bf2904fe427efc46c65d9",
-            "to_bytes": 53426,
+            "to_sha256": "6cf6300988ac49653b66a544858e4188cc4bdc22cd0ce9b3cffabe1622a2e769",
+            "to_bytes": 53548,
             "package_path": "files/locales/zh-CN.json",
             "install_action": "merge-overwrite-file"
         },
@@ -168,8 +168,8 @@
             "operation": "replace",
             "from_sha256": "2b415b8ec4dd9cd9162f3c31e08155dc9e2b1009dbdee5e67893ff439e8c54cc",
             "from_bytes": 177118,
-            "to_sha256": "9d01d4579a71e0ab7a60355f47cdd09a3954fb2187b0f0008a8d7acc26740281",
-            "to_bytes": 180696,
+            "to_sha256": "434b4468b52c54bd8d6296a11d5fbe992bf62a671ec3658bdfaa5bc32bac5194",
+            "to_bytes": 181039,
             "package_path": "files/public/api.php",
             "install_action": "merge-overwrite-file"
         },
@@ -188,8 +188,8 @@
             "operation": "replace",
             "from_sha256": "799a0902ad18114549865fbb070e8a061e6efe96ad98e6be77e2ad578e15931b",
             "from_bytes": 450670,
-            "to_sha256": "6de93305130d3b5d3e389c3ff81db5bbcae0b04d799f3a2c06200574cee3c4e9",
-            "to_bytes": 461082,
+            "to_sha256": "95b8bd7b08e2028c64314278fc1212719efd9affe792f55a23092485c1aea584",
+            "to_bytes": 462183,
             "package_path": "files/public/assets/app.js",
             "install_action": "merge-overwrite-file"
         }
@@ -207,7 +207,7 @@
         }
     ],
     "file_count": 26,
-    "total_bytes": 2037493,
+    "total_bytes": 2041700,
     "files": [
         {
             "path": "LICENSE",
@@ -242,7 +242,7 @@
         {
             "path": "files/DISTRIBUTION-MANIFEST.json",
             "bytes": 42860,
-            "sha256": "fbfb4b8df97f48ed8d9ba9f438ca5eed810cc02d1275d083168dac2ef66d986a"
+            "sha256": "61373507221292601a11fb2a63474fec0ee3fd0c111128e5aeabd6d187bfbeb1"
         },
         {
             "path": "files/HTTP-SERVER-SETUP.ja-en.md",
@@ -276,8 +276,8 @@
         },
         {
             "path": "files/app/bootstrap.php",
-            "bytes": 130049,
-            "sha256": "21400b9bf87c072c3e6eb8508b092fdd6f586600ef6baef78690196cff7f283d"
+            "bytes": 130757,
+            "sha256": "d454404f712c1e627505ebd44462bfeed7a4c57be6f2726373a0d866ee4435b9"
         },
         {
             "path": "files/assets/app.css",
@@ -286,43 +286,43 @@
         },
         {
             "path": "files/assets/app.js",
-            "bytes": 461082,
-            "sha256": "6de93305130d3b5d3e389c3ff81db5bbcae0b04d799f3a2c06200574cee3c4e9"
+            "bytes": 462183,
+            "sha256": "95b8bd7b08e2028c64314278fc1212719efd9affe792f55a23092485c1aea584"
         },
         {
             "path": "files/docs/openconcept-operation-manual.ja.md",
-            "bytes": 49830,
-            "sha256": "5d463b00ca5d34336d2cf17c1833d486501e1e321580b66af092d34fa4a94c6c"
+            "bytes": 50043,
+            "sha256": "be873b5a3b3c4ca18dac1c996c7123ec6dd5bb021b9133b5a11c20900cf5a83b"
         },
         {
             "path": "files/locales/en-US.json",
-            "bytes": 54874,
-            "sha256": "b647cb5831b030573e7dccab0eac85a65016613e30361cc183abd94e479358e0"
+            "bytes": 55008,
+            "sha256": "482ec4c28b3924f9c1be583bdc2e0f6b20b029acc12dfcf72d28d7f6f58569a6"
         },
         {
             "path": "files/locales/ja-JP.json",
-            "bytes": 62545,
-            "sha256": "d1408860f97715375a999f927e667421cc6b646b975079c3cdb0caf50b18ee1e"
+            "bytes": 62715,
+            "sha256": "3e56e3b00fb07298404987c9e10e0cf149b7e57fa53fbd96d563a052bcc36ac6"
         },
         {
             "path": "files/locales/ko-KR.json",
-            "bytes": 61191,
-            "sha256": "ae6ced6bc964d6fd4a13110ea06816ae5c281aa17e0224010bbfc060a2abf478"
+            "bytes": 61352,
+            "sha256": "2e2f46c285be03f7b9cf33a372557bfefe6f17a55c273fb389bcf4ae29d3d2e6"
         },
         {
             "path": "files/locales/vi-VN.json",
-            "bytes": 63146,
-            "sha256": "d65aa4f57dd47b4ade30627233b0825233fc4a2cfe91a7c77ebab869a18890e1"
+            "bytes": 63300,
+            "sha256": "4d58b70850a666cc6cd268f1d745f6c8cc8d5d20a5eaf8172e20fc1bb26308ff"
         },
         {
             "path": "files/locales/zh-CN.json",
-            "bytes": 53426,
-            "sha256": "1ba4876666868da5e2a4ad9453d7072df518d833540bf2904fe427efc46c65d9"
+            "bytes": 53548,
+            "sha256": "6cf6300988ac49653b66a544858e4188cc4bdc22cd0ce9b3cffabe1622a2e769"
         },
         {
             "path": "files/public/api.php",
-            "bytes": 180696,
-            "sha256": "9d01d4579a71e0ab7a60355f47cdd09a3954fb2187b0f0008a8d7acc26740281"
+            "bytes": 181039,
+            "sha256": "434b4468b52c54bd8d6296a11d5fbe992bf62a671ec3658bdfaa5bc32bac5194"
         },
         {
             "path": "files/public/assets/app.css",
@@ -331,8 +331,8 @@
         },
         {
             "path": "files/public/assets/app.js",
-            "bytes": 461082,
-            "sha256": "6de93305130d3b5d3e389c3ff81db5bbcae0b04d799f3a2c06200574cee3c4e9"
+            "bytes": 462183,
+            "sha256": "95b8bd7b08e2028c64314278fc1212719efd9affe792f55a23092485c1aea584"
         },
         {
             "path": "reference/compose.rag.yaml",

@@ -312,6 +312,7 @@
         "profile.title": "프로필",
         "profile.department": "부서",
         "profile.departmentHelp": "부서는 접근 권한에 영향을 줍니다. 변경하려면 관리자에게 요청하세요.",
+        "profile.departmentAdminHelp": "시스템 관리자는 자신의 부서를 변경할 수 있습니다. 부서 이름을 입력하고 저장하세요.",
         "profile.icon": "아이콘",
         "profile.iconHelp": "제공된 아이콘이나 사진을 사용하세요.",
         "profile.initialsIcon": "이니셜 아이콘",

@@ -1910,6 +1910,13 @@
         }
     }
 
+    function renderProfileDepartmentField(draft) {
+        const canEditDepartment = state.user?.role === 'admin';
+        const attributes = canEditDepartment ? 'maxlength="120" required' : 'readonly aria-readonly="true"';
+        const help = canEditDepartment ? 'profile.departmentAdminHelp' : 'profile.departmentHelp';
+        return `<div class="form-field profile-department-field"><label for="profileDepartment">${esc(t('profile.department'))}</label><input class="input" id="profileDepartment" value="${esc(draft.department)}" ${attributes} aria-describedby="profileDepartmentHelp"><small id="profileDepartmentHelp">${esc(t(help))}</small></div>`;
+    }
+
     function openProfileDialog() {
         cleanupProfileDraft(true);
         state.dialog = 'profile';
@@ -1965,10 +1972,19 @@
         const button = root.querySelector('[data-action="save-profile"]');
         if (!draft || !button) return;
         if (error) error.textContent = '';
+        if (state.user?.role === 'admin') {
+            draft.department = trimDepartmentName(document.getElementById('profileDepartment')?.value ?? draft.department);
+            if (!draft.department) {
+                if (error) error.textContent = t('settings.departmentRequired');
+                document.getElementById('profileDepartment')?.focus();
+                return;
+            }
+        }
         button.disabled = true;
         button.textContent = `${t('common.saving')}…`;
         try {
             const formData = new FormData();
+            if (state.user?.role === 'admin') formData.append('department', draft.department);
             formData.append('avatar_kind', draft.avatar_kind);
             formData.append('avatar_value', draft.avatar_value || '');
             if (draft.photo_file) formData.append('photo', draft.photo_file, draft.photo_file.name);
@@ -3277,7 +3293,7 @@
             const categoryNames = profileCategoryNames();
             const iconGroups = Object.entries(state.profileIconChoices).map(([category, choices]) => `<section class="profile-icon-group"><h3>${esc(categoryNames[category] || category)}</h3><div class="profile-icon-grid">${choices.map(icon => `<button type="button" class="profile-icon-option ${draft.avatar_kind === 'emoji' && draft.avatar_value === icon ? 'active' : ''}" data-action="choose-profile-icon" data-value="${esc(icon)}" aria-label="${esc(t('profile.selectIcon', { icon }))}" aria-pressed="${draft.avatar_kind === 'emoji' && draft.avatar_value === icon}">${esc(icon)}</button>`).join('')}</div></section>`).join('');
             const securitySettings = `<section class="profile-security-settings"><div><strong>${esc(t('profile.password.title'))}</strong><span>${esc(t('profile.password.help'))}</span></div><button type="button" class="btn secondary compact" data-action="open-password-change">${svg('lock', 'small')} ${esc(t('profile.password.open'))}</button></section>`;
-            return `<div class="dialog-backdrop" data-action="backdrop"><section class="dialog wide profile-dialog" role="dialog" aria-modal="true" aria-labelledby="profileDialogTitle"><header class="dialog-header"><div class="dialog-title" id="profileDialogTitle">${esc(t('profile.title'))}</div>${close}</header><div class="dialog-body profile-body"><section class="profile-summary">${preview}<div class="profile-identity"><strong>${esc(state.user.name)}</strong><span>${esc(state.user.email)}</span><small>${esc(roleNames()[state.user.role] || state.user.role)}</small></div></section><div class="form-field profile-department-field"><label for="profileDepartment">${esc(t('profile.department'))}</label><input class="input" id="profileDepartment" value="${esc(draft.department)}" readonly aria-readonly="true"><small>${esc(t('profile.departmentHelp'))}</small></div><section class="profile-avatar-settings"><div class="profile-setting-heading"><div><strong>${esc(t('profile.icon'))}</strong><span>${esc(t('profile.iconHelp'))}</span></div><div class="profile-avatar-actions"><button type="button" class="btn secondary compact ${draft.avatar_kind === 'initials' ? 'active' : ''}" data-action="choose-profile-initials">${esc(t('profile.initialsIcon'))}</button><button type="button" class="btn secondary compact ${draft.avatar_kind === 'photo' ? 'active' : ''}" data-action="choose-profile-photo">${svg('image', 'small')} ${esc(t('profile.choosePhoto'))}</button><input id="profilePhotoInput" type="file" accept="image/png,image/jpeg,image/webp" hidden></div></div><p class="profile-photo-hint">${esc(t('profile.photoLimit', { size: state.profilePhotoLimitMb }))}</p>${iconGroups}</section>${securitySettings}<div id="profileError" class="login-error profile-error" role="alert"></div></div><footer class="dialog-footer"><button type="button" class="btn secondary profile-logout" data-action="logout">${svg('logout', 'small')} ${esc(t('common.logout'))}</button><button type="button" class="btn secondary" data-action="close-dialog">${esc(t('common.cancel'))}</button><button type="button" class="btn primary" data-action="save-profile">${esc(t('common.save'))}</button></footer></section></div>`;
+            return `<div class="dialog-backdrop" data-action="backdrop"><section class="dialog wide profile-dialog" role="dialog" aria-modal="true" aria-labelledby="profileDialogTitle"><header class="dialog-header"><div class="dialog-title" id="profileDialogTitle">${esc(t('profile.title'))}</div>${close}</header><div class="dialog-body profile-body"><section class="profile-summary">${preview}<div class="profile-identity"><strong>${esc(state.user.name)}</strong><span>${esc(state.user.email)}</span><small>${esc(roleNames()[state.user.role] || state.user.role)}</small></div></section>${renderProfileDepartmentField(draft)}<section class="profile-avatar-settings"><div class="profile-setting-heading"><div><strong>${esc(t('profile.icon'))}</strong><span>${esc(t('profile.iconHelp'))}</span></div><div class="profile-avatar-actions"><button type="button" class="btn secondary compact ${draft.avatar_kind === 'initials' ? 'active' : ''}" data-action="choose-profile-initials">${esc(t('profile.initialsIcon'))}</button><button type="button" class="btn secondary compact ${draft.avatar_kind === 'photo' ? 'active' : ''}" data-action="choose-profile-photo">${svg('image', 'small')} ${esc(t('profile.choosePhoto'))}</button><input id="profilePhotoInput" type="file" accept="image/png,image/jpeg,image/webp" hidden></div></div><p class="profile-photo-hint">${esc(t('profile.photoLimit', { size: state.profilePhotoLimitMb }))}</p>${iconGroups}</section>${securitySettings}<div id="profileError" class="login-error profile-error" role="alert"></div></div><footer class="dialog-footer"><button type="button" class="btn secondary profile-logout" data-action="logout">${svg('logout', 'small')} ${esc(t('common.logout'))}</button><button type="button" class="btn secondary" data-action="close-dialog">${esc(t('common.cancel'))}</button><button type="button" class="btn primary" data-action="save-profile">${esc(t('common.save'))}</button></footer></section></div>`;
         }
         if (state.dialog === 'password-change') {
             return `<div class="dialog-backdrop" data-action="backdrop"><section class="dialog" role="dialog" aria-modal="true" aria-labelledby="ownPasswordChangeTitle"><header class="dialog-header"><div class="dialog-title" id="ownPasswordChangeTitle">${esc(t('profile.password.title'))}</div>${close}</header><div class="dialog-body"><p class="dialog-intro">${esc(t('profile.password.description'))}</p><form id="ownPasswordChangeForm"><div class="form-field"><label for="currentPassword">${esc(t('profile.password.current'))}</label><input class="input" id="currentPassword" name="current_password" type="password" autocomplete="current-password" required></div><div class="form-field"><label for="ownNewPassword">${esc(t('profile.password.new'))}</label><input class="input" id="ownNewPassword" name="password" type="password" autocomplete="new-password" placeholder="${esc(t('setup.passwordMinimum'))}" required></div><div class="form-field"><label for="ownPasswordConfirmation">${esc(t('profile.password.confirmation'))}</label><input class="input" id="ownPasswordConfirmation" name="password_confirmation" type="password" autocomplete="new-password" required></div><div class="password-requirements">${esc(t('passwordChange.requirements'))}</div><div id="ownPasswordChangeError" class="login-error" role="alert"></div></form></div><footer class="dialog-footer"><button type="button" class="btn secondary" data-action="close-dialog">${esc(t('common.cancel'))}</button><button type="button" class="btn primary" data-action="submit-password-change">${esc(t('profile.password.submit'))}</button></footer></section></div>`;
@@ -6152,6 +6168,9 @@
     }
 
     root.addEventListener('input', event => {
+        if (event.target.id === 'profileDepartment' && state.dialog === 'profile' && state.user?.role === 'admin') {
+            state.dialogData.department = event.target.value;
+        }
         if (event.target.closest?.('#aiProviderForm')) {
             state.aiProviderDraft = readAiProviderForm();
             state.aiProviderNotice = '';

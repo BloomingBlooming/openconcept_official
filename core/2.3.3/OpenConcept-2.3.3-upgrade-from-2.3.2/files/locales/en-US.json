@@ -312,6 +312,7 @@
         "profile.title": "Profile",
         "profile.department": "Department",
         "profile.departmentHelp": "Department affects access permissions. Ask an administrator to change it.",
+        "profile.departmentAdminHelp": "System administrators can change their own department. Enter the department name and save.",
         "profile.icon": "Icon",
         "profile.iconHelp": "Use a provided icon or a photo.",
         "profile.initialsIcon": "Initials icon",

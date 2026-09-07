@@ -2839,15 +2839,19 @@ function updateUserProfile(PDO $pdo, int $userId, string $department, string $av
 
     $ownsTransaction = !$pdo->inTransaction();
     if ($ownsTransaction) {
-        $pdo->beginTransaction();
+        beginPageWriteTransaction($pdo);
     }
 
     try {
-        $current = $pdo->prepare(<<<'SQL'
+        $sql = <<<'SQL'
 SELECT id, name, email, avatar_color, avatar_kind, avatar_value, role, department, must_change_password, invited_at, last_login_at
 FROM users
-WHERE id = ? AND active = 1 AND role <> 'suspended'
-SQL);
+WHERE id = ? AND active = 1 AND role NOT IN ('system', 'suspended')
+SQL;
+        if ((string) $pdo->getAttribute(PDO::ATTR_DRIVER_NAME) !== 'sqlite') {
+            $sql .= ' FOR UPDATE';
+        }
+        $current = $pdo->prepare($sql);
         $current->execute([$userId]);
         $user = $current->fetch();
         if (!$user) {
@@ -2857,12 +2861,23 @@ SQL);
             return null;
         }
 
-        // Department membership is an authorization attribute. It is managed
-        // only through member administration and must never be self-service.
-        $department = (string) $user['department'];
-        $update = $pdo->prepare("UPDATE users SET avatar_kind = ?, avatar_value = ? WHERE id = ? AND active = 1 AND role <> 'suspended'");
-        $update->execute([$avatarKind, $avatarValue, $userId]);
+        // Department membership affects access. Only a live, locked system
+        // administrator may change their own department through their profile.
+        $previousDepartment = (string) $user['department'];
+        if ((string) $user['role'] === 'admin') {
+            $department = cleanText($department, 120);
+            if ($department === '') {
+                throw new RuntimeException('部署名を入力してください。', 422);
+            }
+            $update = $pdo->prepare('UPDATE users SET department = ?, avatar_kind = ?, avatar_value = ? WHERE id = ?');
+            $update->execute([$department, $avatarKind, $avatarValue, $userId]);
+        } else {
+            $department = $previousDepartment;
+            $update = $pdo->prepare('UPDATE users SET avatar_kind = ?, avatar_value = ? WHERE id = ?');
+            $update->execute([$avatarKind, $avatarValue, $userId]);
+        }
         audit($pdo, $userId, 'profile_updated', 'user', $userId, [
+            'previous_department' => $previousDepartment,
             'department' => $department,
             'previous_avatar_kind' => (string) $user['avatar_kind'],
             'avatar_kind' => $avatarKind,

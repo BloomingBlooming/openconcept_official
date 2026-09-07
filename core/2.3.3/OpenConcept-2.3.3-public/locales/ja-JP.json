@@ -312,6 +312,7 @@
         "profile.title": "プロフィール",
         "profile.department": "部署",
         "profile.departmentHelp": "部署は閲覧権限に使用されるため、変更は管理者へ依頼してください。",
+        "profile.departmentAdminHelp": "システム管理者は自分の部署を変更できます。変更する部署名を入力して保存してください。",
         "profile.icon": "アイコン",
         "profile.iconHelp": "用意されたアイコンまたは写真を使用できます。",
         "profile.initialsIcon": "文字アイコン",
