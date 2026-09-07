@@ -134,9 +134,13 @@ if (isset($_SERVER['HTTP_X_OPENCONCEPT_BODY_ENCODING'])
 
 if ($action === 'session') {
     $user = currentUser($pdo);
+    if ($user !== null && ($_COOKIE['openconcept_ui_locale'] ?? null) !== uiLocale($user)) {
+        rememberUiLocale(uiLocale($user));
+    }
     jsonResponse([
         'initialized' => isInitialized($pdo), 'user' => $user, 'csrf' => $_SESSION['csrf'],
         'settings' => wafCompatibilitySettings($pdo, $user !== null),
+        'i18n' => uiI18nBundle($user),
     ]);
 }
 
@@ -215,7 +219,7 @@ if ($action === 'initialize' && $method === 'POST') {
 
 if ($action === 'login' && $method === 'POST') {
     if (!isInitialized($pdo)) {
-        jsonResponse(['error' => '最初に管理者セットアップを完了してください。'], 409);
+        jsonResponse(['error' => $i18n->translate('auth.setupRequired', [], uiLocale())], 409);
     }
     $body = bodyJson();
     $attempts = (array) ($_SESSION['login_attempts'] ?? []);
@@ -226,12 +230,12 @@ if ($action === 'login' && $method === 'POST') {
     $user = $statement->fetch();
     if (!$user || !password_verify((string) ($body['password'] ?? ''), $user['password_hash'])) {
         if (count($attempts) >= 5) {
-            jsonResponse(['error' => '試行回数が多すぎます。1分後にもう一度お試しください。'], 429);
+            jsonResponse(['error' => $i18n->translate('auth.tooManyAttempts', [], uiLocale())], 429);
         }
         $attempts[] = time();
         $_SESSION['login_attempts'] = $attempts;
         usleep(250000);
-        jsonResponse(['error' => 'メールアドレスまたはパスワードが違います。'], 422);
+        jsonResponse(['error' => $i18n->translate('auth.invalidCredentials', [], uiLocale())], 422);
     }
     session_regenerate_id(true);
     $_SESSION['user_id'] = (int) $user['id'];
@@ -240,6 +244,7 @@ if ($action === 'login' && $method === 'POST') {
     unset($_SESSION['login_attempts']);
     $pdo->prepare('UPDATE users SET last_login_at = CURRENT_TIMESTAMP WHERE id = ?')->execute([(int) $user['id']]);
     audit($pdo, (int) $user['id'], 'login', 'user', (int) $user['id']);
+    rememberUiLocale(uiLocale($user));
     jsonResponseWithDeferredWork(
         ['ok' => true, 'csrf' => $_SESSION['csrf'], 'must_change_password' => (bool) $user['must_change_password']],
         static function () use ($pdo, $deploymentWriteGatePath): void {
@@ -306,7 +311,8 @@ if ($action === 'logout' && $method === 'POST') {
     audit($pdo, (int) $user['id'], 'logout', 'user', (int) $user['id']);
     $_SESSION = [];
     session_destroy();
-    jsonResponse(['ok' => true]);
+    rememberUiLocale(uiLocale($user));
+    jsonResponse(['ok' => true, 'i18n' => uiI18nBundle()]);
 }
 
 if ($action === 'change-password' && $method === 'POST') {
@@ -646,6 +652,7 @@ if ($action === 'update-ui-locale' && $method === 'POST') {
         jsonResponse(['error' => $status === 500 ? '画面言語を更新できませんでした。' : $exception->getMessage()], $status);
     }
     $user['ui_locale'] = $requestedLocale;
+    rememberUiLocale($requestedLocale);
     jsonResponse(['ok' => true, 'i18n' => $i18n->bundle($requestedLocale)]);
 }
 
@@ -799,7 +806,7 @@ if ($action === 'ai-conversations' && $method === 'GET') {
 if ($action === 'ai-conversation' && $method === 'GET') {
     $conversationId = (int) ($_GET['id'] ?? 0);
     if ($conversationId < 1) {
-        jsonResponse(['error' => 'AIチャットを選択してください。'], 422);
+        jsonResponse(['error' => $i18n->translate('ai.selectChat', [], uiLocale($user))], 422);
     }
     try {
         $repository = new AiChatRepository($pdo);
@@ -809,7 +816,7 @@ if ($action === 'ai-conversation' && $method === 'GET') {
             $expectedPasswordFingerprint
         ));
     } catch (InvalidArgumentException $exception) {
-        jsonResponse(['error' => $exception->getMessage()], 404);
+        jsonResponse(aiValidationResponsePayload($exception, $user), 404);
     }
 }
 
@@ -862,14 +869,28 @@ function takePendingAiPageAction(string $token): ?array
  *
  * @return array<string, mixed>
  */
-function aiFailureResponsePayload(Throwable $exception, string $fallbackMessage): array
+function aiFailureResponsePayload(Throwable $exception, string $fallbackKey, array $user): array
 {
-    $payload = ['error' => $fallbackMessage];
+    global $i18n;
+    $locale = uiLocale($user);
+    $payload = ['error' => $i18n->translate($fallbackKey, [], $locale)];
     if ($exception instanceof AiProviderRequestException) {
+        $payload['error'] .= ' ' . $i18n->translate('ai.errorCheckDetails', [], $locale);
         $payload['code'] = $exception->failureCode();
         $payload['details'] = $exception->details();
     }
     return $payload;
+}
+
+/** @return array{error: string} */
+function aiValidationResponsePayload(InvalidArgumentException $exception, array $user): array
+{
+    global $i18n;
+    return ['error' => $i18n->translate(
+        $exception instanceof AiValidationException ? $exception->translationKey : 'ai.invalidRequest',
+        $exception instanceof AiValidationException ? $exception->parameters : [],
+        uiLocale($user)
+    )];
 }
 
 if ($action === 'ai-page-action-confirm' && $method === 'POST') {
@@ -877,11 +898,11 @@ if ($action === 'ai-page-action-confirm' && $method === 'POST') {
     $body = bodyJson();
     $token = preg_replace('/[^a-f0-9]/', '', strtolower((string) ($body['token'] ?? ''))) ?? '';
     if (strlen($token) !== 48) {
-        jsonResponse(['error' => 'AI変更案の確認情報が正しくありません。'], 422);
+        jsonResponse(['error' => $i18n->translate('ai.invalidConfirmation', [], uiLocale($user))], 422);
     }
     $pending = takePendingAiPageAction($token);
     if ($pending === null || (int) ($pending['user_id'] ?? 0) !== (int) $user['id']) {
-        jsonResponse(['error' => 'AI変更案の有効期限が切れています。もう一度指示してください。'], 404);
+        jsonResponse(['error' => $i18n->translate('ai.confirmationExpired', [], uiLocale($user))], 404);
     }
     $conversationId = (int) ($pending['conversation_id'] ?? 0);
     $turnId = (int) ($pending['turn_id'] ?? 0);
@@ -936,15 +957,16 @@ if ($action === 'ai-page-action-confirm' && $method === 'POST') {
             'affected_publications' => array_values($affectedPublicationsByRoot),
         ]);
     } catch (InvalidArgumentException $exception) {
-        jsonResponse(['error' => $exception->getMessage()], 422);
+        jsonResponse(aiValidationResponsePayload($exception, $user), 422);
     } catch (Throwable $exception) {
         if ((int) $exception->getCode() === 401) {
-            jsonResponse(['error' => $exception->getMessage()], 401);
+            jsonResponse(['error' => $i18n->translate('ai.sessionChanged', [], uiLocale($user))], 401);
         }
         error_log('OpenConcept AI page action error: ' . $exception->getMessage());
         jsonResponse(aiFailureResponsePayload(
             $exception,
-            'AI変更を実行できませんでした。最新のページを確認してもう一度お試しください。'
+            'ai.actionFailed',
+            $user
         ), 502);
     }
 }
@@ -959,7 +981,7 @@ if ($action === 'ai-search' && $method === 'POST') {
     $editorContext = is_array($body['editor_context'] ?? null) ? $body['editor_context'] : [];
     $expectedUpdatedAt = cleanText((string) ($body['page_updated_at'] ?? ''), 40);
     if (!in_array($mode, ['search', 'page-summary'], true)) {
-        jsonResponse(['error' => 'AI検索の処理方法が正しくありません。'], 422);
+        jsonResponse(['error' => $i18n->translate('ai.invalidMode', [], uiLocale($user))], 422);
     }
     $now = time();
     $windowSeconds = 60;
@@ -970,7 +992,7 @@ if ($action === 'ai-search' && $method === 'POST') {
     ));
     if (count($attempts) >= $limit) {
         header('Retry-After: 60');
-        jsonResponse(['error' => 'AI検索の利用が続いています。1分ほど待ってからもう一度お試しください。'], 429);
+        jsonResponse(['error' => $i18n->translate('ai.rateLimited', [], uiLocale($user))], 429);
     }
     $attempts[] = $now;
     $_SESSION['ai_search_attempts'] = $attempts;
@@ -985,7 +1007,7 @@ if ($action === 'ai-search' && $method === 'POST') {
                 $expectedPasswordFingerprint
             );
         } catch (InvalidArgumentException $exception) {
-            jsonResponse(['error' => $exception->getMessage()], 404);
+            jsonResponse(aiValidationResponsePayload($exception, $user), 404);
         }
     }
     session_write_close();
@@ -1030,15 +1052,16 @@ if ($action === 'ai-search' && $method === 'POST') {
         $saved['turn']['actions'] = $turnAccessible ? $actions : [];
         jsonResponse(['result' => $saved['turn'], 'conversation' => $saved['conversation']]);
     } catch (InvalidArgumentException $exception) {
-        jsonResponse(['error' => $exception->getMessage()], 422);
+        jsonResponse(aiValidationResponsePayload($exception, $user), 422);
     } catch (Throwable $exception) {
         if ((int) $exception->getCode() === 401) {
-            jsonResponse(['error' => $exception->getMessage()], 401);
+            jsonResponse(['error' => $i18n->translate('ai.sessionChanged', [], uiLocale($user))], 401);
         }
         error_log('OpenConcept AI search error: ' . $exception->getMessage());
         jsonResponse(aiFailureResponsePayload(
             $exception,
-            'AI検索を完了できませんでした。以下のエラー詳細を確認してください。'
+            $mode === 'page-summary' ? 'ai.summaryFailed' : 'ai.searchFailed',
+            $user
         ), 502);
     }
 }

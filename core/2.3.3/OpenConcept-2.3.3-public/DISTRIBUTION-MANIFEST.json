@@ -8,8 +8,8 @@
     "sanitizations": [
         "OpenConcept.png: optional text, XMP, EXIF, and timestamp metadata removed"
     ],
-    "file_count": 222,
-    "total_bytes": 7853969,
+    "file_count": 223,
+    "total_bytes": 7875811,
     "files": [
         {
             "path": ".dockerignore",
@@ -63,8 +63,8 @@
         },
         {
             "path": "README.md",
-            "bytes": 9291,
-            "sha256": "23e6cb07b1f4a17566b95882d3a5706e26b2e4688f87fdc448c64466401ab49c"
+            "bytes": 10328,
+            "sha256": "2771d4d284b4a98decf2e7b6ea2d99c8d70cd56023f953d223047f6fec722523"
         },
         {
             "path": "VERSION",
@@ -98,13 +98,13 @@
         },
         {
             "path": "app/AiChatRepository.php",
-            "bytes": 36333,
-            "sha256": "448bc61ffcb383542e80fe5d5cfd882955744c4a6482c7f942641a167fe76bd4"
+            "bytes": 36025,
+            "sha256": "440aa19a058480a1c93c247467591a9c03b09b83d98b93e94cecaedcdb0f238b"
         },
         {
             "path": "app/AiPageActionService.php",
-            "bytes": 47343,
-            "sha256": "ab3df2bffe1f004ec2a22645a8e94e37b98e0e7cf0c66b76d9d624da72d8e9d0"
+            "bytes": 46188,
+            "sha256": "15084c3fd65cf7468a44ec6263c3ed64ee260e2a1b9a78b06ad4a97a73f53931"
         },
         {
             "path": "app/AiProviderSettings.php",
@@ -113,8 +113,13 @@
         },
         {
             "path": "app/AiSearchService.php",
-            "bytes": 62308,
-            "sha256": "9d7e6e6b2c15c575be9c165a53c02210a4ecd7a99d7aa6cdc19380c3e89aff42"
+            "bytes": 62173,
+            "sha256": "c0933d26d3a1951762f5153d899f7ea4e950485f826b489665c9d02b3a80e134"
+        },
+        {
+            "path": "app/AiValidationException.php",
+            "bytes": 420,
+            "sha256": "8a3817f21c7347b2dbb84aa2cc7b5027b00c21c3187df484248c9e2a601cdf77"
         },
         {
             "path": "app/BgeM3EmbeddingProvider.php",
@@ -303,8 +308,8 @@
         },
         {
             "path": "app/I18n.php",
-            "bytes": 7169,
-            "sha256": "a8a3d3d4e0a716223f73c7089a81bcda770961b7a0d35f61f3530561d1232400"
+            "bytes": 9988,
+            "sha256": "55a140eee2e0ab0bcd7ffcaa9874f2c2be1373e80e441f0ec747c9fa1fc278eb"
         },
         {
             "path": "app/InvitationManager.php",
@@ -528,8 +533,8 @@
         },
         {
             "path": "app/bootstrap.php",
-            "bytes": 130757,
-            "sha256": "d454404f712c1e627505ebd44462bfeed7a4c57be6f2726373a0d866ee4435b9"
+            "bytes": 131694,
+            "sha256": "550fb8b311af6bda0fe9fe708d3341eeb8084af17a429099b2819802dfd36302"
         },
         {
             "path": "app/public-bootstrap.php",
@@ -543,8 +548,8 @@
         },
         {
             "path": "assets/app.js",
-            "bytes": 462183,
-            "sha256": "95b8bd7b08e2028c64314278fc1212719efd9affe792f55a23092485c1aea584"
+            "bytes": 462827,
+            "sha256": "2ed8468307fd3198c06b1b6309037aaceb98e209fe3563948d60f2b8e11c4a0d"
         },
         {
             "path": "assets/rag-core.css",
@@ -643,8 +648,8 @@
         },
         {
             "path": "docs/openconcept-operation-manual.ja.md",
-            "bytes": 50043,
-            "sha256": "be873b5a3b3c4ca18dac1c996c7123ec6dd5bb021b9133b5a11c20900cf5a83b"
+            "bytes": 50965,
+            "sha256": "d5546bb40e8e3090e28d1ded84a27c33ea9fd5a9666eff1137f65b4f2fc97eab"
         },
         {
             "path": "export.php",
@@ -658,18 +663,18 @@
         },
         {
             "path": "locales/en-US.json",
-            "bytes": 55008,
-            "sha256": "482ec4c28b3924f9c1be583bdc2e0f6b20b029acc12dfcf72d28d7f6f58569a6"
+            "bytes": 57702,
+            "sha256": "9c9b0909d3af63188a9a98c7dba2a86e7e35fd55a9e6629ba74114ba26c99f90"
         },
         {
             "path": "locales/ja-JP.json",
-            "bytes": 62715,
-            "sha256": "3e56e3b00fb07298404987c9e10e0cf149b7e57fa53fbd96d563a052bcc36ac6"
+            "bytes": 66180,
+            "sha256": "b9e9f25dbbc3db9a5d1b4d29ecb8fb6355e4b645b45fe3e53f383706db6b3784"
         },
         {
             "path": "locales/ko-KR.json",
-            "bytes": 61352,
-            "sha256": "2e2f46c285be03f7b9cf33a372557bfefe6f17a55c273fb389bcf4ae29d3d2e6"
+            "bytes": 64584,
+            "sha256": "d66406ac69a5f6c49129e79ae86d06843cac7256c86f26a3cf2aca369d129d84"
         },
         {
             "path": "locales/rag-core/en-US.json",
@@ -698,13 +703,13 @@
         },
         {
             "path": "locales/vi-VN.json",
-            "bytes": 63300,
-            "sha256": "4d58b70850a666cc6cd268f1d745f6c8cc8d5d20a5eaf8172e20fc1bb26308ff"
+            "bytes": 66523,
+            "sha256": "22d64f5d52d5aab2822a4db9cae6cdc2743e2d473ae6290f7bcda19c257076c4"
         },
         {
             "path": "locales/zh-CN.json",
-            "bytes": 53548,
-            "sha256": "6cf6300988ac49653b66a544858e4188cc4bdc22cd0ce9b3cffabe1622a2e769"
+            "bytes": 56035,
+            "sha256": "d2e4386178dbdcd9af7548dddc316848897d6c404e7a17e63b67e1aad7b7124d"
         },
         {
             "path": "plugin-asset.php",
@@ -993,8 +998,8 @@
         },
         {
             "path": "public/api.php",
-            "bytes": 181039,
-            "sha256": "434b4468b52c54bd8d6296a11d5fbe992bf62a671ec3658bdfaa5bc32bac5194"
+            "bytes": 181831,
+            "sha256": "30c32da5a3db35fe4b684ee55956bbf2d8d128ae23d60108494d914425995f3d"
         },
         {
             "path": "public/app-css.php",
@@ -1018,8 +1023,8 @@
         },
         {
             "path": "public/assets/app.js",
-            "bytes": 462183,
-            "sha256": "95b8bd7b08e2028c64314278fc1212719efd9affe792f55a23092485c1aea584"
+            "bytes": 462827,
+            "sha256": "2ed8468307fd3198c06b1b6309037aaceb98e209fe3563948d60f2b8e11c4a0d"
         },
         {
             "path": "public/assets/public-share.css",
@@ -1033,8 +1038,8 @@
         },
         {
             "path": "public/index.php",
-            "bytes": 7116,
-            "sha256": "a2cf4f46c1b56d5737bb39a95b6f1870de75a6e9ec43eb48293d5be3a33d2336"
+            "bytes": 7240,
+            "sha256": "fd6850b7e2930a721bb68be0793a4966fd31554c767432a145ebf787501dd906"
         },
         {
             "path": "public/plugin-asset.php",

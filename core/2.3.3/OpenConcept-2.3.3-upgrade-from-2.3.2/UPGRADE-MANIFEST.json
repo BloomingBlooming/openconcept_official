@@ -6,7 +6,7 @@
     "target_version": "2.3.3",
     "product_version": "2.3.3",
     "source_public_manifest_sha256": "077d7a7680f2a104e1aa7e3e2c1fd0f4bfee35bfbf49412eb73d4d422d84ac14",
-    "target_public_manifest_sha256": "61373507221292601a11fb2a63474fec0ee3fd0c111128e5aeabd6d187bfbeb1",
+    "target_public_manifest_sha256": "319623f4fcb82647d0756c8cd50157297a706358e5072db693eb4f9e7f57a376",
     "install_mode": "merge-files-no-delete",
     "database_schema_changed": false,
     "instance_configuration_included": false,
@@ -28,8 +28,8 @@
             "operation": "replace",
             "from_sha256": "559dad970c8cdfbf2b24c43fee2207026e6152b4e6e1a1c7fb171c98fb518e84",
             "from_bytes": 7697,
-            "to_sha256": "23e6cb07b1f4a17566b95882d3a5706e26b2e4688f87fdc448c64466401ab49c",
-            "to_bytes": 9291,
+            "to_sha256": "2771d4d284b4a98decf2e7b6ea2d99c8d70cd56023f953d223047f6fec722523",
+            "to_bytes": 10328,
             "package_path": "files/README.md",
             "install_action": "merge-overwrite-file"
         },
@@ -44,6 +44,46 @@
             "install_action": "merge-overwrite-file"
         },
         {
+            "path": "app/AiChatRepository.php",
+            "operation": "replace",
+            "from_sha256": "448bc61ffcb383542e80fe5d5cfd882955744c4a6482c7f942641a167fe76bd4",
+            "from_bytes": 36333,
+            "to_sha256": "440aa19a058480a1c93c247467591a9c03b09b83d98b93e94cecaedcdb0f238b",
+            "to_bytes": 36025,
+            "package_path": "files/app/AiChatRepository.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/AiPageActionService.php",
+            "operation": "replace",
+            "from_sha256": "ab3df2bffe1f004ec2a22645a8e94e37b98e0e7cf0c66b76d9d624da72d8e9d0",
+            "from_bytes": 47343,
+            "to_sha256": "15084c3fd65cf7468a44ec6263c3ed64ee260e2a1b9a78b06ad4a97a73f53931",
+            "to_bytes": 46188,
+            "package_path": "files/app/AiPageActionService.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/AiSearchService.php",
+            "operation": "replace",
+            "from_sha256": "9d7e6e6b2c15c575be9c165a53c02210a4ecd7a99d7aa6cdc19380c3e89aff42",
+            "from_bytes": 62308,
+            "to_sha256": "c0933d26d3a1951762f5153d899f7ea4e950485f826b489665c9d02b3a80e134",
+            "to_bytes": 62173,
+            "package_path": "files/app/AiSearchService.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/AiValidationException.php",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "8a3817f21c7347b2dbb84aa2cc7b5027b00c21c3187df484248c9e2a601cdf77",
+            "to_bytes": 420,
+            "package_path": "files/app/AiValidationException.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
             "path": "app/DefaultOperationManual.php",
             "operation": "replace",
             "from_sha256": "d8c803c177218e4b5979944d1df8f997879a796b44aa9472a643beca0bc52ba6",
@@ -51,6 +91,16 @@
             "to_sha256": "d6c7d9d6ddec5202f2ef5e9b7252b57ce09f2c5a6aa1d8603a86ee59ff621192",
             "to_bytes": 20408,
             "package_path": "files/app/DefaultOperationManual.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/I18n.php",
+            "operation": "replace",
+            "from_sha256": "a8a3d3d4e0a716223f73c7089a81bcda770961b7a0d35f61f3530561d1232400",
+            "from_bytes": 7169,
+            "to_sha256": "55a140eee2e0ab0bcd7ffcaa9874f2c2be1373e80e441f0ec747c9fa1fc278eb",
+            "to_bytes": 9988,
+            "package_path": "files/app/I18n.php",
             "install_action": "merge-overwrite-file"
         },
         {
@@ -78,8 +128,8 @@
             "operation": "replace",
             "from_sha256": "0c89e618ef9d944588c853af3570f2095041e95fe1c230b72fcb228525dea792",
             "from_bytes": 127543,
-            "to_sha256": "d454404f712c1e627505ebd44462bfeed7a4c57be6f2726373a0d866ee4435b9",
-            "to_bytes": 130757,
+            "to_sha256": "550fb8b311af6bda0fe9fe708d3341eeb8084af17a429099b2819802dfd36302",
+            "to_bytes": 131694,
             "package_path": "files/app/bootstrap.php",
             "install_action": "merge-overwrite-file"
         },
@@ -98,8 +148,8 @@
             "operation": "replace",
             "from_sha256": "799a0902ad18114549865fbb070e8a061e6efe96ad98e6be77e2ad578e15931b",
             "from_bytes": 450670,
-            "to_sha256": "95b8bd7b08e2028c64314278fc1212719efd9affe792f55a23092485c1aea584",
-            "to_bytes": 462183,
+            "to_sha256": "2ed8468307fd3198c06b1b6309037aaceb98e209fe3563948d60f2b8e11c4a0d",
+            "to_bytes": 462827,
             "package_path": "files/assets/app.js",
             "install_action": "merge-overwrite-file"
         },
@@ -108,8 +158,8 @@
             "operation": "replace",
             "from_sha256": "69b995afb568dcd5495525d19b6e027a397282e878bea4c9371439891bb40d83",
             "from_bytes": 48043,
-            "to_sha256": "be873b5a3b3c4ca18dac1c996c7123ec6dd5bb021b9133b5a11c20900cf5a83b",
-            "to_bytes": 50043,
+            "to_sha256": "d5546bb40e8e3090e28d1ded84a27c33ea9fd5a9666eff1137f65b4f2fc97eab",
+            "to_bytes": 50965,
             "package_path": "files/docs/openconcept-operation-manual.ja.md",
             "install_action": "merge-overwrite-file"
         },
@@ -118,8 +168,8 @@
             "operation": "replace",
             "from_sha256": "345ab721ab688a7a11ebec3680a6bf7e076c4410b42f47e254c9da119bee5698",
             "from_bytes": 52688,
-            "to_sha256": "482ec4c28b3924f9c1be583bdc2e0f6b20b029acc12dfcf72d28d7f6f58569a6",
-            "to_bytes": 55008,
+            "to_sha256": "9c9b0909d3af63188a9a98c7dba2a86e7e35fd55a9e6629ba74114ba26c99f90",
+            "to_bytes": 57702,
             "package_path": "files/locales/en-US.json",
             "install_action": "merge-overwrite-file"
         },
@@ -128,8 +178,8 @@
             "operation": "replace",
             "from_sha256": "ab4587484e1edcd8507e61fa3b5cc265ccb7b43d6d2d15bbad108ad51524dbd2",
             "from_bytes": 59875,
-            "to_sha256": "3e56e3b00fb07298404987c9e10e0cf149b7e57fa53fbd96d563a052bcc36ac6",
-            "to_bytes": 62715,
+            "to_sha256": "b9e9f25dbbc3db9a5d1b4d29ecb8fb6355e4b645b45fe3e53f383706db6b3784",
+            "to_bytes": 66180,
             "package_path": "files/locales/ja-JP.json",
             "install_action": "merge-overwrite-file"
         },
@@ -138,8 +188,8 @@
             "operation": "replace",
             "from_sha256": "8336c6ea24d131fa345c09d6aa55bd174d0d37be72d5c0cbad9dc38d269a2c00",
             "from_bytes": 58550,
-            "to_sha256": "2e2f46c285be03f7b9cf33a372557bfefe6f17a55c273fb389bcf4ae29d3d2e6",
-            "to_bytes": 61352,
+            "to_sha256": "d66406ac69a5f6c49129e79ae86d06843cac7256c86f26a3cf2aca369d129d84",
+            "to_bytes": 64584,
             "package_path": "files/locales/ko-KR.json",
             "install_action": "merge-overwrite-file"
         },
@@ -148,8 +198,8 @@
             "operation": "replace",
             "from_sha256": "cb6de44bd3bd7384f8d40e9b812dcd232fea88e24c4c304adb861744289e7a4f",
             "from_bytes": 60533,
-            "to_sha256": "4d58b70850a666cc6cd268f1d745f6c8cc8d5d20a5eaf8172e20fc1bb26308ff",
-            "to_bytes": 63300,
+            "to_sha256": "22d64f5d52d5aab2822a4db9cae6cdc2743e2d473ae6290f7bcda19c257076c4",
+            "to_bytes": 66523,
             "package_path": "files/locales/vi-VN.json",
             "install_action": "merge-overwrite-file"
         },
@@ -158,8 +208,8 @@
             "operation": "replace",
             "from_sha256": "579fa8c43956fb13bbdc2f072aab861c1879b1dc280c47d8599c0b93928234fc",
             "from_bytes": 51400,
-            "to_sha256": "6cf6300988ac49653b66a544858e4188cc4bdc22cd0ce9b3cffabe1622a2e769",
-            "to_bytes": 53548,
+            "to_sha256": "d2e4386178dbdcd9af7548dddc316848897d6c404e7a17e63b67e1aad7b7124d",
+            "to_bytes": 56035,
             "package_path": "files/locales/zh-CN.json",
             "install_action": "merge-overwrite-file"
         },
@@ -168,8 +218,8 @@
             "operation": "replace",
             "from_sha256": "2b415b8ec4dd9cd9162f3c31e08155dc9e2b1009dbdee5e67893ff439e8c54cc",
             "from_bytes": 177118,
-            "to_sha256": "434b4468b52c54bd8d6296a11d5fbe992bf62a671ec3658bdfaa5bc32bac5194",
-            "to_bytes": 181039,
+            "to_sha256": "30c32da5a3db35fe4b684ee55956bbf2d8d128ae23d60108494d914425995f3d",
+            "to_bytes": 181831,
             "package_path": "files/public/api.php",
             "install_action": "merge-overwrite-file"
         },
@@ -188,9 +238,19 @@
             "operation": "replace",
             "from_sha256": "799a0902ad18114549865fbb070e8a061e6efe96ad98e6be77e2ad578e15931b",
             "from_bytes": 450670,
-            "to_sha256": "95b8bd7b08e2028c64314278fc1212719efd9affe792f55a23092485c1aea584",
-            "to_bytes": 462183,
+            "to_sha256": "2ed8468307fd3198c06b1b6309037aaceb98e209fe3563948d60f2b8e11c4a0d",
+            "to_bytes": 462827,
             "package_path": "files/public/assets/app.js",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "public/index.php",
+            "operation": "replace",
+            "from_sha256": "a2cf4f46c1b56d5737bb39a95b6f1870de75a6e9ec43eb48293d5be3a33d2336",
+            "from_bytes": 7116,
+            "to_sha256": "fd6850b7e2930a721bb68be0793a4966fd31554c767432a145ebf787501dd906",
+            "to_bytes": 7240,
+            "package_path": "files/public/index.php",
             "install_action": "merge-overwrite-file"
         }
     ],
@@ -206,8 +266,8 @@
             "install_action": "manual-merge-only"
         }
     ],
-    "file_count": 26,
-    "total_bytes": 2041700,
+    "file_count": 32,
+    "total_bytes": 2225142,
     "files": [
         {
             "path": "LICENSE",
@@ -236,13 +296,13 @@
         },
         {
             "path": "README.ja-en.md",
-            "bytes": 8266,
-            "sha256": "02506fc5edbb909ea4b8733ecb9da9ee8ab9c466605908a33fa59e72209fc7bb"
+            "bytes": 9407,
+            "sha256": "a5ba315bedac00e8106c502fe025788a65a5e5d79634de8dd89e7e3587d943c0"
         },
         {
             "path": "files/DISTRIBUTION-MANIFEST.json",
-            "bytes": 42860,
-            "sha256": "61373507221292601a11fb2a63474fec0ee3fd0c111128e5aeabd6d187bfbeb1"
+            "bytes": 43050,
+            "sha256": "319623f4fcb82647d0756c8cd50157297a706358e5072db693eb4f9e7f57a376"
         },
         {
             "path": "files/HTTP-SERVER-SETUP.ja-en.md",
@@ -251,8 +311,8 @@
         },
         {
             "path": "files/README.md",
-            "bytes": 9291,
-            "sha256": "23e6cb07b1f4a17566b95882d3a5706e26b2e4688f87fdc448c64466401ab49c"
+            "bytes": 10328,
+            "sha256": "2771d4d284b4a98decf2e7b6ea2d99c8d70cd56023f953d223047f6fec722523"
         },
         {
             "path": "files/VERSION",
@@ -260,9 +320,34 @@
             "sha256": "ef6949f5950f6f55fd1676a55619a3decdff9426d41a7d8078d3c4dab2e4449b"
         },
         {
+            "path": "files/app/AiChatRepository.php",
+            "bytes": 36025,
+            "sha256": "440aa19a058480a1c93c247467591a9c03b09b83d98b93e94cecaedcdb0f238b"
+        },
+        {
+            "path": "files/app/AiPageActionService.php",
+            "bytes": 46188,
+            "sha256": "15084c3fd65cf7468a44ec6263c3ed64ee260e2a1b9a78b06ad4a97a73f53931"
+        },
+        {
+            "path": "files/app/AiSearchService.php",
+            "bytes": 62173,
+            "sha256": "c0933d26d3a1951762f5153d899f7ea4e950485f826b489665c9d02b3a80e134"
+        },
+        {
+            "path": "files/app/AiValidationException.php",
+            "bytes": 420,
+            "sha256": "8a3817f21c7347b2dbb84aa2cc7b5027b00c21c3187df484248c9e2a601cdf77"
+        },
+        {
             "path": "files/app/DefaultOperationManual.php",
             "bytes": 20408,
             "sha256": "d6c7d9d6ddec5202f2ef5e9b7252b57ce09f2c5a6aa1d8603a86ee59ff621192"
+        },
+        {
+            "path": "files/app/I18n.php",
+            "bytes": 9988,
+            "sha256": "55a140eee2e0ab0bcd7ffcaa9874f2c2be1373e80e441f0ec747c9fa1fc278eb"
         },
         {
             "path": "files/app/JsonRequestBody.php",
@@ -276,8 +361,8 @@
         },
         {
             "path": "files/app/bootstrap.php",
-            "bytes": 130757,
-            "sha256": "d454404f712c1e627505ebd44462bfeed7a4c57be6f2726373a0d866ee4435b9"
+            "bytes": 131694,
+            "sha256": "550fb8b311af6bda0fe9fe708d3341eeb8084af17a429099b2819802dfd36302"
         },
         {
             "path": "files/assets/app.css",
@@ -286,43 +371,43 @@
         },
         {
             "path": "files/assets/app.js",
-            "bytes": 462183,
-            "sha256": "95b8bd7b08e2028c64314278fc1212719efd9affe792f55a23092485c1aea584"
+            "bytes": 462827,
+            "sha256": "2ed8468307fd3198c06b1b6309037aaceb98e209fe3563948d60f2b8e11c4a0d"
         },
         {
             "path": "files/docs/openconcept-operation-manual.ja.md",
-            "bytes": 50043,
-            "sha256": "be873b5a3b3c4ca18dac1c996c7123ec6dd5bb021b9133b5a11c20900cf5a83b"
+            "bytes": 50965,
+            "sha256": "d5546bb40e8e3090e28d1ded84a27c33ea9fd5a9666eff1137f65b4f2fc97eab"
         },
         {
             "path": "files/locales/en-US.json",
-            "bytes": 55008,
-            "sha256": "482ec4c28b3924f9c1be583bdc2e0f6b20b029acc12dfcf72d28d7f6f58569a6"
+            "bytes": 57702,
+            "sha256": "9c9b0909d3af63188a9a98c7dba2a86e7e35fd55a9e6629ba74114ba26c99f90"
         },
         {
             "path": "files/locales/ja-JP.json",
-            "bytes": 62715,
-            "sha256": "3e56e3b00fb07298404987c9e10e0cf149b7e57fa53fbd96d563a052bcc36ac6"
+            "bytes": 66180,
+            "sha256": "b9e9f25dbbc3db9a5d1b4d29ecb8fb6355e4b645b45fe3e53f383706db6b3784"
         },
         {
             "path": "files/locales/ko-KR.json",
-            "bytes": 61352,
-            "sha256": "2e2f46c285be03f7b9cf33a372557bfefe6f17a55c273fb389bcf4ae29d3d2e6"
+            "bytes": 64584,
+            "sha256": "d66406ac69a5f6c49129e79ae86d06843cac7256c86f26a3cf2aca369d129d84"
         },
         {
             "path": "files/locales/vi-VN.json",
-            "bytes": 63300,
-            "sha256": "4d58b70850a666cc6cd268f1d745f6c8cc8d5d20a5eaf8172e20fc1bb26308ff"
+            "bytes": 66523,
+            "sha256": "22d64f5d52d5aab2822a4db9cae6cdc2743e2d473ae6290f7bcda19c257076c4"
         },
         {
             "path": "files/locales/zh-CN.json",
-            "bytes": 53548,
-            "sha256": "6cf6300988ac49653b66a544858e4188cc4bdc22cd0ce9b3cffabe1622a2e769"
+            "bytes": 56035,
+            "sha256": "d2e4386178dbdcd9af7548dddc316848897d6c404e7a17e63b67e1aad7b7124d"
         },
         {
             "path": "files/public/api.php",
-            "bytes": 181039,
-            "sha256": "434b4468b52c54bd8d6296a11d5fbe992bf62a671ec3658bdfaa5bc32bac5194"
+            "bytes": 181831,
+            "sha256": "30c32da5a3db35fe4b684ee55956bbf2d8d128ae23d60108494d914425995f3d"
         },
         {
             "path": "files/public/assets/app.css",
@@ -331,8 +416,13 @@
         },
         {
             "path": "files/public/assets/app.js",
-            "bytes": 462183,
-            "sha256": "95b8bd7b08e2028c64314278fc1212719efd9affe792f55a23092485c1aea584"
+            "bytes": 462827,
+            "sha256": "2ed8468307fd3198c06b1b6309037aaceb98e209fe3563948d60f2b8e11c4a0d"
+        },
+        {
+            "path": "files/public/index.php",
+            "bytes": 7240,
+            "sha256": "fd6850b7e2930a721bb68be0793a4966fd31554c767432a145ebf787501dd906"
         },
         {
             "path": "reference/compose.rag.yaml",

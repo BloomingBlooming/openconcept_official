@@ -2,6 +2,14 @@
 
 このフォルダーは、不特定多数への配布を目的としたOpenConceptの実行パッケージです。個別環境のホスト名、Database接続情報、APIキー、メールアカウント、SSH設定、利用者データ、ログ、添付ファイルは含まれていません。
 
+本更新もバージョンは2.3.3です。ログイン前は前回の表示言語Cookie、ブラウザの優先言語、英語の順で表示言語を決め、ログイン後はユーザー設定を優先します。ログイン後はホームを表示し、サイドバーのフォルダーをすべて閉じます。
+
+This refreshed build remains version 2.3.3. Before sign-in, the display language follows the remembered language cookie, then browser preferences, then English. After sign-in, the user setting takes priority and the workspace opens at Home with all sidebar folders collapsed.
+
+AI検索・要約・AIページ操作のエラー表示を、ユーザーが選択した画面言語に対応させました。設定の表示言語項目には、英語以外の画面で固定の「（Language）」を併記します。
+
+AI Search, summaries, and AI page-action errors now follow the user's interface language. In non-English interfaces, the language setting also displays the fixed English label “（Language）”.
+
 HTTP/HTTPSサーバーへの配置ツリー、必要環境、PostgreSQL・ベクトル検索の条件は、[日英併記の設置説明書](HTTP-SERVER-SETUP.ja-en.md)を参照してください。
 
 See the [bilingual HTTP server setup guide](HTTP-SERVER-SETUP.ja-en.md) for directory trees, server requirements, and PostgreSQL/vector search prerequisites.

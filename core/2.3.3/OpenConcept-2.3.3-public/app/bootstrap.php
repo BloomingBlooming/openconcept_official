@@ -45,6 +45,7 @@ require_once __DIR__ . '/RagAiSearchBridge.php';
 require_once __DIR__ . '/OpenAiCompatibleChatProvider.php';
 require_once __DIR__ . '/RagCoreController.php';
 require_once __DIR__ . '/RagCoreRuntime.php';
+require_once __DIR__ . '/AiValidationException.php';
 require_once __DIR__ . '/AiSearchService.php';
 require_once __DIR__ . '/AiPageActionService.php';
 require_once __DIR__ . '/AiChatRepository.php';
@@ -1036,7 +1037,30 @@ function canManageAllContent(array $user): bool
 function uiLocale(?array $user = null): string
 {
     global $i18n;
-    return $i18n->selectLocale(is_array($user) ? (string) ($user['ui_locale'] ?? '') : 'ja-JP');
+    if ($user !== null) {
+        return $i18n->selectLocale((string) ($user['ui_locale'] ?? ''));
+    }
+    return $i18n->selectGuestLocale(
+        is_string($_COOKIE['openconcept_ui_locale'] ?? null) ? $_COOKIE['openconcept_ui_locale'] : null,
+        is_string($_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? null) ? $_SERVER['HTTP_ACCEPT_LANGUAGE'] : ''
+    );
+}
+
+function rememberUiLocale(string $locale): void
+{
+    global $i18n;
+    if (headers_sent() || $i18n->selectLocale($locale) !== $locale) {
+        return;
+    }
+    $directory = str_replace('\\', '/', dirname((string) ($_SERVER['SCRIPT_NAME'] ?? '/index.php')));
+    setcookie('openconcept_ui_locale', $locale, [
+        'expires' => time() + 365 * 24 * 60 * 60,
+        'path' => $directory === '.' ? '/' : rtrim($directory, '/') . '/',
+        'secure' => !empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off',
+        'httponly' => true,
+        'samesite' => 'Lax',
+    ]);
+    $_COOKIE['openconcept_ui_locale'] = $locale;
 }
 
 /** @return array<string, mixed> */

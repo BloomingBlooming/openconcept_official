@@ -40,7 +40,7 @@
         capabilities: {},
         workspaceName: 'OpenConcept',
         organizationName: '',
-        i18n: window.OPENCONCEPT_BOOT?.i18n || { locale: 'ja-JP', fallback_locale: 'en-US', available_locales: [], messages: {}, plugins: {} },
+        i18n: window.OPENCONCEPT_BOOT?.i18n || { locale: 'en-US', fallback_locale: 'en-US', available_locales: [], messages: {}, plugins: {} },
         translationBusy: false,
         pluginUi: Array.isArray(window.OPENCONCEPT_BOOT?.plugin_ui) ? window.OPENCONCEPT_BOOT.plugin_ui : [],
         installedPlugins: [],
@@ -89,7 +89,7 @@
         view: 'home',
         panel: null,
         dialog: null,
-        expanded: new Set([1, 5, 7]),
+        expanded: new Set(),
         sidebarCollapsed: false,
         mobileSidebar: false,
         sidebarScrollTop: 0,
@@ -660,6 +660,7 @@
             if (data.must_change_password) {
                 const session = await api('session');
                 state.user = session.user;
+                applyI18n(session.i18n);
                 renderPasswordChange();
             } else await loadWorkspace();
         } catch (err) {
@@ -669,13 +670,20 @@
         }
     }
 
-    async function loadWorkspace() {
+    async function loadWorkspace({ restoreRoute = false } = {}) {
         resetUndoHistory();
         state.page = null;
         state.view = 'home';
         state.panel = null;
         state.dialog = null;
         state.dialogData = null;
+        state.expanded.clear();
+        state.localSearchQuery = '';
+        state.localSearchTag = '';
+        state.sidebarScrollTop = 0;
+        state.mobileSidebar = false;
+        // Every successful sign-in starts at Home; authenticated reloads can follow a page URL.
+        if (!restoreRoute) history.replaceState(null, '', '#home');
         root.innerHTML = `<div class="app-loading">${brandLogo('brand-mark', 'OpenConcept')}<span class="loading-dot"></span></div>`;
         try {
             const data = await api('bootstrap');
@@ -2509,7 +2517,8 @@
 
     function renderSettingsPage() {
         const organizationSettings = state.capabilities.can_manage_system_settings ? `<section class="organization-settings"><div class="organization-settings-copy"><strong>${esc(t('settings.organizationName'))}</strong><span>${esc(t('settings.organizationNameHelp'))}</span></div><form id="organizationForm" class="organization-settings-form"><label class="sr-only" for="organizationName">${esc(t('settings.organizationName'))}</label><input class="input" id="organizationName" maxlength="120" value="${esc(state.organizationName)}" placeholder="${esc(t('settings.organizationNamePlaceholder'))}" required><button class="btn primary compact" type="submit">${esc(t('common.save'))}</button></form></section>` : '';
-        const localeSettings = `<section class="organization-settings"><div class="organization-settings-copy"><strong>${esc(t('settings.uiLanguage'))}</strong><span>${esc(t('settings.uiLanguageHelp'))}</span></div><select class="select" id="uiLocaleSelect">${availableContentLanguages().map(locale => `<option value="${esc(locale.code)}" ${locale.code === state.i18n.locale ? 'selected' : ''}>${esc(locale.name)}</option>`).join('')}</select></section>`;
+        const localeLabelSuffix = /^en(?:-|$)/i.test(state.i18n.locale || 'en-US') ? '' : ' <bdi lang="en" translate="no">（Language）</bdi>';
+        const localeSettings = `<section class="organization-settings"><div class="organization-settings-copy"><strong>${esc(t('settings.uiLanguage'))}${localeLabelSuffix}</strong><span>${esc(t('settings.uiLanguageHelp'))}</span></div><select class="select" id="uiLocaleSelect">${availableContentLanguages().map(locale => `<option value="${esc(locale.code)}" ${locale.code === state.i18n.locale ? 'selected' : ''}>${esc(locale.name)}</option>`).join('')}</select></section>`;
         const availableTabs = state.capabilities.can_manage_system_settings ? ['general', 'ai', 'translation', 'plugins'] : ['general'];
         const activeTab = availableTabs.includes(state.settingsTab) ? state.settingsTab : 'general';
         const tabButton = (tab, label) => `<button type="button" class="settings-tab ${activeTab === tab ? 'active' : ''}" id="settingsTab-${tab}" role="tab" aria-selected="${activeTab === tab}" aria-controls="settingsPanel-${tab}" tabindex="${activeTab === tab ? '0' : '-1'}" data-action="settings-tab" data-settings-tab="${tab}"><strong>${esc(label)}</strong><small>${esc(settingsTabDescription(tab))}</small></button>`;
@@ -7045,7 +7054,7 @@
             else deletePendingInvitation(Number(target.dataset.memberId));
         }
         else if (action === 'copy-temporary-password') { await navigator.clipboard?.writeText(state.dialogData?.temporary_password || ''); toast(t('settings.temporaryPasswordCopied')); }
-        else if (action === 'logout') { try { await api('logout', { method: 'POST', body: {} }); renderLogin(); } catch (err) { toast(err.message, 'error'); } }
+        else if (action === 'logout') { try { const data = await api('logout', { method: 'POST', body: {} }); applyI18n(data.i18n); renderLogin(); } catch (err) { toast(err.message, 'error'); } }
     });
 
     document.addEventListener('keydown', event => {
@@ -7108,9 +7117,10 @@
             state.csrf = session.csrf;
             state.initialized = Boolean(session.initialized);
             state.user = session.user;
+            applyI18n(session.i18n);
             if (!state.initialized) renderSetup();
             else if (state.user?.must_change_password) renderPasswordChange();
-            else if (state.user) await loadWorkspace();
+            else if (state.user) await loadWorkspace({ restoreRoute: true });
             else renderLogin();
         } catch { renderLogin(); }
     })();

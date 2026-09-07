@@ -4,6 +4,10 @@
 
 2.3.3では、管理者の「設定 > 一般」に「WAF誤検知を回避」を追加しました。既定値はOFFです。有効にすると対象の保存要求をAES-256-GCMで暗号化します。利用にはHTTPS、Web Crypto対応ブラウザー、AES-GCM対応のPHP OpenSSLが必要です。通常の利用で誤検知がなければOFFのまま使用できます。
 
+今回の2.3.3更新版には、ログイン前の表示言語を「前回の言語Cookie → ブラウザの優先言語 → 英語」で決める修正と、ログイン後にホームを表示してフォルダーをすべて閉じる修正も含みます。ログイン後の表示言語はユーザー設定を優先します。言語Cookieは言語コードだけを最大365日記憶します。
+
+AI検索・要約・AIページ操作のエラー表示も、ユーザーが選択した画面言語に対応しました。設定の表示言語項目には、英語以外の画面で固定の「（Language）」を併記します。
+
 ## パッケージの使い分け
 
 | 内容 | 用途 |
@@ -43,6 +47,10 @@ WAF対策が必要な環境では更新後に管理者が「WAF誤検知を回�
 ## English instructions
 
 This is a **delta upgrade from OpenConcept 2.3.2 to 2.3.3 only**. It is not a new installation package or an upgrade from other versions.
+
+This refreshed 2.3.3 package also selects the sign-in language from the remembered language cookie, browser preferences, then English. After sign-in, the user setting takes priority and Home opens with all sidebar folders collapsed. The language cookie stores only a language code for up to 365 days.
+
+AI Search, summaries, and AI page-action errors now follow the user's interface language. In non-English interfaces, the language setting also displays the fixed English label “（Language）”.
 
 Upload **only the contents of `files/` into the existing application root**, merging directories and overwriting matching files. Preserve files absent from this package. Do not upload just `files/public/`, create a new `files/` directory on the server, replace whole directories, or use synchronization that deletes destination-only files.
 
