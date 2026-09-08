@@ -10,8 +10,11 @@ This repository manages the public distribution folder for OpenConcept and its o
 
 | バージョン / Version | ダウンロード / Download | 検証値 / Checksum | 設置説明書 / Setup guide |
 | --- | --- | --- | --- |
-| 2.4.0 | [OpenConcept 2.4.0 ZIP](core/2.4.0/OpenConcept-2.4.0-public.zip) | [SHA-256](core/2.4.0/OpenConcept-2.4.0-public.zip.sha256) | [日本語・English](core/2.4.0/OpenConcept-2.4.0-public/HTTP-SERVER-SETUP.ja-en.md) |
-| 2.3.3 → 2.4.0 | [更新用ZIP / Upgrade ZIP](core/2.4.0/OpenConcept-2.4.0-upgrade-from-2.3.3.zip) | [SHA-256](core/2.4.0/OpenConcept-2.4.0-upgrade-from-2.3.3.zip.sha256) | [更新手順 / Instructions](core/2.4.0/OpenConcept-2.4.0-upgrade-from-2.3.3/README.ja-en.md) |
+| 2.4.1 | [OpenConcept 2.4.1 ZIP](core/2.4.1/OpenConcept-2.4.1-public.zip) | [SHA-256](core/2.4.1/OpenConcept-2.4.1-public.zip.sha256) | [日本語・English](core/2.4.1/README.md) |
+
+現在の本体配布物は、新規設置用の2.4.1通常配布版です。ZIP、SHA-256チェックサム、展開済みファイル一式を掲載しています。
+
+The current application download is the full 2.4.1 distribution for new installations. The ZIP, SHA-256 checksum, and unpacked application files are available.
 
 設置説明書には、HTTP/HTTPSサーバーへの配置ツリー、必要なPHP環境、Pluginの配置先、PostgreSQLとpgvectorが必要になる条件を記載しています。
 
@@ -25,14 +28,11 @@ openconcept_official/
 ├── LICENSE, LICENSE.*
 ├── core/                              本体をバージョン別に配置 / Versioned application distributions
 │   ├── README.md
-│   └── 2.4.0/
-│       ├── README.md                  配布物・説明書へのリンク / Downloads and guides
-│       ├── OpenConcept-2.4.0-public.zip
-│       ├── OpenConcept-2.4.0-public.zip.sha256
-│       ├── OpenConcept-2.4.0-upgrade-from-2.3.3.zip
-│       ├── OpenConcept-2.4.0-upgrade-from-2.3.3.zip.sha256
-│       ├── OpenConcept-2.4.0-upgrade-from-2.3.3/
-│       └── OpenConcept-2.4.0-public/   展開済み本体 / Unpacked application
+│   └── 2.4.1/
+│       ├── README.md                  配布案内・設置説明書 / Downloads and setup guide
+│       ├── OpenConcept-2.4.1-public.zip
+│       ├── OpenConcept-2.4.1-public.zip.sha256
+│       └── OpenConcept-2.4.1-public/   展開済み本体 / Unpacked application
 │           ├── public/
 │           ├── app/
 │           ├── plugins/              同梱5種・図面管理は別配布 / Five bundled plugins; drawings separate
@@ -61,13 +61,13 @@ Updated distributions are copied manually, or at the version requested by the ma
 
 The [official plugin directory](plugins/) and [catalog](plugins/catalog.json) distribute [Drawing Manager 0.9.1](plugins/packages/drawing-manager/0.9.1/README.md) separately.
 
-本体2.4.0では図面管理を同梱せず、「設定 > プラグイン > 公式ダウンロード」から追加します。ダウンロード直後は無効です。有効化すると図面管理メニューが表示されます。他の同梱プラグインは従来どおりです。
+本体2.4.1では図面管理を同梱せず、「設定 > プラグイン > 公式ダウンロード」から追加します。ダウンロード直後は無効です。有効化すると図面管理メニューが表示されます。他の同梱プラグインは従来どおりです。
 
-Application 2.4.0 distributes Drawing Manager separately. Add it in Settings > Plugins > Official downloads, then enable it to show the drawing menu. Downloads are initially disabled. Other bundled plugins remain included.
+Application 2.4.1 distributes Drawing Manager separately. Add it in Settings > Plugins > Official downloads, then enable it to show the drawing menu. Downloads are initially disabled. Other bundled plugins remain included.
 
-本体2.4.0の公式カタログとパッケージの取得先は、このリポジトリの`main/plugins/`内に固定しています。環境変数で別の配布元へ変更することはできません。HTTPSとSHA-256で取得先・ファイルの一致を確認します。発行者の電子署名検証は実装していません。
+本体2.4.1の公式カタログとパッケージの取得先は、このリポジトリの`main/plugins/`内に固定しています。環境変数で別の配布元へ変更することはできません。HTTPSとSHA-256で取得先・ファイルの一致を確認します。発行者の電子署名検証は実装していません。
 
-Application 2.4.0 pins its official catalog and package URLs to this repository under `main/plugins/`. Environment variables cannot select a different publisher. HTTPS and SHA-256 check the source connection and file integrity; publisher-signature verification is not implemented.
+Application 2.4.1 pins its official catalog and package URLs to this repository under `main/plugins/`. Environment variables cannot select a different publisher. HTTPS and SHA-256 check the source connection and file integrity; publisher-signature verification is not implemented.
 
 ## ライセンス / License
 
