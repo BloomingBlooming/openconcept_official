@@ -9,7 +9,7 @@
         "OpenConcept.png: optional text, XMP, EXIF, and timestamp metadata removed"
     ],
     "file_count": 223,
-    "total_bytes": 7962618,
+    "total_bytes": 7963737,
     "files": [
         {
             "path": ".dockerignore",
@@ -158,8 +158,8 @@
         },
         {
             "path": "app/CoreSchemaRuntime.php",
-            "bytes": 41370,
-            "sha256": "b40f3df9935c64d7591247befb3cf5dd74d124a4fc4ccb734a5814afb8a3a491"
+            "bytes": 42489,
+            "sha256": "7a55bfcff47c0c2941007d927a35466c0cb501478a178721a765c28dfd8a0311"
         },
         {
             "path": "app/CoreSchemaSignature.php",

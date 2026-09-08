@@ -78,6 +78,29 @@ final class CoreSchemaRuntime
      */
     public function preflight(bool $writesAllowed): ?array
     {
+        if ((string) $this->pdo->getAttribute(PDO::ATTR_DRIVER_NAME) !== 'sqlite') {
+            return $this->inspectPreflight($writesAllowed);
+        }
+
+        // Keep schema inspection and attestation markers in one read snapshot.
+        // A competing first boot can otherwise commit between the version and
+        // fingerprint reads and make a healthy database look inconsistent.
+        // SAVEPOINT also nests inside provisionFreshSqlite's BEGIN IMMEDIATE,
+        // which PDO::inTransaction() does not detect on every SQLite build.
+        $savepoint = 'core_schema_preflight_' . bin2hex(random_bytes(8));
+        $this->pdo->exec('SAVEPOINT ' . $savepoint);
+        try {
+            return $this->inspectPreflight($writesAllowed);
+        } finally {
+            // Inspection is read-only. Release only our snapshot, preserving
+            // any transaction (and pending writes) owned by the caller.
+            $this->pdo->exec('RELEASE SAVEPOINT ' . $savepoint);
+        }
+    }
+
+    /** @return array<string, mixed>|null */
+    private function inspectPreflight(bool $writesAllowed): ?array
+    {
         $this->baseProvisioningRequired = false;
         $version = $this->storedVersion(self::VERSION_SETTING);
         $this->assertSupportedVersion($version);

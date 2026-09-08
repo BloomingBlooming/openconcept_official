@@ -2,6 +2,10 @@
 
 最新版 / Latest: **v2.4.1**
 
+現在のv2.4.1配布物は、SQLiteへの初回アクセスが重なった際に初期化途中の状態をスキーマ不整合と誤判定する問題を修正して再生成したものです。
+
+The current v2.4.1 distribution was rebuilt with a fix for concurrent first access to SQLite, preventing incomplete initialization from being misidentified as a schema mismatch.
+
 | 用途 / Purpose | ZIP | SHA-256 | 内容・手順 / Contents and instructions |
 | --- | --- | --- | --- |
 | 新規設置 / New installation | [本体 / Application](OpenConcept-2.4.1-public.zip) | [検証値 / Checksum](OpenConcept-2.4.1-public.zip.sha256) | [展開済み / Unpacked](OpenConcept-2.4.1-public/) |
