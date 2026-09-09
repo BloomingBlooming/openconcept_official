@@ -10,11 +10,20 @@ This repository manages the public distribution folder for OpenConcept and its o
 
 | バージョン / Version | ダウンロード / Download | 検証値 / Checksum | 設置説明書 / Setup guide |
 | --- | --- | --- | --- |
-| 2.4.1 | [OpenConcept 2.4.1 ZIP](core/2.4.1/OpenConcept-2.4.1-public.zip) | [SHA-256](core/2.4.1/OpenConcept-2.4.1-public.zip.sha256) | [日本語・English](core/2.4.1/README.md) |
+| 2.5.0（新規設置 / New installation） | [OpenConcept 2.5.0 ZIP](core/2.5.0/OpenConcept-2.5.0-public.zip) | [SHA-256](core/2.5.0/OpenConcept-2.5.0-public.zip.sha256) | [日本語・English](core/2.5.0/README.md) |
+| 2.4.1 → 2.5.0（更新 / Upgrade） | [Upgrade ZIP](core/2.5.0/OpenConcept-2.5.0-upgrade-from-2.4.1.zip) | [SHA-256](core/2.5.0/OpenConcept-2.5.0-upgrade-from-2.4.1.zip.sha256) | [更新手順 / Instructions](core/2.5.0/OpenConcept-2.5.0-upgrade-from-2.4.1/README.ja-en.md) |
 
-現在の本体配布物は、新規設置用の2.4.1通常配布版です。ZIP、SHA-256チェックサム、展開済みファイル一式を掲載しています。
+現在の本体配布物は、新規設置用の2.5.0通常配布版と、2.4.1から2.5.0への更新版です。それぞれのZIP、SHA-256チェックサム、展開済みファイル一式を掲載しています。
 
-The current application download is the full 2.4.1 distribution for new installations. The ZIP, SHA-256 checksum, and unpacked application files are available.
+The current downloads are the full 2.5.0 distribution for new installations and the upgrade from 2.4.1 to 2.5.0. Both include a ZIP, SHA-256 checksum, and unpacked files.
+
+V2.4.1から更新する場合は、[配布案内の変更前ハッシュに関する説明](core/2.5.0/README.md)も確認してください。
+
+When upgrading from V2.4.1, also read the [distribution guide's note about before hashes](core/2.5.0/README.md).
+
+2.5.0では共通プラグインAPI、AIファイル読み取り、管理者向け更新通知、受信トレイのアーカイブ・ページ送り、正本読み取り専用APIを追加しました。詳しくは[リリースノート](core/2.5.0/OpenConcept-2.5.0-public/docs/release-notes-2.5.0.md)をご覧ください。
+
+Version 2.5.0 adds the common Plugin API, AI File Reader, administrator update notifications, inbox archiving and pagination, and a read-only canonical snapshot API. See the [release notes](core/2.5.0/OpenConcept-2.5.0-public/docs/release-notes-2.5.0.md).
 
 設置説明書には、HTTP/HTTPSサーバーへの配置ツリー、必要なPHP環境、Pluginの配置先、PostgreSQLとpgvectorが必要になる条件を記載しています。
 
@@ -28,14 +37,17 @@ openconcept_official/
 ├── LICENSE, LICENSE.*
 ├── core/                              本体をバージョン別に配置 / Versioned application distributions
 │   ├── README.md
-│   └── 2.4.1/
+│   └── 2.5.0/
 │       ├── README.md                  配布案内・設置説明書 / Downloads and setup guide
-│       ├── OpenConcept-2.4.1-public.zip
-│       ├── OpenConcept-2.4.1-public.zip.sha256
-│       └── OpenConcept-2.4.1-public/   展開済み本体 / Unpacked application
+│       ├── OpenConcept-2.5.0-public.zip
+│       ├── OpenConcept-2.5.0-public.zip.sha256
+│       ├── OpenConcept-2.5.0-upgrade-from-2.4.1.zip
+│       ├── OpenConcept-2.5.0-upgrade-from-2.4.1.zip.sha256
+│       ├── OpenConcept-2.5.0-upgrade-from-2.4.1/  更新手順・差分 / Upgrade guide and files
+│       └── OpenConcept-2.5.0-public/   展開済み本体 / Unpacked application
 │           ├── public/
 │           ├── app/
-│           ├── plugins/              同梱5種・図面管理は別配布 / Five bundled plugins; drawings separate
+│           ├── plugins/              同梱6種・図面管理は別配布 / Six bundled plugins; drawings separate
 │           ├── HTTP-SERVER-SETUP.ja-en.md
 │           ├── DISTRIBUTION-MANIFEST.json
 │           └── ...
@@ -45,10 +57,10 @@ openconcept_official/
     └── packages/                      個別配布パッケージ / Standalone plugin packages
         ├── README.md
         └── drawing-manager/
-            └── 0.9.1/
+            └── 0.9.2/
                 ├── README.md
-                ├── drawing-manager-0.9.1.oc-plugin.json
-                └── drawing-manager-0.9.1.oc-plugin.json.sha256
+                ├── drawing-manager-0.9.2.oc-plugin.json
+                └── drawing-manager-0.9.2.oc-plugin.json.sha256
 ```
 
 更新済みの配布物は、OpenConceptプロジェクトの`Dist/`以下から手動、または管理者が指示したバージョンを取得して配置します。自動同期は行いません。本体は`core/<version>/`へ配置し、フォルダー名と内容のバージョンを一致させます。更新対象の旧配布物を置き換え、ダウンロード一覧やカタログも更新します。旧版や作業用ファイルは保管しません。
@@ -57,17 +69,17 @@ Updated distributions are copied manually, or at the version requested by the ma
 
 ## 公式プラグイン / Official plugins
 
-[公式Plugin配布フォルダー](plugins/)と[カタログ](plugins/catalog.json)から、[図面管理0.9.1](plugins/packages/drawing-manager/0.9.1/README.md)を個別配布しています。
+[公式Plugin配布フォルダー](plugins/)と[カタログ](plugins/catalog.json)から、[図面管理0.9.2](plugins/packages/drawing-manager/0.9.2/README.md)を個別配布しています。利用には更新済みの本体2.5.0が必要です。
 
-The [official plugin directory](plugins/) and [catalog](plugins/catalog.json) distribute [Drawing Manager 0.9.1](plugins/packages/drawing-manager/0.9.1/README.md) separately.
+The [official plugin directory](plugins/) and [catalog](plugins/catalog.json) distribute [Drawing Manager 0.9.2](plugins/packages/drawing-manager/0.9.2/README.md) separately. It requires the updated 2.5.0 application.
 
-本体2.4.1では図面管理を同梱せず、「設定 > プラグイン > 公式ダウンロード」から追加します。ダウンロード直後は無効です。有効化すると図面管理メニューが表示されます。他の同梱プラグインは従来どおりです。
+本体2.5.0では図面管理を同梱せず、「設定 > プラグイン > 公式ダウンロード」から追加します。ダウンロード直後は無効です。有効化すると図面管理メニューが表示されます。既存の図面管理は本体更新後、プラグイン一覧の「UpDate」から更新できます。
 
-Application 2.4.1 distributes Drawing Manager separately. Add it in Settings > Plugins > Official downloads, then enable it to show the drawing menu. Downloads are initially disabled. Other bundled plugins remain included.
+Application 2.5.0 distributes Drawing Manager separately. Add it in Settings > Plugins > Official downloads, then enable it to show the drawing menu. Downloads are initially disabled. After updating the application, use UpDate in the plugin list to update an existing Drawing Manager installation.
 
-本体2.4.1の公式カタログとパッケージの取得先は、このリポジトリの`main/plugins/`内に固定しています。環境変数で別の配布元へ変更することはできません。HTTPSとSHA-256で取得先・ファイルの一致を確認します。発行者の電子署名検証は実装していません。
+本体2.5.0の公式カタログとパッケージの取得先は、このリポジトリの`main/plugins/`内に固定しています。環境変数で別の配布元へ変更することはできません。HTTPSとSHA-256で取得先・ファイルの一致を確認します。発行者の電子署名検証は実装していません。
 
-Application 2.4.1 pins its official catalog and package URLs to this repository under `main/plugins/`. Environment variables cannot select a different publisher. HTTPS and SHA-256 check the source connection and file integrity; publisher-signature verification is not implemented.
+Application 2.5.0 pins its official catalog and package URLs to this repository under `main/plugins/`. Environment variables cannot select a different publisher. HTTPS and SHA-256 check the source connection and file integrity; publisher-signature verification is not implemented.
 
 ## ライセンス / License
 

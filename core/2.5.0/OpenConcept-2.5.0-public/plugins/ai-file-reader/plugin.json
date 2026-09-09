@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "id": "ai-file-reader",
+  "name": "AI File Reader",
+  "version": "0.1.0",
+  "enabled": false,
+  "description": "Reads published PDF, Word and Excel originals for normal AI search, with review in the inbox.",
+  "entry": "plugin.php",
+  "requires": { "plugin_api": "1.0.0", "capabilities": ["sources", "jobs", "storage", "settings", "secrets", "search-content", "notifications", "actions", "file-state"] },
+  "assets": { "styles": ["assets/plugin.css"], "scripts": ["assets/plugin.js"] },
+  "ui": { "sidebar": { "label": "AI File Reader", "icon": "📄", "placement": "default", "roles": ["admin"] } }
+}

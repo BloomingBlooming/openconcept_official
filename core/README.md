@@ -6,11 +6,12 @@ The current application distribution is stored under `core/<version>/`. It conta
 
 | Version | 設置説明書 / Setup guide | ZIP | SHA-256 |
 | --- | --- | --- | --- |
-| 2.4.1 | [日本語・English](2.4.1/README.md) | [Download](2.4.1/OpenConcept-2.4.1-public.zip) | [Checksum](2.4.1/OpenConcept-2.4.1-public.zip.sha256) |
+| 2.5.0（新規設置 / New installation） | [日本語・English](2.5.0/README.md) | [Download](2.5.0/OpenConcept-2.5.0-public.zip) | [Checksum](2.5.0/OpenConcept-2.5.0-public.zip.sha256) |
+| 2.4.1 → 2.5.0（更新 / Upgrade） | [更新手順 / Instructions](2.5.0/OpenConcept-2.5.0-upgrade-from-2.4.1/README.ja-en.md) | [Download](2.5.0/OpenConcept-2.5.0-upgrade-from-2.4.1.zip) | [Checksum](2.5.0/OpenConcept-2.5.0-upgrade-from-2.4.1.zip.sha256) |
 
-現在は新規設置用の通常配布版のみを掲載しています。バージョン別のREADMEは、`Dist/README.md`をそのまま配置した配布案内・設置説明書です。
+新規設置用の通常配布版とV2.4.1からの更新版を掲載しています。バージョン別のREADMEから、配布物に同梱された設置説明書・更新手順・リリースノートを参照できます。
 
-Only the full distribution for new installations is currently listed. The version-specific README is copied unchanged from `Dist/README.md` and contains download information and the setup guide.
+The full distribution for new installations and the upgrade from V2.4.1 are available. The version-specific README links to the setup guide, upgrade instructions, and release notes included in the distribution.
 
 更新時はOpenConceptプロジェクトの`Dist/`以下から、手動または管理者が指示したバージョンの配布物を取得します。対象バージョンのフォルダーへ配置して旧配布物を置き換え、この一覧と[リポジトリ先頭の一覧](../README.md)を更新します。このリポジトリで配布物を直接修正したり、旧版を保管したりしません。
 

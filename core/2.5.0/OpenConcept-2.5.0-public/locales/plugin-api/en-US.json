@@ -1,0 +1,27 @@
+{
+  "name": "en-US",
+  "messages": {
+    "state.queued": "Queued",
+    "state.processing": "Reading",
+    "state.review": "Awaiting review",
+    "state.registered": "Registered",
+    "state.unregistered": "Data not registered",
+    "replace": "Replace",
+    "replaced": "File replaced.",
+    "unavailable": "Unavailable. Check the plugin status and your access.",
+    "failed": "The operation failed.",
+    "details": "Details",
+    "empty": "No items to display.",
+    "item": "Item",
+    "actions": "Actions",
+    "pagination": "Pagination",
+    "previous": "Previous",
+    "next": "Next",
+    "progress": "Progress",
+    "close": "Close",
+    "loading": "Loading…",
+    "notice": "Notice",
+    "operationFailed": "The operation could not be completed. Please try again later.",
+    "processing": "Processing…"
+  }
+}
