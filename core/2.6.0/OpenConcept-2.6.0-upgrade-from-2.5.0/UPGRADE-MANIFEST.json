@@ -1,0 +1,659 @@
+{
+    "manifest_version": 1,
+    "package_type": "upgrade-distribution",
+    "product": "OpenConcept",
+    "from_version": "2.5.0",
+    "target_version": "2.6.0",
+    "product_version": "2.6.0",
+    "source_public_manifest_sha256": "0e259103ca6a3e6b67c68399f1ac39a785def97bf616883b6ae3c4f57357a60a",
+    "target_public_manifest_sha256": "8342d8a858bc9e5e95a5b24df05a651385f104f6eb9584b21495c2df63e1e1f8",
+    "install_mode": "merge-files-no-delete",
+    "database_schema_changed": false,
+    "database_schema_transition": null,
+    "instance_configuration_included": false,
+    "runtime_data_included": false,
+    "delete_files": [],
+    "changes": [
+        {
+            "path": "HTTP-SERVER-SETUP.ja-en.md",
+            "operation": "replace",
+            "from_sha256": "ed1cae14be267c39f291db16a64f6721313c52ff56b4484c86352cf442f2de39",
+            "from_bytes": 36503,
+            "to_sha256": "8377facf9920a86f1ce109db1df81c8e42ca17704d91be619d87c3f12237413d",
+            "to_bytes": 37136,
+            "package_path": "files/HTTP-SERVER-SETUP.ja-en.md",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "README.md",
+            "operation": "replace",
+            "from_sha256": "024d5eae45a1378b06bf428a30a9a6580b682f8b66b1f979f21d40ad2b575bd3",
+            "from_bytes": 15654,
+            "to_sha256": "f1bdf14a99a87ed2a3d34d9f1d309d2a6fb4a58f18cdba51e99ae35d06c5bedb",
+            "to_bytes": 15497,
+            "package_path": "files/README.md",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "VERSION",
+            "operation": "replace",
+            "from_sha256": "732f64d874f90788c0199b0c19bfd9b3b6436e140114e53e462832532d74c61c",
+            "from_bytes": 6,
+            "to_sha256": "afd16935d2e1f7d4439d018c456c46ac7756396cc089ff50daa04b2afd4f3d7f",
+            "to_bytes": 7,
+            "package_path": "files/VERSION",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/AiChatRepository.php",
+            "operation": "replace",
+            "from_sha256": "296f9cb3e1f3b57e901f6e115916428796ef3b2afd2b522b6f010059abc2ae26",
+            "from_bytes": 36495,
+            "to_sha256": "b8d4c915de172b7f3d1a7befe6a381faa19d2ba5be295b32c3711207a4b579d1",
+            "to_bytes": 37342,
+            "package_path": "files/app/AiChatRepository.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/AiPageActionService.php",
+            "operation": "replace",
+            "from_sha256": "15084c3fd65cf7468a44ec6263c3ed64ee260e2a1b9a78b06ad4a97a73f53931",
+            "from_bytes": 46188,
+            "to_sha256": "840dbd05403b84c60e6dfea4d1855c0d9a22f0e92cb751936c8702ea31b7ddb6",
+            "to_bytes": 45408,
+            "package_path": "files/app/AiPageActionService.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/AiSearchService.php",
+            "operation": "replace",
+            "from_sha256": "9d0a8ddeaa343bcc05a7affa2319c460e13c38c47bcb09f6359ea537a5e9ce89",
+            "from_bytes": 64207,
+            "to_sha256": "360b9046ab64e2e8e59255e1d10d84ab737fa50ffbee3b84a20db33aac7b0e1a",
+            "to_bytes": 65840,
+            "package_path": "files/app/AiSearchService.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/CanonicalReadSnapshotService.php",
+            "operation": "replace",
+            "from_sha256": "dadd81fbd1e0277b4baee193d897bcc0a67ab9b404ffed8c181ea77edf3f6fd7",
+            "from_bytes": 49442,
+            "to_sha256": "10a81d98cd02fdbe67c5c9ebdf1f5ad8e46d0ab1100c54c844001107b691ca28",
+            "to_bytes": 50062,
+            "package_path": "files/app/CanonicalReadSnapshotService.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/DefaultOperationManual.php",
+            "operation": "replace",
+            "from_sha256": "8f9e9178eda1e4f1c0edfc197133f37a85df6d81e5adee21b43fd9669980adbe",
+            "from_bytes": 20408,
+            "to_sha256": "9cff53432b2a565c4825a21e94dc5074b5bcb692e85ab3322ee0d6d05830fee3",
+            "to_bytes": 20904,
+            "package_path": "files/app/DefaultOperationManual.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/KnowledgeFileVersions.php",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "2c2d93aa74dd276a41e18c333e45d1f8802e502e2e1a2b7bdfa1befec9cc2e0c",
+            "to_bytes": 3795,
+            "package_path": "files/app/KnowledgeFileVersions.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/KnowledgeHistoryController.php",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "30accb0f25aef5b8b0c79352859667ad5ca3a63599094cfdf5d75f84b033170e",
+            "to_bytes": 7280,
+            "package_path": "files/app/KnowledgeHistoryController.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/KnowledgeHistoryService.php",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "5a2b53f59a8d2dc682f84b12c0cbf0675435aa1c08aece9c1b55b92918014797",
+            "to_bytes": 19262,
+            "package_path": "files/app/KnowledgeHistoryService.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/KnowledgePortableArchive.php",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "fff9247b46cf503218b6a2e2b60609f66d3f6ec96e10157416ef44a9d1099e9b",
+            "to_bytes": 19968,
+            "package_path": "files/app/KnowledgePortableArchive.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/KnowledgeRecords.php",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "183fdca4d3027c9518f06ebc0696e1e2308a81a758217727c2dc616e893ccfd6",
+            "to_bytes": 13435,
+            "package_path": "files/app/KnowledgeRecords.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/KnowledgeSearchBridge.php",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "57d8d5938f5ad1d673dd1f99a679bebea42724bec06f22c84e1ce951fd17033c",
+            "to_bytes": 4149,
+            "package_path": "files/app/KnowledgeSearchBridge.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/KnowledgeSnapshotProvider.php",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "e648be35a3db02ee08512814b050e1e96acfc8c2e87f44f4ee5b7824cf440f41",
+            "to_bytes": 4038,
+            "package_path": "files/app/KnowledgeSnapshotProvider.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/OpenAIClient.php",
+            "operation": "replace",
+            "from_sha256": "bdab64fb4c754e73d560b1ae894f0db4aa6ecce47c00751e939ab6b7103bdc90",
+            "from_bytes": 45768,
+            "to_sha256": "1b00ab4a6209d266eb0d3d3b9db248b10fe6151600211706a6c9224aae8971ec",
+            "to_bytes": 46506,
+            "package_path": "files/app/OpenAIClient.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/PluginCompatibility.php",
+            "operation": "replace",
+            "from_sha256": "c754ab164d11d90e1639ad5eb903e462e656dd1d4bb815775b949020cb04c0f3",
+            "from_bytes": 7921,
+            "to_sha256": "b347aebfdfa241448641207cf1dc0d4fb2c270eb3f751784b778ce78729883ff",
+            "to_bytes": 8286,
+            "package_path": "files/app/PluginCompatibility.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/TranslationService.php",
+            "operation": "replace",
+            "from_sha256": "53fdc7c6d8ba81c8beac9be856f85f842f36a9841af2cdfaddf1300ef676bca9",
+            "from_bytes": 38190,
+            "to_sha256": "58fb3bf8daff19a09c0947a858d4d6dc24a19f987465410052921c0ab6e2c113",
+            "to_bytes": 37958,
+            "package_path": "files/app/TranslationService.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/bootstrap.php",
+            "operation": "replace",
+            "from_sha256": "bd26b4452129ecf17503fe53cef41c1568e8bfce1944e80a9f3133d4737f055f",
+            "from_bytes": 131471,
+            "to_sha256": "5ef2474c2aeb6ebf4c16ddce30c9f6bd456a3f8819829facd53eff36a417251f",
+            "to_bytes": 129385,
+            "package_path": "files/app/bootstrap.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "assets/app.js",
+            "operation": "replace",
+            "from_sha256": "c75d588547396e138cdf0f983cccfc72f19cf6cd58c38d04410541f59386dcc8",
+            "from_bytes": 506105,
+            "to_sha256": "8b4566150168cdffa3aaa0ca349155ee667c7178973ad90521223922c0391ef5",
+            "to_bytes": 507843,
+            "package_path": "files/assets/app.js",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "assets/knowledge-history.css",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "7ae120cec250cc72a0fd5823b19cfd797e58090949d02d5c651f0a2239a7ffca",
+            "to_bytes": 3756,
+            "package_path": "files/assets/knowledge-history.css",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "assets/knowledge-history.js",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "64296281eced6088b013511b095c52e4fbced854698f7a1429b267e4a9dd56a1",
+            "to_bytes": 11176,
+            "package_path": "files/assets/knowledge-history.js",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "docs/knowledge-history-2.6.0.md",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "8c4a67fcada05aa7abca14b0d89ce0240e836594dbf4dca5c472b5a50eddd8d9",
+            "to_bytes": 3003,
+            "package_path": "files/docs/knowledge-history-2.6.0.md",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "docs/nginx.conf",
+            "operation": "replace",
+            "from_sha256": "8f58c8e3d0aa987574484198c244e5f76934a2a2a2566c46ff1b28063876e419",
+            "from_bytes": 5971,
+            "to_sha256": "dc1526ac16b42edb46f3dbe1405b92fca0d75ef4bf5fb87abe65b1d6b6fe1782",
+            "to_bytes": 6120,
+            "package_path": "files/docs/nginx.conf",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "docs/openconcept-operation-manual.ja.md",
+            "operation": "replace",
+            "from_sha256": "ee59784b9c430381ed8568ad7af26bd33cb573d58df14ad6a678ee267dfceb50",
+            "from_bytes": 56254,
+            "to_sha256": "3f6c50dcbac3b15feeff92e0dba8a4c2b4da403af9397b57e7fc05629c724769",
+            "to_bytes": 58088,
+            "package_path": "files/docs/openconcept-operation-manual.ja.md",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "docs/plugin-api-reference.md",
+            "operation": "replace",
+            "from_sha256": "c15fe67448beca67bbffff74e2505279797046a6a6dd46e0ad0fb6bdcdd654ae",
+            "from_bytes": 13190,
+            "to_sha256": "1f58e03da0a7ecd1baeb72536785c456c1fe7707f307d65fb15e81c0cc42841f",
+            "to_bytes": 13672,
+            "package_path": "files/docs/plugin-api-reference.md",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "docs/release-notes-2.6.0.md",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "6ed75433ac25aea7b64f3b4358d58b39a1643ae60dfe0db4cdfbfe1da5b28e35",
+            "to_bytes": 7657,
+            "package_path": "files/docs/release-notes-2.6.0.md",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "history.php",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "299fbb4fb25cede252e4557ed30161f0198074c048ceefeddb8a59b5889322ff",
+            "to_bytes": 72,
+            "package_path": "files/history.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/en-US.json",
+            "operation": "replace",
+            "from_sha256": "bb23fa6371d86f54bb84bf729fb7b24511e53383ae6e912c284d5bc01bb04ef4",
+            "from_bytes": 63147,
+            "to_sha256": "f0549e5ef2f9dd64d99f10611458a4840a5900e3d7f3b4b5edbb3ba0df710400",
+            "to_bytes": 66693,
+            "package_path": "files/locales/en-US.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/ja-JP.json",
+            "operation": "replace",
+            "from_sha256": "6775a43e9511cdbb866131ddd2d2fecf0ee9e0fffa2347cb37f52c98f31e9c3f",
+            "from_bytes": 72484,
+            "to_sha256": "8f6c1fe870c6d9b01f22f576dce873b2dc9f167d5ca535e194d542670377467f",
+            "to_bytes": 76301,
+            "package_path": "files/locales/ja-JP.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/ko-KR.json",
+            "operation": "replace",
+            "from_sha256": "dfaef77fddf2ab069daf39c34cb94089582c8ae85db4233a371aa0c5e99d5d49",
+            "from_bytes": 70780,
+            "to_sha256": "2a6e330490ba06d7f1461d17a5c407419a18545d586732dfd36a57a7f4f50101",
+            "to_bytes": 74497,
+            "package_path": "files/locales/ko-KR.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/vi-VN.json",
+            "operation": "replace",
+            "from_sha256": "945d3142c848e3f0a7baa4fcc33aeee87278a92e8c65150dc014d34d633f73c7",
+            "from_bytes": 72587,
+            "to_sha256": "69f943e30caf65f677970229912991469269a480087f7f7b8a6e7d5c6c37e7f8",
+            "to_bytes": 76510,
+            "package_path": "files/locales/vi-VN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/zh-CN.json",
+            "operation": "replace",
+            "from_sha256": "41a4e8f464e81eab0207d7aea69d7fd788f8a57447a3fbec2b8545eb98abe0c5",
+            "from_bytes": 61070,
+            "to_sha256": "28b9feec306b36a57492d9aac42b9a3a67b746b47cf61c23d4e51680ff4f4275",
+            "to_bytes": 64501,
+            "package_path": "files/locales/zh-CN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "public/api.php",
+            "operation": "replace",
+            "from_sha256": "d361259c29f860c80266d09db457743afbca2e0d82bee2a4dd419f314d487c3c",
+            "from_bytes": 198571,
+            "to_sha256": "9f5b69b3c579440e2a53139c8eb43190026a09921751c6fad71cda2073ae537a",
+            "to_bytes": 199344,
+            "package_path": "files/public/api.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "public/assets/app.js",
+            "operation": "replace",
+            "from_sha256": "c75d588547396e138cdf0f983cccfc72f19cf6cd58c38d04410541f59386dcc8",
+            "from_bytes": 506105,
+            "to_sha256": "8b4566150168cdffa3aaa0ca349155ee667c7178973ad90521223922c0391ef5",
+            "to_bytes": 507843,
+            "package_path": "files/public/assets/app.js",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "public/assets/knowledge-history.css",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "7ae120cec250cc72a0fd5823b19cfd797e58090949d02d5c651f0a2239a7ffca",
+            "to_bytes": 3756,
+            "package_path": "files/public/assets/knowledge-history.css",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "public/assets/knowledge-history.js",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "64296281eced6088b013511b095c52e4fbced854698f7a1429b267e4a9dd56a1",
+            "to_bytes": 11176,
+            "package_path": "files/public/assets/knowledge-history.js",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "public/history.php",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "e1db8c229e1c4b96aec98780e72771b9818077bb459a822169ce72100e8bc5b0",
+            "to_bytes": 4504,
+            "package_path": "files/public/history.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "scripts/knowledge-archive.php",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "380a9085a5e42a3af5ecc7e53de4882e89aa3e9b4da25fb032727392481b044d",
+            "to_bytes": 4102,
+            "package_path": "files/scripts/knowledge-archive.php",
+            "install_action": "merge-overwrite-file"
+        }
+    ],
+    "reference_files": [
+        {
+            "path": "compose.rag.yaml",
+            "operation": "replace",
+            "from_sha256": "159d50c059228ca4baf456f13696d67e6b4dafe3d9073d2736e126b43a8ffb16",
+            "from_bytes": 5281,
+            "to_sha256": "3bf8b977916bd0a095eb20db6289a965d09e81969d78cd3b74fe7c54a61ac7a6",
+            "to_bytes": 5422,
+            "package_path": "reference/compose.rag.yaml",
+            "install_action": "manual-merge-only"
+        }
+    ],
+    "file_count": 47,
+    "total_bytes": 2406392,
+    "files": [
+        {
+            "path": "LICENSE",
+            "bytes": 1090,
+            "sha256": "0b6f376a9a9ca41e60bddf668b53020a3d1d2f7aa0d9559987fb6248ca7fef16"
+        },
+        {
+            "path": "LICENSE.en.md",
+            "bytes": 17995,
+            "sha256": "a36b56756ded8b45ff27b43845ff6ee5625969452309a48ad1361604cb52f1a2"
+        },
+        {
+            "path": "LICENSE.en.txt",
+            "bytes": 17921,
+            "sha256": "8f17d8b250b91f649ff8367192d3585d7116c9bf9210093164459d3f82a4c49c"
+        },
+        {
+            "path": "LICENSE.ja.md",
+            "bytes": 19060,
+            "sha256": "f86093552100563de06f47f1feec0986535b569960c3f9b201d6cea363fd2b6c"
+        },
+        {
+            "path": "LICENSE.ja.txt",
+            "bytes": 18986,
+            "sha256": "5c0eced685837e693be5bcdc6d11efa2e72f9c92c861da0be6c5573b28058199"
+        },
+        {
+            "path": "README.ja-en.md",
+            "bytes": 2340,
+            "sha256": "bc07361ea9a6dcfa0de2d835df4af806c590df8273dae4560afd6971e62ae538"
+        },
+        {
+            "path": "files/DISTRIBUTION-MANIFEST.json",
+            "bytes": 56706,
+            "sha256": "8342d8a858bc9e5e95a5b24df05a651385f104f6eb9584b21495c2df63e1e1f8"
+        },
+        {
+            "path": "files/HTTP-SERVER-SETUP.ja-en.md",
+            "bytes": 37136,
+            "sha256": "8377facf9920a86f1ce109db1df81c8e42ca17704d91be619d87c3f12237413d"
+        },
+        {
+            "path": "files/README.md",
+            "bytes": 15497,
+            "sha256": "f1bdf14a99a87ed2a3d34d9f1d309d2a6fb4a58f18cdba51e99ae35d06c5bedb"
+        },
+        {
+            "path": "files/VERSION",
+            "bytes": 7,
+            "sha256": "afd16935d2e1f7d4439d018c456c46ac7756396cc089ff50daa04b2afd4f3d7f"
+        },
+        {
+            "path": "files/app/AiChatRepository.php",
+            "bytes": 37342,
+            "sha256": "b8d4c915de172b7f3d1a7befe6a381faa19d2ba5be295b32c3711207a4b579d1"
+        },
+        {
+            "path": "files/app/AiPageActionService.php",
+            "bytes": 45408,
+            "sha256": "840dbd05403b84c60e6dfea4d1855c0d9a22f0e92cb751936c8702ea31b7ddb6"
+        },
+        {
+            "path": "files/app/AiSearchService.php",
+            "bytes": 65840,
+            "sha256": "360b9046ab64e2e8e59255e1d10d84ab737fa50ffbee3b84a20db33aac7b0e1a"
+        },
+        {
+            "path": "files/app/CanonicalReadSnapshotService.php",
+            "bytes": 50062,
+            "sha256": "10a81d98cd02fdbe67c5c9ebdf1f5ad8e46d0ab1100c54c844001107b691ca28"
+        },
+        {
+            "path": "files/app/DefaultOperationManual.php",
+            "bytes": 20904,
+            "sha256": "9cff53432b2a565c4825a21e94dc5074b5bcb692e85ab3322ee0d6d05830fee3"
+        },
+        {
+            "path": "files/app/KnowledgeFileVersions.php",
+            "bytes": 3795,
+            "sha256": "2c2d93aa74dd276a41e18c333e45d1f8802e502e2e1a2b7bdfa1befec9cc2e0c"
+        },
+        {
+            "path": "files/app/KnowledgeHistoryController.php",
+            "bytes": 7280,
+            "sha256": "30accb0f25aef5b8b0c79352859667ad5ca3a63599094cfdf5d75f84b033170e"
+        },
+        {
+            "path": "files/app/KnowledgeHistoryService.php",
+            "bytes": 19262,
+            "sha256": "5a2b53f59a8d2dc682f84b12c0cbf0675435aa1c08aece9c1b55b92918014797"
+        },
+        {
+            "path": "files/app/KnowledgePortableArchive.php",
+            "bytes": 19968,
+            "sha256": "fff9247b46cf503218b6a2e2b60609f66d3f6ec96e10157416ef44a9d1099e9b"
+        },
+        {
+            "path": "files/app/KnowledgeRecords.php",
+            "bytes": 13435,
+            "sha256": "183fdca4d3027c9518f06ebc0696e1e2308a81a758217727c2dc616e893ccfd6"
+        },
+        {
+            "path": "files/app/KnowledgeSearchBridge.php",
+            "bytes": 4149,
+            "sha256": "57d8d5938f5ad1d673dd1f99a679bebea42724bec06f22c84e1ce951fd17033c"
+        },
+        {
+            "path": "files/app/KnowledgeSnapshotProvider.php",
+            "bytes": 4038,
+            "sha256": "e648be35a3db02ee08512814b050e1e96acfc8c2e87f44f4ee5b7824cf440f41"
+        },
+        {
+            "path": "files/app/OpenAIClient.php",
+            "bytes": 46506,
+            "sha256": "1b00ab4a6209d266eb0d3d3b9db248b10fe6151600211706a6c9224aae8971ec"
+        },
+        {
+            "path": "files/app/PluginCompatibility.php",
+            "bytes": 8286,
+            "sha256": "b347aebfdfa241448641207cf1dc0d4fb2c270eb3f751784b778ce78729883ff"
+        },
+        {
+            "path": "files/app/TranslationService.php",
+            "bytes": 37958,
+            "sha256": "58fb3bf8daff19a09c0947a858d4d6dc24a19f987465410052921c0ab6e2c113"
+        },
+        {
+            "path": "files/app/bootstrap.php",
+            "bytes": 129385,
+            "sha256": "5ef2474c2aeb6ebf4c16ddce30c9f6bd456a3f8819829facd53eff36a417251f"
+        },
+        {
+            "path": "files/assets/app.js",
+            "bytes": 507843,
+            "sha256": "8b4566150168cdffa3aaa0ca349155ee667c7178973ad90521223922c0391ef5"
+        },
+        {
+            "path": "files/assets/knowledge-history.css",
+            "bytes": 3756,
+            "sha256": "7ae120cec250cc72a0fd5823b19cfd797e58090949d02d5c651f0a2239a7ffca"
+        },
+        {
+            "path": "files/assets/knowledge-history.js",
+            "bytes": 11176,
+            "sha256": "64296281eced6088b013511b095c52e4fbced854698f7a1429b267e4a9dd56a1"
+        },
+        {
+            "path": "files/docs/knowledge-history-2.6.0.md",
+            "bytes": 3003,
+            "sha256": "8c4a67fcada05aa7abca14b0d89ce0240e836594dbf4dca5c472b5a50eddd8d9"
+        },
+        {
+            "path": "files/docs/nginx.conf",
+            "bytes": 6120,
+            "sha256": "dc1526ac16b42edb46f3dbe1405b92fca0d75ef4bf5fb87abe65b1d6b6fe1782"
+        },
+        {
+            "path": "files/docs/openconcept-operation-manual.ja.md",
+            "bytes": 58088,
+            "sha256": "3f6c50dcbac3b15feeff92e0dba8a4c2b4da403af9397b57e7fc05629c724769"
+        },
+        {
+            "path": "files/docs/plugin-api-reference.md",
+            "bytes": 13672,
+            "sha256": "1f58e03da0a7ecd1baeb72536785c456c1fe7707f307d65fb15e81c0cc42841f"
+        },
+        {
+            "path": "files/docs/release-notes-2.6.0.md",
+            "bytes": 7657,
+            "sha256": "6ed75433ac25aea7b64f3b4358d58b39a1643ae60dfe0db4cdfbfe1da5b28e35"
+        },
+        {
+            "path": "files/history.php",
+            "bytes": 72,
+            "sha256": "299fbb4fb25cede252e4557ed30161f0198074c048ceefeddb8a59b5889322ff"
+        },
+        {
+            "path": "files/locales/en-US.json",
+            "bytes": 66693,
+            "sha256": "f0549e5ef2f9dd64d99f10611458a4840a5900e3d7f3b4b5edbb3ba0df710400"
+        },
+        {
+            "path": "files/locales/ja-JP.json",
+            "bytes": 76301,
+            "sha256": "8f6c1fe870c6d9b01f22f576dce873b2dc9f167d5ca535e194d542670377467f"
+        },
+        {
+            "path": "files/locales/ko-KR.json",
+            "bytes": 74497,
+            "sha256": "2a6e330490ba06d7f1461d17a5c407419a18545d586732dfd36a57a7f4f50101"
+        },
+        {
+            "path": "files/locales/vi-VN.json",
+            "bytes": 76510,
+            "sha256": "69f943e30caf65f677970229912991469269a480087f7f7b8a6e7d5c6c37e7f8"
+        },
+        {
+            "path": "files/locales/zh-CN.json",
+            "bytes": 64501,
+            "sha256": "28b9feec306b36a57492d9aac42b9a3a67b746b47cf61c23d4e51680ff4f4275"
+        },
+        {
+            "path": "files/public/api.php",
+            "bytes": 199344,
+            "sha256": "9f5b69b3c579440e2a53139c8eb43190026a09921751c6fad71cda2073ae537a"
+        },
+        {
+            "path": "files/public/assets/app.js",
+            "bytes": 507843,
+            "sha256": "8b4566150168cdffa3aaa0ca349155ee667c7178973ad90521223922c0391ef5"
+        },
+        {
+            "path": "files/public/assets/knowledge-history.css",
+            "bytes": 3756,
+            "sha256": "7ae120cec250cc72a0fd5823b19cfd797e58090949d02d5c651f0a2239a7ffca"
+        },
+        {
+            "path": "files/public/assets/knowledge-history.js",
+            "bytes": 11176,
+            "sha256": "64296281eced6088b013511b095c52e4fbced854698f7a1429b267e4a9dd56a1"
+        },
+        {
+            "path": "files/public/history.php",
+            "bytes": 4504,
+            "sha256": "e1db8c229e1c4b96aec98780e72771b9818077bb459a822169ce72100e8bc5b0"
+        },
+        {
+            "path": "files/scripts/knowledge-archive.php",
+            "bytes": 4102,
+            "sha256": "380a9085a5e42a3af5ecc7e53de4882e89aa3e9b4da25fb032727392481b044d"
+        },
+        {
+            "path": "reference/compose.rag.yaml",
+            "bytes": 5422,
+            "sha256": "3bf8b977916bd0a095eb20db6289a965d09e81969d78cd3b74fe7c54a61ac7a6"
+        }
+    ]
+}

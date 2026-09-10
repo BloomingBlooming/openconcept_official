@@ -12,13 +12,13 @@ This directory holds the [distribution catalog](catalog.json) and [packages](pac
 
 Drawing Manager is distributed separately from application 2.3.1 onward and can be added through Official downloads in the application.
 
-図面管理0.9.2には更新済みのOpenConcept V2.5.0とPlugin API 1.0.0が必要です。新規導入は「設定 > プラグイン > 公式ダウンロード」からダウンロードし、管理者が有効化してください。導入にはPHP実行ユーザーの`plugins/`への書込み権限が必要です。
+図面管理0.9.2の最低対応版は更新済みのOpenConcept V2.5.0とPlugin API 1.0.0で、本体V2.6.0でも利用できます。新規導入は「設定 > プラグイン > 公式ダウンロード」からダウンロードし、管理者が有効化してください。導入にはPHP実行ユーザーの`plugins/`への書込み権限が必要です。
 
-Drawing Manager 0.9.2 requires the updated OpenConcept V2.5.0 application and Plugin API 1.0.0. For a new installation, download it in Settings > Plugins > Official downloads, then enable it as an administrator. The PHP service identity needs write access to `plugins/` for installation.
+Drawing Manager 0.9.2 requires at least the updated OpenConcept V2.5.0 application and Plugin API 1.0.0, and also supports V2.6.0. For a new installation, download it in Settings > Plugins > Official downloads, then enable it as an administrator. The PHP service identity needs write access to `plugins/` for installation.
 
-導入済みの場合は、プラグイン一覧を開くか再取得して、適合する新版に表示される「UpDate」から更新します。有効・無効の状態、設定、登録データ、原本は保持されます。詳細は[本体2.5.0のリリースノート](../core/2.5.0/OpenConcept-2.5.0-public/docs/release-notes-2.5.0.md)を参照してください。
+導入済みの場合は、プラグイン一覧を開くか再取得して、適合する新版に表示される「UpDate」から更新します。有効・無効の状態、設定、登録データ、原本は保持されます。詳細は[本体同梱のプラグインAPI説明](../core/2.6.0/OpenConcept-2.6.0-public/docs/plugin-api-reference.md)を参照してください。
 
-For an installed plugin, open or refresh the plugin list and use UpDate when a compatible newer version is available. Updates preserve the enabled state, settings, registered data, and original files. See the [application 2.5.0 release notes](../core/2.5.0/OpenConcept-2.5.0-public/docs/release-notes-2.5.0.md).
+For an installed plugin, open or refresh the plugin list and use UpDate when a compatible newer version is available. Updates preserve the enabled state, settings, registered data, and original files. See the [bundled Plugin API guide](../core/2.6.0/OpenConcept-2.6.0-public/docs/plugin-api-reference.md).
 
 カタログのHTTPS配信先 / HTTPS catalog endpoint:
 
