@@ -1,0 +1,22 @@
+DirectoryIndex index.html
+Options -Indexes -MultiViews
+
+<FilesMatch "(?i)(?:^\.|\.(?:json|sig|key|php|phtml|phar)$)">
+    Require all denied
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule (?:^|/)\. - [F,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "DENY"
+    Header always set Referrer-Policy "no-referrer"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+    Header always set Content-Security-Policy "default-src 'none'; script-src 'none'; style-src 'self'; img-src 'self'; font-src 'none'; media-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+    <FilesMatch "(?i)\.html?$">
+        Header always set Cache-Control "no-cache, max-age=0, must-revalidate"
+    </FilesMatch>
+</IfModule>

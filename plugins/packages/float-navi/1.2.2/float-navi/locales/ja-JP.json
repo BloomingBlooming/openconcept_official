@@ -1,0 +1,21 @@
+{
+    "name": "日本語",
+    "messages": {
+        "plugin.name": "フロートNavi",
+        "plugin.description": "ページ検索とツリーを、左ナビと同期する移動・サイズ変更可能なウィンドウに表示します。",
+        "window.title": "フロートNavi",
+        "window.menu": "フロートNaviのメニュー",
+        "window.closeTransparency": "透過度の設定を閉じる",
+        "menu.settings": "設定",
+        "menu.transparency": "透過",
+        "menu.background": "背景モード",
+        "menu.light": "ライトモード",
+        "menu.dark": "ダークモード",
+        "menu.back": "戻る",
+        "window.transparency": "背景の透過度",
+        "window.open": "フロートNaviを開く",
+        "window.close": "フロートNaviを閉じる",
+        "window.move": "ドラッグまたは矢印キーでウィンドウを移動",
+        "window.resize": "ドラッグまたは矢印キーでウィンドウのサイズを変更"
+    }
+}

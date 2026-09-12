@@ -1,0 +1,23 @@
+{
+    "schema_version": 1,
+    "id": "voice-conversation",
+    "name": "AI音声会話",
+    "version": "0.15.1",
+    "enabled": false,
+    "description": "マイク入力を文字化し、AIの回答をブラウザ音声とビジュアライザーで再生します。音声データは保存しません。",
+    "entry": "plugin.php",
+    "assets": {
+        "styles": [
+            "assets/plugin.css"
+        ],
+        "scripts": [
+            "assets/plugin.js"
+        ]
+    },
+    "ui": {
+        "sidebar": {
+            "label": "AI音声会話",
+            "icon": "🎙️"
+        }
+    }
+}

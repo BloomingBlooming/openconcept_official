@@ -1,43 +1,22 @@
-# OpenConcept 2.6.0
+# OpenConcept 2.6.0 通常版・更新版 / Full Release and Upgrade
 
-最新版 / Latest: **v2.6.0**
+通常版と **V2.5.0 → V2.6.0** の更新版を継続掲載しています。新規設置には最新版の [OpenConcept 2.6.1](../2.6.1/README.md) を使用してください。V2.6.0が必要な場合は、以下の通常版を使用できます。
 
-| 用途 / Purpose | ダウンロード / Download | SHA-256 | 内容・手順 / Contents and instructions |
+The full V2.6.0 release and the **V2.5.0 → V2.6.0** upgrade remain available. Use [OpenConcept 2.6.1](../2.6.1/README.md) for new installations. The full release below is available for installations requiring V2.6.0.
+
+| 用途 / Purpose | ZIP | SHA-256 | 手順 / Instructions |
 | --- | --- | --- | --- |
-| 新規設置 / New installation | [OpenConcept 2.6.0 ZIP](OpenConcept-2.6.0-public.zip) | [Checksum](OpenConcept-2.6.0-public.zip.sha256) | [展開済み / Unpacked](OpenConcept-2.6.0-public/) |
-| V2.5.0から更新 / Upgrade from V2.5.0 | [Upgrade ZIP](OpenConcept-2.6.0-upgrade-from-2.5.0.zip) | [Checksum](OpenConcept-2.6.0-upgrade-from-2.5.0.zip.sha256) | [更新手順 / Instructions](OpenConcept-2.6.0-upgrade-from-2.5.0/README.ja-en.md) |
-| 図面管理 / Drawing Manager 0.9.2 | [Package](../../plugins/packages/drawing-manager/0.9.2/drawing-manager-0.9.2.oc-plugin.json) | [Checksum](../../plugins/packages/drawing-manager/0.9.2/drawing-manager-0.9.2.oc-plugin.json.sha256) | [導入・更新 / Installation and update](../../plugins/packages/drawing-manager/0.9.2/README.md) |
+| V2.6.0通常版 / Full release | [Download](OpenConcept-2.6.0-public.zip) | [Checksum](OpenConcept-2.6.0-public.zip.sha256) | [設置手順 / Installation](OpenConcept-2.6.0-public/HTTP-SERVER-SETUP.ja-en.md) |
+| V2.5.0から更新 / Upgrade from V2.5.0 | [Download](OpenConcept-2.6.0-upgrade-from-2.5.0.zip) | [Checksum](OpenConcept-2.6.0-upgrade-from-2.5.0.zip.sha256) | [更新手順](OpenConcept-2.6.0-upgrade-from-2.5.0/README.ja-en.md) |
 
-## 設置・更新 / Installation and upgrade
+環境全体をバックアップし、書き込み・ワーカーを停止して、同梱の手順に従い `files/` を既存アプリルートへ結合します。Coreスキーマ世代6を維持します。Dockerのcomposeは手動比較用です。NginxのPHP許可リストを使用している場合は `history.php` を追加してください。
 
-新規設置は[HTTP/HTTPSサーバー配置・必要環境（日本語・English）](OpenConcept-2.6.0-public/HTTP-SERVER-SETUP.ja-en.md)に従い、配布物一式を配置してください。通常のDocument Rootはアプリ内の`public/`です。
+V2.6.0への更新を確認したら、[V2.6.1への更新版](../2.6.1/README.md)を適用します。V2.4.1からは先に[2.5.0へ更新](../2.5.0/README.md)します。
 
-For a new installation, deploy the complete distribution following the [HTTP/HTTPS server layout and requirements (Japanese and English)](OpenConcept-2.6.0-public/HTTP-SERVER-SETUP.ja-en.md). The normal document root is the application's `public/` directory.
+Back up the environment, pause writers and workers, and merge `files/` following the included instructions. Core schema generation 6 is retained. Review Docker compose changes manually and add `history.php` when using an Nginx PHP allowlist. Verify V2.6.0, then apply the [V2.6.1 upgrade](../2.6.1/README.md). V2.4.1 installations first require [V2.5.0](../2.5.0/README.md).
 
-V2.5.0からの更新は、既存環境全体をバックアップして書き込み・ワーカーを停止し、[同梱の更新手順](OpenConcept-2.6.0-upgrade-from-2.5.0/README.ja-en.md)に従って`files/`を既存アプリルートへ結合します。Coreスキーマ世代6を維持し、DBスキーマ変更はありません。`reference/compose.rag.yaml`は手動比較・結合用です。NginxのPHP許可リストを使用している場合は`history.php`を追加してください。
+V2.6.0では記録と履歴、会話取込、旧添付を含む正本出力と隔離SQLite復元を追加しました。[リリースノート / Release notes](OpenConcept-2.6.0-upgrade-from-2.5.0/files/docs/release-notes-2.6.0.md) · [記録と履歴の仕様 / Records and history](OpenConcept-2.6.0-upgrade-from-2.5.0/files/docs/knowledge-history-2.6.0.md)
 
-To upgrade from V2.5.0, back up the complete environment, pause writers and workers, and merge `files/` into the existing application root following the [included upgrade instructions](OpenConcept-2.6.0-upgrade-from-2.5.0/README.ja-en.md). Core schema generation 6 remains unchanged. Compare and merge `reference/compose.rag.yaml` manually. Add `history.php` if using an Nginx PHP allowlist.
+配布物は `Dist/` から変更せずに配置しています。ZIPは隣接する `.sha256`、展開済みファイルは [UPGRADE-MANIFEST.json](OpenConcept-2.6.0-upgrade-from-2.5.0/UPGRADE-MANIFEST.json) で検証できます。
 
-この更新版はV2.5.0向けです。V2.4.1以前の環境は対応する更新を順に適用してください。[2.4.1から2.5.0への更新版](../2.5.0/README.md)も引き続き掲載します。
-
-This upgrade targets V2.5.0. Earlier installations must apply the corresponding intermediate upgrades in sequence. The [upgrade from 2.4.1 to 2.5.0](../2.5.0/README.md) remains available.
-
-## V2.6.0の変更 / Changes in V2.6.0
-
-発言・訂正・判断の履歴、共通JSON会話取込、旧添付を含む正本出力と隔離SQLite復元を追加しました。詳しくは[リリースノート](OpenConcept-2.6.0-public/docs/release-notes-2.6.0.md)、[記録と履歴の仕様](OpenConcept-2.6.0-public/docs/knowledge-history-2.6.0.md)、[日本語操作説明書](OpenConcept-2.6.0-public/docs/openconcept-operation-manual.ja.md)をご覧ください。
-
-This release adds records and history, append-only corrections, common-format conversation imports, and portable exports including retained attachments with verified isolated SQLite restoration. See the [release notes](OpenConcept-2.6.0-public/docs/release-notes-2.6.0.md), [records and history specification](OpenConcept-2.6.0-public/docs/knowledge-history-2.6.0.md), and [Japanese operation manual](OpenConcept-2.6.0-public/docs/openconcept-operation-manual.ja.md).
-
-旧添付とゴミ箱の保持により保存容量が増加します。根拠不足時の一般知識への自動切替は停止します。クラウド会話は共通JSON形式への変換が必要です。正本アーカイブは稼働環境の資格情報を含まず、既存DBへの上書き復元は行いません。環境全体のバックアップも継続してください。
-
-Storage usage grows as old attachments and trashed pages are retained. AI answers no longer automatically fall back to general knowledge when evidence is insufficient. Cloud conversations require conversion to the common JSON format. Portable archives omit runtime credentials and restore only into a new isolated destination. Continue backing up the complete environment.
-
-図面管理0.9.2は別配布で、本体V2.6.0でも利用できます。最低対応版は更新済みの本体V2.5.0とPlugin API 1.0.0のままです。
-
-Drawing Manager 0.9.2 is distributed separately and supports V2.6.0. Its minimum requirements remain the updated V2.5.0 application and Plugin API 1.0.0.
-
-## 配布物の検証 / Distribution verification
-
-ZIPは隣接する`.sha256`で、展開済みファイルは[本体manifest](OpenConcept-2.6.0-public/DISTRIBUTION-MANIFEST.json)または[更新manifest](OpenConcept-2.6.0-upgrade-from-2.5.0/UPGRADE-MANIFEST.json)で検証できます。配布物はOpenConceptプロジェクトの`Dist/`から内容を変更せずに配置しています。
-
-Verify ZIP archives with their adjacent `.sha256` files and unpacked files with the [application manifest](OpenConcept-2.6.0-public/DISTRIBUTION-MANIFEST.json) or [upgrade manifest](OpenConcept-2.6.0-upgrade-from-2.5.0/UPGRADE-MANIFEST.json). Distribution contents are copied unchanged from the OpenConcept project's `Dist/` directory.
+Packages are copied unchanged from `Dist/`. Verify the ZIP with its adjacent `.sha256` file and unpacked contents with the upgrade manifest.

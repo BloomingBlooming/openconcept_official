@@ -1,19 +1,22 @@
 # 本体のバージョン別配布 / Versioned Application Distributions
 
-本体の公開配布物を`core/<version>/`に保持します。最新版は2.6.0で、2.4.1から2.5.0への更新版も引き続き掲載します。配布物には、設置・更新説明書、ZIP、ZIPのSHA-256、manifest付きの展開済みパッケージを含めます。
+最新版は **V2.6.1** です。通常版とV2.6.0からの更新版を掲載しています。V2.5.0とV2.6.0の通常版・更新版も保持しています。
 
-Application distributions are stored under `core/<version>/`. The latest version is 2.6.0; the upgrade from 2.4.1 to 2.5.0 also remains available. Each contains an installation or upgrade guide, ZIP, ZIP checksum, and unpacked package with a file manifest.
+The latest version is **V2.6.1**, available as a full installation and an upgrade from V2.6.0. Full releases and upgrades for V2.5.0 and V2.6.0 also remain available.
 
-| Version | 設置説明書 / Setup guide | ZIP | SHA-256 |
+| Version | 説明書 / Guide | ZIP | SHA-256 |
 | --- | --- | --- | --- |
-| 2.6.0（新規設置 / New installation） | [日本語・English](2.6.0/README.md) | [Download](2.6.0/OpenConcept-2.6.0-public.zip) | [Checksum](2.6.0/OpenConcept-2.6.0-public.zip.sha256) |
-| 2.5.0 → 2.6.0（更新 / Upgrade） | [更新手順 / Instructions](2.6.0/OpenConcept-2.6.0-upgrade-from-2.5.0/README.ja-en.md) | [Download](2.6.0/OpenConcept-2.6.0-upgrade-from-2.5.0.zip) | [Checksum](2.6.0/OpenConcept-2.6.0-upgrade-from-2.5.0.zip.sha256) |
-| 2.4.1 → 2.5.0（継続掲載・更新 / Retained upgrade） | [更新手順 / Instructions](2.5.0/OpenConcept-2.5.0-upgrade-from-2.4.1/README.ja-en.md) | [Download](2.5.0/OpenConcept-2.5.0-upgrade-from-2.4.1.zip) | [Checksum](2.5.0/OpenConcept-2.5.0-upgrade-from-2.4.1.zip.sha256) |
+| 2.6.1 新規設置 / New installation | [日本語・English](2.6.1/README.md) | [Download](2.6.1/OpenConcept-2.6.1-public.zip) | [Checksum](2.6.1/OpenConcept-2.6.1-public.zip.sha256) |
+| 2.6.0 → 2.6.1 | [更新手順](2.6.1/OpenConcept-2.6.1-upgrade-from-2.6.0/README.ja-en.md) | [Download](2.6.1/OpenConcept-2.6.1-upgrade-from-2.6.0.zip) | [Checksum](2.6.1/OpenConcept-2.6.1-upgrade-from-2.6.0.zip.sha256) |
+| 2.6.0 通常版 / Retained full release | [日本語・English](2.6.0/README.md) | [Download](2.6.0/OpenConcept-2.6.0-public.zip) | [Checksum](2.6.0/OpenConcept-2.6.0-public.zip.sha256) |
+| 2.5.0 → 2.6.0 | [更新手順](2.6.0/README.md) | [Download](2.6.0/OpenConcept-2.6.0-upgrade-from-2.5.0.zip) | [Checksum](2.6.0/OpenConcept-2.6.0-upgrade-from-2.5.0.zip.sha256) |
+| 2.5.0 通常版 / Retained full release | [日本語・English](2.5.0/README.md) | [Download](2.5.0/OpenConcept-2.5.0-public.zip) | [Checksum](2.5.0/OpenConcept-2.5.0-public.zip.sha256) |
+| 2.4.1 → 2.5.0 | [更新手順](2.5.0/README.md) | [Download](2.5.0/OpenConcept-2.5.0-upgrade-from-2.4.1.zip) | [Checksum](2.5.0/OpenConcept-2.5.0-upgrade-from-2.4.1.zip.sha256) |
 
-新規設置には最新版2.6.0を使用してください。V2.4.1からは2.5.0、2.6.0の順に更新します。バージョン別のREADMEから、配布物に同梱された設置説明書・更新手順・リリースノートを参照できます。
+新規設置にはV2.6.1を使用してください。V2.4.1からは2.5.0、2.6.0、2.6.1の順に更新します。[V2.5.0の変更前ハッシュに関する説明](2.5.0/README.md)も確認してください。
 
-Use the latest 2.6.0 distribution for new installations. From V2.4.1, upgrade to 2.5.0 and then to 2.6.0. The version-specific README links to the setup guide, upgrade instructions, and release notes included in each distribution.
+Use V2.6.1 for new installations. Upgrade V2.4.1 through 2.5.0 and 2.6.0 to 2.6.1, noting the [V2.5.0 before-hash information](2.5.0/README.md).
 
-更新時はOpenConceptプロジェクトの`Dist/`以下から、手動または管理者が指示したバージョンの配布物を取得します。対象バージョンのフォルダーへ配置し、この一覧と[リポジトリ先頭の一覧](../README.md)を更新します。旧配布物は原則として置き換えますが、管理者の指定により2.4.1から2.5.0への更新版は保持します。2.5.0通常配布版は公開用リポジトリ外へ退避しました。このリポジトリで配布物を直接修正しません。
+配布物はOpenConceptの `Dist/` から `core/<version>/` へ配置し、[先頭のダウンロード一覧](../README.md)と揃えています。ZIP、SHA-256、manifest付き展開済みファイルを含みます。V2.5.0とV2.6.0の通常版も保持し、配布物をここで直接編集しません。
 
-For updates, copy distributions manually, or at the version requested by the maintainer, from the OpenConcept project's `Dist/` folder. Place them in the matching version directory and update this list and the [repository's main list](../README.md). Superseded distributions are normally replaced; the maintainer has requested retaining the upgrade from 2.4.1 to 2.5.0. The full 2.5.0 distribution has been archived outside this public repository. Do not edit distribution contents directly.
+Distributions are copied from OpenConcept's `Dist/` into `core/<version>/`, matching the [main download list](../README.md). Each includes a ZIP, checksum and unpacked files with a manifest. Full releases for V2.5.0 and V2.6.0 are retained; packaged contents are not edited here.

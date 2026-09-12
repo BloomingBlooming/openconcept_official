@@ -1,0 +1,27 @@
+{
+  "name": "zh-CN",
+  "messages": {
+    "state.queued": "等待处理",
+    "state.processing": "正在读取",
+    "state.review": "等待审核",
+    "state.registered": "已登记",
+    "state.unregistered": "数据未登记",
+    "replace": "替换",
+    "replaced": "文件已替换。",
+    "unavailable": "无法使用。请检查插件状态和访问权限。",
+    "failed": "处理失败。",
+    "details": "详情",
+    "empty": "没有可显示的项目。",
+    "item": "项目",
+    "actions": "操作",
+    "pagination": "分页",
+    "previous": "上一页",
+    "next": "下一页",
+    "progress": "进度",
+    "close": "关闭",
+    "loading": "正在加载…",
+    "notice": "通知",
+    "operationFailed": "无法完成操作，请稍后重试。",
+    "processing": "正在处理…"
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "English",
+    "messages": {
+        "plugin.name": "フロートNavi / Float Navi",
+        "plugin.description": "Displays page search and the tree in a movable, resizable window synchronized with the sidebar.",
+        "window.title": "Float Navi",
+        "window.menu": "Float Navi menu",
+        "window.closeTransparency": "Close transparency settings",
+        "menu.settings": "Settings",
+        "menu.transparency": "Transparency",
+        "menu.background": "Background mode",
+        "menu.light": "Light mode",
+        "menu.dark": "Dark mode",
+        "menu.back": "Back",
+        "window.transparency": "Background transparency",
+        "window.open": "Open Float Navi",
+        "window.close": "Close Float Navi",
+        "window.move": "Drag or use arrow keys to move the window",
+        "window.resize": "Drag or use arrow keys to resize the window"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "version": "2.6.1",
+    "artifacts": [
+        {
+            "package": "OpenConcept-2.6.1-public",
+            "zipSha256": "ce59bd53c649d756812fddbb5425122b7140c4e740cab94736ca09c63d88eefe",
+            "zipBytes": 1692283,
+            "fileCount": 303,
+            "manifestSha256": "9948fe4228fe283fc1b64fe10a7f4315c72ce091f79f44461ae0005df67a119d",
+            "allZipFilesVerified": true
+        },
+        {
+            "package": "OpenConcept-2.6.1-upgrade-from-2.6.0",
+            "zipSha256": "d4a5f6cde75f2e55dbbb64d23d48eff432e76114cf0f64f4663b6af5df20937e",
+            "zipBytes": 569661,
+            "fileCount": 45,
+            "manifestSha256": "e54d663f669231ff9079681c67743f33701db3259d77084f0af93c3ec8a2c676",
+            "allZipFilesVerified": true
+        }
+    ]
+}

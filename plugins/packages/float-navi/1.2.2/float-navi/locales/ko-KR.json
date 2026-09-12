@@ -1,0 +1,21 @@
+{
+    "name": "한국어",
+    "messages": {
+        "plugin.name": "フロートNavi / Float Navi",
+        "plugin.description": "페이지 검색과 트리를 사이드바와 동기화되는 이동 및 크기 조절 가능한 창에 표시합니다.",
+        "window.title": "Float Navi",
+        "window.menu": "Float Navi 메뉴",
+        "window.closeTransparency": "투명도 설정 닫기",
+        "menu.settings": "설정",
+        "menu.transparency": "투명도",
+        "menu.background": "배경 모드",
+        "menu.light": "라이트 모드",
+        "menu.dark": "다크 모드",
+        "menu.back": "뒤로",
+        "window.transparency": "배경 투명도",
+        "window.open": "Float Navi 열기",
+        "window.close": "Float Navi 닫기",
+        "window.move": "드래그하거나 방향키로 창 이동",
+        "window.resize": "드래그하거나 방향키로 창 크기 조절"
+    }
+}

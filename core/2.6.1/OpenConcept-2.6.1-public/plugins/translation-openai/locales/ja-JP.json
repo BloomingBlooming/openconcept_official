@@ -1,0 +1,9 @@
+{
+    "name": "日本語",
+    "messages": {
+        "plugin.name": "翻訳プロバイダー",
+        "plugin.description": "OpenAIまたはOpenAI互換APIをCoreの翻訳機能へ接続します。",
+        "provider.name": "翻訳プロバイダー",
+        "provider.description": "サーバーに設定されたプロバイダーで構造化テキストを翻訳します。"
+    }
+}

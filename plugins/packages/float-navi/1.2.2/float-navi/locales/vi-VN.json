@@ -1,0 +1,21 @@
+{
+    "name": "Tiếng Việt",
+    "messages": {
+        "plugin.name": "フロートNavi / Float Navi",
+        "plugin.description": "Hiển thị tìm kiếm trang và cây trang trong cửa sổ có thể di chuyển, đổi kích thước và đồng bộ với thanh bên.",
+        "window.title": "Float Navi",
+        "window.menu": "Menu Float Navi",
+        "window.closeTransparency": "Đóng cài đặt độ trong suốt",
+        "menu.settings": "Cài đặt",
+        "menu.transparency": "Độ trong suốt",
+        "menu.background": "Chế độ nền",
+        "menu.light": "Chế độ sáng",
+        "menu.dark": "Chế độ tối",
+        "menu.back": "Quay lại",
+        "window.transparency": "Độ trong suốt nền",
+        "window.open": "Mở Float Navi",
+        "window.close": "Đóng Float Navi",
+        "window.move": "Kéo hoặc dùng phím mũi tên để di chuyển cửa sổ",
+        "window.resize": "Kéo hoặc dùng phím mũi tên để đổi kích thước cửa sổ"
+    }
+}
