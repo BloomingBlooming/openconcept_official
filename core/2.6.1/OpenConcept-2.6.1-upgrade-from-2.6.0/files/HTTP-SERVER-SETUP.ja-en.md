@@ -15,7 +15,7 @@ RAG is not limited to vector search. Without PostgreSQL, published source and pe
 ## 1. 配布物からサーバーへの配置 / From distribution to server
 
 ```text
-dist/
+dist/core/
 ├── OpenConcept-2.6.1-public.zip          配布ZIP / Distribution archive
 ├── OpenConcept-2.6.1-public.zip.sha256   ZIP検証値 / Archive checksum
 └── OpenConcept-2.6.1-public/             展開済み配布物 / Unpacked distribution

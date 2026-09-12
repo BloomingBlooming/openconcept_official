@@ -6,7 +6,7 @@
     "target_version": "2.6.1",
     "product_version": "2.6.1",
     "source_public_manifest_sha256": "8342d8a858bc9e5e95a5b24df05a651385f104f6eb9584b21495c2df63e1e1f8",
-    "target_public_manifest_sha256": "9948fe4228fe283fc1b64fe10a7f4315c72ce091f79f44461ae0005df67a119d",
+    "target_public_manifest_sha256": "55fc2e2779e6f2459d8646677311405eef7ab43d64a1d1189d632fb536dc7385",
     "install_mode": "merge-files-no-delete",
     "database_schema_changed": false,
     "database_schema_transition": null,
@@ -19,8 +19,8 @@
             "operation": "replace",
             "from_sha256": "8377facf9920a86f1ce109db1df81c8e42ca17704d91be619d87c3f12237413d",
             "from_bytes": 37136,
-            "to_sha256": "af0202bb79677767bf3967e2c928d27e455f7d57b1a13f99093ac73568a98654",
-            "to_bytes": 37136,
+            "to_sha256": "7ea5801c672dd19b8e3a336eeb22c82b6379b27a29ac03d4ca8ec20a7ded5955",
+            "to_bytes": 37140,
             "package_path": "files/HTTP-SERVER-SETUP.ja-en.md",
             "install_action": "merge-overwrite-file"
         },
@@ -79,8 +79,8 @@
             "operation": "replace",
             "from_sha256": "b347aebfdfa241448641207cf1dc0d4fb2c270eb3f751784b778ce78729883ff",
             "from_bytes": 8286,
-            "to_sha256": "8f09d45523dceec8bff2fbde6ea248b82ede5435f096508dc6911f46e3503798",
-            "to_bytes": 8583,
+            "to_sha256": "6a4275844b0c60270bba4e740176c37e44fa09157575444f816dc7a0eebe0459",
+            "to_bytes": 8700,
             "package_path": "files/app/PluginCompatibility.php",
             "install_action": "merge-overwrite-file"
         },
@@ -189,8 +189,8 @@
             "operation": "replace",
             "from_sha256": "1f58e03da0a7ecd1baeb72536785c456c1fe7707f307d65fb15e81c0cc42841f",
             "from_bytes": 13672,
-            "to_sha256": "977efaaaef2cb701fab1037c0d455f7b62d2a51e8b57e4ba70f236d5bd2cccf8",
-            "to_bytes": 14262,
+            "to_sha256": "3443453f676e9c0249c8922c24936b1ffb14e26c696681d831a72665558b8990",
+            "to_bytes": 14914,
             "package_path": "files/docs/plugin-api-reference.md",
             "install_action": "merge-overwrite-file"
         },
@@ -219,8 +219,8 @@
             "operation": "add",
             "from_sha256": null,
             "from_bytes": null,
-            "to_sha256": "0f5b818b10bf73269a6885c07a6b27da25a4ac3b8c7aa57b7df91713aee460bd",
-            "to_bytes": 10001,
+            "to_sha256": "ec0d8b7c6bca2f4366c5376d63d7f240bf95c78c0709e4943dca65285b3b9b51",
+            "to_bytes": 10234,
             "package_path": "files/docs/release-notes-2.6.1.md",
             "install_action": "merge-overwrite-file"
         },
@@ -388,7 +388,7 @@
         }
     ],
     "file_count": 44,
-    "total_bytes": 2478058,
+    "total_bytes": 2479064,
     "files": [
         {
             "path": "LICENSE",
@@ -423,12 +423,12 @@
         {
             "path": "files/DISTRIBUTION-MANIFEST.json",
             "bytes": 58176,
-            "sha256": "9948fe4228fe283fc1b64fe10a7f4315c72ce091f79f44461ae0005df67a119d"
+            "sha256": "55fc2e2779e6f2459d8646677311405eef7ab43d64a1d1189d632fb536dc7385"
         },
         {
             "path": "files/HTTP-SERVER-SETUP.ja-en.md",
-            "bytes": 37136,
-            "sha256": "af0202bb79677767bf3967e2c928d27e455f7d57b1a13f99093ac73568a98654"
+            "bytes": 37140,
+            "sha256": "7ea5801c672dd19b8e3a336eeb22c82b6379b27a29ac03d4ca8ec20a7ded5955"
         },
         {
             "path": "files/README.md",
@@ -457,8 +457,8 @@
         },
         {
             "path": "files/app/PluginCompatibility.php",
-            "bytes": 8583,
-            "sha256": "8f09d45523dceec8bff2fbde6ea248b82ede5435f096508dc6911f46e3503798"
+            "bytes": 8700,
+            "sha256": "6a4275844b0c60270bba4e740176c37e44fa09157575444f816dc7a0eebe0459"
         },
         {
             "path": "files/app/PublicPageRenderer.php",
@@ -512,8 +512,8 @@
         },
         {
             "path": "files/docs/plugin-api-reference.md",
-            "bytes": 14262,
-            "sha256": "977efaaaef2cb701fab1037c0d455f7b62d2a51e8b57e4ba70f236d5bd2cccf8"
+            "bytes": 14914,
+            "sha256": "3443453f676e9c0249c8922c24936b1ffb14e26c696681d831a72665558b8990"
         },
         {
             "path": "files/docs/plugin-development.md",
@@ -527,8 +527,8 @@
         },
         {
             "path": "files/docs/release-notes-2.6.1.md",
-            "bytes": 10001,
-            "sha256": "0f5b818b10bf73269a6885c07a6b27da25a4ac3b8c7aa57b7df91713aee460bd"
+            "bytes": 10234,
+            "sha256": "ec0d8b7c6bca2f4366c5376d63d7f240bf95c78c0709e4943dca65285b3b9b51"
         },
         {
             "path": "files/locales/en-US.json",

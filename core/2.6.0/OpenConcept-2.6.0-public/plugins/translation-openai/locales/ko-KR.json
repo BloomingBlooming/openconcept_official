@@ -1,9 +1,0 @@
-{
-    "name": "한국어",
-    "messages": {
-        "plugin.name": "번역 제공자",
-        "plugin.description": "OpenAI 또는 OpenAI 호환 API를 Core 번역 기능에 연결합니다.",
-        "provider.name": "번역 제공자",
-        "provider.description": "서버에 구성된 제공자로 구조화된 텍스트 구간을 번역합니다."
-    }
-}

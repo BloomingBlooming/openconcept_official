@@ -19,8 +19,11 @@
 | database-mysql-adapter | 1.1.8 |
 | database-postgresql-adapter | 1.5.1 |
 | drawing-manager | 0.9.2 |
+| float-navi | 1.0.0 |
 | translation-openai | 1.0.0 |
 | voice-conversation | 0.15.1 |
+
+フロートNaviの最新版1.2.2はOpenConcept V2.5.0以降に対応し、1.0.0以降の既存版も引き続き使用できる。公開済みV2.5.0／V2.6.0で「最低対応版の登録なし」と表示される場合は、本体側の登録が未反映のため、V2.6.1への更新、または使用中の版に合う[フロートNavi互換パッチ](https://github.com/BloomingBlooming/openconcept_official/blob/main/plugins/packages/float-navi/1.2.2/README.md)を適用する。V2.6.1では追加の互換パッチは不要。プラグインの再インストールだけでは本体の登録一覧は更新されない。
 
 新規IDも既存IDも、必要APIのmajor・最低版・能力を照合する。API要件を宣言しない従来のHookプラグインも利用できる。本体のバージョンごとの最低版表がないことだけを理由に起動を拒否しない。IDの形式、フォルダー名との一致、Coreが予約したID、宣言ファイルの検証は継続する。
 

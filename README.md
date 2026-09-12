@@ -1,8 +1,8 @@
 # OpenConcept 公式配布 / Official Distribution
 
-OpenConcept本体と公式プラグインの公開用フォルダです。最新の本体配布物は **V2.6.1** です。V2.5.0とV2.6.0の通常版・更新版も継続掲載しています。
+OpenConcept本体と公式プラグインの公開用フォルダです。最新の本体配布物は **V2.6.1** です。V2.6.0の通常版は、プラグインID制限の不具合により配布を停止しました。既存V2.6.0からはV2.6.1への更新版を使用してください。
 
-This repository holds OpenConcept and official plugin distributions. The latest application release is **V2.6.1**. Full releases and upgrades for V2.5.0 and V2.6.0 also remain available.
+This repository holds OpenConcept and official plugin distributions. The latest application release is **V2.6.1**. The full V2.6.0 release has been withdrawn because of its plugin ID restriction defect. Existing V2.6.0 installations should use the upgrade to V2.6.1.
 
 公式公開先 / Official repository: [BloomingBlooming/openconcept_official](https://github.com/BloomingBlooming/openconcept_official).
 
@@ -12,12 +12,13 @@ This repository holds OpenConcept and official plugin distributions. The latest 
 | --- | --- | --- | --- |
 | 2.6.1（新規設置 / New installation） | [OpenConcept 2.6.1 ZIP](core/2.6.1/OpenConcept-2.6.1-public.zip) | [SHA-256](core/2.6.1/OpenConcept-2.6.1-public.zip.sha256) | [日本語・English](core/2.6.1/README.md) |
 | 2.6.0 → 2.6.1（更新 / Upgrade） | [Upgrade ZIP](core/2.6.1/OpenConcept-2.6.1-upgrade-from-2.6.0.zip) | [SHA-256](core/2.6.1/OpenConcept-2.6.1-upgrade-from-2.6.0.zip.sha256) | [更新手順](core/2.6.1/OpenConcept-2.6.1-upgrade-from-2.6.0/README.ja-en.md) |
-| 2.6.0（継続掲載 / Retained full release） | [OpenConcept 2.6.0 ZIP](core/2.6.0/OpenConcept-2.6.0-public.zip) | [SHA-256](core/2.6.0/OpenConcept-2.6.0-public.zip.sha256) | [日本語・English](core/2.6.0/README.md) |
 | 2.5.0 → 2.6.0（中間更新 / Intermediate upgrade） | [Upgrade ZIP](core/2.6.0/OpenConcept-2.6.0-upgrade-from-2.5.0.zip) | [SHA-256](core/2.6.0/OpenConcept-2.6.0-upgrade-from-2.5.0.zip.sha256) | [更新手順](core/2.6.0/OpenConcept-2.6.0-upgrade-from-2.5.0/README.ja-en.md) |
 | 2.5.0（継続掲載 / Retained full release） | [OpenConcept 2.5.0 ZIP](core/2.5.0/OpenConcept-2.5.0-public.zip) | [SHA-256](core/2.5.0/OpenConcept-2.5.0-public.zip.sha256) | [日本語・English](core/2.5.0/README.md) |
 | 2.4.1 → 2.5.0（継続掲載 / Retained upgrade） | [Upgrade ZIP](core/2.5.0/OpenConcept-2.5.0-upgrade-from-2.4.1.zip) | [SHA-256](core/2.5.0/OpenConcept-2.5.0-upgrade-from-2.4.1.zip.sha256) | [更新手順](core/2.5.0/OpenConcept-2.5.0-upgrade-from-2.4.1/README.ja-en.md) |
 
 V2.6.1にはアプリ全体のダークモード、カバー13種類（なしを含む）・アイコン96種類、受信トレイ下の三点アイコンによるAI検索・記録と履歴の開閉を含みます。ページ状態の一括変更、ツリー表示、履歴のページ送り、プラグイン管理の改善もまとめました。[リリースノート](core/2.6.1/OpenConcept-2.6.1-public/docs/release-notes-2.6.1.md)と[配布案内](core/2.6.1/README.md)をご覧ください。
+
+本体の新規プラグインID制限解除、有効化前の警告、フロートNaviの最低対応プラグイン版1.0.0の登録を含みます。フロートNavi最新版1.2.2は、V2.6.1では追加の本体互換パッチなしで有効化できます。
 
 V2.6.1 adds dark mode, 13 cover choices including No cover, 96 icons, and the three-dot toggle below Inbox for AI search and Records and history. It also includes bulk page status changes, improved tree display, history pagination and plugin management. See the [release notes](core/2.6.1/OpenConcept-2.6.1-public/docs/release-notes-2.6.1.md) and [distribution guide](core/2.6.1/README.md).
 
@@ -33,7 +34,7 @@ openconcept_official/
 ├── core/
 │   ├── README.md
 │   ├── 2.5.0/       通常版・2.4.1からの更新版 / Full release and upgrade
-│   ├── 2.6.0/       通常版・2.5.0からの更新版 / Full release and upgrade
+│   ├── 2.6.0/       2.5.0からの中間更新版のみ / Intermediate upgrade only
 │   └── 2.6.1/       最新の通常版・更新版 / Latest full release and upgrade
 │       ├── README.md
 │       ├── OpenConcept-2.6.1-public.zip, .zip.sha256
@@ -50,9 +51,9 @@ openconcept_official/
         └── drawing-manager/0.9.3/
 ```
 
-本体はOpenConceptプロジェクトの `Dist/core/`、個別プラグインは `Dist/plugins/<plugin-id>/<version>/` で生成・検証した配布物を配置します。ZIP、チェックサム、manifest、展開済みファイルを揃えています。V2.5.0とV2.6.0は、通常版と中間更新版の両方を継続掲載します。配布物の内容はここで直接編集しません。
+本体はOpenConceptプロジェクトの `Dist/core/`、個別プラグインは `Dist/plugins/<plugin-id>/<version>/` で生成・検証した配布物を配置します。ZIP、チェックサム、manifest、展開済みファイルを揃えています。V2.5.0通常版と旧環境からの中間更新版は継続掲載します。V2.6.0通常版のZIP・チェックサム・展開済みファイルは公開対象から削除しました。配布物の内容はここで直接編集しません。
 
-Application distributions are generated and verified in the OpenConcept project's `Dist/core/` directory; standalone plugins come from `Dist/plugins/<plugin-id>/<version>/`. ZIPs, checksums, manifests and unpacked files are kept consistent. Full releases and intermediate upgrades for V2.5.0 and V2.6.0 remain available. Packaged contents are not edited here.
+Application distributions are generated and verified in the OpenConcept project's `Dist/core/` directory; standalone plugins come from `Dist/plugins/<plugin-id>/<version>/`. ZIPs, checksums, manifests and unpacked files are kept consistent. The V2.5.0 full release and intermediate upgrades remain available. The full V2.6.0 ZIP, checksum and unpacked files have been removed from the published tree. Packaged contents are not edited here.
 
 Dist内のフォルダー整理により取得元のパスが変わりました。公開用リポジトリの配置とダウンロードURLは維持しています。同梱説明書に旧生成先が記載されている場合は、上記の取得元に読み替えてください。
 

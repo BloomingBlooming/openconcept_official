@@ -19,6 +19,7 @@ This release includes all changes through V2.6.1, with a full installation packa
 - 受信トレイ下の三点アイコンで「AI検索」「記録と履歴」を開閉。初期状態は非表示です。
 - ページツリーの状態マークとツールチップ、フォルダー配下の状態一括変更、履歴のページ送り、プラグイン有効化の確認と新規IDへの対応を含みます。
 - フロートNavi 1.2.2は個別配布です。左ツリーとの同期、移動・サイズ変更、透過、背景モード、AI検索より手前への表示に対応します。
+- フロートNaviの最低対応版1.0.0の登録を含みます。V2.6.1では最新版1.2.2をそのまま有効化でき、追加の本体互換パッチは不要です。図面管理の個別配布最新版は0.9.3です。
 
 Adds browser-persisted dark mode, 13 cover choices including No cover, 96 icons in four groups, and the three-dot navigation toggle below Inbox. Also includes page status marks and tooltips, bulk status changes for descendants, history pagination, and improved plugin activation. Float Navi 1.2.2 is a separate optional plugin with synchronized floating navigation, transparency, background modes, and display above AI search.
 
@@ -38,4 +39,4 @@ For a new installation, extract the public ZIP and follow its setup guide, norma
 
 ZIPは隣接する `.sha256`、展開済みファイルは[本体manifest](OpenConcept-2.6.1-public/DISTRIBUTION-MANIFEST.json)と[更新manifest](OpenConcept-2.6.1-upgrade-from-2.6.0/UPGRADE-MANIFEST.json)で確認できます。全ファイルのサイズ・SHA-256・ZIPとの一致、新規設置とV2.6.0からの更新を検証済みです。
 
-Verify ZIPs with the adjacent `.sha256` files and unpacked contents with the manifests. File sizes, hashes, ZIP contents, new installation and the V2.6.0 upgrade have been verified. Distribution files are generated in the OpenConcept project's `Dist/` directory.
+Verify ZIPs with the adjacent `.sha256` files and unpacked contents with the manifests. File sizes, hashes, ZIP contents, new installation and the V2.6.0 upgrade have been verified. Distribution files are generated in the OpenConcept project's `Dist/core/` directory.

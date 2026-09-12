@@ -9,7 +9,7 @@
         "OpenConcept.png: optional text, XMP, EXIF, and timestamp metadata removed"
     ],
     "file_count": 302,
-    "total_bytes": 10014778,
+    "total_bytes": 10015784,
     "files": [
         {
             "path": ".dockerignore",
@@ -28,8 +28,8 @@
         },
         {
             "path": "HTTP-SERVER-SETUP.ja-en.md",
-            "bytes": 37136,
-            "sha256": "af0202bb79677767bf3967e2c928d27e455f7d57b1a13f99093ac73568a98654"
+            "bytes": 37140,
+            "sha256": "7ea5801c672dd19b8e3a336eeb22c82b6379b27a29ac03d4ca8ec20a7ded5955"
         },
         {
             "path": "LICENSE",
@@ -463,8 +463,8 @@
         },
         {
             "path": "app/PluginCompatibility.php",
-            "bytes": 8583,
-            "sha256": "8f09d45523dceec8bff2fbde6ea248b82ede5435f096508dc6911f46e3503798"
+            "bytes": 8700,
+            "sha256": "6a4275844b0c60270bba4e740176c37e44fa09157575444f816dc7a0eebe0459"
         },
         {
             "path": "app/PluginDetachment.php",
@@ -823,8 +823,8 @@
         },
         {
             "path": "docs/plugin-api-reference.md",
-            "bytes": 14262,
-            "sha256": "977efaaaef2cb701fab1037c0d455f7b62d2a51e8b57e4ba70f236d5bd2cccf8"
+            "bytes": 14914,
+            "sha256": "3443453f676e9c0249c8922c24936b1ffb14e26c696681d831a72665558b8990"
         },
         {
             "path": "docs/plugin-development.md",
@@ -843,8 +843,8 @@
         },
         {
             "path": "docs/release-notes-2.6.1.md",
-            "bytes": 10001,
-            "sha256": "0f5b818b10bf73269a6885c07a6b27da25a4ac3b8c7aa57b7df91713aee460bd"
+            "bytes": 10234,
+            "sha256": "ec0d8b7c6bca2f4366c5376d63d7f240bf95c78c0709e4943dca65285b3b9b51"
         },
         {
             "path": "export.php",
