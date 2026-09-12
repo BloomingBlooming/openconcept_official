@@ -1,5 +1,9 @@
 # 本体のバージョン別配布 / Versioned Application Distributions
 
+2026-09-12、履歴表示・検索改善を含む2.6.1へ通常版と更新版を差し替えました。全文保存は維持します。既存2.6.1の更新方法は[配布案内](2.6.1/README.md)を参照し、ZIPのSHA-256で今回の配布物を確認してください。
+
+The full and upgrade packages were refreshed on 2026-09-12 with history display and search improvements, retaining full snapshots and version 2.6.1. See the [distribution guide](2.6.1/README.md) for refreshing an existing 2.6.1 installation, and identify these packages by their SHA-256 checksums.
+
 最新版は **V2.6.1** です。通常版とV2.6.0からの更新版を掲載しています。V2.6.0通常版はプラグインID制限の不具合により配布を停止しました。V2.5.0とV2.6.0は旧環境からの中間更新版だけを保持しています。
 
 The latest version is **V2.6.1**, available as a full installation and an upgrade from V2.6.0. The full V2.6.0 release has been withdrawn because of its plugin ID restriction defect. Only intermediate upgrades remain available for V2.5.0 and V2.6.0.

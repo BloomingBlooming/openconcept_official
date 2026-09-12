@@ -2,6 +2,8 @@
 
 最新版 / Latest: **v2.6.1**
 
+2026-09-12 履歴表示・検索改善版 / History display and search refresh. バージョン番号は2.6.1を維持しています。
+
 これまでの変更をまとめた通常配布版と、V2.6.0からの更新版です。
 
 This release includes all changes through V2.6.1, with a full installation package and an upgrade from V2.6.0.
@@ -12,6 +14,11 @@ This release includes all changes through V2.6.1, with a full installation packa
 | V2.6.0から更新 / Upgrade from V2.6.0 | [Upgrade ZIP](OpenConcept-2.6.1-upgrade-from-2.6.0.zip) | [Checksum](OpenConcept-2.6.1-upgrade-from-2.6.0.zip.sha256) | [更新手順 / Instructions](OpenConcept-2.6.1-upgrade-from-2.6.0/README.ja-en.md) |
 
 ## 主な変更 / Changes
+
+- ページの全文保存を維持し、同じページの保存履歴をまとめて表示。展開すると各保存版を開けます。本文・アイコン・カバー等の変更点も表示します。
+- 履歴検索は続きの記録まで取得し、中断後の再開に対応。AI検索では重複本文を整理し、その後ろにある別の内容も検索対象にします。
+
+Full page snapshots are retained. History results group matching versions by page, show changes between saved states, and continue searching beyond the old limits. Interrupted searches can resume, and AI retrieval no longer lets repeated page text hide later distinct records.
 
 - 設定 → 一般の最後尾にアプリ全体のライト／ダークモードを追加。ブラウザーに保存します。
 - カバーサンプルの表示を修正し、黒・濃い青系・原色の赤／青／黄色を追加。「なし」を含め13種類です。
@@ -26,6 +33,10 @@ Adds browser-persisted dark mode, 13 cover choices including No cover, 96 icons 
 [リリースノート / Release notes](OpenConcept-2.6.1-public/docs/release-notes-2.6.1.md) · [外観と左メニュー / Appearance and navigation](OpenConcept-2.6.1-public/docs/dark-mode-2.6.1.md) · [日本語操作説明書 / Operation manual](OpenConcept-2.6.1-public/docs/openconcept-operation-manual.ja.md) · [配布物情報 / Artifact metadata](OpenConcept-2.6.1-artifacts.json)
 
 ## 設置・更新 / Installation and upgrade
+
+既存の2.6.1にも、今回の更新ZIPの `files/` を手動で結合して適用できます。環境全体のバックアップと書き込み停止、独自改修の確認、データ・設定の保持は以下と同じです。番号が同じため、新版通知ではなくZIPのSHA-256とリリースノートで識別してください。更新manifestの元版・変更前ハッシュは2.6.0用のままであり、2.6.1への自動適用の事前条件には使用しません。
+
+Existing 2.6.1 installations may manually merge this refreshed upgrade's `files/`, preserving runtime data and configuration and reviewing customizations. Identify the refresh by its SHA-256 and release notes; the version number is unchanged. The manifest's source version and before-hashes still describe 2.6.0, not an automatic same-version upgrade.
 
 新規設置は本体ZIPを展開し、同梱の設置手順に従います。通常のDocument Rootはアプリ内の `public/` です。
 

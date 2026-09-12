@@ -1,5 +1,13 @@
 # OpenConcept 2.6.0 → 2.6.1
 
+2026-09-12 履歴表示・検索改善版。全文履歴を保持したまま、ページ単位の表示・保存状態の比較・検索の継続と再開・AI候補の重複整理を追加しました。バージョン番号は2.6.1です。
+
+History display and search refresh, 2026-09-12. Full snapshots are preserved, with grouped history, saved-state comparisons, resumable search, and duplicate handling in AI retrieval. The version remains 2.6.1.
+
+既存2.6.1へ今回の改善だけを取り込む場合も、以下の停止・バックアップ・独自改修確認を行い `files/` を手動で結合できます。manifestの元版・変更前ハッシュは2.6.0を基準としているため、2.6.1への自動適用の事前条件には使いません。同じ版番号の配布物はZIPのSHA-256とリリースノートで識別してください。
+
+For an existing 2.6.1 installation, manually merge `files/` after the same backup, pause and customization review described below. The manifest's source version and before-hashes describe 2.6.0 and must not be used as automatic preconditions for 2.6.1. Distinguish same-version releases by the ZIP SHA-256 and release notes.
+
 アプリのダークモード（設定 → 一般の最後尾）、カバー13種類（なしを含む）・アイコン96種類、カバーサンプルの表示修正、受信トレイ下の三点アイコンによるAI検索・記録と履歴の開閉も含みます。フロートNaviの透過・背景モード・AI検索より手前への表示は、個別プラグイン1.2.2で利用できます。既存のフロートNaviは別途更新してください。
 
 Also includes app-wide dark mode at the end of Settings → General, 13 cover choices including No cover, 96 icons, corrected cover swatches, and the three-dot toggle below Inbox. Float Navi's transparency, background modes and display above AI search are provided by the separately updated Float Navi 1.2.2 plugin.

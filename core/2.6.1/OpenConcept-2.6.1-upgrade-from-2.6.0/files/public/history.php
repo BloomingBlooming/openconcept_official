@@ -10,6 +10,13 @@ foreach (['title','description','back','search','question','from','to','dateBasi
     $historyLabels[$key] = $i18n->translate('knowledge.' . $key, [], $historyLocale);
 }
 $h = static fn(string $value): string => htmlspecialchars($value, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+foreach (['matchingVersions','savedVersion','sameBody','scanning','searchFinished','searchProgress','searchIncomplete','resumeSearch','changes','compareCurrent','compareNext','previousVersion','nextVersion','bodyChanged','bodyUnchanged','noRecordedChanges','comparisonPartial','compareBody','before','after','snapshotExplanation',
+    'field_title','field_icon','field_cover','field_blocks_json','field_status','field_category','field_manual_tags_json','field_visibility','field_access_department','field_comments_enabled','field_language_code','field_parent_id','field_sort_order','field_translation_status'] as $key) {
+    $historyLabels[$key] = $i18n->translate('knowledge.' . $key, [], $historyLocale);
+}
+foreach (['none','mint','blue','sand','coral','lavender','night','black','navy','midnight','red','primary-blue','yellow'] as $cover) {
+    $historyLabels['cover_' . $cover] = $i18n->translate('page.cover.' . $cover, [], $historyLocale);
+}
 $historyBoot = ['csrf' => $_SESSION['csrf'], 'labels' => $historyLabels, 'admin' => $historyUser['role'] === 'admin',
     'waf' => wafCompatibilitySettings($pdo, true)];
 $historyAssetVersions = [];

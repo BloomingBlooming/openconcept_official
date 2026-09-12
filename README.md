@@ -6,6 +6,10 @@ This repository holds OpenConcept and official plugin distributions. The latest 
 
 公式公開先 / Official repository: [BloomingBlooming/openconcept_official](https://github.com/BloomingBlooming/openconcept_official).
 
+**2026-09-12 履歴表示・検索改善版を、2.6.1のまま再公開しました。** 全文履歴を保持し、同じページの保存版をまとめて表示します。保存状態の比較、履歴検索の継続・再開、AI検索での重複本文の整理を含みます。既存2.6.1へ適用する場合も[配布案内](core/2.6.1/README.md)の手動更新手順を使用してください。同じバージョン番号のため、ZIPのSHA-256とリリースノートで識別します。
+
+**History display and search refresh, 2026-09-12, still version 2.6.1.** Full snapshots are retained, with grouped saved versions, state comparisons, resumable history searches and duplicate handling in AI retrieval. Existing 2.6.1 installations can follow the manual refresh steps in the [distribution guide](core/2.6.1/README.md). Identify this refresh by its ZIP SHA-256 and release notes.
+
 ## 本体ダウンロード / Application downloads
 
 | バージョン / Version | ダウンロード / Download | 検証値 / Checksum | 説明書 / Guide |

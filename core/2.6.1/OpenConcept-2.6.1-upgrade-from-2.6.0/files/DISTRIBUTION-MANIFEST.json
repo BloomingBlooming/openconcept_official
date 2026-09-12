@@ -8,8 +8,8 @@
     "sanitizations": [
         "OpenConcept.png: optional text, XMP, EXIF, and timestamp metadata removed"
     ],
-    "file_count": 302,
-    "total_bytes": 10015784,
+    "file_count": 303,
+    "total_bytes": 10066767,
     "files": [
         {
             "path": ".dockerignore",
@@ -348,13 +348,13 @@
         },
         {
             "path": "app/KnowledgeHistoryController.php",
-            "bytes": 7280,
-            "sha256": "30accb0f25aef5b8b0c79352859667ad5ca3a63599094cfdf5d75f84b033170e"
+            "bytes": 7286,
+            "sha256": "082ec91da81618ab0bc348ad9f0da5a068c896bbdb218c169d52db0e3e7662f2"
         },
         {
             "path": "app/KnowledgeHistoryService.php",
-            "bytes": 19262,
-            "sha256": "5a2b53f59a8d2dc682f84b12c0cbf0675435aa1c08aece9c1b55b92918014797"
+            "bytes": 29266,
+            "sha256": "9f3b6a7de7a4ddc8d4ff45f8fbbeb63ba26ab79e179bd1ca6c93ba6cd26bf0c6"
         },
         {
             "path": "app/KnowledgePortableArchive.php",
@@ -368,8 +368,8 @@
         },
         {
             "path": "app/KnowledgeSearchBridge.php",
-            "bytes": 4149,
-            "sha256": "57d8d5938f5ad1d673dd1f99a679bebea42724bec06f22c84e1ce951fd17033c"
+            "bytes": 6359,
+            "sha256": "4149250579819d6713245f4e28d137c50cb0ec14542d532fb355b5595ebfb4d3"
         },
         {
             "path": "app/KnowledgeSnapshotProvider.php",
@@ -398,8 +398,8 @@
         },
         {
             "path": "app/OpenAIClient.php",
-            "bytes": 46506,
-            "sha256": "1b00ab4a6209d266eb0d3d3b9db248b10fe6151600211706a6c9224aae8971ec"
+            "bytes": 46711,
+            "sha256": "b24bc538c48e0d62f560a1c0ff3b07b12b954dccfa3b1de8a7bc419495088175"
         },
         {
             "path": "app/OpenAiCompatibleChatProvider.php",
@@ -678,13 +678,13 @@
         },
         {
             "path": "assets/knowledge-history.css",
-            "bytes": 4463,
-            "sha256": "32fa98a339b9b27803078490619c8d6326e095d42376433ef07cdfb4bfff1bd6"
+            "bytes": 5438,
+            "sha256": "77d2b69973116a90adb75250d6edb0684f1b267cdf7cd92a594c82b4b657bbb5"
         },
         {
             "path": "assets/knowledge-history.js",
-            "bytes": 14182,
-            "sha256": "843f237fe2ab503526835638694a0fc54632acb0ed5676669fc0ba7119ddc3c5"
+            "bytes": 21588,
+            "sha256": "1daa22b6d14fdf22aa6185f96124b855b74e31e3a51978956a8a55c82aa55b5e"
         },
         {
             "path": "assets/plugin-api.js",
@@ -808,8 +808,13 @@
         },
         {
             "path": "docs/knowledge-history-2.6.0.md",
-            "bytes": 3003,
-            "sha256": "8c4a67fcada05aa7abca14b0d89ce0240e836594dbf4dca5c472b5a50eddd8d9"
+            "bytes": 3155,
+            "sha256": "bebf8dd8da91a15687484cfadc1b9830df6a8e13817835217c6c48d2115646d8"
+        },
+        {
+            "path": "docs/knowledge-history-display-and-search.md",
+            "bytes": 5831,
+            "sha256": "d49ca8a1d5815aa60a93ab45bf0346d33b61e23bf20ae4dd5214a53bdce9d0ec"
         },
         {
             "path": "docs/nginx.conf",
@@ -843,8 +848,8 @@
         },
         {
             "path": "docs/release-notes-2.6.1.md",
-            "bytes": 10234,
-            "sha256": "ec0d8b7c6bca2f4366c5376d63d7f240bf95c78c0709e4943dca65285b3b9b51"
+            "bytes": 12352,
+            "sha256": "5509c26232322ba76f7348e1eddf090c506208e3c01ca1ad2b32b31e6a690fba"
         },
         {
             "path": "export.php",
@@ -888,18 +893,18 @@
         },
         {
             "path": "locales/en-US.json",
-            "bytes": 69016,
-            "sha256": "558fedb0a4650cc8d742d7f19c9cd5b281b1c30ec5ad629599e7abc64ae5a766"
+            "bytes": 71432,
+            "sha256": "e68bd17f183e3ee23b695e38a9733f5589f36044a62923b92d6b5bcfcbf1a4f6"
         },
         {
             "path": "locales/ja-JP.json",
-            "bytes": 78908,
-            "sha256": "aa9538e0939443d94b9519576911fa3291f89693948ceff64a03913552898088"
+            "bytes": 81556,
+            "sha256": "8ac33758842df18e1167ef4496ee8fef8f86f77e96b71a5b425aa037d6fa8432"
         },
         {
             "path": "locales/ko-KR.json",
-            "bytes": 77015,
-            "sha256": "04ca1bd6b975a7c109507ee82ce51e00e6e0ab50e8c01c3d3973087c0a40c48c"
+            "bytes": 79592,
+            "sha256": "bd7e73ff3118d2fe99e8dac0d9d4748258547772b9df0fe26d0e8d5e3fa5b01d"
         },
         {
             "path": "locales/plugin-api/en-US.json",
@@ -953,13 +958,13 @@
         },
         {
             "path": "locales/vi-VN.json",
-            "bytes": 79128,
-            "sha256": "323f8fda5bac3aff829c887a03817fa055a6eb28b8cd7709bcc44712fce30183"
+            "bytes": 81869,
+            "sha256": "040eb64d79d99ad7618294bdd9f8d9f959c3ad7117c715112057af2282bb5002"
         },
         {
             "path": "locales/zh-CN.json",
-            "bytes": 66683,
-            "sha256": "abfc1c8727067084c142d31c58459a8e51cf7bf4886fd51c303b205fcceb0da5"
+            "bytes": 69049,
+            "sha256": "76145d705db501a81213c0caa97278e6b598ac5d96848aa26cb7398456ed5c53"
         },
         {
             "path": "plugin-api-js.php",
@@ -1383,13 +1388,13 @@
         },
         {
             "path": "public/assets/knowledge-history.css",
-            "bytes": 4463,
-            "sha256": "32fa98a339b9b27803078490619c8d6326e095d42376433ef07cdfb4bfff1bd6"
+            "bytes": 5438,
+            "sha256": "77d2b69973116a90adb75250d6edb0684f1b267cdf7cd92a594c82b4b657bbb5"
         },
         {
             "path": "public/assets/knowledge-history.js",
-            "bytes": 14182,
-            "sha256": "843f237fe2ab503526835638694a0fc54632acb0ed5676669fc0ba7119ddc3c5"
+            "bytes": 21588,
+            "sha256": "1daa22b6d14fdf22aa6185f96124b855b74e31e3a51978956a8a55c82aa55b5e"
         },
         {
             "path": "public/assets/plugin-api.js",
@@ -1418,8 +1423,8 @@
         },
         {
             "path": "public/history.php",
-            "bytes": 6078,
-            "sha256": "04e77e3e80a9fac85d6a31ac584d543d91d453ceb3b839718fe941e75b1af926"
+            "bytes": 7025,
+            "sha256": "f8a1d15fb7355de34a7d32a681bca4bdc4aef44969f18b2dedd3dd6effff55e0"
         },
         {
             "path": "public/index.php",

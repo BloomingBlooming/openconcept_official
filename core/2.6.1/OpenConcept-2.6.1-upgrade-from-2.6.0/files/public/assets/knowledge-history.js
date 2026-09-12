@@ -21,6 +21,10 @@
     let searchLoading = false;
     let searchGeneration = 0;
     let recordGeneration = 0;
+    let scannedRows = null;
+    let resultGroups = [];
+    let scanCursor = null;
+    let scanComplete = true;
     const element = (tag, value, className) => {
         const node = document.createElement(tag);
         if (value !== undefined) node.textContent = String(value);
@@ -77,15 +81,82 @@
         nextButtons.forEach(node => { node.disabled = searchLoading || nextOffset === null; });
         results.setAttribute('aria-busy', String(searchLoading));
     }
+    function appearance(row) {
+        const value = row.appearance || {};
+        return [value.icon ? `${t('field_icon')}: ${value.icon}` : '', value.cover ? `${t('field_cover')}: ${t('cover_' + value.cover)}` : ''].filter(Boolean).join(' · ');
+    }
+    function cardFor(row) {
+        const card = element('article', undefined, 'knowledge-card');
+        card.append(element('span', t(row.type), 'knowledge-type'), recordLink(row.reference, (row.type === 'relation' ? t(row.kind) : row.title) || t(row.type)),
+            element('p', row.excerpt), element('small', `${t('sourceTime')}: ${row.occurred_at || t('unknown')} · ${t('captureTime')}: ${row.recorded_at || t('unknown')}`));
+        if (row.versions) {
+            const versions = element('details', undefined, 'knowledge-versions');
+            versions.append(element('summary', t('matchingVersions', { count: row.versions.length, bodies: new Set(row.versions.map(item => item.content_hash)).size })));
+            let previousHash = null;
+            for (const version of row.versions) {
+                const item = element('div', undefined, 'knowledge-version');
+                item.append(recordLink(version.reference, t('savedVersion', { id: version.id || version.reference.split(':')[1] })),
+                    element('small', `${t('captureTime')}: ${version.recorded_at || t('unknown')}`), element('small', appearance(version)));
+                if (version.content_hash !== previousHash) item.append(element('p', version.excerpt));
+                else item.append(element('small', t('sameBody')));
+                previousHash = version.content_hash;
+                versions.append(item);
+            }
+            card.append(versions);
+        }
+        return card;
+    }
+    function regroup(criteria) {
+        const basis = criteria.date_basis || 'recorded_at';
+        const rows = [...scannedRows.values()].sort((a, b) => String(a[basis] || '9999').localeCompare(String(b[basis] || '9999'))
+            || String(a.conversation_key || '').localeCompare(String(b.conversation_key || ''))
+            || (a.sequence || 0) - (b.sequence || 0) || a.reference.localeCompare(b.reference, undefined, { numeric: true }));
+        const groups = new Map();
+        for (const row of rows) {
+            const key = row.type === 'page_revision' ? `page:${row.page_id}` : row.reference;
+            if (groups.has(key)) groups.get(key).versions.push(row);
+            else groups.set(key, row.type === 'page_revision' ? { ...row, versions: [row] } : row);
+        }
+        resultGroups = [...groups.values()];
+    }
+    function renderScanned(offset, limit) {
+        currentOffset = offset >= resultGroups.length ? 0 : offset;
+        currentLimit = limit; matchedCount = resultGroups.length;
+        const visible = resultGroups.slice(currentOffset, currentOffset + limit);
+        displayedCount = visible.length; nextOffset = currentOffset + limit < matchedCount ? currentOffset + limit : null;
+        results.replaceChildren(...visible.map(cardFor));
+        if (!visible.length) results.append(element('p', t(scanComplete ? 'empty' : 'scanning')));
+        pageSize.value = String(limit); updatePagination();
+    }
+    async function collectScanned(data, criteria, generation, limit) {
+        for (;;) {
+            if (generation !== searchGeneration) return;
+            for (const row of data.items) scannedRows.set(row.reference, row);
+            scanCursor = data.scan_cursor; scanComplete = data.complete === true;
+            regroup(criteria); renderScanned(0, limit);
+            setStatus(t(scanComplete ? 'searchFinished' : 'searchProgress', { count: scannedRows.size, groups: resultGroups.length }));
+            if (scanComplete) return;
+            data = await request('knowledge-search', undefined, { ...criteria, scan: '1', cursor: scanCursor, limit: 500 });
+        }
+    }
     async function search(offset = 0, criteria = filters(), scrollToList = false) {
         const generation = ++searchGeneration;
         const limit = [10, 25, 50].includes(Number(pageSize.value)) ? Number(pageSize.value) : 10;
         // A new filter starts at page one, even when submitted during navigation.
         if (JSON.stringify(criteria) !== JSON.stringify(appliedFilters)) offset = 0;
+        if (scrollToList && scannedRows !== null && JSON.stringify(criteria) === JSON.stringify(appliedFilters)) {
+            renderScanned(offset, limit); listControls.scrollIntoView({ block: 'start' }); pageSummaries[0].focus({ preventScroll: true }); return;
+        }
         searchLoading = true; updatePagination(); setStatus(t('busy'));
         try {
-            let data = await request('knowledge-search', undefined, { ...criteria, offset, limit });
+            let data = await request('knowledge-search', undefined, { ...criteria, offset, limit, scan: '1' });
             if (generation !== searchGeneration) return;
+            if (Object.hasOwn(data, 'scan_cursor')) {
+                scannedRows = new Map(); appliedFilters = { ...criteria };
+                await collectScanned(data, criteria, generation, limit);
+                return;
+            }
+            scannedRows = null;
             // Permissions or filters can reduce the available records between requests.
             if (offset > 0 && !data.items.length) {
                 offset = 0;
@@ -93,12 +164,7 @@
                 if (generation !== searchGeneration) return;
             }
             results.replaceChildren();
-            for (const row of data.items) {
-                const card = element('article', undefined, 'knowledge-card');
-                card.append(element('span', t(row.type), 'knowledge-type'), recordLink(row.reference, (row.type === 'relation' ? t(row.kind) : row.title) || t(row.type)),
-                    element('p', row.excerpt), element('small', `${t('sourceTime')}: ${row.occurred_at || t('unknown')} · ${t('captureTime')}: ${row.recorded_at || t('unknown')}`));
-                results.append(card);
-            }
+            for (const row of data.items) results.append(cardFor(row));
             if (!data.items.length) results.append(element('p', t('empty')));
             currentOffset = offset; currentLimit = limit; matchedCount = data.matched_count;
             displayedCount = data.items.length; nextOffset = data.next_offset; appliedFilters = { ...criteria };
@@ -109,10 +175,52 @@
                 pageSummaries[0].focus({ preventScroll: true });
             }
         } catch (error) {
-            if (generation === searchGeneration) { pageSize.value = String(currentLimit); setStatus(error.message, true); }
+            if (generation === searchGeneration) {
+                pageSize.value = String(currentLimit);
+                setStatus(scannedRows !== null && !scanComplete ? `${t('searchIncomplete')} ${error.message}` : error.message, true);
+                if (scannedRows !== null && !scanComplete && scanCursor) status.append(button(t('resumeSearch'), () => resumeSearch()));
+            }
         } finally {
             if (generation === searchGeneration) { searchLoading = false; updatePagination(); }
         }
+    }
+    async function resumeSearch() {
+        if (searchLoading || !scanCursor) return;
+        const generation = ++searchGeneration;
+        searchLoading = true; updatePagination(); setStatus(t('busy'));
+        try {
+            const data = await request('knowledge-search', undefined, { ...appliedFilters, scan: '1', cursor: scanCursor, limit: 500 });
+            await collectScanned(data, appliedFilters, generation, currentLimit);
+        } catch (error) {
+            if (generation === searchGeneration) { setStatus(`${t('searchIncomplete')} ${error.message}`, true); status.append(button(t('resumeSearch'), () => resumeSearch())); }
+        } finally { if (generation === searchGeneration) { searchLoading = false; updatePagination(); } }
+    }
+    function showRevisionContext(row) {
+        const context = row.revision_context;
+        if (!context) return;
+        const section = element('section', undefined, 'knowledge-changes');
+        section.append(element('h3', t('changes')), element('p', t(context.compared_with === 'current_page' ? 'compareCurrent' : 'compareNext'), 'knowledge-note'));
+        if (context.previous_reference) section.append(recordLink(context.previous_reference, t('previousVersion')), document.createTextNode(' · '));
+        if (context.next_reference) section.append(recordLink(context.next_reference, t('nextVersion')));
+        const changes = element('ul');
+        for (const change of context.changes) {
+            const item = element('li', t('field_' + change.field));
+            const display = value => change.field === 'cover' ? t('cover_' + value) : (typeof value === 'object' ? JSON.stringify(value) : String(value ?? '—'));
+            if (change.field !== 'blocks_json') item.append(element('div', `${display(change.before)} → ${display(change.after)}`, 'knowledge-change-value'));
+            changes.append(item);
+        }
+        section.append(changes, element('p', t(context.changes.some(change => change.field === 'blocks_json') ? 'bodyChanged' : 'bodyUnchanged'), 'knowledge-note'));
+        if (!context.changes.length) section.append(element('p', t('noRecordedChanges')));
+        if (context.unrecorded_fields.length) section.append(element('p', t('comparisonPartial'), 'knowledge-note'));
+        if (context.body_after !== null) {
+            const comparison = element('details'); comparison.append(element('summary', t('compareBody')));
+            const columns = element('div', undefined, 'knowledge-body-comparison');
+            for (const [label, text] of [['before', row.text], ['after', context.body_after]]) {
+                const column = element('section'); column.append(element('h4', t(label)), element('pre', text, 'knowledge-original')); columns.append(column);
+            }
+            comparison.append(columns); section.append(comparison);
+        }
+        detail.append(section);
     }
     async function openRecord(reference) {
         const generation = ++recordGeneration;
@@ -122,8 +230,10 @@
             detail.replaceChildren(element('span', t(row.type), 'knowledge-type'), element('h2', (row.type === 'relation' ? t(row.kind) : row.title) || t(row.type)),
                 element('p', t('sourceWarning'), 'knowledge-note'),
                 element('p', `${t('sourceTime')}: ${row.occurred_at || t('unknown')}\n${t('captureTime')}: ${row.recorded_at || t('unknown')}`, 'knowledge-dates'),
-                element('p', `${t('role')}: ${t(row.role)}${row.speaker ? ` (${row.speaker})` : ''} · ${t('kind')}: ${t(row.kind)}${row.sequence !== null ? ` · ${t('sequence')}: ${row.sequence}` : ''}`),
-                element('pre', row.text, 'knowledge-original'));
+                element('p', `${t('role')}: ${t(row.role)}${row.speaker ? ` (${row.speaker})` : ''} · ${t('kind')}: ${t(row.kind)}${row.sequence !== null ? ` · ${t('sequence')}: ${row.sequence}` : ''}`));
+            if (row.type === 'page_revision') detail.append(element('p', t('snapshotExplanation'), 'knowledge-note'));
+            showRevisionContext(row);
+            detail.append(element('pre', row.text, 'knowledge-original'));
             if (row.type === 'file_version') {
                 const link = element('a', t('original')); link.href = 'api.php?action=knowledge-file&record=' + encodeURIComponent(reference); detail.append(link);
             }

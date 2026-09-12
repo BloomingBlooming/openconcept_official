@@ -25,6 +25,8 @@ V2.6.1では、アプリ全体のダークモード、ページのカバーと�
 
 ## 下位互換
 
+2026-09-12の履歴表示・検索改善を、バージョン番号2.6.1のまま同梱しました。ページの全文・属性・履歴IDは保持し、同じページの保存履歴をまとめて展開表示します。詳細では次の保存状態または現在のページとの変更点を確認できます。履歴画面は検索を続きから取得し、従来の件数上限の先も検索できます。中断後の再開に対応し、AI検索では同一ページ・本文の重複を整理して別の内容を候補に残します。訂正付きの履歴・別ページ・別発言は個別に保持します。[保存・表示・検索の仕様と制限](OpenConcept-2.6.1-public/docs/knowledge-history-display-and-search.md)も参照してください。
+
 Core DBスキーマは世代6、Plugin APIは1.0.0を維持します。既存API、設定キー、保存形式、プラグインのID・バージョン、ON/OFF状態、利用者データを変更しません。既存プラグインの最低対応版もV2.6.0と同じです。
 
 以前の固定ID制限で起動できなかったプラグインについて、保存済みの有効化設定がONの場合、更新後に他の互換条件を満たせば起動対象になります。更新前にインストール済みプラグインとON/OFF設定を確認してください。新規パッケージのインストール時は従来どおりOFFで登録され、管理者による有効化が必要です。
@@ -37,11 +39,15 @@ V2.6.0の記録と履歴、旧添付の保持、会話取込、正本出力と�
 - V2.6.0からの更新用：`OpenConcept-2.6.1-upgrade-from-2.6.0.zip`
 - 各ZIPにSHA-256検証ファイルを付属します。
 
+既に2.6.1を導入している場合も、今回の更新ZIPの `files/` を手動で結合することで履歴表示・検索改善版へ更新できます。バージョンが同じため、自動更新の新しいバージョン通知には頼らず、SHA-256とこのリリースノートで配布物を識別してください。`UPGRADE-MANIFEST.json` の変更前ハッシュと元バージョンは2.6.0を基準としているため、既存2.6.1へその事前条件を要求する自動適用は行わないでください。独自改修を比較して反映し、環境設定・DB・添付・鍵を保持します。
+
 更新前に環境全体をバックアップし、書き込みとワーカーを停止して、更新パッケージの説明書に従い `files/` を既存アプリルートへ結合します。既存フォルダーを丸ごと削除・置換しないでください。環境設定、DB、添付、鍵、個別のプラグインを保持します。Dockerを利用している場合は、参照用composeファイルとの差分を確認してイメージを再ビルドします。
 
 V2.5.0以前からは対応する既存の更新パッケージでV2.6.0にしてから、この更新を適用してください。図面管理とフロートNaviは別配布で、本体の更新パッケージには含みません。
 
 ## English
+
+The 2026-09-12 history display and search refresh retains version 2.6.1. Full snapshots and their IDs remain intact. Matching snapshots are grouped by page, with adjacent-state comparisons and resumable search beyond the old row/match limits. AI retrieval groups equivalent page text while preserving distinct content, pages, speakers and annotated revisions. Existing 2.6.1 installations can manually merge the refreshed upgrade's `files/` after reviewing customizations. The manifest's source version and before-hashes remain based on 2.6.0; do not use those preconditions for automated application to an existing 2.6.1 installation. Identify this refresh by its SHA-256 and release notes rather than a version-increase notification.
 
 Version 2.6.1 adds browser-persisted light/dark appearance under Settings → General, fixes missing cover swatches, and expands covers to 13 choices including No cover and icons to 96 choices in four categories. New covers include black, navy, midnight blue and primary red, blue and yellow. AI search and Records and history move below Inbox, hidden initially and toggled with the three-dot icon. Float Navi 1.2.2 is a separate optional plugin with synchronized floating navigation, transparency, dark backgrounds and foreground display over AI search.
 
