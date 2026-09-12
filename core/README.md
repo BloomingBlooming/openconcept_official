@@ -17,6 +17,6 @@ The latest version is **V2.6.1**, available as a full installation and an upgrad
 
 Use V2.6.1 for new installations. Upgrade V2.4.1 through 2.5.0 and 2.6.0 to 2.6.1, noting the [V2.5.0 before-hash information](2.5.0/README.md).
 
-配布物はOpenConceptの `Dist/` から `core/<version>/` へ配置し、[先頭のダウンロード一覧](../README.md)と揃えています。ZIP、SHA-256、manifest付き展開済みファイルを含みます。V2.5.0とV2.6.0の通常版も保持し、配布物をここで直接編集しません。
+配布物はOpenConceptの `Dist/core/` から `core/<version>/` へ配置し、[先頭のダウンロード一覧](../README.md)と揃えています。ZIP、SHA-256、manifest付き展開済みファイルを含みます。V2.5.0とV2.6.0の通常版も保持し、配布物をここで直接編集しません。
 
-Distributions are copied from OpenConcept's `Dist/` into `core/<version>/`, matching the [main download list](../README.md). Each includes a ZIP, checksum and unpacked files with a manifest. Full releases for V2.5.0 and V2.6.0 are retained; packaged contents are not edited here.
+Distributions are copied from OpenConcept's `Dist/core/` into `core/<version>/`, matching the [main download list](../README.md). Each includes a ZIP, checksum and unpacked files with a manifest. Full releases for V2.5.0 and V2.6.0 are retained; packaged contents are not edited here.

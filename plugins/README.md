@@ -4,6 +4,10 @@
 
 This directory holds the [distribution catalog](catalog.json) and [packages](packages/) for official OpenConcept plugins.
 
+配布物はOpenConceptプロジェクトの `Dist/plugins/<plugin-id>/<version>/` から、このリポジトリの `plugins/packages/<plugin-id>/<version>/` へ配置します。
+
+Packages are copied from the OpenConcept project's `Dist/plugins/<plugin-id>/<version>/` into this repository's `plugins/packages/<plugin-id>/<version>/`.
+
 | Plugin | Version | 導入説明 / Installation guide | ダウンロード / Download |
 | --- | --- | --- | --- |
 | フロートNavi / Float Navi | 1.2.2 | [日本語・English](packages/float-navi/1.2.2/README.md) | [Package](packages/float-navi/1.2.2/float-navi-1.2.2.oc-plugin.json) · [手動導入ZIP](packages/float-navi/1.2.2/float-navi-1.2.2.zip) · [SHA-256](packages/float-navi/1.2.2/float-navi-1.2.2.zip.sha256) |

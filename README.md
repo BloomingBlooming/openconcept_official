@@ -50,9 +50,13 @@ openconcept_official/
         └── drawing-manager/0.9.3/
 ```
 
-配布物はOpenConceptプロジェクトの `Dist/` で生成・検証したものを配置します。ZIP、チェックサム、manifest、展開済みファイルを揃えています。V2.5.0とV2.6.0は、通常版と中間更新版の両方を継続掲載します。配布物の内容はここで直接編集しません。
+本体はOpenConceptプロジェクトの `Dist/core/`、個別プラグインは `Dist/plugins/<plugin-id>/<version>/` で生成・検証した配布物を配置します。ZIP、チェックサム、manifest、展開済みファイルを揃えています。V2.5.0とV2.6.0は、通常版と中間更新版の両方を継続掲載します。配布物の内容はここで直接編集しません。
 
-Distributions are generated and verified in the OpenConcept project's `Dist/` directory. ZIPs, checksums, manifests and unpacked files are kept consistent. Full releases and intermediate upgrades for V2.5.0 and V2.6.0 remain available. Packaged contents are not edited here.
+Application distributions are generated and verified in the OpenConcept project's `Dist/core/` directory; standalone plugins come from `Dist/plugins/<plugin-id>/<version>/`. ZIPs, checksums, manifests and unpacked files are kept consistent. Full releases and intermediate upgrades for V2.5.0 and V2.6.0 remain available. Packaged contents are not edited here.
+
+Dist内のフォルダー整理により取得元のパスが変わりました。公開用リポジトリの配置とダウンロードURLは維持しています。同梱説明書に旧生成先が記載されている場合は、上記の取得元に読み替えてください。
+
+The Dist folders have been reorganized. Public repository paths and download URLs remain unchanged. If a bundled guide mentions an older build output path, use the source locations above.
 
 ## 公式プラグイン / Official plugins
 
