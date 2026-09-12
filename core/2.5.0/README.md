@@ -1,12 +1,11 @@
-# OpenConcept 2.5.0 通常版・更新版 / Full Release and Upgrade
+# OpenConcept 2.5.0 更新版 / Upgrade
 
-通常版と **v2.4.1 → v2.5.0** の更新版を継続掲載しています。新規設置には最新版の[OpenConcept 2.6.1](../2.6.1/README.md)を使用してください。V2.5.0が必要な場合は、以下の通常版を使用できます。
+通常版の掲載を終了し、**v2.4.1 → v2.5.0** の更新版だけを継続掲載しています。通常版ZIP・チェックサム・展開済みファイルは公開対象から削除しました。新規設置には最新版の[OpenConcept 2.6.1](../2.6.1/README.md)を使用してください。
 
-The full 2.5.0 release and the upgrade from 2.4.1 remain available. Use the latest [OpenConcept 2.6.1](../2.6.1/README.md) for new installations. The full release below is available for installations requiring V2.5.0.
+Only the upgrade from 2.4.1 to 2.5.0 remains available. The full-release ZIP, checksum and unpacked files have been removed from the published tree. Use the latest [OpenConcept 2.6.1](../2.6.1/README.md) for new installations.
 
 | 用途 / Purpose | ダウンロード / Download | SHA-256 | 内容・手順 / Contents and instructions |
 | --- | --- | --- | --- |
-| V2.5.0通常版 / Full release | [Full ZIP](OpenConcept-2.5.0-public.zip) | [Checksum](OpenConcept-2.5.0-public.zip.sha256) | [設置手順 / Installation](OpenConcept-2.5.0-public/HTTP-SERVER-SETUP.ja-en.md) |
 | V2.4.1から更新 / Upgrade from V2.4.1 | [Upgrade ZIP](OpenConcept-2.5.0-upgrade-from-2.4.1.zip) | [Checksum](OpenConcept-2.5.0-upgrade-from-2.4.1.zip.sha256) | [更新手順 / Instructions](OpenConcept-2.5.0-upgrade-from-2.4.1/README.ja-en.md) |
 | 図面管理 / Drawing Manager 0.9.3 | [Package](../../plugins/packages/drawing-manager/0.9.3/drawing-manager-0.9.3.oc-plugin.json) | [Checksum](../../plugins/packages/drawing-manager/0.9.3/drawing-manager-0.9.3.oc-plugin.json.sha256) | [導入・更新 / Installation and update](../../plugins/packages/drawing-manager/0.9.3/README.md) |
 

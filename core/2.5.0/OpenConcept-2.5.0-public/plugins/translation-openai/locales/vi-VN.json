@@ -1,9 +1,0 @@
-{
-    "name": "Tiếng Việt",
-    "messages": {
-        "plugin.name": "Nhà cung cấp bản dịch",
-        "plugin.description": "Kết nối OpenAI hoặc API tương thích OpenAI với chức năng dịch của Core.",
-        "provider.name": "Nhà cung cấp bản dịch",
-        "provider.description": "Dịch các đoạn văn bản có cấu trúc bằng nhà cung cấp được cấu hình trên máy chủ."
-    }
-}
