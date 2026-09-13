@@ -1,69 +1,32 @@
 # 公式プラグイン / Official Plugins
 
-ここはOpenConcept公式プラグインの配布領域です。[配布カタログ](catalog.json)と[パッケージ保存先](packages/)を保持します。
+ここはOpenConcept公式プラグインの配布領域です。[配布カタログ](catalog.json)と[パッケージ一覧](packages/README.md)から最新版を取得できます。
 
-This directory holds the [distribution catalog](catalog.json) and [packages](packages/) for official OpenConcept plugins.
-
-配布物はOpenConceptプロジェクトの `Dist/plugins/<plugin-id>/<version>/` から、このリポジトリの `plugins/packages/<plugin-id>/<version>/` へ配置します。
-
-Packages are copied from the OpenConcept project's `Dist/plugins/<plugin-id>/<version>/` into this repository's `plugins/packages/<plugin-id>/<version>/`.
-
-| Plugin | Version | 導入説明 / Installation guide | ダウンロード / Download |
+| Plugin | Version | 導入説明 / Guide | ダウンロード / Download |
 | --- | --- | --- | --- |
-| フロートNavi / Float Navi | 1.2.2 | [日本語・English](packages/float-navi/1.2.2/README.md) | [Package](packages/float-navi/1.2.2/float-navi-1.2.2.oc-plugin.json) · [手動導入ZIP](packages/float-navi/1.2.2/float-navi-1.2.2.zip) · [SHA-256](packages/float-navi/1.2.2/float-navi-1.2.2.zip.sha256) |
-| 図面管理 / Drawing Manager | 0.9.3 | [日本語・English](packages/drawing-manager/0.9.3/README.md) | [Package](packages/drawing-manager/0.9.3/drawing-manager-0.9.3.oc-plugin.json) · [SHA-256](packages/drawing-manager/0.9.3/drawing-manager-0.9.3.oc-plugin.json.sha256) |
+| フロートNavi / Float Navi | 1.2.3 | [日本語・English](packages/float-navi/1.2.3/README.md) | [Package](packages/float-navi/1.2.3/float-navi-1.2.3.oc-plugin.json) · [ZIP](packages/float-navi/1.2.3/float-navi-1.2.3.zip) · [SHA-256](packages/float-navi/1.2.3/float-navi-1.2.3.zip.sha256) |
+| 図面管理 / Drawing Manager | 0.9.4 | [日本語・English](packages/drawing-manager/0.9.4/README.md) | [Package](packages/drawing-manager/0.9.4/drawing-manager-0.9.4.oc-plugin.json) · [SHA-256](packages/drawing-manager/0.9.4/drawing-manager-0.9.4.oc-plugin.json.sha256) |
 
-図面管理は2.3.1以降の本体配布から分離されています。必要な管理者が本体の「公式ダウンロード」から追加します。
+2026-09-13に両パッケージとカタログを同時更新しました。フロートNavi1.2.3は開閉状態・位置・サイズ・透過度・背景モードをブラウザーに保存して復元します。図面管理0.9.4は固定UIの5言語対応を改善しました。図面管理の固定APIエラーの翻訳にはCore V3.0.0が必要です。
 
-フロートNaviはV2.5.0、V2.6.0、V2.6.1に対応します。ページ検索・全開閉・ツリーを左ナビと同期する移動・サイズ変更可能な窓を追加します。1.2.2ではAI検索ウィンドウより手前に表示するよう修正しました。歯車から「透過」や背景のライト／ダークモードを選択できます。公開済み本体が未登録プラグインIDを拒否する場合は、先に[各バージョン用の互換パッチ](packages/float-navi/1.2.2/README.md)を適用してください。
+## 導入と更新 / Install and update
 
-Float Navi supports V2.5.0, V2.6.0 and V2.6.1 and adds a movable, resizable window synchronized with page navigation. Version 1.2.2 keeps it in front of the AI search window. The gear menu offers transparency controls and light/dark background modes. Older Core builds that reject unlisted IDs need the [matching compatibility patch](packages/float-navi/1.2.2/README.md) first.
+新規導入は管理者の「設定 > プラグイン > 公式ダウンロード」から行い、その後有効化します。導入済みの場合はプラグイン一覧を再取得し、適合する新版に表示される「UpDate」（V3.0.0では「Update」）から更新します。旧プログラムを退避して新版へ差し替え、有効・無効の状態、設定、登録データ、添付を保持します。
 
-Drawing Manager is distributed separately from application 2.3.1 onward and can be added through Official downloads in the application.
+**本体V2.6.1を利用中なら、今回のプラグイン更新のために本体を更新する必要はありません。** V2.6.1およびV3.0.0で、新規導入・旧版からの更新・再起動・データ保持を確認済みです。更新済みV2.5.0以降に対応しますが、未登録IDを拒否する旧V2.5.0／V2.6.0はフロートNaviの同梱互換パッチが必要です。新規導入・更新にはPHP実行ユーザーが`plugins/`へ書き込める必要があります。
 
-図面管理0.9.3の最低対応版は更新済みのOpenConcept V2.5.0とPlugin API 1.0.0で、本体V2.6.0／V2.6.1でも利用できます。新規導入は「設定 > プラグイン > 公式ダウンロード」からダウンロードし、管理者が有効化してください。導入にはPHP実行ユーザーの`plugins/`への書込み権限が必要です。
+For new installations, use Settings > Plugins > Official downloads, then enable the plugin. For an existing installation, refresh the plugin list and choose UpDate (Update on Core V3.0.0) when a compatible release appears. The previous code is retained, and enabled state, settings, records and attachments are preserved.
 
-Drawing Manager 0.9.3 requires at least the updated OpenConcept V2.5.0 application and Plugin API 1.0.0, and also supports V2.6.0 and V2.6.1. For a new installation, download it in Settings > Plugins > Official downloads, then enable it as an administrator. The PHP service identity needs write access to `plugins/` for installation.
+**Core V2.6.1 does not need an application update to install these plugin updates.** New installations, updates from the previous plugins, restarts and data preservation were verified on Core V2.6.1 and V3.0.0. Drawing Manager 0.9.4 improves UI localization; its translated API errors require Core V3.0.0. Float Navi 1.2.3 retains window preferences across reloads. Older restricted V2.5.0/V2.6.0 builds need the included matching Float Navi compatibility patch.
 
-導入済みの場合は、プラグイン一覧を開くか再取得して、適合する新版に表示される「UpDate」から更新します。有効・無効の状態、設定、登録データ、原本は保持されます。詳細は[本体同梱のプラグインAPI説明](../core/2.6.1/OpenConcept-2.6.1-public/docs/plugin-api-reference.md)を参照してください。
+## 配布仕様 / Distribution contract
 
-For an installed plugin, open or refresh the plugin list and use UpDate when a compatible newer version is available. Updates preserve the enabled state, settings, registered data, and original files. See the [bundled Plugin API guide](../core/2.6.1/OpenConcept-2.6.1-public/docs/plugin-api-reference.md).
+配布物はOpenConceptプロジェクトの `Dist/plugins/<plugin-id>/<version>/` で生成・検証したものです。図面管理の外側READMEは検証済みパッケージ内のREADMEをそのまま展開しています。この公開領域には各最新版を置き、過去版は開発側のアーカイブとGit履歴に保持します。
 
-カタログのHTTPS配信先 / HTTPS catalog endpoint:
+カタログは `schema_version: 1` です。ID・バージョン・HTTPS URL・SHA-256・Plugin API要件をパッケージのmanifestと一致させます。本体はこのリポジトリの `main/plugins/` を取得先として使用します。新しいプラグイン版とカタログを同じコミットで公開し、公開後に実URLとハッシュを照合します。
 
-```text
-https://raw.githubusercontent.com/BloomingBlooming/openconcept_official/main/plugins/catalog.json
-```
+Packages are generated and verified in the development project's Dist directory. The external Drawing Manager README is extracted unchanged from the verified package. This published tree retains current plugin versions; older versions remain in the development archive and Git history. Publish packages and catalog changes in one commit, then verify the public URLs and hashes. Catalog schema, identities, API requirements and package checksums must match.
 
-本体に同梱するPluginは、対応する`core/<version>/OpenConcept-<version>-public/plugins/`に含まれます。この配布フォルダーをアプリの実行フォルダーとして使用するものではありません。
+本体同梱プラグインは `core/<version>/OpenConcept-<version>-public/plugins/` に含まれます。詳しくは [Plugin API説明](../core/2.6.1/OpenConcept-2.6.1-public/docs/plugin-api-reference.md) を参照してください。HTTPSとSHA-256で取得先・内容を確認します。電子署名の検証は実装していません。
 
-Bundled plugins are included under `core/<version>/OpenConcept-<version>-public/plugins/` for the corresponding application version. This distribution directory is not an application's runtime plugin directory.
-
-## パッケージ配置 / Package layout
-
-個別配布を開始するときは、次の形式で追加します。以下のIDとバージョンは配置例です。
-
-When standalone distribution begins, add packages using the following layout. The ID and version below are examples.
-
-```text
-plugins/
-├── README.md
-├── catalog.json
-└── packages/
-    ├── README.md
-    └── <plugin-id>/
-        └── <version>/
-            └── <plugin-id>-<version>.oc-plugin.json
-```
-
-カタログは現行アプリが読み取る`schema_version: 1`形式です。配布するPluginのID・名前・バージョン・説明・アイコン・HTTPSダウンロードURL・パッケージSHA-256を登録します。API要件がある場合は、manifestと同じ`requires.plugin_api`と`requires.capabilities`を含めます。カタログとダウンロードURLは同じHTTPSオリジンで提供します。
-
-The catalog uses `schema_version: 1`, supported by the current application. Register each plugin's ID, name, version, description, icon, HTTPS download URL, and package SHA-256. When a plugin declares API requirements, include the manifest's `requires.plugin_api` and `requires.capabilities`. Serve the catalog and download URLs from the same HTTPS origin.
-
-PluginのIDとバージョンはパッケージのmanifestと一致させます。公開済みパッケージを修正する場合はPluginのバージョンを上げ、新しいファイルとして追加します。
-
-Plugin IDs and versions must match the package manifest. Publish corrections with an incremented plugin version as a new package file.
-
-公式の発行者確認と単なるファイルハッシュ検証は別の機能です。現行のカタログ形式には公式署名検証の契約はまだ含まれていません。
-
-Publisher authentication and file-hash verification are separate functions. The current catalog format does not yet define official-signature verification.
+Bundled plugins are part of the corresponding Core distribution. See the [Plugin API guide](../core/2.6.1/OpenConcept-2.6.1-public/docs/plugin-api-reference.md). HTTPS and SHA-256 verify the endpoint and package integrity; publisher signature verification is not implemented.

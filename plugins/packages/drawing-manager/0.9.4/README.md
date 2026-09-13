@@ -2,9 +2,13 @@
 
 ## 個別配布と導入 / Standalone distribution and installation
 
-図面管理0.9.3はOpenConceptの追加プラグインです。この版は共通Plugin API 1.0.0を使用するため、更新済みのOpenConcept V2.5.0が必要です。本体ZIPには含まれず、個別パッケージとして配布します。新規導入したパッケージは無効状態で、管理者が有効化します。
+図面管理0.9.4はOpenConceptの追加プラグインです。共通Plugin API 1.0.0を使用し、更新済みのOpenConcept V2.5.0以降とV3.0.0に対応します。本体ZIPには含まれず、個別パッケージとして配布します。新規導入したパッケージは無効状態で、管理者が有効化します。
 
-Drawing Manager 0.9.3 is an optional OpenConcept plugin requiring the updated V2.5.0 application and Plugin API 1.0.0. It is distributed separately from the application ZIP. New package installations are disabled until an administrator enables the plugin.
+Drawing Manager 0.9.4 is an optional OpenConcept plugin supporting updated Core V2.5.0 and later, including V3.0.0, with Plugin API 1.0.0. It is distributed separately from the application ZIP. New package installations are disabled until an administrator enables the plugin.
+
+0.9.4ではアプリが表示する固定の案内・エラー・図面ライブラリー見出しを5言語に対応しました。人間が入力した図面名・備考・訂正コメントと既存API・スキーマ・設定・添付形式は保持します。公開済み0.9.3の配布ファイルは変更せず、V3.0.0での利用も検証しています。
+
+Version 0.9.4 localizes fixed application labels and errors in all five official languages while preserving user-entered names, notes, comments, existing APIs, schema, settings and file formats. The published 0.9.3 package remains unchanged and is also tested on Core V3.0.0.
 
 配布元 / Publisher: [BloomingBlooming/openconcept_official](https://github.com/BloomingBlooming/openconcept_official/tree/main/plugins).
 
@@ -163,4 +167,4 @@ php plugins/drawing-manager/tests/DrawingPluginContractTest.php
 ```
 
 - Plugin ID: `drawing-manager`
-- Version: `0.9.3`
+- Version: `0.9.4`

@@ -4,27 +4,23 @@
         {
             "id": "float-navi",
             "name": "フロートNavi",
-            "version": "1.2.2",
-            "description": "ページ検索とツリーを左ナビと同期するフロート窓。AI検索より手前に表示し、透過と背景のダークモードに対応。V2.6.1では追加の本体互換パッチは不要です。V2.5.0以降に対応し、未登録IDを拒否する旧本体はV2.6.1への更新または互換パッチが必要です。 Floating navigation with transparency and dark mode. No Core patch is needed on V2.6.1; older restricted builds need the upgrade or compatibility patch.",
+            "version": "1.2.3",
+            "description": "左ナビと同期するフロート窓。開閉状態・位置・サイズ・透過度・背景モードを再読み込み後に復元します。V2.6.1とV3.0.0では追加の本体互換パッチは不要です。 Floating navigation with persistent window preferences. Core V2.6.1 and V3.0.0 need no application update; older restricted builds require the matching compatibility patch.",
             "icon": "🧭",
-            "download_url": "https://raw.githubusercontent.com/BloomingBlooming/openconcept_official/main/plugins/packages/float-navi/1.2.2/float-navi-1.2.2.oc-plugin.json",
-            "sha256": "8a25136e0e7de6024c1ac64b193efbe9ffe9bde6d824eec146704b2cc71f174c"
+            "download_url": "https://raw.githubusercontent.com/BloomingBlooming/openconcept_official/main/plugins/packages/float-navi/1.2.3/float-navi-1.2.3.oc-plugin.json",
+            "sha256": "ee3d8dbbcf400d320d7a3b5803823200671fe2427d3bbfdf099ff9c7cebd5d4f"
         },
         {
             "id": "drawing-manager",
             "name": "Drawing Manager / 図面管理",
-            "version": "0.9.3",
-            "description": "図面番号・改訂番号・品名をAIで読み取り、未承認保存、管理者編集、訂正コメント、承認、検索、閲覧、削除（アーカイブ）を行います。 Manage drawings, approvals and search. Download, then enable.",
+            "version": "0.9.4",
+            "description": "図面の登録・承認・検索・訂正コメント・閲覧・アーカイブ。固定UIの5言語対応を改善しました。V2.6.1でも本体更新なしで利用できます。固定APIエラーの5言語化にはCore V3.0.0が必要です。 Drawing management with localized UI and retained data. Works on Core V2.6.1 without an application update; translated API errors require Core V3.0.0.",
             "icon": "📐",
-            "download_url": "https://raw.githubusercontent.com/BloomingBlooming/openconcept_official/main/plugins/packages/drawing-manager/0.9.3/drawing-manager-0.9.3.oc-plugin.json",
-            "sha256": "6d6615a8b0fcc1d5f6e96a78f66f83f845626de6cbcc761e69eef6639da66337",
+            "download_url": "https://raw.githubusercontent.com/BloomingBlooming/openconcept_official/main/plugins/packages/drawing-manager/0.9.4/drawing-manager-0.9.4.oc-plugin.json",
+            "sha256": "c490cd5da2859942dbe4d34d8aa52adecbffe5951974f4b934b5faa1826223b1",
             "requires": {
                 "plugin_api": "1.0.0",
-                "capabilities": [
-                    "notifications",
-                    "actions",
-                    "storage"
-                ]
+                "capabilities": ["notifications", "actions", "storage"]
             }
         }
     ]

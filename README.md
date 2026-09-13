@@ -21,7 +21,7 @@ This repository holds OpenConcept and official plugin distributions. The latest 
 
 V2.6.1にはアプリ全体のダークモード、カバー13種類（なしを含む）・アイコン96種類、受信トレイ下の三点アイコンによるAI検索・記録と履歴の開閉を含みます。ページ状態の一括変更、ツリー表示、履歴のページ送り、プラグイン管理の改善もまとめました。[リリースノート](core/2.6.1/OpenConcept-2.6.1-public/docs/release-notes-2.6.1.md)と[配布案内](core/2.6.1/README.md)をご覧ください。
 
-本体の新規プラグインID制限解除、有効化前の警告、フロートNaviの最低対応プラグイン版1.0.0の登録を含みます。フロートNavi最新版1.2.2は、V2.6.1では追加の本体互換パッチなしで有効化できます。
+本体の新規プラグインID制限解除、有効化前の警告、フロートNaviの最低対応プラグイン版1.0.0の登録を含みます。フロートNavi最新版1.2.3は、V2.6.1では追加の本体互換パッチなしで有効化できます。
 
 V2.6.1 adds dark mode, 13 cover choices including No cover, 96 icons, and the three-dot toggle below Inbox for AI search and Records and history. It also includes bulk page status changes, improved tree display, history pagination and plugin management. See the [release notes](core/2.6.1/OpenConcept-2.6.1-public/docs/release-notes-2.6.1.md) and [distribution guide](core/2.6.1/README.md).
 
@@ -50,8 +50,8 @@ openconcept_official/
     ├── README.md, catalog.json
     └── packages/
         ├── README.md
-        ├── float-navi/1.2.2/
-        └── drawing-manager/0.9.3/
+        ├── float-navi/1.2.3/
+        └── drawing-manager/0.9.4/
 ```
 
 本体はOpenConceptプロジェクトの `Dist/core/`、個別プラグインは `Dist/plugins/<plugin-id>/<version>/` で生成・検証した配布物を配置します。ZIP、チェックサム、manifest、展開済みファイルを揃えています。V2.5.0とV2.6.0は旧環境からの中間更新版だけを継続掲載します。両バージョンの通常版ZIP・チェックサム・展開済みファイルは公開対象から削除しました。配布物の内容はここで直接編集しません。
@@ -64,17 +64,21 @@ The Dist folders have been reorganized. Public repository paths and download URL
 
 ## 公式プラグイン / Official plugins
 
-[フロートNavi 1.2.2](plugins/packages/float-navi/1.2.2/README.md)を追加しました。ページ検索・全開閉・ツリーを、左ナビと同期する移動・サイズ変更可能な窓に表示します。AI検索ウィンドウと重なっても手前に表示されます。歯車の「透過」から通常は隠れているスライダーを表示し、「背景モード → ダークモード」で黒背景・白文字に変更できます。V2.5.0／V2.6.0／V2.6.1対応で、未登録IDを拒否する旧本体向けの互換パッチも同梱しています。
+**2026-09-13：図面管理0.9.4・フロートNavi1.2.3とカタログを更新しました。** フロートNaviは窓の開閉状態・位置・サイズ・透過度・背景モードを再読み込み後に復元します。図面管理は固定UIの5言語対応を改善しました。両プラグインは本体V2.6.1のまま更新でき、設定・登録データ・添付を保持します。図面管理の固定APIエラーの5言語化にはCore V3.0.0が必要です。
 
-[Float Navi 1.2.2](plugins/packages/float-navi/1.2.2/README.md) adds movable, resizable page navigation synchronized with the sidebar and keeps it in front of the AI search window. The gear menu reveals transparency settings and offers a black-background, white-text dark mode. Supports V2.5.0, V2.6.0 and V2.6.1, with compatibility patches for older Core builds that reject unlisted plugin IDs.
+**2026-09-13: Drawing Manager 0.9.4, Float Navi 1.2.3 and the catalog were updated together.** Float Navi restores window preferences after reloads, and Drawing Manager improves UI localization in five languages. Both plugins update on Core V2.6.1 without an application update, retaining settings, records and attachments. Drawing Manager's translated API errors require Core V3.0.0.
 
-[公式Plugin配布フォルダー](plugins/)と[カタログ](plugins/catalog.json)から、[図面管理0.9.3](plugins/packages/drawing-manager/0.9.3/README.md)を個別配布しています。最低対応版は更新済みの本体2.5.0で、本体2.6.1でも利用できます。
+[フロートNavi 1.2.3](plugins/packages/float-navi/1.2.3/README.md)を追加しました。ページ検索・全開閉・ツリーを、左ナビと同期する移動・サイズ変更可能な窓に表示します。AI検索ウィンドウと重なっても手前に表示されます。歯車の「透過」から通常は隠れているスライダーを表示し、「背景モード → ダークモード」で黒背景・白文字に変更できます。V2.5.0／V2.6.0／V2.6.1対応で、未登録IDを拒否する旧本体向けの互換パッチも同梱しています。
 
-The [official plugin directory](plugins/) and [catalog](plugins/catalog.json) distribute [Drawing Manager 0.9.3](plugins/packages/drawing-manager/0.9.3/README.md) separately. Its minimum supported application is the updated 2.5.0 release; it also supports 2.6.1.
+[Float Navi 1.2.3](plugins/packages/float-navi/1.2.3/README.md) adds movable, resizable page navigation synchronized with the sidebar and keeps it in front of the AI search window. The gear menu reveals transparency settings and offers a black-background, white-text dark mode. Supports V2.5.0, V2.6.0 and V2.6.1, with compatibility patches for older Core builds that reject unlisted plugin IDs.
 
-本体2.6.1では図面管理を同梱せず、「設定 > プラグイン > 公式ダウンロード」から追加します。ダウンロード直後は無効です。有効化すると図面管理メニューが表示されます。既存の図面管理は本体更新後、プラグイン一覧の「UpDate」から更新できます。
+[公式Plugin配布フォルダー](plugins/)と[カタログ](plugins/catalog.json)から、[図面管理0.9.4](plugins/packages/drawing-manager/0.9.4/README.md)を個別配布しています。最低対応版は更新済みの本体2.5.0で、本体2.6.1でも利用できます。
 
-Application 2.6.1 distributes Drawing Manager separately. Add it in Settings > Plugins > Official downloads, then enable it to show the drawing menu. Downloads are initially disabled. After updating the application, use UpDate in the plugin list to update an existing Drawing Manager installation.
+The [official plugin directory](plugins/) and [catalog](plugins/catalog.json) distribute [Drawing Manager 0.9.4](plugins/packages/drawing-manager/0.9.4/README.md) separately. Its minimum supported application is the updated 2.5.0 release; it also supports 2.6.1.
+
+本体2.6.1では図面管理を同梱せず、「設定 > プラグイン > 公式ダウンロード」から追加します。ダウンロード直後は無効です。有効化すると図面管理メニューが表示されます。既存の図面管理は、プラグイン一覧の「UpDate」から更新できます。V2.6.1を利用中なら、今回のプラグイン更新に本体の更新は不要です。
+
+Application 2.6.1 distributes Drawing Manager separately. Add it in Settings > Plugins > Official downloads, then enable it to show the drawing menu. Downloads are initially disabled. On Core V2.6.1, use UpDate in the plugin list to update an existing Drawing Manager installation without updating the application.
 
 本体2.6.1の公式カタログとパッケージの取得先は、このリポジトリの`main/plugins/`内に固定しています。環境変数で別の配布元へ変更することはできません。HTTPSとSHA-256で取得先・ファイルの一致を確認します。発行者の電子署名検証は実装していません。
 

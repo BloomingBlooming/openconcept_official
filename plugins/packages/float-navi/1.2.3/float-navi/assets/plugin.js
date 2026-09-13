@@ -21,6 +21,14 @@
         'menu.back': 'Back',
     };
     const PLUGIN_ID = 'float-navi';
+    // Display preferences belong to this browser and application path. Keep
+    // page content, search terms and Core's enabled state out of this record.
+    const storageKey = 'openconcept.float-navi.v1:' + new URL('.', window.location.href).pathname;
+    let saved = {};
+    try {
+        const value = JSON.parse(window.localStorage.getItem(storageKey));
+        if (value && value.version === 1) saved = value;
+    } catch (_) { /* Unavailable or damaged storage keeps the existing defaults. */ }
     const t = key => window.OpenConceptI18n?.t(PLUGIN_ID, key, {}, fallbacks[key]) || fallbacks[key];
     const icon = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="6" width="15" height="15" rx="2"/><path d="M10 3h11v11M21 3l-9 9"/></svg>';
     const panel = document.createElement('section');
@@ -30,7 +38,7 @@
     panel.setAttribute('aria-modal', 'false');
     panel.setAttribute('aria-labelledby', 'float-navi-title');
     panel.hidden = true;
-    panel.dataset.backgroundMode = 'light';
+    panel.dataset.backgroundMode = saved.backgroundMode === 'dark' ? 'dark' : 'light';
     panel.innerHTML = '<header class="float-navi-header"><button type="button" class="float-navi-move"><span aria-hidden="true">⠿</span><strong id="float-navi-title"></strong></button><button type="button" class="float-navi-settings" aria-haspopup="menu" aria-expanded="false" aria-controls="float-navi-menu"><span aria-hidden="true">⚙</span></button><button type="button" class="float-navi-close">×</button></header><div id="float-navi-menu" class="float-navi-menu" role="menu" hidden></div><div class="float-navi-appearance" hidden><label for="float-navi-transparency"></label><input id="float-navi-transparency" type="range" min="0" max="100" step="1" value="0"><output for="float-navi-transparency">0%</output><button type="button" class="float-navi-appearance-close">×</button></div><div class="float-navi-tools"></div><div class="float-navi-body"><ul class="page-tree float-navi-tree"></ul></div><button type="button" class="float-navi-resize"><span aria-hidden="true">◢</span></button>';
     const move = panel.querySelector('.float-navi-move');
     const close = panel.querySelector('.float-navi-close');
@@ -49,14 +57,25 @@
     let sourceSection = null;
     let sourceInput = null;
     let toggle = null;
-    let open = false;
+    let open = saved.open === true;
     let frame = 0;
     let gesture = null;
     let treeDragging = false;
     let toolSource = '';
     let focusKey = null;
     let pendingFocus = null;
-    let geometry = null;
+    let geometry = saved.geometry && ['x', 'y', 'width', 'height'].every(key =>
+        typeof saved.geometry[key] === 'number' && Number.isFinite(saved.geometry[key]))
+        ? { x: saved.geometry.x, y: saved.geometry.y, width: saved.geometry.width, height: saved.geometry.height } : null;
+    if (typeof saved.transparency === 'number' && Number.isFinite(saved.transparency)) {
+        transparency.value = String(Math.max(0, Math.min(100, saved.transparency)));
+    }
+    function savePreferences() {
+        try {
+            window.localStorage.setItem(storageKey, JSON.stringify({ version: 1, open, geometry,
+                transparency: Number(transparency.value), backgroundMode: panel.dataset.backgroundMode }));
+        } catch (_) { /* Controls still work when browser storage is blocked/full. */ }
+    }
 
     // The sidebar remains Core's single source of truth. Only the search input
     // needs forwarding; clicks and tree drags bubble through the real #app so
@@ -125,6 +144,7 @@
             focusKey = pendingFocus = null;
             toggle?.focus({ preventScroll: true });
         }
+        savePreferences();
     }
 
     const sidebarObserver = new MutationObserver(queueSync);
@@ -194,6 +214,7 @@
         } else if (action === 'light' || action === 'dark') {
             panel.dataset.backgroundMode = action;
             hideMenu();
+            savePreferences();
         }
     });
     menu.addEventListener('keydown', event => {
@@ -233,6 +254,7 @@
     transparency.addEventListener('input', event => {
         event.stopPropagation();
         updateTransparency();
+        savePreferences();
     });
     // Let the native slider handle arrow/Home/End keys without Core shortcuts.
     transparency.addEventListener('keydown', event => {
@@ -248,7 +270,8 @@
             appearance.hidden = true;
             sidebarObserver.disconnect();
             sourceSection = sourceInput = toggle = null;
-            open = false;
+            // Core briefly removes the sidebar while booting/rerendering.
+            // Hide the panel until it returns without discarding the preference.
             focusKey = pendingFocus = null;
             tree.replaceChildren();
             toolbar.replaceChildren();
@@ -273,11 +296,13 @@
         }
         const reattached = panel.parentElement !== app;
         if (reattached) app.append(panel);
+        panel.hidden = !open;
         // Avoid observing our own accessibility-label updates indefinitely.
         sidebarObserver.disconnect();
         updateLabels();
         sidebarObserver.observe(section, { subtree: true, childList: true, attributes: true, characterData: true });
         if (!open) return;
+        fit();
 
         const active = document.activeElement;
         const key = pendingFocus || (panel.contains(active) ? rememberFocus(active) : reattached ? focusKey : null);
@@ -376,7 +401,7 @@
             else { geometry.width += dx; geometry.height += dy; }
             fit();
         });
-        const stop = () => { gesture = null; panel.classList.remove('is-moving'); };
+        const stop = () => { gesture = null; panel.classList.remove('is-moving'); savePreferences(); };
         handle.addEventListener('pointerup', stop);
         handle.addEventListener('pointercancel', stop);
         handle.addEventListener('lostpointercapture', stop);
@@ -389,6 +414,7 @@
             const horizontal = event.key === 'ArrowLeft' || event.key === 'ArrowRight';
             geometry[mode === 'move' ? horizontal ? 'x' : 'y' : horizontal ? 'width' : 'height'] += delta;
             fit();
+            savePreferences();
         });
     }
 
@@ -399,6 +425,7 @@
         app.addEventListener(name, () => { treeDragging = false; queueSync(); });
     }
     window.addEventListener('resize', () => { if (open) fit(); });
+    window.addEventListener('pagehide', savePreferences);
     window.addEventListener('openconcept:locale-change', () => { hideMenu(false); queueSync(); });
     // Core replaces #app children on navigation. Reattach the same floating
     // window, retaining its geometry and scroll; do not observe the editor.

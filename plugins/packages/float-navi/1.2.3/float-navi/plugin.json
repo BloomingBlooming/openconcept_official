@@ -2,7 +2,7 @@
     "schema_version": 1,
     "id": "float-navi",
     "name": "フロートNavi",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "enabled": false,
     "description": "ページ検索・すべて開く・すべて閉じる・ページツリーを、左ナビと同期する移動・サイズ変更可能なウィンドウに表示します。OpenConcept V2.5.0以降に対応。",
     "entry": "plugin.php",

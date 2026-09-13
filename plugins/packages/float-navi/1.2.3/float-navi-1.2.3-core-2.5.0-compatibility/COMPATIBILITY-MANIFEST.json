@@ -2,7 +2,7 @@
     "schema_version": 1,
     "application_version": "2.5.0",
     "plugin_id": "float-navi",
-    "plugin_version": "1.2.2",
+    "plugin_version": "1.2.3",
     "files": {
         "app/PluginCompatibility.php": {
             "before_sha256": "c754ab164d11d90e1639ad5eb903e462e656dd1d4bb815775b949020cb04c0f3",
