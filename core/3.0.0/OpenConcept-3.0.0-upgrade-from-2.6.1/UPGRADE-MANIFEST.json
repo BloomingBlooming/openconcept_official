@@ -1,0 +1,2482 @@
+{
+    "manifest_version": 1,
+    "package_type": "upgrade-distribution",
+    "product": "OpenConcept",
+    "from_version": "2.6.1",
+    "target_version": "3.0.0",
+    "product_version": "3.0.0",
+    "source_public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+    "target_public_manifest_sha256": "24a31957243895aaf8f7fe31d1c473115efd9c9910182aa98c982b0bab337392",
+    "install_mode": "merge-files-no-delete",
+    "database_schema_changed": false,
+    "database_schema_transition": null,
+    "instance_configuration_included": false,
+    "runtime_data_included": false,
+    "delete_files": [],
+    "changes": [
+        {
+            "path": "HTTP-SERVER-SETUP.ja-en.md",
+            "operation": "replace",
+            "from_sha256": "7ea5801c672dd19b8e3a336eeb22c82b6379b27a29ac03d4ca8ec20a7ded5955",
+            "from_bytes": 37140,
+            "to_sha256": "c61ef82292e3331100b42126bd0faa4384bf019486433633ffb4887250312963",
+            "to_bytes": 37062,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "7ea5801c672dd19b8e3a336eeb22c82b6379b27a29ac03d4ca8ec20a7ded5955",
+                    "bytes": 37140
+                }
+            ],
+            "package_path": "files/HTTP-SERVER-SETUP.ja-en.md",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "README.md",
+            "operation": "replace",
+            "from_sha256": "caa4818cf2ed2271f273471de1f80ad03916ae284c9824873e074ce34c2d19bb",
+            "from_bytes": 17368,
+            "to_sha256": "23a13b0f7446f0d7f0ae9efa84d51468bb96336438d30e04139e89bbe7f8b213",
+            "to_bytes": 18572,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "caa4818cf2ed2271f273471de1f80ad03916ae284c9824873e074ce34c2d19bb",
+                    "bytes": 17368
+                }
+            ],
+            "package_path": "files/README.md",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "VERSION",
+            "operation": "replace",
+            "from_sha256": "9efa866c9a87a85603d4442a223189718913692f0738199543eb4bd8f6e01706",
+            "from_bytes": 7,
+            "to_sha256": "2985be8b28d3ade858e8d8fb4bc22f565b1bf6020dff982dce141f7721b9999c",
+            "to_bytes": 6,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "9efa866c9a87a85603d4442a223189718913692f0738199543eb4bd8f6e01706",
+                    "bytes": 7
+                }
+            ],
+            "package_path": "files/VERSION",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/AiPageActionService.php",
+            "operation": "replace",
+            "from_sha256": "840dbd05403b84c60e6dfea4d1855c0d9a22f0e92cb751936c8702ea31b7ddb6",
+            "from_bytes": 45408,
+            "to_sha256": "6e513c90e4a912edeb15522dd533c2d33341892df71170489e9381ab672242de",
+            "to_bytes": 45177,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "840dbd05403b84c60e6dfea4d1855c0d9a22f0e92cb751936c8702ea31b7ddb6",
+                    "bytes": 45408
+                }
+            ],
+            "package_path": "files/app/AiPageActionService.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/AiSearchService.php",
+            "operation": "replace",
+            "from_sha256": "360b9046ab64e2e8e59255e1d10d84ab737fa50ffbee3b84a20db33aac7b0e1a",
+            "from_bytes": 65840,
+            "to_sha256": "05dc0fa0d580daecd0f145ac93fcb02e4aa55f70022166787c014eee4a5b5bfa",
+            "to_bytes": 67875,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "360b9046ab64e2e8e59255e1d10d84ab737fa50ffbee3b84a20db33aac7b0e1a",
+                    "bytes": 65840
+                }
+            ],
+            "package_path": "files/app/AiSearchService.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/DatabaseFailurePageRenderer.php",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "a8305d776366df3fab685fca1a44d51fd6cb94ea4c70fc2d86ddf25f114e00df",
+            "to_bytes": 3124,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/app/DatabaseFailurePageRenderer.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/DefaultOperationManual.php",
+            "operation": "replace",
+            "from_sha256": "567b48dd217a40ad90fa7295cf619b5e4867699285703c51c8d00f37bd370379",
+            "from_bytes": 20904,
+            "to_sha256": "71dbf119d23b0e958c582776d8ae81a36b8f1536d97ad6093c0137b2cb263f4b",
+            "to_bytes": 20408,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "567b48dd217a40ad90fa7295cf619b5e4867699285703c51c8d00f37bd370379",
+                    "bytes": 20904
+                }
+            ],
+            "package_path": "files/app/DefaultOperationManual.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/MailSettings.php",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "61773f88d062c2009d41c80f675a0fca1a0a946be786bc3ff73b86468a319bfe",
+            "to_bytes": 9991,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/app/MailSettings.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/Mailer.php",
+            "operation": "replace",
+            "from_sha256": "9801eba391ab2e3d446cda0440b7cea7d5c8e9e02e050bce0f8138706da966b4",
+            "from_bytes": 18868,
+            "to_sha256": "00607044a5806f6d341af9ffea14d19e6f24910a03beef7fd69827a6d9726aeb",
+            "to_bytes": 18180,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "9801eba391ab2e3d446cda0440b7cea7d5c8e9e02e050bce0f8138706da966b4",
+                    "bytes": 18868
+                }
+            ],
+            "package_path": "files/app/Mailer.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/MaintenancePageRenderer.php",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "01fcf4ba9b35d3e6e678eed37d86fd2bc9827a65c6e69a8981304c1df32de812",
+            "to_bytes": 4147,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/app/MaintenancePageRenderer.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/NotificationInbox.php",
+            "operation": "replace",
+            "from_sha256": "3cc3e742bd94c45b679c63fcc8b56b993861f99eed6e41ae693244307497a427",
+            "from_bytes": 11611,
+            "to_sha256": "3439abb00b9dd04331157896327cea6618fa82880b03e27a9ea8fba37cbebcdd",
+            "to_bytes": 12713,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "3cc3e742bd94c45b679c63fcc8b56b993861f99eed6e41ae693244307497a427",
+                    "bytes": 11611
+                }
+            ],
+            "package_path": "files/app/NotificationInbox.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/PageExportLocalization.php",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "57493a6f328648d38e6fab934f789d56cc5e208d7bb3ecaac8f307bde1926f10",
+            "to_bytes": 2312,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/app/PageExportLocalization.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/PageExporter.php",
+            "operation": "replace",
+            "from_sha256": "73abb0ffdcd5475f19f3b9015827c4719a6b4c471649bd70f93b81081bb4b628",
+            "from_bytes": 24055,
+            "to_sha256": "640c49ced7210769ce3e003fd5007e282f205cd32e4e031e528cec22ec1c40db",
+            "to_bytes": 25016,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "73abb0ffdcd5475f19f3b9015827c4719a6b4c471649bd70f93b81081bb4b628",
+                    "bytes": 24055
+                }
+            ],
+            "package_path": "files/app/PageExporter.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/PageSubtreeStatus.php",
+            "operation": "replace",
+            "from_sha256": "6638c0f1cb394d88104e8326145179be976871b1c7831cd472bdd2418b977de3",
+            "from_bytes": 3813,
+            "to_sha256": "f77d80e75f4b1eefac5b6932ee53bff5847619c6c873a1bcbfd042174497bec1",
+            "to_bytes": 3993,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "6638c0f1cb394d88104e8326145179be976871b1c7831cd472bdd2418b977de3",
+                    "bytes": 3813
+                }
+            ],
+            "package_path": "files/app/PageSubtreeStatus.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/PluginApiClient.php",
+            "operation": "replace",
+            "from_sha256": "61b251c3496ea5ec4bd97dc70613d02ec667dee1dfc16875d96e0a66ad6748c1",
+            "from_bytes": 5644,
+            "to_sha256": "0d4200d9270111c3b262c0eec74fa22d609e8b1e006def69233afa46b7976a4d",
+            "to_bytes": 6459,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "61b251c3496ea5ec4bd97dc70613d02ec667dee1dfc16875d96e0a66ad6748c1",
+                    "bytes": 5644
+                }
+            ],
+            "package_path": "files/app/PluginApiClient.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/PluginApiRegistry.php",
+            "operation": "replace",
+            "from_sha256": "799a084237de7286808cc1345667ad1d651287f318d6b6209fba76780eb9f1e2",
+            "from_bytes": 20725,
+            "to_sha256": "95fdae7e25b297e72bbe5e68a7248066a68ee0293cc79014242b0ed4cc7f3a3e",
+            "to_bytes": 21698,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "799a084237de7286808cc1345667ad1d651287f318d6b6209fba76780eb9f1e2",
+                    "bytes": 20725
+                }
+            ],
+            "package_path": "files/app/PluginApiRegistry.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/PluginApiRuntime.php",
+            "operation": "replace",
+            "from_sha256": "40e584c14ad965e4e65740e06bfebb816bd1e7ad2916771aa0a3a1e27ac3ba9d",
+            "from_bytes": 17367,
+            "to_sha256": "cba6b30fc7eb67004fa9a34caf7953a1a6d019fe6a11e7b4241066d541420982",
+            "to_bytes": 18018,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "40e584c14ad965e4e65740e06bfebb816bd1e7ad2916771aa0a3a1e27ac3ba9d",
+                    "bytes": 17367
+                }
+            ],
+            "package_path": "files/app/PluginApiRuntime.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/PluginCompatibility.php",
+            "operation": "replace",
+            "from_sha256": "6a4275844b0c60270bba4e740176c37e44fa09157575444f816dc7a0eebe0459",
+            "from_bytes": 8700,
+            "to_sha256": "a403862530b550dd1955b8a5c3b76a4af06596e39fb3e08648641292cb408e62",
+            "to_bytes": 9997,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "6a4275844b0c60270bba4e740176c37e44fa09157575444f816dc7a0eebe0459",
+                    "bytes": 8700
+                }
+            ],
+            "package_path": "files/app/PluginCompatibility.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/ProfilePhoto.php",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "3a67cecf79f9cdbf7fbb2fa5a3a642b59a0b1ac8a75739faa4b5f3c0d2dca51a",
+            "to_bytes": 9478,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/app/ProfilePhoto.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/PublicPageRenderer.php",
+            "operation": "replace",
+            "from_sha256": "0783882155c285eb7602d4117184bcfbd3fe48eba59b99d19428cf4fed6a7e57",
+            "from_bytes": 22073,
+            "to_sha256": "6e38d4b1d59c9120ec684f8f0a953b38a089b129953fb3027cdf61878a082c1a",
+            "to_bytes": 22189,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "0783882155c285eb7602d4117184bcfbd3fe48eba59b99d19428cf4fed6a7e57",
+                    "bytes": 22073
+                }
+            ],
+            "package_path": "files/app/PublicPageRenderer.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/StaticPublicSitePublisher.php",
+            "operation": "replace",
+            "from_sha256": "ebf087fafb939c817d9b1e5ff3c4424c18c9d6c5dd5e9faa904a6174337d973c",
+            "from_bytes": 108346,
+            "to_sha256": "647cd5afbd0005990395502c931a5ce43b1da22ff4f2f60331141ae97d354f8a",
+            "to_bytes": 110212,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "ebf087fafb939c817d9b1e5ff3c4424c18c9d6c5dd5e9faa904a6174337d973c",
+                    "bytes": 108346
+                }
+            ],
+            "package_path": "files/app/StaticPublicSitePublisher.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/SystemMessageLocalizer.php",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "2d9405d17457edefadec6ebdc9dd7a268050502292c7df2c9bce1b66a7850ff6",
+            "to_bytes": 9615,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/app/SystemMessageLocalizer.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "app/bootstrap.php",
+            "operation": "replace",
+            "from_sha256": "a52094efbdf23fe71c258a7f6e17af20ce506e5dae9ca9d4017d15338bc944ba",
+            "from_bytes": 129434,
+            "to_sha256": "d3e9a9d49033f96c617ae105bad405d529b51edd43b9a7afc8d971d49dce55bb",
+            "to_bytes": 130725,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "a52094efbdf23fe71c258a7f6e17af20ce506e5dae9ca9d4017d15338bc944ba",
+                    "bytes": 129434
+                }
+            ],
+            "package_path": "files/app/bootstrap.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "assets/app.css",
+            "operation": "replace",
+            "from_sha256": "6a5c1df3b784026f617e3b9efa2a52f33a593984141e2ec125120fb38acaa1f8",
+            "from_bytes": 135325,
+            "to_sha256": "a345c87defa45bcaf6449414b2c77728393668cb66c6fbd8da01e184396b905e",
+            "to_bytes": 135547,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "6a5c1df3b784026f617e3b9efa2a52f33a593984141e2ec125120fb38acaa1f8",
+                    "bytes": 135325
+                }
+            ],
+            "package_path": "files/assets/app.css",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "assets/app.js",
+            "operation": "replace",
+            "from_sha256": "784f97b6fb9bce6d524394c9d0b45a591c55d090ef59b6b5f041e515bb1858f3",
+            "from_bytes": 520045,
+            "to_sha256": "ceec87ad5b2a9053b5877999e51f6a52991e79617a86e1e40302334ed27b4d91",
+            "to_bytes": 523988,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "784f97b6fb9bce6d524394c9d0b45a591c55d090ef59b6b5f041e515bb1858f3",
+                    "bytes": 520045
+                }
+            ],
+            "package_path": "files/assets/app.js",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "assets/knowledge-date-picker.css",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "e4f32599c6b9bb06b327e83951e1e14cf01183ddd1ae509abadcb170c0f7a4a2",
+            "to_bytes": 1961,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/assets/knowledge-date-picker.css",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "assets/knowledge-date-picker.js",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "8a7561280aef011e21fa4169ff598a98c9032fec6ea7ef9a2118917060e6ba30",
+            "to_bytes": 8547,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/assets/knowledge-date-picker.js",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "assets/rag-core.js",
+            "operation": "replace",
+            "from_sha256": "509653a385d551dc1ee115ec82853211f553a05d4476b39fdc464bc8caf2a871",
+            "from_bytes": 114923,
+            "to_sha256": "bf8e1e4a61ebabd7cccb44e1186a8b0e17b25df5bc50e4b6c3b3f008a97c56bc",
+            "to_bytes": 115162,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "509653a385d551dc1ee115ec82853211f553a05d4476b39fdc464bc8caf2a871",
+                    "bytes": 114923
+                }
+            ],
+            "package_path": "files/assets/rag-core.js",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "docker/openconcept/Dockerfile",
+            "operation": "replace",
+            "from_sha256": "a2e6b2df7842c8d7e0638bc9c2f72eb71779ee3547aa874b2136921c4d13f957",
+            "from_bytes": 1252,
+            "to_sha256": "e97b0a149d47ca644a037d923c06afd2502a3b4ec65e2790e404edcdd49bfbe0",
+            "to_bytes": 1359,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "a2e6b2df7842c8d7e0638bc9c2f72eb71779ee3547aa874b2136921c4d13f957",
+                    "bytes": 1252
+                }
+            ],
+            "package_path": "files/docker/openconcept/Dockerfile",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "docs/openconcept-operation-manual.ja.md",
+            "operation": "replace",
+            "from_sha256": "e1a79ad04a79b74414d1eb09a0ad555bbb410ff94cb7fbcd626a801a69dce9fd",
+            "from_bytes": 60699,
+            "to_sha256": "04340ce24ed905acb7e06b3a596004788db4b8a6f818a7779356c9c9e0b33279",
+            "to_bytes": 60856,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "e1a79ad04a79b74414d1eb09a0ad555bbb410ff94cb7fbcd626a801a69dce9fd",
+                    "bytes": 60699
+                }
+            ],
+            "package_path": "files/docs/openconcept-operation-manual.ja.md",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "docs/release-notes-2.6.2.md",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "480c65ba2644fb796ee7734a608daf9b4ad955e7837533a0bebb8f1ea4097254",
+            "to_bytes": 2950,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/docs/release-notes-2.6.2.md",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "docs/release-notes-2.7.0.md",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "08d8a2e74e072dc58b0301cee86b1e48375774c75a458e442ad7f88287e5c0c4",
+            "to_bytes": 3900,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/docs/release-notes-2.7.0.md",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "docs/release-notes-3.0.0.md",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "01df10014480fb63f96e349a54cd166617512eaa5a23cae9c896514e0d349122",
+            "to_bytes": 11689,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/docs/release-notes-3.0.0.md",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/ai-page-actions/en-US.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "692f637a5311030664fb019cb01665e3f1d9e2f8eca291911530ffb870cfee63",
+            "to_bytes": 2715,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/ai-page-actions/en-US.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/ai-page-actions/ja-JP.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "8b6ca8acb2498cd9a3d825fa21bbc03823bf69a45960a9c44c565ba411cce1a7",
+            "to_bytes": 3410,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/ai-page-actions/ja-JP.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/ai-page-actions/ko-KR.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "0e35f646c093c482caf923bdefb986efaae6df631ac8a72e7cbd238d85e58866",
+            "to_bytes": 3087,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/ai-page-actions/ko-KR.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/ai-page-actions/vi-VN.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "b711c7b80020adeb71245caed69b591f8ded9e52be31a0b8027da9d327e84464",
+            "to_bytes": 3110,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/ai-page-actions/vi-VN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/ai-page-actions/zh-CN.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "a4a930473f7d274be0e219e4e176d2ab1bb81026fdee398571ae22ceb391e585",
+            "to_bytes": 2452,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/ai-page-actions/zh-CN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/ai-search-system/en-US.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "fb3ec4fa4202b8e66df121e0b9561e8ea92c688c469b74ec0971663de8cd7607",
+            "to_bytes": 1809,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/ai-search-system/en-US.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/ai-search-system/ja-JP.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "366958e321e4233a91684214a68b5056fe63002e18494d087f131d6f0536593d",
+            "to_bytes": 2110,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/ai-search-system/ja-JP.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/ai-search-system/ko-KR.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "f288059db90dd091e5047b99163b338e587ddb4c71200307ebabd2dc55973e51",
+            "to_bytes": 2040,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/ai-search-system/ko-KR.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/ai-search-system/vi-VN.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "b7f5915550b1a2880c4a91673e5a7009dd97b4a020bbfaf6a1d8f0e11e338be4",
+            "to_bytes": 2152,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/ai-search-system/vi-VN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/ai-search-system/zh-CN.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "6106aea5d06b11625990f0dbf87fbad8a8e92ec01045f33a608654f797d96da7",
+            "to_bytes": 1703,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/ai-search-system/zh-CN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/en-US.json",
+            "operation": "replace",
+            "from_sha256": "e68bd17f183e3ee23b695e38a9733f5589f36044a62923b92d6b5bcfcbf1a4f6",
+            "from_bytes": 71432,
+            "to_sha256": "96591d00a115a4277af7f185402c2f22d00e849d040c8617dedb2507aa0024e3",
+            "to_bytes": 81233,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "e68bd17f183e3ee23b695e38a9733f5589f36044a62923b92d6b5bcfcbf1a4f6",
+                    "bytes": 71432
+                }
+            ],
+            "package_path": "files/locales/en-US.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/ja-JP.json",
+            "operation": "replace",
+            "from_sha256": "8ac33758842df18e1167ef4496ee8fef8f86f77e96b71a5b425aa037d6fa8432",
+            "from_bytes": 81556,
+            "to_sha256": "036db09315687f9db126ef705eec9a1c8113ca955199ca98342ab01adfa6386a",
+            "to_bytes": 93703,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "8ac33758842df18e1167ef4496ee8fef8f86f77e96b71a5b425aa037d6fa8432",
+                    "bytes": 81556
+                }
+            ],
+            "package_path": "files/locales/ja-JP.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/ko-KR.json",
+            "operation": "replace",
+            "from_sha256": "bd7e73ff3118d2fe99e8dac0d9d4748258547772b9df0fe26d0e8d5e3fa5b01d",
+            "from_bytes": 79592,
+            "to_sha256": "a2660ce0f27b55269131a29b0ed3c0bdd4117b5e5b072be684394e6bb681a92b",
+            "to_bytes": 90903,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "bd7e73ff3118d2fe99e8dac0d9d4748258547772b9df0fe26d0e8d5e3fa5b01d",
+                    "bytes": 79592
+                }
+            ],
+            "package_path": "files/locales/ko-KR.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/maintenance-screen/en-US.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "ca4e9033abc51294e6bc985bcfc10418fd89cbb7484ddd716c742c3272df9982",
+            "to_bytes": 3786,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/maintenance-screen/en-US.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/maintenance-screen/ja-JP.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "e9722833737df49bd46a226cf4d4771c63f9b2ad920191d3558be1c3a69db581",
+            "to_bytes": 4521,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/maintenance-screen/ja-JP.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/maintenance-screen/ko-KR.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "2937741e048f76331cdc252809973762f8ce72fdd0d108987714138e48ed754f",
+            "to_bytes": 4177,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/maintenance-screen/ko-KR.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/maintenance-screen/vi-VN.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "99b09ca34062d8ad1aafac2c72ba4218210ac96f2ce5a4a4b337d477bb75244b",
+            "to_bytes": 4610,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/maintenance-screen/vi-VN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/maintenance-screen/zh-CN.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "ee54613e338276dd3db4a7a575c5192f709cf524f3f87c4fddb936abca5352ae",
+            "to_bytes": 3531,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/maintenance-screen/zh-CN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/page-export/en-US.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "45bcaa6e68f9b6717135d60c3d36661384a756618227805696689091905d8fd2",
+            "to_bytes": 1497,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/page-export/en-US.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/page-export/ja-JP.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "1b9ca1a7ce32970f6233c8c2bba45aa5ff3bb126a7877f54d56cf579bc1a71f2",
+            "to_bytes": 1725,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/page-export/ja-JP.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/page-export/ko-KR.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "c4e9b46e63850e3d88c371a1344adc1cd79c6441e3bed0dea0a4f62918ba583f",
+            "to_bytes": 1667,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/page-export/ko-KR.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/page-export/vi-VN.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "8e7720f55f8f5357ba7b0ce41baf339682107e5df8bcbc56be5730812ae7815c",
+            "to_bytes": 1645,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/page-export/vi-VN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/page-export/zh-CN.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "a4f4040416a554578f6180df64a665c96e3ae4d385f49a77e798aba07e9412d3",
+            "to_bytes": 1441,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/page-export/zh-CN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/rag-core/en-US.json",
+            "operation": "replace",
+            "from_sha256": "5d95504e02d074963a144b8047a2b5cf845e135b31d705c2e15d1771962e9eb9",
+            "from_bytes": 27674,
+            "to_sha256": "7e6b28133b4d01436f19f080d5c5d1ca3d3f35414b52d4ca3bd5e6895618e236",
+            "to_bytes": 28049,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "5d95504e02d074963a144b8047a2b5cf845e135b31d705c2e15d1771962e9eb9",
+                    "bytes": 27674
+                }
+            ],
+            "package_path": "files/locales/rag-core/en-US.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/rag-core/ja-JP.json",
+            "operation": "replace",
+            "from_sha256": "db56ba87feaacb415eba138c6cd6f817c44bc4fbd8e3e8dd5ad04a175e6e2a7b",
+            "from_bytes": 32249,
+            "to_sha256": "a5fd7baef269adf76cd604023b14bb57d56dd29452bb0f53f989c21a4b29792d",
+            "to_bytes": 32663,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "db56ba87feaacb415eba138c6cd6f817c44bc4fbd8e3e8dd5ad04a175e6e2a7b",
+                    "bytes": 32249
+                }
+            ],
+            "package_path": "files/locales/rag-core/ja-JP.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/rag-core/ko-KR.json",
+            "operation": "replace",
+            "from_sha256": "5471426731a6102e7f566a264e910f966d46e5ef2739dfc1101274be1a6bf558",
+            "from_bytes": 30886,
+            "to_sha256": "cf933d399808a7ddac96a05f9d816feab037bccb6f8cb1fb13975d304fa4e6f5",
+            "to_bytes": 31602,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "5471426731a6102e7f566a264e910f966d46e5ef2739dfc1101274be1a6bf558",
+                    "bytes": 30886
+                }
+            ],
+            "package_path": "files/locales/rag-core/ko-KR.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/rag-core/vi-VN.json",
+            "operation": "replace",
+            "from_sha256": "f500333f3ac788d9fca7309cb1baa8dcb57c8139d078293e55aae87701a5aa96",
+            "from_bytes": 33717,
+            "to_sha256": "02182c8d3b7926e6787617b075c29f9dffc059c0019e975ad8c74a43a56a5efa",
+            "to_bytes": 34829,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "f500333f3ac788d9fca7309cb1baa8dcb57c8139d078293e55aae87701a5aa96",
+                    "bytes": 33717
+                }
+            ],
+            "package_path": "files/locales/rag-core/vi-VN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/rag-core/zh-CN.json",
+            "operation": "replace",
+            "from_sha256": "c8baefee6890b6373215a851148eaf7e2614a27e06f2b477e7842b096684a99a",
+            "from_bytes": 26472,
+            "to_sha256": "759a3baebff0cf7d9d65ad396b3061a834cedb7aba70f1a2bc41f8bd46c22b7c",
+            "to_bytes": 26705,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "c8baefee6890b6373215a851148eaf7e2614a27e06f2b477e7842b096684a99a",
+                    "bytes": 26472
+                }
+            ],
+            "package_path": "files/locales/rag-core/zh-CN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/system-messages/en-US.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "32cf7999d4168626ebbaec1a37908efdde3563510310299b84ac4c03a41a323f",
+            "to_bytes": 21252,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/system-messages/en-US.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/system-messages/ja-JP.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "0fbdf765b20a9db009b606878aa88158448a715bdee87000a5c35518afbbf358",
+            "to_bytes": 25929,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/system-messages/ja-JP.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/system-messages/ko-KR.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "633fac49adaa23d7df329daebd5effa3c866c3b5e530e0785f30ab0a51c81279",
+            "to_bytes": 24160,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/system-messages/ko-KR.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/system-messages/sources.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "0f1936ee7a663915917629dc6db2c79dd9061f0f066cab904e8c7196395140f8",
+            "to_bytes": 29933,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/system-messages/sources.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/system-messages/vi-VN.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "ec66c6c9e2bf5eeb41de2e7ef4bad0a41cb248bcf5a978156b2ce8b75a10eb01",
+            "to_bytes": 23717,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/system-messages/vi-VN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/system-messages/zh-CN.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "1401bb9da71c098ed1aa7fe731b2c6a4e694e5a8ceb83df456bd3e6f544d4f52",
+            "to_bytes": 18810,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/locales/system-messages/zh-CN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/vi-VN.json",
+            "operation": "replace",
+            "from_sha256": "040eb64d79d99ad7618294bdd9f8d9f959c3ad7117c715112057af2282bb5002",
+            "from_bytes": 81869,
+            "to_sha256": "53bd4019cc5ce18d3facc1fd3c9791598efcf193e01e5b4ee257a9b3629cfbcd",
+            "to_bytes": 92986,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "040eb64d79d99ad7618294bdd9f8d9f959c3ad7117c715112057af2282bb5002",
+                    "bytes": 81869
+                }
+            ],
+            "package_path": "files/locales/vi-VN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "locales/zh-CN.json",
+            "operation": "replace",
+            "from_sha256": "76145d705db501a81213c0caa97278e6b598ac5d96848aa26cb7398456ed5c53",
+            "from_bytes": 69049,
+            "to_sha256": "fa0ae03591ccf5c6ecc81374537118cae297b9f9d935170911e70aa68c2a274d",
+            "to_bytes": 78301,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "76145d705db501a81213c0caa97278e6b598ac5d96848aa26cb7398456ed5c53",
+                    "bytes": 69049
+                }
+            ],
+            "package_path": "files/locales/zh-CN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/ai-file-reader/locales/en-US.json",
+            "operation": "replace",
+            "from_sha256": "04cad2148a6f95c375726a296f5c00251b9446cc96e05d526fcd1496988e2bc3",
+            "from_bytes": 8286,
+            "to_sha256": "1a6e1412d1e064c522ea64017de657b3c534be47b1fe9c96cfeb3454bb7dd4fa",
+            "to_bytes": 9384,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "04cad2148a6f95c375726a296f5c00251b9446cc96e05d526fcd1496988e2bc3",
+                    "bytes": 8286
+                }
+            ],
+            "package_path": "files/plugins/ai-file-reader/locales/en-US.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/ai-file-reader/locales/ja-JP.json",
+            "operation": "replace",
+            "from_sha256": "4a2a43e8ecf14d3c99543f0ad6e3e35503f23f7200a02966ad7c2e3ba519792c",
+            "from_bytes": 9858,
+            "to_sha256": "1f961dfcc7d8c8e960d9e0dd414643fc6695345a62513f321666c74a6c02fbc5",
+            "to_bytes": 11237,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "4a2a43e8ecf14d3c99543f0ad6e3e35503f23f7200a02966ad7c2e3ba519792c",
+                    "bytes": 9858
+                }
+            ],
+            "package_path": "files/plugins/ai-file-reader/locales/ja-JP.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/ai-file-reader/locales/ko-KR.json",
+            "operation": "replace",
+            "from_sha256": "b072fc799d9ccab35a20e758989e7226830db6786f417b81b5e1a797ae6262cb",
+            "from_bytes": 9229,
+            "to_sha256": "45e5b65c2c9217c33cbef1a1b655037c42ae263b7e2f0bcb852ac9e62778174c",
+            "to_bytes": 10575,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "b072fc799d9ccab35a20e758989e7226830db6786f417b81b5e1a797ae6262cb",
+                    "bytes": 9229
+                }
+            ],
+            "package_path": "files/plugins/ai-file-reader/locales/ko-KR.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/ai-file-reader/locales/system-messages.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "453098ec07058a61fbb6830c555b72050ab91800189e32900f5d7e012de6a90a",
+            "to_bytes": 924,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/plugins/ai-file-reader/locales/system-messages.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/ai-file-reader/locales/vi-VN.json",
+            "operation": "replace",
+            "from_sha256": "af626045d2cdbfdcdceeb0648d0accf9711384517e0efdc7299b25cd2a1e3679",
+            "from_bytes": 9563,
+            "to_sha256": "3baf9ac11cda2ac73bde8b11c80635bda55fc7769eb240b29d316c54bf84ef17",
+            "to_bytes": 10907,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "af626045d2cdbfdcdceeb0648d0accf9711384517e0efdc7299b25cd2a1e3679",
+                    "bytes": 9563
+                }
+            ],
+            "package_path": "files/plugins/ai-file-reader/locales/vi-VN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/ai-file-reader/locales/zh-CN.json",
+            "operation": "replace",
+            "from_sha256": "aca1f0bd39db5d43d71eaf8baa650c2e162717fee21c659509ad7cdbc7a41fe6",
+            "from_bytes": 7782,
+            "to_sha256": "2a6a9193c07e2116a7d9c28d48ed9e9f45b0ef1f7815edb39c8f9e84e5efbbdd",
+            "to_bytes": 8837,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "aca1f0bd39db5d43d71eaf8baa650c2e162717fee21c659509ad7cdbc7a41fe6",
+                    "bytes": 7782
+                }
+            ],
+            "package_path": "files/plugins/ai-file-reader/locales/zh-CN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/ai-file-reader/plugin.php",
+            "operation": "replace",
+            "from_sha256": "89e88ca65ba23a90a1703fcd88de7b5d927248a1da732fdc0d4545430dd3c4b3",
+            "from_bytes": 657,
+            "to_sha256": "224e6425ffa55778fd48cdd82761ae1eb78bfcbf15131307e04a3401fed9ea8f",
+            "to_bytes": 946,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "89e88ca65ba23a90a1703fcd88de7b5d927248a1da732fdc0d4545430dd3c4b3",
+                    "bytes": 657
+                }
+            ],
+            "package_path": "files/plugins/ai-file-reader/plugin.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/ai-file-reader/src/FileReaderService.php",
+            "operation": "replace",
+            "from_sha256": "39679570ac5a6ce6c430125a10825f2e06ef07c5d27b04cae84175c7a82466bf",
+            "from_bytes": 43419,
+            "to_sha256": "940ae97ab67f32018f71f330031037845d343a3dc7b00a43e5926cd6da88ca1f",
+            "to_bytes": 43852,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "39679570ac5a6ce6c430125a10825f2e06ef07c5d27b04cae84175c7a82466bf",
+                    "bytes": 43419
+                }
+            ],
+            "package_path": "files/plugins/ai-file-reader/src/FileReaderService.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/ai-search-voice/locales/en-US.json",
+            "operation": "replace",
+            "from_sha256": "1494ab735ad06539e5e7c78c627061431b1de407ee41e2c3d1a73f14c206926b",
+            "from_bytes": 4044,
+            "to_sha256": "ad990cd30e4f9ef80194921240c16f4c2f5d4401650790e41d4a55ace0f270a8",
+            "to_bytes": 5465,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "1494ab735ad06539e5e7c78c627061431b1de407ee41e2c3d1a73f14c206926b",
+                    "bytes": 4044
+                }
+            ],
+            "package_path": "files/plugins/ai-search-voice/locales/en-US.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/ai-search-voice/locales/ja-JP.json",
+            "operation": "replace",
+            "from_sha256": "45ac073927f1c28f7dab92ea365d2e6c371944e0223083ef104510bde099ba83",
+            "from_bytes": 4603,
+            "to_sha256": "a2de0722177ee21cf1ecfdf2f9feaad0dbc17cc2aaf8af91fbf7e52fa8dbc122",
+            "to_bytes": 6311,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "45ac073927f1c28f7dab92ea365d2e6c371944e0223083ef104510bde099ba83",
+                    "bytes": 4603
+                }
+            ],
+            "package_path": "files/plugins/ai-search-voice/locales/ja-JP.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/ai-search-voice/locales/ko-KR.json",
+            "operation": "replace",
+            "from_sha256": "cbe07ceaa5101451253ade9a162cb41f2a97ccafe1ca2c59c5f4f3ad8dc1f044",
+            "from_bytes": 4527,
+            "to_sha256": "565d05ebfca59c816f227b11e9d85143c6b8db70d6e999cb9a6a0cc23f1873d4",
+            "to_bytes": 6148,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "cbe07ceaa5101451253ade9a162cb41f2a97ccafe1ca2c59c5f4f3ad8dc1f044",
+                    "bytes": 4527
+                }
+            ],
+            "package_path": "files/plugins/ai-search-voice/locales/ko-KR.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/ai-search-voice/locales/system-messages.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "475690e28e383d157fbcf2db821614465de6a36219fc0762f8b666e64820d203",
+            "to_bytes": 1641,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/plugins/ai-search-voice/locales/system-messages.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/ai-search-voice/locales/vi-VN.json",
+            "operation": "replace",
+            "from_sha256": "4cca8c8a5c376cea71001dd31a410c3d39d6b87611064bdc608f2de57ccc4f91",
+            "from_bytes": 4682,
+            "to_sha256": "23ccb41af395d9dfa0408b201a5a844405abaccd5f50077e4c577f808a4fb6bf",
+            "to_bytes": 6411,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "4cca8c8a5c376cea71001dd31a410c3d39d6b87611064bdc608f2de57ccc4f91",
+                    "bytes": 4682
+                }
+            ],
+            "package_path": "files/plugins/ai-search-voice/locales/vi-VN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/ai-search-voice/locales/zh-CN.json",
+            "operation": "replace",
+            "from_sha256": "a7fa555b8589996e8f8b49faecc8636ed954a5f6ea4ddbed22e1a50f7b28c19a",
+            "from_bytes": 3874,
+            "to_sha256": "2b5ba423a85ad787a7a7712fc88b9a10426cceeac729b2c856ef325fb3f17446",
+            "to_bytes": 5188,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "a7fa555b8589996e8f8b49faecc8636ed954a5f6ea4ddbed22e1a50f7b28c19a",
+                    "bytes": 3874
+                }
+            ],
+            "package_path": "files/plugins/ai-search-voice/locales/zh-CN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/ai-search-voice/plugin.php",
+            "operation": "replace",
+            "from_sha256": "47ea09e5d3eebb28dd8274fdc3a05e3c2a330c37322f7a0a6e26b104cbf73d63",
+            "from_bytes": 866,
+            "to_sha256": "2ca47cf0676d4228cb796967baae12a047b39e4c70e080091fd26730499bffcf",
+            "to_bytes": 1241,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "47ea09e5d3eebb28dd8274fdc3a05e3c2a330c37322f7a0a6e26b104cbf73d63",
+                    "bytes": 866
+                }
+            ],
+            "package_path": "files/plugins/ai-search-voice/plugin.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/translation-openai/locales/en-US.json",
+            "operation": "replace",
+            "from_sha256": "96192b53be8ed3196cda7cfa2eb7cbbd33cf7c70cecdd87d522c91900a507676",
+            "from_bytes": 364,
+            "to_sha256": "7a02fb979a1caa7a65e1317725adae4ec73fec0a375a91ce3b30d32f2cedebba",
+            "to_bytes": 1969,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "96192b53be8ed3196cda7cfa2eb7cbbd33cf7c70cecdd87d522c91900a507676",
+                    "bytes": 364
+                }
+            ],
+            "package_path": "files/plugins/translation-openai/locales/en-US.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/translation-openai/locales/ja-JP.json",
+            "operation": "replace",
+            "from_sha256": "5093446f5c48a3284cee1e1dee9c83d622a30f7b641d2acbb70253e0e484d2c6",
+            "from_bytes": 397,
+            "to_sha256": "addbdf5ddc0a4888f43151e0768b64d8c6f85a5658a9af3509b46483ae4f599c",
+            "to_bytes": 2178,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "5093446f5c48a3284cee1e1dee9c83d622a30f7b641d2acbb70253e0e484d2c6",
+                    "bytes": 397
+                }
+            ],
+            "package_path": "files/plugins/translation-openai/locales/ja-JP.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/translation-openai/locales/ko-KR.json",
+            "operation": "replace",
+            "from_sha256": "db689a929975bf9c67409a412d2880e78b77577c48c2acd656286e45135b38e2",
+            "from_bytes": 370,
+            "to_sha256": "76a8f768555907e35b9438f4cd7248bc74ac30656150c30190f0e50d9f9f9738",
+            "to_bytes": 2136,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "db689a929975bf9c67409a412d2880e78b77577c48c2acd656286e45135b38e2",
+                    "bytes": 370
+                }
+            ],
+            "package_path": "files/plugins/translation-openai/locales/ko-KR.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/translation-openai/locales/system-messages.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "ec64b512a0db06fa1ff5e29c7b00409ff0e0e75c662a5204d8e2acbcd3f81995",
+            "to_bytes": 1714,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/plugins/translation-openai/locales/system-messages.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/translation-openai/locales/vi-VN.json",
+            "operation": "replace",
+            "from_sha256": "c749a35fda70f3d4f652deb9402e034686f7ed874dcdd6836257f892a0c587b1",
+            "from_bytes": 441,
+            "to_sha256": "b33873deb09ad616ee425da44a7e7e2511f68aca9a1f5181a0fb98bdc0d178b5",
+            "to_bytes": 2237,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "c749a35fda70f3d4f652deb9402e034686f7ed874dcdd6836257f892a0c587b1",
+                    "bytes": 441
+                }
+            ],
+            "package_path": "files/plugins/translation-openai/locales/vi-VN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/translation-openai/locales/zh-CN.json",
+            "operation": "replace",
+            "from_sha256": "cbe48a2a43760d56a9a2db6aad3484b6e1a9ec2461aebc2c3ac2e7284f736205",
+            "from_bytes": 363,
+            "to_sha256": "29771373f1cddb394a7e02473c5fdba7f7fe956fd9f67ec2f8edde3a6b8c83de",
+            "to_bytes": 1756,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "cbe48a2a43760d56a9a2db6aad3484b6e1a9ec2461aebc2c3ac2e7284f736205",
+                    "bytes": 363
+                }
+            ],
+            "package_path": "files/plugins/translation-openai/locales/zh-CN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/translation-openai/plugin.php",
+            "operation": "replace",
+            "from_sha256": "22d54d9cff4835b4ed80e5f28ba8e2bb04b81c13e204e4b88f69e93c37f4b448",
+            "from_bytes": 1046,
+            "to_sha256": "6f7ba5e4098273388eff34056ea36844590ccb8f378a59a9ab7c3ee7db24a2fb",
+            "to_bytes": 1432,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "22d54d9cff4835b4ed80e5f28ba8e2bb04b81c13e204e4b88f69e93c37f4b448",
+                    "bytes": 1046
+                }
+            ],
+            "package_path": "files/plugins/translation-openai/plugin.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/voice-conversation/locales/en-US.json",
+            "operation": "replace",
+            "from_sha256": "5dc7d8dd264cfd5da46e92e2920603d54fd67e0e09e47036af1613bd2d207899",
+            "from_bytes": 7190,
+            "to_sha256": "ec8be155100ed560c3314a592d1fcd599c2894f01f9c48b057c5dbeda63dfaca",
+            "to_bytes": 9432,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "5dc7d8dd264cfd5da46e92e2920603d54fd67e0e09e47036af1613bd2d207899",
+                    "bytes": 7190
+                }
+            ],
+            "package_path": "files/plugins/voice-conversation/locales/en-US.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/voice-conversation/locales/ja-JP.json",
+            "operation": "replace",
+            "from_sha256": "fac9d7d2d4fcafdb6e061e7d05877786c3e3b9fba3841b8bce27fb47ae4a019b",
+            "from_bytes": 8104,
+            "to_sha256": "44414010954e196eb592eebf7744f6ea097a9462123fd77c01e8416db906a739",
+            "to_bytes": 10737,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "fac9d7d2d4fcafdb6e061e7d05877786c3e3b9fba3841b8bce27fb47ae4a019b",
+                    "bytes": 8104
+                }
+            ],
+            "package_path": "files/plugins/voice-conversation/locales/ja-JP.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/voice-conversation/locales/ko-KR.json",
+            "operation": "replace",
+            "from_sha256": "6b7255999ad2fef61446d10e12a10456a3fb5ffb8da7238206cb60cfc8b6cff5",
+            "from_bytes": 8014,
+            "to_sha256": "a73cc050dd3f8106f792b57470a22cd48eb66fd2ec5792adf19f20a2ecc5b0cc",
+            "to_bytes": 10474,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "6b7255999ad2fef61446d10e12a10456a3fb5ffb8da7238206cb60cfc8b6cff5",
+                    "bytes": 8014
+                }
+            ],
+            "package_path": "files/plugins/voice-conversation/locales/ko-KR.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/voice-conversation/locales/system-messages.json",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "435ef7ddc31ee44b3ba87e8484cfa4b983e2be6fcaff302eeeab817733b16b94",
+            "to_bytes": 2526,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/plugins/voice-conversation/locales/system-messages.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/voice-conversation/locales/vi-VN.json",
+            "operation": "replace",
+            "from_sha256": "359adb5157d07424319750de417b1eca6822be1ea5c61550ece272660e62d64c",
+            "from_bytes": 8232,
+            "to_sha256": "4e7917712ec74e1ae2078d298f60873f8d70c2f8016a71d705025a8337493196",
+            "to_bytes": 10846,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "359adb5157d07424319750de417b1eca6822be1ea5c61550ece272660e62d64c",
+                    "bytes": 8232
+                }
+            ],
+            "package_path": "files/plugins/voice-conversation/locales/vi-VN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/voice-conversation/locales/zh-CN.json",
+            "operation": "replace",
+            "from_sha256": "ee1a002bee9c30e1b5e6b8f7c467279154d650cd904afdc2bacccfcd69ca3168",
+            "from_bytes": 6743,
+            "to_sha256": "1ec8af9829f6e05f19b2f097a613f8e219563b546996aa4c4a0e0b93fca50de4",
+            "to_bytes": 8753,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "ee1a002bee9c30e1b5e6b8f7c467279154d650cd904afdc2bacccfcd69ca3168",
+                    "bytes": 6743
+                }
+            ],
+            "package_path": "files/plugins/voice-conversation/locales/zh-CN.json",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/voice-conversation/plugin.php",
+            "operation": "replace",
+            "from_sha256": "ecd90c86b6d79ca521e9c021141661218e233d189f088f9afff4511d83e32d4f",
+            "from_bytes": 2283,
+            "to_sha256": "7b432afd64167a1bf7b35e92883e61d7c5a1842f56d7d09ec85581feab74c0d9",
+            "to_bytes": 2661,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "ecd90c86b6d79ca521e9c021141661218e233d189f088f9afff4511d83e32d4f",
+                    "bytes": 2283
+                }
+            ],
+            "package_path": "files/plugins/voice-conversation/plugin.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "plugins/voice-conversation/src/VoiceConversationController.php",
+            "operation": "replace",
+            "from_sha256": "64025a003f3eee0a59c44addcb3944209c4eca256cd2ecd0cc845bcdc651557e",
+            "from_bytes": 13457,
+            "to_sha256": "0010027ad7763c483fb460673875d8ac9cafc782aa1e7ddeac715a18a0dd11ef",
+            "to_bytes": 13884,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "64025a003f3eee0a59c44addcb3944209c4eca256cd2ecd0cc845bcdc651557e",
+                    "bytes": 13457
+                }
+            ],
+            "package_path": "files/plugins/voice-conversation/src/VoiceConversationController.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "public/api.php",
+            "operation": "replace",
+            "from_sha256": "1f0efe8e18b3902f2a08f542c420109fe9f1d6072f0f36d7f75ea6106e5b6959",
+            "from_bytes": 202106,
+            "to_sha256": "c5e0ffc8e437267d878b00c139bffc8c229ae3bac5e325c98e8dd93cd8d1acee",
+            "to_bytes": 205454,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "1f0efe8e18b3902f2a08f542c420109fe9f1d6072f0f36d7f75ea6106e5b6959",
+                    "bytes": 202106
+                }
+            ],
+            "package_path": "files/public/api.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "public/assets/app.css",
+            "operation": "replace",
+            "from_sha256": "6a5c1df3b784026f617e3b9efa2a52f33a593984141e2ec125120fb38acaa1f8",
+            "from_bytes": 135325,
+            "to_sha256": "a345c87defa45bcaf6449414b2c77728393668cb66c6fbd8da01e184396b905e",
+            "to_bytes": 135547,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "6a5c1df3b784026f617e3b9efa2a52f33a593984141e2ec125120fb38acaa1f8",
+                    "bytes": 135325
+                }
+            ],
+            "package_path": "files/public/assets/app.css",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "public/assets/app.js",
+            "operation": "replace",
+            "from_sha256": "784f97b6fb9bce6d524394c9d0b45a591c55d090ef59b6b5f041e515bb1858f3",
+            "from_bytes": 520045,
+            "to_sha256": "ceec87ad5b2a9053b5877999e51f6a52991e79617a86e1e40302334ed27b4d91",
+            "to_bytes": 523988,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "784f97b6fb9bce6d524394c9d0b45a591c55d090ef59b6b5f041e515bb1858f3",
+                    "bytes": 520045
+                }
+            ],
+            "package_path": "files/public/assets/app.js",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "public/assets/knowledge-date-picker.css",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "e4f32599c6b9bb06b327e83951e1e14cf01183ddd1ae509abadcb170c0f7a4a2",
+            "to_bytes": 1961,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/public/assets/knowledge-date-picker.css",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "public/assets/knowledge-date-picker.js",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "8a7561280aef011e21fa4169ff598a98c9032fec6ea7ef9a2118917060e6ba30",
+            "to_bytes": 8547,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/public/assets/knowledge-date-picker.js",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "public/assets/rag-core.js",
+            "operation": "add",
+            "from_sha256": null,
+            "from_bytes": null,
+            "to_sha256": "bf8e1e4a61ebabd7cccb44e1186a8b0e17b25df5bc50e4b6c3b3f008a97c56bc",
+            "to_bytes": 115162,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": null,
+                    "bytes": null
+                }
+            ],
+            "package_path": "files/public/assets/rag-core.js",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "public/export.php",
+            "operation": "replace",
+            "from_sha256": "6c686a69043d3c16116f48f94a3f572630c997bd8f7166e917c0d48bfbf87e45",
+            "from_bytes": 2114,
+            "to_sha256": "997779299b1267a9dd30e4e9a0fe83a97bd87577b1a51a19df71edff37c39b2e",
+            "to_bytes": 2336,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "6c686a69043d3c16116f48f94a3f572630c997bd8f7166e917c0d48bfbf87e45",
+                    "bytes": 2114
+                }
+            ],
+            "package_path": "files/public/export.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "public/history.php",
+            "operation": "replace",
+            "from_sha256": "f8a1d15fb7355de34a7d32a681bca4bdc4aef44969f18b2dedd3dd6effff55e0",
+            "from_bytes": 7025,
+            "to_sha256": "cd50e1c9f3391d51a6fe15cb72530dfe58f3ca878a353c7e90a6692b1bb6026f",
+            "to_bytes": 8395,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "f8a1d15fb7355de34a7d32a681bca4bdc4aef44969f18b2dedd3dd6effff55e0",
+                    "bytes": 7025
+                }
+            ],
+            "package_path": "files/public/history.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "public/index.php",
+            "operation": "replace",
+            "from_sha256": "76082a3e2a0eb0fd397aa42021579dc86b02504c2b0d2130365b7c2983b58a9e",
+            "from_bytes": 7617,
+            "to_sha256": "3bceac6d82ebc0ac36e67348ecff7ff0669200645be4065a56b4ac3c9de22769",
+            "to_bytes": 3611,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "76082a3e2a0eb0fd397aa42021579dc86b02504c2b0d2130365b7c2983b58a9e",
+                    "bytes": 7617
+                }
+            ],
+            "package_path": "files/public/index.php",
+            "install_action": "merge-overwrite-file"
+        },
+        {
+            "path": "public/share.php",
+            "operation": "replace",
+            "from_sha256": "6a50dc7300f4d8c33d0fc361e169ffd5fbc895875729611331dc2468676cd632",
+            "from_bytes": 1534,
+            "to_sha256": "7f24ceed447e836e948d33c4d187251aac0deb06846356c1e849bc5368f22a48",
+            "to_bytes": 1823,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "6a50dc7300f4d8c33d0fc361e169ffd5fbc895875729611331dc2468676cd632",
+                    "bytes": 1534
+                }
+            ],
+            "package_path": "files/public/share.php",
+            "install_action": "merge-overwrite-file"
+        }
+    ],
+    "reference_files": [
+        {
+            "path": "compose.rag.yaml",
+            "operation": "replace",
+            "from_sha256": "7ee3a4ee8b88b208168afec3f867e56fac5f5d0a556416e985250d8cace072e5",
+            "from_bytes": 5422,
+            "to_sha256": "9ec08cd7bcfd6acf021826c158bcb448ca86e6496563adbc726093b72f03cc57",
+            "to_bytes": 5281,
+            "accepted_from": [
+                {
+                    "public_manifest_sha256": "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08",
+                    "sha256": "7ee3a4ee8b88b208168afec3f867e56fac5f5d0a556416e985250d8cace072e5",
+                    "bytes": 5422
+                }
+            ],
+            "package_path": "reference/compose.rag.yaml",
+            "install_action": "manual-merge-only"
+        }
+    ],
+    "file_count": 117,
+    "total_bytes": 3637087,
+    "files": [
+        {
+            "path": "LICENSE",
+            "bytes": 1090,
+            "sha256": "0b6f376a9a9ca41e60bddf668b53020a3d1d2f7aa0d9559987fb6248ca7fef16"
+        },
+        {
+            "path": "LICENSE.en.md",
+            "bytes": 17995,
+            "sha256": "a36b56756ded8b45ff27b43845ff6ee5625969452309a48ad1361604cb52f1a2"
+        },
+        {
+            "path": "LICENSE.en.txt",
+            "bytes": 17921,
+            "sha256": "8f17d8b250b91f649ff8367192d3585d7116c9bf9210093164459d3f82a4c49c"
+        },
+        {
+            "path": "LICENSE.ja.md",
+            "bytes": 19060,
+            "sha256": "f86093552100563de06f47f1feec0986535b569960c3f9b201d6cea363fd2b6c"
+        },
+        {
+            "path": "LICENSE.ja.txt",
+            "bytes": 18986,
+            "sha256": "5c0eced685837e693be5bcdc6d11efa2e72f9c92c861da0be6c5573b28058199"
+        },
+        {
+            "path": "README.ja-en.md",
+            "bytes": 10243,
+            "sha256": "f5f2d0d112bb1045fed9968c08c8e5bce143647ef92b67046d1a926978b59877"
+        },
+        {
+            "path": "files/DISTRIBUTION-MANIFEST.json",
+            "bytes": 66996,
+            "sha256": "24a31957243895aaf8f7fe31d1c473115efd9c9910182aa98c982b0bab337392"
+        },
+        {
+            "path": "files/HTTP-SERVER-SETUP.ja-en.md",
+            "bytes": 37062,
+            "sha256": "c61ef82292e3331100b42126bd0faa4384bf019486433633ffb4887250312963"
+        },
+        {
+            "path": "files/README.md",
+            "bytes": 18572,
+            "sha256": "23a13b0f7446f0d7f0ae9efa84d51468bb96336438d30e04139e89bbe7f8b213"
+        },
+        {
+            "path": "files/VERSION",
+            "bytes": 6,
+            "sha256": "2985be8b28d3ade858e8d8fb4bc22f565b1bf6020dff982dce141f7721b9999c"
+        },
+        {
+            "path": "files/app/AiPageActionService.php",
+            "bytes": 45177,
+            "sha256": "6e513c90e4a912edeb15522dd533c2d33341892df71170489e9381ab672242de"
+        },
+        {
+            "path": "files/app/AiSearchService.php",
+            "bytes": 67875,
+            "sha256": "05dc0fa0d580daecd0f145ac93fcb02e4aa55f70022166787c014eee4a5b5bfa"
+        },
+        {
+            "path": "files/app/DatabaseFailurePageRenderer.php",
+            "bytes": 3124,
+            "sha256": "a8305d776366df3fab685fca1a44d51fd6cb94ea4c70fc2d86ddf25f114e00df"
+        },
+        {
+            "path": "files/app/DefaultOperationManual.php",
+            "bytes": 20408,
+            "sha256": "71dbf119d23b0e958c582776d8ae81a36b8f1536d97ad6093c0137b2cb263f4b"
+        },
+        {
+            "path": "files/app/MailSettings.php",
+            "bytes": 9991,
+            "sha256": "61773f88d062c2009d41c80f675a0fca1a0a946be786bc3ff73b86468a319bfe"
+        },
+        {
+            "path": "files/app/Mailer.php",
+            "bytes": 18180,
+            "sha256": "00607044a5806f6d341af9ffea14d19e6f24910a03beef7fd69827a6d9726aeb"
+        },
+        {
+            "path": "files/app/MaintenancePageRenderer.php",
+            "bytes": 4147,
+            "sha256": "01fcf4ba9b35d3e6e678eed37d86fd2bc9827a65c6e69a8981304c1df32de812"
+        },
+        {
+            "path": "files/app/NotificationInbox.php",
+            "bytes": 12713,
+            "sha256": "3439abb00b9dd04331157896327cea6618fa82880b03e27a9ea8fba37cbebcdd"
+        },
+        {
+            "path": "files/app/PageExportLocalization.php",
+            "bytes": 2312,
+            "sha256": "57493a6f328648d38e6fab934f789d56cc5e208d7bb3ecaac8f307bde1926f10"
+        },
+        {
+            "path": "files/app/PageExporter.php",
+            "bytes": 25016,
+            "sha256": "640c49ced7210769ce3e003fd5007e282f205cd32e4e031e528cec22ec1c40db"
+        },
+        {
+            "path": "files/app/PageSubtreeStatus.php",
+            "bytes": 3993,
+            "sha256": "f77d80e75f4b1eefac5b6932ee53bff5847619c6c873a1bcbfd042174497bec1"
+        },
+        {
+            "path": "files/app/PluginApiClient.php",
+            "bytes": 6459,
+            "sha256": "0d4200d9270111c3b262c0eec74fa22d609e8b1e006def69233afa46b7976a4d"
+        },
+        {
+            "path": "files/app/PluginApiRegistry.php",
+            "bytes": 21698,
+            "sha256": "95fdae7e25b297e72bbe5e68a7248066a68ee0293cc79014242b0ed4cc7f3a3e"
+        },
+        {
+            "path": "files/app/PluginApiRuntime.php",
+            "bytes": 18018,
+            "sha256": "cba6b30fc7eb67004fa9a34caf7953a1a6d019fe6a11e7b4241066d541420982"
+        },
+        {
+            "path": "files/app/PluginCompatibility.php",
+            "bytes": 9997,
+            "sha256": "a403862530b550dd1955b8a5c3b76a4af06596e39fb3e08648641292cb408e62"
+        },
+        {
+            "path": "files/app/ProfilePhoto.php",
+            "bytes": 9478,
+            "sha256": "3a67cecf79f9cdbf7fbb2fa5a3a642b59a0b1ac8a75739faa4b5f3c0d2dca51a"
+        },
+        {
+            "path": "files/app/PublicPageRenderer.php",
+            "bytes": 22189,
+            "sha256": "6e38d4b1d59c9120ec684f8f0a953b38a089b129953fb3027cdf61878a082c1a"
+        },
+        {
+            "path": "files/app/StaticPublicSitePublisher.php",
+            "bytes": 110212,
+            "sha256": "647cd5afbd0005990395502c931a5ce43b1da22ff4f2f60331141ae97d354f8a"
+        },
+        {
+            "path": "files/app/SystemMessageLocalizer.php",
+            "bytes": 9615,
+            "sha256": "2d9405d17457edefadec6ebdc9dd7a268050502292c7df2c9bce1b66a7850ff6"
+        },
+        {
+            "path": "files/app/bootstrap.php",
+            "bytes": 130725,
+            "sha256": "d3e9a9d49033f96c617ae105bad405d529b51edd43b9a7afc8d971d49dce55bb"
+        },
+        {
+            "path": "files/assets/app.css",
+            "bytes": 135547,
+            "sha256": "a345c87defa45bcaf6449414b2c77728393668cb66c6fbd8da01e184396b905e"
+        },
+        {
+            "path": "files/assets/app.js",
+            "bytes": 523988,
+            "sha256": "ceec87ad5b2a9053b5877999e51f6a52991e79617a86e1e40302334ed27b4d91"
+        },
+        {
+            "path": "files/assets/knowledge-date-picker.css",
+            "bytes": 1961,
+            "sha256": "e4f32599c6b9bb06b327e83951e1e14cf01183ddd1ae509abadcb170c0f7a4a2"
+        },
+        {
+            "path": "files/assets/knowledge-date-picker.js",
+            "bytes": 8547,
+            "sha256": "8a7561280aef011e21fa4169ff598a98c9032fec6ea7ef9a2118917060e6ba30"
+        },
+        {
+            "path": "files/assets/rag-core.js",
+            "bytes": 115162,
+            "sha256": "bf8e1e4a61ebabd7cccb44e1186a8b0e17b25df5bc50e4b6c3b3f008a97c56bc"
+        },
+        {
+            "path": "files/docker/openconcept/Dockerfile",
+            "bytes": 1359,
+            "sha256": "e97b0a149d47ca644a037d923c06afd2502a3b4ec65e2790e404edcdd49bfbe0"
+        },
+        {
+            "path": "files/docs/openconcept-operation-manual.ja.md",
+            "bytes": 60856,
+            "sha256": "04340ce24ed905acb7e06b3a596004788db4b8a6f818a7779356c9c9e0b33279"
+        },
+        {
+            "path": "files/docs/release-notes-2.6.2.md",
+            "bytes": 2950,
+            "sha256": "480c65ba2644fb796ee7734a608daf9b4ad955e7837533a0bebb8f1ea4097254"
+        },
+        {
+            "path": "files/docs/release-notes-2.7.0.md",
+            "bytes": 3900,
+            "sha256": "08d8a2e74e072dc58b0301cee86b1e48375774c75a458e442ad7f88287e5c0c4"
+        },
+        {
+            "path": "files/docs/release-notes-3.0.0.md",
+            "bytes": 11689,
+            "sha256": "01df10014480fb63f96e349a54cd166617512eaa5a23cae9c896514e0d349122"
+        },
+        {
+            "path": "files/locales/ai-page-actions/en-US.json",
+            "bytes": 2715,
+            "sha256": "692f637a5311030664fb019cb01665e3f1d9e2f8eca291911530ffb870cfee63"
+        },
+        {
+            "path": "files/locales/ai-page-actions/ja-JP.json",
+            "bytes": 3410,
+            "sha256": "8b6ca8acb2498cd9a3d825fa21bbc03823bf69a45960a9c44c565ba411cce1a7"
+        },
+        {
+            "path": "files/locales/ai-page-actions/ko-KR.json",
+            "bytes": 3087,
+            "sha256": "0e35f646c093c482caf923bdefb986efaae6df631ac8a72e7cbd238d85e58866"
+        },
+        {
+            "path": "files/locales/ai-page-actions/vi-VN.json",
+            "bytes": 3110,
+            "sha256": "b711c7b80020adeb71245caed69b591f8ded9e52be31a0b8027da9d327e84464"
+        },
+        {
+            "path": "files/locales/ai-page-actions/zh-CN.json",
+            "bytes": 2452,
+            "sha256": "a4a930473f7d274be0e219e4e176d2ab1bb81026fdee398571ae22ceb391e585"
+        },
+        {
+            "path": "files/locales/ai-search-system/en-US.json",
+            "bytes": 1809,
+            "sha256": "fb3ec4fa4202b8e66df121e0b9561e8ea92c688c469b74ec0971663de8cd7607"
+        },
+        {
+            "path": "files/locales/ai-search-system/ja-JP.json",
+            "bytes": 2110,
+            "sha256": "366958e321e4233a91684214a68b5056fe63002e18494d087f131d6f0536593d"
+        },
+        {
+            "path": "files/locales/ai-search-system/ko-KR.json",
+            "bytes": 2040,
+            "sha256": "f288059db90dd091e5047b99163b338e587ddb4c71200307ebabd2dc55973e51"
+        },
+        {
+            "path": "files/locales/ai-search-system/vi-VN.json",
+            "bytes": 2152,
+            "sha256": "b7f5915550b1a2880c4a91673e5a7009dd97b4a020bbfaf6a1d8f0e11e338be4"
+        },
+        {
+            "path": "files/locales/ai-search-system/zh-CN.json",
+            "bytes": 1703,
+            "sha256": "6106aea5d06b11625990f0dbf87fbad8a8e92ec01045f33a608654f797d96da7"
+        },
+        {
+            "path": "files/locales/en-US.json",
+            "bytes": 81233,
+            "sha256": "96591d00a115a4277af7f185402c2f22d00e849d040c8617dedb2507aa0024e3"
+        },
+        {
+            "path": "files/locales/ja-JP.json",
+            "bytes": 93703,
+            "sha256": "036db09315687f9db126ef705eec9a1c8113ca955199ca98342ab01adfa6386a"
+        },
+        {
+            "path": "files/locales/ko-KR.json",
+            "bytes": 90903,
+            "sha256": "a2660ce0f27b55269131a29b0ed3c0bdd4117b5e5b072be684394e6bb681a92b"
+        },
+        {
+            "path": "files/locales/maintenance-screen/en-US.json",
+            "bytes": 3786,
+            "sha256": "ca4e9033abc51294e6bc985bcfc10418fd89cbb7484ddd716c742c3272df9982"
+        },
+        {
+            "path": "files/locales/maintenance-screen/ja-JP.json",
+            "bytes": 4521,
+            "sha256": "e9722833737df49bd46a226cf4d4771c63f9b2ad920191d3558be1c3a69db581"
+        },
+        {
+            "path": "files/locales/maintenance-screen/ko-KR.json",
+            "bytes": 4177,
+            "sha256": "2937741e048f76331cdc252809973762f8ce72fdd0d108987714138e48ed754f"
+        },
+        {
+            "path": "files/locales/maintenance-screen/vi-VN.json",
+            "bytes": 4610,
+            "sha256": "99b09ca34062d8ad1aafac2c72ba4218210ac96f2ce5a4a4b337d477bb75244b"
+        },
+        {
+            "path": "files/locales/maintenance-screen/zh-CN.json",
+            "bytes": 3531,
+            "sha256": "ee54613e338276dd3db4a7a575c5192f709cf524f3f87c4fddb936abca5352ae"
+        },
+        {
+            "path": "files/locales/page-export/en-US.json",
+            "bytes": 1497,
+            "sha256": "45bcaa6e68f9b6717135d60c3d36661384a756618227805696689091905d8fd2"
+        },
+        {
+            "path": "files/locales/page-export/ja-JP.json",
+            "bytes": 1725,
+            "sha256": "1b9ca1a7ce32970f6233c8c2bba45aa5ff3bb126a7877f54d56cf579bc1a71f2"
+        },
+        {
+            "path": "files/locales/page-export/ko-KR.json",
+            "bytes": 1667,
+            "sha256": "c4e9b46e63850e3d88c371a1344adc1cd79c6441e3bed0dea0a4f62918ba583f"
+        },
+        {
+            "path": "files/locales/page-export/vi-VN.json",
+            "bytes": 1645,
+            "sha256": "8e7720f55f8f5357ba7b0ce41baf339682107e5df8bcbc56be5730812ae7815c"
+        },
+        {
+            "path": "files/locales/page-export/zh-CN.json",
+            "bytes": 1441,
+            "sha256": "a4f4040416a554578f6180df64a665c96e3ae4d385f49a77e798aba07e9412d3"
+        },
+        {
+            "path": "files/locales/rag-core/en-US.json",
+            "bytes": 28049,
+            "sha256": "7e6b28133b4d01436f19f080d5c5d1ca3d3f35414b52d4ca3bd5e6895618e236"
+        },
+        {
+            "path": "files/locales/rag-core/ja-JP.json",
+            "bytes": 32663,
+            "sha256": "a5fd7baef269adf76cd604023b14bb57d56dd29452bb0f53f989c21a4b29792d"
+        },
+        {
+            "path": "files/locales/rag-core/ko-KR.json",
+            "bytes": 31602,
+            "sha256": "cf933d399808a7ddac96a05f9d816feab037bccb6f8cb1fb13975d304fa4e6f5"
+        },
+        {
+            "path": "files/locales/rag-core/vi-VN.json",
+            "bytes": 34829,
+            "sha256": "02182c8d3b7926e6787617b075c29f9dffc059c0019e975ad8c74a43a56a5efa"
+        },
+        {
+            "path": "files/locales/rag-core/zh-CN.json",
+            "bytes": 26705,
+            "sha256": "759a3baebff0cf7d9d65ad396b3061a834cedb7aba70f1a2bc41f8bd46c22b7c"
+        },
+        {
+            "path": "files/locales/system-messages/en-US.json",
+            "bytes": 21252,
+            "sha256": "32cf7999d4168626ebbaec1a37908efdde3563510310299b84ac4c03a41a323f"
+        },
+        {
+            "path": "files/locales/system-messages/ja-JP.json",
+            "bytes": 25929,
+            "sha256": "0fbdf765b20a9db009b606878aa88158448a715bdee87000a5c35518afbbf358"
+        },
+        {
+            "path": "files/locales/system-messages/ko-KR.json",
+            "bytes": 24160,
+            "sha256": "633fac49adaa23d7df329daebd5effa3c866c3b5e530e0785f30ab0a51c81279"
+        },
+        {
+            "path": "files/locales/system-messages/sources.json",
+            "bytes": 29933,
+            "sha256": "0f1936ee7a663915917629dc6db2c79dd9061f0f066cab904e8c7196395140f8"
+        },
+        {
+            "path": "files/locales/system-messages/vi-VN.json",
+            "bytes": 23717,
+            "sha256": "ec66c6c9e2bf5eeb41de2e7ef4bad0a41cb248bcf5a978156b2ce8b75a10eb01"
+        },
+        {
+            "path": "files/locales/system-messages/zh-CN.json",
+            "bytes": 18810,
+            "sha256": "1401bb9da71c098ed1aa7fe731b2c6a4e694e5a8ceb83df456bd3e6f544d4f52"
+        },
+        {
+            "path": "files/locales/vi-VN.json",
+            "bytes": 92986,
+            "sha256": "53bd4019cc5ce18d3facc1fd3c9791598efcf193e01e5b4ee257a9b3629cfbcd"
+        },
+        {
+            "path": "files/locales/zh-CN.json",
+            "bytes": 78301,
+            "sha256": "fa0ae03591ccf5c6ecc81374537118cae297b9f9d935170911e70aa68c2a274d"
+        },
+        {
+            "path": "files/plugins/ai-file-reader/locales/en-US.json",
+            "bytes": 9384,
+            "sha256": "1a6e1412d1e064c522ea64017de657b3c534be47b1fe9c96cfeb3454bb7dd4fa"
+        },
+        {
+            "path": "files/plugins/ai-file-reader/locales/ja-JP.json",
+            "bytes": 11237,
+            "sha256": "1f961dfcc7d8c8e960d9e0dd414643fc6695345a62513f321666c74a6c02fbc5"
+        },
+        {
+            "path": "files/plugins/ai-file-reader/locales/ko-KR.json",
+            "bytes": 10575,
+            "sha256": "45e5b65c2c9217c33cbef1a1b655037c42ae263b7e2f0bcb852ac9e62778174c"
+        },
+        {
+            "path": "files/plugins/ai-file-reader/locales/system-messages.json",
+            "bytes": 924,
+            "sha256": "453098ec07058a61fbb6830c555b72050ab91800189e32900f5d7e012de6a90a"
+        },
+        {
+            "path": "files/plugins/ai-file-reader/locales/vi-VN.json",
+            "bytes": 10907,
+            "sha256": "3baf9ac11cda2ac73bde8b11c80635bda55fc7769eb240b29d316c54bf84ef17"
+        },
+        {
+            "path": "files/plugins/ai-file-reader/locales/zh-CN.json",
+            "bytes": 8837,
+            "sha256": "2a6a9193c07e2116a7d9c28d48ed9e9f45b0ef1f7815edb39c8f9e84e5efbbdd"
+        },
+        {
+            "path": "files/plugins/ai-file-reader/plugin.php",
+            "bytes": 946,
+            "sha256": "224e6425ffa55778fd48cdd82761ae1eb78bfcbf15131307e04a3401fed9ea8f"
+        },
+        {
+            "path": "files/plugins/ai-file-reader/src/FileReaderService.php",
+            "bytes": 43852,
+            "sha256": "940ae97ab67f32018f71f330031037845d343a3dc7b00a43e5926cd6da88ca1f"
+        },
+        {
+            "path": "files/plugins/ai-search-voice/locales/en-US.json",
+            "bytes": 5465,
+            "sha256": "ad990cd30e4f9ef80194921240c16f4c2f5d4401650790e41d4a55ace0f270a8"
+        },
+        {
+            "path": "files/plugins/ai-search-voice/locales/ja-JP.json",
+            "bytes": 6311,
+            "sha256": "a2de0722177ee21cf1ecfdf2f9feaad0dbc17cc2aaf8af91fbf7e52fa8dbc122"
+        },
+        {
+            "path": "files/plugins/ai-search-voice/locales/ko-KR.json",
+            "bytes": 6148,
+            "sha256": "565d05ebfca59c816f227b11e9d85143c6b8db70d6e999cb9a6a0cc23f1873d4"
+        },
+        {
+            "path": "files/plugins/ai-search-voice/locales/system-messages.json",
+            "bytes": 1641,
+            "sha256": "475690e28e383d157fbcf2db821614465de6a36219fc0762f8b666e64820d203"
+        },
+        {
+            "path": "files/plugins/ai-search-voice/locales/vi-VN.json",
+            "bytes": 6411,
+            "sha256": "23ccb41af395d9dfa0408b201a5a844405abaccd5f50077e4c577f808a4fb6bf"
+        },
+        {
+            "path": "files/plugins/ai-search-voice/locales/zh-CN.json",
+            "bytes": 5188,
+            "sha256": "2b5ba423a85ad787a7a7712fc88b9a10426cceeac729b2c856ef325fb3f17446"
+        },
+        {
+            "path": "files/plugins/ai-search-voice/plugin.php",
+            "bytes": 1241,
+            "sha256": "2ca47cf0676d4228cb796967baae12a047b39e4c70e080091fd26730499bffcf"
+        },
+        {
+            "path": "files/plugins/translation-openai/locales/en-US.json",
+            "bytes": 1969,
+            "sha256": "7a02fb979a1caa7a65e1317725adae4ec73fec0a375a91ce3b30d32f2cedebba"
+        },
+        {
+            "path": "files/plugins/translation-openai/locales/ja-JP.json",
+            "bytes": 2178,
+            "sha256": "addbdf5ddc0a4888f43151e0768b64d8c6f85a5658a9af3509b46483ae4f599c"
+        },
+        {
+            "path": "files/plugins/translation-openai/locales/ko-KR.json",
+            "bytes": 2136,
+            "sha256": "76a8f768555907e35b9438f4cd7248bc74ac30656150c30190f0e50d9f9f9738"
+        },
+        {
+            "path": "files/plugins/translation-openai/locales/system-messages.json",
+            "bytes": 1714,
+            "sha256": "ec64b512a0db06fa1ff5e29c7b00409ff0e0e75c662a5204d8e2acbcd3f81995"
+        },
+        {
+            "path": "files/plugins/translation-openai/locales/vi-VN.json",
+            "bytes": 2237,
+            "sha256": "b33873deb09ad616ee425da44a7e7e2511f68aca9a1f5181a0fb98bdc0d178b5"
+        },
+        {
+            "path": "files/plugins/translation-openai/locales/zh-CN.json",
+            "bytes": 1756,
+            "sha256": "29771373f1cddb394a7e02473c5fdba7f7fe956fd9f67ec2f8edde3a6b8c83de"
+        },
+        {
+            "path": "files/plugins/translation-openai/plugin.php",
+            "bytes": 1432,
+            "sha256": "6f7ba5e4098273388eff34056ea36844590ccb8f378a59a9ab7c3ee7db24a2fb"
+        },
+        {
+            "path": "files/plugins/voice-conversation/locales/en-US.json",
+            "bytes": 9432,
+            "sha256": "ec8be155100ed560c3314a592d1fcd599c2894f01f9c48b057c5dbeda63dfaca"
+        },
+        {
+            "path": "files/plugins/voice-conversation/locales/ja-JP.json",
+            "bytes": 10737,
+            "sha256": "44414010954e196eb592eebf7744f6ea097a9462123fd77c01e8416db906a739"
+        },
+        {
+            "path": "files/plugins/voice-conversation/locales/ko-KR.json",
+            "bytes": 10474,
+            "sha256": "a73cc050dd3f8106f792b57470a22cd48eb66fd2ec5792adf19f20a2ecc5b0cc"
+        },
+        {
+            "path": "files/plugins/voice-conversation/locales/system-messages.json",
+            "bytes": 2526,
+            "sha256": "435ef7ddc31ee44b3ba87e8484cfa4b983e2be6fcaff302eeeab817733b16b94"
+        },
+        {
+            "path": "files/plugins/voice-conversation/locales/vi-VN.json",
+            "bytes": 10846,
+            "sha256": "4e7917712ec74e1ae2078d298f60873f8d70c2f8016a71d705025a8337493196"
+        },
+        {
+            "path": "files/plugins/voice-conversation/locales/zh-CN.json",
+            "bytes": 8753,
+            "sha256": "1ec8af9829f6e05f19b2f097a613f8e219563b546996aa4c4a0e0b93fca50de4"
+        },
+        {
+            "path": "files/plugins/voice-conversation/plugin.php",
+            "bytes": 2661,
+            "sha256": "7b432afd64167a1bf7b35e92883e61d7c5a1842f56d7d09ec85581feab74c0d9"
+        },
+        {
+            "path": "files/plugins/voice-conversation/src/VoiceConversationController.php",
+            "bytes": 13884,
+            "sha256": "0010027ad7763c483fb460673875d8ac9cafc782aa1e7ddeac715a18a0dd11ef"
+        },
+        {
+            "path": "files/public/api.php",
+            "bytes": 205454,
+            "sha256": "c5e0ffc8e437267d878b00c139bffc8c229ae3bac5e325c98e8dd93cd8d1acee"
+        },
+        {
+            "path": "files/public/assets/app.css",
+            "bytes": 135547,
+            "sha256": "a345c87defa45bcaf6449414b2c77728393668cb66c6fbd8da01e184396b905e"
+        },
+        {
+            "path": "files/public/assets/app.js",
+            "bytes": 523988,
+            "sha256": "ceec87ad5b2a9053b5877999e51f6a52991e79617a86e1e40302334ed27b4d91"
+        },
+        {
+            "path": "files/public/assets/knowledge-date-picker.css",
+            "bytes": 1961,
+            "sha256": "e4f32599c6b9bb06b327e83951e1e14cf01183ddd1ae509abadcb170c0f7a4a2"
+        },
+        {
+            "path": "files/public/assets/knowledge-date-picker.js",
+            "bytes": 8547,
+            "sha256": "8a7561280aef011e21fa4169ff598a98c9032fec6ea7ef9a2118917060e6ba30"
+        },
+        {
+            "path": "files/public/assets/rag-core.js",
+            "bytes": 115162,
+            "sha256": "bf8e1e4a61ebabd7cccb44e1186a8b0e17b25df5bc50e4b6c3b3f008a97c56bc"
+        },
+        {
+            "path": "files/public/export.php",
+            "bytes": 2336,
+            "sha256": "997779299b1267a9dd30e4e9a0fe83a97bd87577b1a51a19df71edff37c39b2e"
+        },
+        {
+            "path": "files/public/history.php",
+            "bytes": 8395,
+            "sha256": "cd50e1c9f3391d51a6fe15cb72530dfe58f3ca878a353c7e90a6692b1bb6026f"
+        },
+        {
+            "path": "files/public/index.php",
+            "bytes": 3611,
+            "sha256": "3bceac6d82ebc0ac36e67348ecff7ff0669200645be4065a56b4ac3c9de22769"
+        },
+        {
+            "path": "files/public/share.php",
+            "bytes": 1823,
+            "sha256": "7f24ceed447e836e948d33c4d187251aac0deb06846356c1e849bc5368f22a48"
+        },
+        {
+            "path": "reference/compose.rag.yaml",
+            "bytes": 5281,
+            "sha256": "9ec08cd7bcfd6acf021826c158bcb448ca86e6496563adbc726093b72f03cc57"
+        }
+    ],
+    "source_public_manifest_sha256s": [
+        "d0b790d53cd66ba4a0ee741244dd7724c2ee0964594ff5a7011dfc27d29e7b08"
+    ]
+}

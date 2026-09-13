@@ -1,0 +1,26 @@
+{
+    "name": "한국어",
+    "messages": {
+        "answer.insufficient": "등록된 데이터만으로는 답변할 수 없습니다.",
+        "answer.pageInsufficient": "이 페이지의 내용만으로는 답변할 수 없습니다.",
+        "summary.question": "이 페이지 요약",
+        "summary.prompt": "“{title}”의 내용을 간결하게 요약해 주세요. 중요한 목적, 결정 사항, 절차, 기한 및 주의 사항이 있으면 정리해 주세요.",
+        "basis.general_knowledge": "이 답변은 일반 지식을 바탕으로 작성되었습니다. 앱에 등록된 데이터나 보고 있던 페이지를 근거로 하지 않았습니다.",
+        "basis.registered_data": "앱에 등록된 데이터를 바탕으로 답변했습니다. 답변의 출처에서 확인할 수 있습니다.",
+        "basis.current_page": "답변 당시 보고 있던 페이지의 내용만을 근거로 답변했습니다. 일반 지식은 포함하지 않았습니다.",
+        "basis.unavailable": "이전 답변을 뒷받침할 충분한 근거가 없었습니다.",
+        "source.pageSummary": "현재 원본 페이지 본문에서 만든 요약용 발췌문입니다.",
+        "source.pageImage": "페이지 이미지",
+        "source.pageImageNumber": "페이지 이미지 {number}",
+        "source.imageSummary": "현재 보고 있는 원본 페이지에 배치된 이미지입니다.",
+        "source.fileNumber": "파일 #{number}",
+        "source.linkedFile": "연결된 파일",
+        "source.fileSummary": "질문의 링크에서 접근 권한을 확인한 후 첨부한 파일입니다.",
+        "source.emptyBody": "(이 페이지의 본문이 비어 있습니다.)",
+        "source.originalBodyNumber": "원본 본문 {number}",
+        "source.imageReference": "이미지 참조: {reference}",
+        "source.filename": "파일명: {name}",
+        "source.caption": "설명: {caption}",
+        "source.fileReference": "첨부 파일 참조: {reference}"
+    }
+}

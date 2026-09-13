@@ -1,0 +1,26 @@
+{
+    "name": "Tiếng Việt",
+    "messages": {
+        "plugin.name": "Nhà cung cấp bản dịch",
+        "plugin.description": "Kết nối OpenAI hoặc API tương thích OpenAI với chức năng dịch của Core.",
+        "provider.name": "Nhà cung cấp bản dịch",
+        "provider.description": "Dịch các đoạn văn bản có cấu trúc bằng nhà cung cấp được cấu hình trên máy chủ.",
+        "error.caBundle": "Không thể đọc chứng chỉ CA được chỉ định trong OPENCONCEPT_CA_BUNDLE.",
+        "error.translationKey": "Thiếu khóa API hoặc cấu hình xác thực của nhà cung cấp dịch.",
+        "error.translationTest": "Không thể chạy kiểm tra kết nối với nhà cung cấp dịch.",
+        "error.segmentCount": "Số đoạn dịch nằm ngoài phạm vi cho phép.",
+        "error.segmentId": "ID đoạn dịch không hợp lệ.",
+        "error.segmentFormat": "Định dạng đoạn dịch không hợp lệ.",
+        "error.segmentRetry": "Không thể xác minh ID đoạn trong phản hồi dịch AI. Các lần thử lại tự động cũng thất bại.",
+        "error.translationFailed": "Không thể hoàn tất bản dịch AI.",
+        "error.translationResponse": "API của nhà cung cấp dịch trả về phản hồi không thể phân tích.",
+        "error.translationApiError": "Lỗi API nhà cung cấp dịch: {details}",
+        "error.translationIncomplete": "Phản hồi của API nhà cung cấp dịch chưa hoàn tất.",
+        "error.translationStructured": "Đầu ra có cấu trúc của API nhà cung cấp dịch không hợp lệ.",
+        "error.translationJson": "Đầu ra có cấu trúc của bản dịch AI không hợp lệ.",
+        "error.translationSegment": "Định dạng đoạn của API nhà cung cấp dịch không hợp lệ.",
+        "error.segmentDuplicate": "API nhà cung cấp dịch trả về các ID đoạn bị trùng.",
+        "error.translationCurl": "Plugin nhà cung cấp dịch cần phần mở rộng PHP cURL.",
+        "error.translationConnect": "Không thể kết nối với API nhà cung cấp dịch: {details}"
+    }
+}

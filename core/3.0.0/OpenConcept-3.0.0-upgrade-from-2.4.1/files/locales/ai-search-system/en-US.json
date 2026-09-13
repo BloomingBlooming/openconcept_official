@@ -1,0 +1,26 @@
+{
+    "name": "English",
+    "messages": {
+        "answer.insufficient": "There is not enough registered data to answer this question.",
+        "answer.pageInsufficient": "There is not enough information on this page to answer this question.",
+        "summary.question": "Summarize this page",
+        "summary.prompt": "Summarize “{title}” concisely. Organize any important objectives, decisions, steps, deadlines and cautions.",
+        "basis.general_knowledge": "This answer used general knowledge. It was not based on the app's registered data or the page being viewed.",
+        "basis.registered_data": "This answer was based on data registered in the app. You can check it under Sources in the answer.",
+        "basis.current_page": "This answer used only the page being viewed at the time. It did not include general knowledge.",
+        "basis.unavailable": "There was not enough evidence to support the previous answer.",
+        "source.pageSummary": "A summary excerpt from the current original page.",
+        "source.pageImage": "Page image",
+        "source.pageImageNumber": "Page image {number}",
+        "source.imageSummary": "An image on the original page currently being viewed.",
+        "source.fileNumber": "File #{number}",
+        "source.linkedFile": "Linked file",
+        "source.fileSummary": "A file attached from a link in the question after checking access permissions.",
+        "source.emptyBody": "(This page has no body text.)",
+        "source.originalBodyNumber": "Original page text {number}",
+        "source.imageReference": "Image reference: {reference}",
+        "source.filename": "Filename: {name}",
+        "source.caption": "Description: {caption}",
+        "source.fileReference": "Attachment reference: {reference}"
+    }
+}

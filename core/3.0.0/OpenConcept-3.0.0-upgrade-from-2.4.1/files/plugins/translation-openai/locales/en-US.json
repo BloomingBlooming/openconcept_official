@@ -1,0 +1,26 @@
+{
+    "name": "English",
+    "messages": {
+        "plugin.name": "Translation Provider",
+        "plugin.description": "Connects OpenAI or an OpenAI-compatible API to Core translation.",
+        "provider.name": "Translation Provider",
+        "provider.description": "Translates structured text segments with the provider configured on the server.",
+        "error.caBundle": "The CA certificate specified by OPENCONCEPT_CA_BUNDLE could not be read.",
+        "error.translationKey": "The translation provider API key or authentication settings are missing.",
+        "error.translationTest": "The translation provider connection test could not be run.",
+        "error.segmentCount": "The number of translation segments is out of range.",
+        "error.segmentId": "The translation segment ID is invalid.",
+        "error.segmentFormat": "The translation segment format is invalid.",
+        "error.segmentRetry": "Translation segment IDs could not be verified. Automatic retries also failed.",
+        "error.translationFailed": "AI translation could not be completed.",
+        "error.translationResponse": "The translation provider API returned an unreadable response.",
+        "error.translationApiError": "Translation provider API error: {details}",
+        "error.translationIncomplete": "The translation provider API response was incomplete.",
+        "error.translationStructured": "The translation provider API structured output is invalid.",
+        "error.translationJson": "The AI translation structured output is invalid.",
+        "error.translationSegment": "The translation provider API segment format is invalid.",
+        "error.segmentDuplicate": "The translation provider API returned duplicate segment IDs.",
+        "error.translationCurl": "The translation provider plugin requires the PHP cURL extension.",
+        "error.translationConnect": "Could not connect to the translation provider API: {details}"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "name": "简体中文",
+    "messages": {
+        "plugin.name": "翻译服务提供方",
+        "plugin.description": "将 OpenAI 或 OpenAI 兼容 API 连接到 Core 翻译功能。",
+        "provider.name": "翻译服务提供方",
+        "provider.description": "使用服务器上配置的服务提供方翻译结构化文本片段。",
+        "error.caBundle": "无法读取 OPENCONCEPT_CA_BUNDLE 指定的 CA 证书。",
+        "error.translationKey": "缺少翻译提供商的 API 密钥或认证设置。",
+        "error.translationTest": "无法执行翻译提供商连接测试。",
+        "error.segmentCount": "翻译片段数量超出允许范围。",
+        "error.segmentId": "翻译片段 ID 无效。",
+        "error.segmentFormat": "翻译片段格式无效。",
+        "error.segmentRetry": "无法验证 AI 翻译响应中的片段 ID，自动重试也失败了。",
+        "error.translationFailed": "无法完成 AI 翻译。",
+        "error.translationResponse": "翻译提供商 API 返回了无法解析的响应。",
+        "error.translationApiError": "翻译提供商 API 错误：{details}",
+        "error.translationIncomplete": "翻译提供商 API 响应未完成。",
+        "error.translationStructured": "翻译提供商 API 的结构化输出无效。",
+        "error.translationJson": "AI 翻译的结构化输出无效。",
+        "error.translationSegment": "翻译提供商 API 的片段格式无效。",
+        "error.segmentDuplicate": "翻译提供商 API 返回了重复的片段 ID。",
+        "error.translationCurl": "翻译提供商插件需要 PHP cURL 扩展。",
+        "error.translationConnect": "无法连接翻译提供商 API：{details}"
+    }
+}

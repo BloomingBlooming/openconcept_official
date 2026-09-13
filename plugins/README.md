@@ -27,6 +27,6 @@ For new installations, use Settings > Plugins > Official downloads, then enable 
 
 Packages are generated and verified in the development project's Dist directory. The external Drawing Manager README is extracted unchanged from the verified package. This published tree retains current plugin versions; older versions remain in the development archive and Git history. Publish packages and catalog changes in one commit, then verify the public URLs and hashes. Catalog schema, identities, API requirements and package checksums must match.
 
-本体同梱プラグインは `core/<version>/OpenConcept-<version>-public/plugins/` に含まれます。詳しくは [Plugin API説明](../core/2.6.1/OpenConcept-2.6.1-public/docs/plugin-api-reference.md) を参照してください。HTTPSとSHA-256で取得先・内容を確認します。電子署名の検証は実装していません。
+本体同梱プラグインは `core/<version>/OpenConcept-<version>-public/plugins/` に含まれます。詳しくは [Plugin API説明](../core/3.0.0/OpenConcept-3.0.0-public/docs/plugin-api-reference.md) を参照してください。HTTPSとSHA-256で取得先・内容を確認します。電子署名の検証は実装していません。
 
-Bundled plugins are part of the corresponding Core distribution. See the [Plugin API guide](../core/2.6.1/OpenConcept-2.6.1-public/docs/plugin-api-reference.md). HTTPS and SHA-256 verify the endpoint and package integrity; publisher signature verification is not implemented.
+Bundled plugins are part of the corresponding Core distribution. See the [Plugin API guide](../core/3.0.0/OpenConcept-3.0.0-public/docs/plugin-api-reference.md). HTTPS and SHA-256 verify the endpoint and package integrity; publisher signature verification is not implemented.

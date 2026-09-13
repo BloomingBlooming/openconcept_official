@@ -1,0 +1,26 @@
+{
+    "name": "Tiếng Việt",
+    "messages": {
+        "answer.insufficient": "Dữ liệu đã đăng ký chưa đủ để trả lời câu hỏi này.",
+        "answer.pageInsufficient": "Nội dung trang này chưa đủ để trả lời câu hỏi này.",
+        "summary.question": "Tóm tắt trang này",
+        "summary.prompt": "Hãy tóm tắt ngắn gọn nội dung “{title}”. Trình bày có hệ thống các mục tiêu, quyết định, bước thực hiện, thời hạn và lưu ý quan trọng nếu có.",
+        "basis.general_knowledge": "Câu trả lời dựa trên kiến thức chung, không dựa trên dữ liệu đã đăng ký trong ứng dụng hay trang đang xem.",
+        "basis.registered_data": "Câu trả lời dựa trên dữ liệu đã đăng ký trong ứng dụng. Bạn có thể kiểm tra trong phần Nguồn của câu trả lời.",
+        "basis.current_page": "Câu trả lời chỉ dựa trên nội dung trang đang xem tại thời điểm trả lời, không bổ sung kiến thức chung.",
+        "basis.unavailable": "Không có đủ căn cứ để hỗ trợ câu trả lời trước đó.",
+        "source.pageSummary": "Đoạn dùng để tóm tắt được lấy từ nội dung trang gốc hiện tại.",
+        "source.pageImage": "Hình ảnh trang",
+        "source.pageImageNumber": "Hình ảnh trang {number}",
+        "source.imageSummary": "Hình ảnh trên trang gốc hiện đang xem.",
+        "source.fileNumber": "Tệp #{number}",
+        "source.linkedFile": "Tệp được liên kết",
+        "source.fileSummary": "Tệp được đính kèm từ liên kết trong câu hỏi sau khi kiểm tra quyền truy cập.",
+        "source.emptyBody": "(Trang này chưa có nội dung.)",
+        "source.originalBodyNumber": "Nội dung trang gốc {number}",
+        "source.imageReference": "Tham chiếu hình ảnh: {reference}",
+        "source.filename": "Tên tệp: {name}",
+        "source.caption": "Mô tả: {caption}",
+        "source.fileReference": "Tham chiếu tệp đính kèm: {reference}"
+    }
+}

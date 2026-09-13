@@ -1,0 +1,19 @@
+{
+    "OPENCONCEPT_CA_BUNDLEで指定したCA証明書を読み込めません。": "error.caBundle",
+    "翻訳プロバイダーのAPIキーまたは認証設定が不足しています。": "error.translationKey",
+    "翻訳プロバイダーの接続テストを実行できません。": "error.translationTest",
+    "翻訳segment数が範囲外です。": "error.segmentCount",
+    "翻訳segment IDが正しくありません。": "error.segmentId",
+    "翻訳segmentの形式が正しくありません。": "error.segmentFormat",
+    "AI翻訳の応答でsegment IDを確認できませんでした。自動再試行にも失敗しました。": "error.segmentRetry",
+    "AI翻訳を完了できませんでした。": "error.translationFailed",
+    "翻訳プロバイダーAPIから解釈できない応答を受信しました。": "error.translationResponse",
+    "翻訳プロバイダーAPI error: {details}": "error.translationApiError",
+    "翻訳プロバイダーAPIの応答が完了しませんでした。": "error.translationIncomplete",
+    "翻訳プロバイダーAPIの構造化出力が正しくありません。": "error.translationStructured",
+    "AI翻訳の構造化出力が正しくありません。": "error.translationJson",
+    "翻訳プロバイダーAPIのsegment形式が正しくありません。": "error.translationSegment",
+    "翻訳プロバイダーAPIがsegment IDを重複して返しました。": "error.segmentDuplicate",
+    "翻訳プロバイダープラグインにはPHP cURL拡張が必要です。": "error.translationCurl",
+    "翻訳プロバイダーAPIへ接続できません: {details}": "error.translationConnect"
+}

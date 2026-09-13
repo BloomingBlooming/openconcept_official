@@ -1,98 +1,56 @@
 # OpenConcept 公式配布 / Official Distribution
 
-OpenConcept本体と公式プラグインの公開用フォルダです。最新の本体配布物は **V2.6.1** です。V2.6.0の通常版は、プラグインID制限の不具合により配布を停止しました。既存V2.6.0からはV2.6.1への更新版を使用してください。
+最新の本体は **V3.0.0** です。V2.6.1以降の変更をまとめ、送信メール設定、5言語の招待・ログイン・初回パスワード変更、プロフィール写真の縮小、各機能の翻訳を改善しました。履歴カレンダーの言語対応と、独立プラグインのフロートNaviによる状態保持も利用できます。
 
-This repository holds OpenConcept and official plugin distributions. The latest application release is **V2.6.1**. The full V2.6.0 release has been withdrawn because of its plugin ID restriction defect. Existing V2.6.0 installations should use the upgrade to V2.6.1.
-
-公式公開先 / Official repository: [BloomingBlooming/openconcept_official](https://github.com/BloomingBlooming/openconcept_official).
-
-**2026-09-12 履歴表示・検索改善版を、2.6.1のまま再公開しました。** 全文履歴を保持し、同じページの保存版をまとめて表示します。保存状態の比較、履歴検索の継続・再開、AI検索での重複本文の整理を含みます。既存2.6.1へ適用する場合も[配布案内](core/2.6.1/README.md)の手動更新手順を使用してください。同じバージョン番号のため、ZIPのSHA-256とリリースノートで識別します。
-
-**History display and search refresh, 2026-09-12, still version 2.6.1.** Full snapshots are retained, with grouped saved versions, state comparisons, resumable history searches and duplicate handling in AI retrieval. Existing 2.6.1 installations can follow the manual refresh steps in the [distribution guide](core/2.6.1/README.md). Identify this refresh by its ZIP SHA-256 and release notes.
+The latest application release is **V3.0.0**. It consolidates changes since V2.6.1, including outgoing email settings, invitations and authentication in five languages, profile photo compression, localized system messages and exports, and the history calendar. Float Navi preferences are provided by its separately distributed plugin.
 
 ## 本体ダウンロード / Application downloads
 
-| バージョン / Version | ダウンロード / Download | 検証値 / Checksum | 説明書 / Guide |
+| 用途 / Purpose | ZIP | SHA-256 | 手順 / Guide |
 | --- | --- | --- | --- |
-| 2.6.1（新規設置 / New installation） | [OpenConcept 2.6.1 ZIP](core/2.6.1/OpenConcept-2.6.1-public.zip) | [SHA-256](core/2.6.1/OpenConcept-2.6.1-public.zip.sha256) | [日本語・English](core/2.6.1/README.md) |
-| 2.6.0 → 2.6.1（更新 / Upgrade） | [Upgrade ZIP](core/2.6.1/OpenConcept-2.6.1-upgrade-from-2.6.0.zip) | [SHA-256](core/2.6.1/OpenConcept-2.6.1-upgrade-from-2.6.0.zip.sha256) | [更新手順](core/2.6.1/OpenConcept-2.6.1-upgrade-from-2.6.0/README.ja-en.md) |
-| 2.5.0 → 2.6.0（中間更新 / Intermediate upgrade） | [Upgrade ZIP](core/2.6.0/OpenConcept-2.6.0-upgrade-from-2.5.0.zip) | [SHA-256](core/2.6.0/OpenConcept-2.6.0-upgrade-from-2.5.0.zip.sha256) | [更新手順](core/2.6.0/OpenConcept-2.6.0-upgrade-from-2.5.0/README.ja-en.md) |
-| 2.4.1 → 2.5.0（継続掲載 / Retained upgrade） | [Upgrade ZIP](core/2.5.0/OpenConcept-2.5.0-upgrade-from-2.4.1.zip) | [SHA-256](core/2.5.0/OpenConcept-2.5.0-upgrade-from-2.4.1.zip.sha256) | [更新手順](core/2.5.0/OpenConcept-2.5.0-upgrade-from-2.4.1/README.ja-en.md) |
+| V3.0.0 新規設置 / New installation | [Download](core/3.0.0/OpenConcept-3.0.0-public.zip) | [Checksum](core/3.0.0/OpenConcept-3.0.0-public.zip.sha256) | [設置手順](core/3.0.0/OpenConcept-3.0.0-public/README.md) |
+| V2.4.1 → V3.0.0 | [Upgrade](core/3.0.0/OpenConcept-3.0.0-upgrade-from-2.4.1.zip) | [Checksum](core/3.0.0/OpenConcept-3.0.0-upgrade-from-2.4.1.zip.sha256) | [更新手順](core/3.0.0/OpenConcept-3.0.0-upgrade-from-2.4.1/README.ja-en.md) |
+| V2.5.0 → V3.0.0 | [Upgrade](core/3.0.0/OpenConcept-3.0.0-upgrade-from-2.5.0.zip) | [Checksum](core/3.0.0/OpenConcept-3.0.0-upgrade-from-2.5.0.zip.sha256) | [更新手順](core/3.0.0/OpenConcept-3.0.0-upgrade-from-2.5.0/README.ja-en.md) |
+| V2.6.0 → V3.0.0 | [Upgrade](core/3.0.0/OpenConcept-3.0.0-upgrade-from-2.6.0.zip) | [Checksum](core/3.0.0/OpenConcept-3.0.0-upgrade-from-2.6.0.zip.sha256) | [更新手順](core/3.0.0/OpenConcept-3.0.0-upgrade-from-2.6.0/README.ja-en.md) |
+| V2.6.1 → V3.0.0 | [Upgrade](core/3.0.0/OpenConcept-3.0.0-upgrade-from-2.6.1.zip) | [Checksum](core/3.0.0/OpenConcept-3.0.0-upgrade-from-2.6.1.zip.sha256) | [更新手順](core/3.0.0/OpenConcept-3.0.0-upgrade-from-2.6.1/README.ja-en.md) |
 
-V2.6.1にはアプリ全体のダークモード、カバー13種類（なしを含む）・アイコン96種類、受信トレイ下の三点アイコンによるAI検索・記録と履歴の開閉を含みます。ページ状態の一括変更、ツリー表示、履歴のページ送り、プラグイン管理の改善もまとめました。[リリースノート](core/2.6.1/OpenConcept-2.6.1-public/docs/release-notes-2.6.1.md)と[配布案内](core/2.6.1/README.md)をご覧ください。
+[配布物一式・展開版](core/3.0.0/README.md) · [リリースノート](core/3.0.0/OpenConcept-3.0.0-public/docs/release-notes-3.0.0.md) · [検証済みハッシュ一覧](core/3.0.0/OpenConcept-3.0.0-artifacts.json)
 
-本体の新規プラグインID制限解除、有効化前の警告、フロートNaviの最低対応プラグイン版1.0.0の登録を含みます。フロートNavi最新版1.2.3は、V2.6.1では追加の本体互換パッチなしで有効化できます。
+更新元に合う更新版を使用してください。V2.4.1は初回公開版とSQLite初回起動修正版の両方に対応し、中間バージョンの導入は不要です。バックアップを取り、同梱手順に従って更新用ファイルを結合します。DB・添付・設定・鍵・独立プラグインのデータを保持します。更新通知は案内を表示する機能で、本体を自動的にインストールしません。
 
-V2.6.1 adds dark mode, 13 cover choices including No cover, 96 icons, and the three-dot toggle below Inbox for AI search and Records and history. It also includes bulk page status changes, improved tree display, history pagination and plugin management. See the [release notes](core/2.6.1/OpenConcept-2.6.1-public/docs/release-notes-2.6.1.md) and [distribution guide](core/2.6.1/README.md).
+Use the upgrade matching the installed version. Both published V2.4.1 revisions are supported, and no intermediate release is needed. Back up the installation and follow the included merge instructions, retaining databases, uploaded files, settings, keys and standalone plugin data. Application update notifications provide instructions; they do not automatically install the Core release.
 
-新規設置はV2.6.1を使用してください。既存V2.6.0からは更新版を結合し、DB・添付・設定・個別プラグインを保持します。Core DBスキーマ世代6とPlugin API 1.0.0は維持します。V2.4.1からは2.5.0、2.6.0、2.6.1の順で更新します。[V2.5.0の変更前ハッシュに関する説明](core/2.5.0/README.md)も確認してください。
+## V3.0.0の主な改善 / Highlights
 
-Use V2.6.1 for new installations. Existing V2.6.0 installations use the merge-only upgrade, retaining data, settings and plugins. Core schema generation 6 and Plugin API 1.0.0 remain unchanged. Upgrade V2.4.1 through 2.5.0 and 2.6.0 to 2.6.1, noting the [V2.5.0 guide's before-hash information](core/2.5.0/README.md).
+- 管理者が画面からSMTP送信アカウントを設定し、招待メールを相手の言語で送信できます。実際のメール到達は導入先の送信アカウントで確認してください。
+- 日本語・英語・ベトナム語・韓国語・簡体字中国語で、ログイン・初回パスワード変更・システム案内・通知・出力に対応します。言語選択のラベルは全言語で **Language** です。人間が入力した名前・本文等は言語変更で自動翻訳しません。
+- プロフィール写真を長辺256px以内・128KiB以内へ縮小します。PHP GDのJPEG・PNG・WebP対応が必要です。
+- SQLiteを標準DBとし、Coreスキーマ世代6とPlugin API 1.0.0を維持します。V2.4.1からの更新では世代5から6への追加テーブル移行を行います。
 
-## リポジトリ構成 / Repository layout
-
-```text
-openconcept_official/
-├── README.md, LICENSE, LICENSE.*
-├── core/
-│   ├── README.md
-│   ├── 2.5.0/       2.4.1からの更新版のみ / Upgrade only
-│   ├── 2.6.0/       2.5.0からの中間更新版のみ / Intermediate upgrade only
-│   └── 2.6.1/       最新の通常版・更新版 / Latest full release and upgrade
-│       ├── README.md
-│       ├── OpenConcept-2.6.1-public.zip, .zip.sha256
-│       ├── OpenConcept-2.6.1-public/
-│       ├── OpenConcept-2.6.1-upgrade-from-2.6.0.zip, .zip.sha256
-│       ├── OpenConcept-2.6.1-upgrade-from-2.6.0/
-│       ├── OpenConcept-2.6.1-artifacts.json
-│       └── release-notes-2.6.1.md
-└── plugins/
-    ├── README.md, catalog.json
-    └── packages/
-        ├── README.md
-        ├── float-navi/1.2.3/
-        └── drawing-manager/0.9.4/
-```
-
-本体はOpenConceptプロジェクトの `Dist/core/`、個別プラグインは `Dist/plugins/<plugin-id>/<version>/` で生成・検証した配布物を配置します。ZIP、チェックサム、manifest、展開済みファイルを揃えています。V2.5.0とV2.6.0は旧環境からの中間更新版だけを継続掲載します。両バージョンの通常版ZIP・チェックサム・展開済みファイルは公開対象から削除しました。配布物の内容はここで直接編集しません。
-
-Application distributions are generated and verified in the OpenConcept project's `Dist/core/` directory; standalone plugins come from `Dist/plugins/<plugin-id>/<version>/`. ZIPs, checksums, manifests and unpacked files are kept consistent. Only intermediate upgrades remain available for V2.5.0 and V2.6.0. Full-release ZIPs, checksums and unpacked files for both versions have been removed from the published tree. Packaged contents are not edited here.
-
-Dist内のフォルダー整理により取得元のパスが変わりました。公開用リポジトリの配置とダウンロードURLは維持しています。同梱説明書に旧生成先が記載されている場合は、上記の取得元に読み替えてください。
-
-The Dist folders have been reorganized. Public repository paths and download URLs remain unchanged. If a bundled guide mentions an older build output path, use the source locations above.
+Administrators can configure SMTP accounts and invite members in their language. Verify actual email delivery with the installation's sending account. Authentication, fixed system messages, notifications and exports support Japanese, English, Vietnamese, Korean and Simplified Chinese; user-authored content remains unchanged. Profile photos are reduced to at most 256px and 128KiB using PHP GD. SQLite remains standard, with Core schema generation 6 and Plugin API 1.0.0; the V2.4.1 upgrade adds the generation 6 extension tables.
 
 ## 公式プラグイン / Official plugins
 
-**2026-09-13：図面管理0.9.4・フロートNavi1.2.3とカタログを更新しました。** フロートNaviは窓の開閉状態・位置・サイズ・透過度・背景モードを再読み込み後に復元します。図面管理は固定UIの5言語対応を改善しました。両プラグインは本体V2.6.1のまま更新でき、設定・登録データ・添付を保持します。図面管理の固定APIエラーの5言語化にはCore V3.0.0が必要です。
+| プラグイン | 最新版 | パッケージ・手順 |
+| --- | --- | --- |
+| 図面管理 / Drawing Manager | 0.9.4 | [Package](plugins/packages/drawing-manager/0.9.4/drawing-manager-0.9.4.oc-plugin.json) · [SHA-256](plugins/packages/drawing-manager/0.9.4/drawing-manager-0.9.4.oc-plugin.json.sha256) · [Guide](plugins/packages/drawing-manager/0.9.4/README.md) |
+| フロートNavi / Float Navi | 1.2.3 | [Package](plugins/packages/float-navi/1.2.3/float-navi-1.2.3.oc-plugin.json) · [ZIP](plugins/packages/float-navi/1.2.3/float-navi-1.2.3.zip) · [Guide](plugins/packages/float-navi/1.2.3/README.md) |
 
-**2026-09-13: Drawing Manager 0.9.4, Float Navi 1.2.3 and the catalog were updated together.** Float Navi restores window preferences after reloads, and Drawing Manager improves UI localization in five languages. Both plugins update on Core V2.6.1 without an application update, retaining settings, records and attachments. Drawing Manager's translated API errors require Core V3.0.0.
+両プラグインは本体と独立して更新できます。新規導入は「設定 > プラグイン > 公式ダウンロード」、導入済みの更新はプラグイン一覧の「Update」（旧本体では「UpDate」）を使用します。設定・登録データ・添付・ON/OFFを保持します。図面管理0.9.4とフロートNavi1.2.3はCore V2.6.1・V3.0.0で検証済みです。図面管理の固定APIエラー翻訳はCore V3.0.0で利用できます。
 
-[フロートNavi 1.2.3](plugins/packages/float-navi/1.2.3/README.md)を追加しました。ページ検索・全開閉・ツリーを、左ナビと同期する移動・サイズ変更可能な窓に表示します。AI検索ウィンドウと重なっても手前に表示されます。歯車の「透過」から通常は隠れているスライダーを表示し、「背景モード → ダークモード」で黒背景・白文字に変更できます。V2.5.0／V2.6.0／V2.6.1対応で、未登録IDを拒否する旧本体向けの互換パッチも同梱しています。
+Plugins are updated independently of Core. Use Official downloads for new installations and Update (UpDate on older Core) for existing plugins. Settings, records, attachments and enabled state are retained. Both plugins were verified on Core V2.6.1 and V3.0.0. Drawing Manager's translated API errors are available on Core V3.0.0. See the [plugin directory](plugins/README.md) and [catalog](plugins/catalog.json).
 
-[Float Navi 1.2.3](plugins/packages/float-navi/1.2.3/README.md) adds movable, resizable page navigation synchronized with the sidebar and keeps it in front of the AI search window. The gear menu reveals transparency settings and offers a black-background, white-text dark mode. Supports V2.5.0, V2.6.0 and V2.6.1, with compatibility patches for older Core builds that reject unlisted plugin IDs.
+## 配布物の管理 / Distribution management
 
-[公式Plugin配布フォルダー](plugins/)と[カタログ](plugins/catalog.json)から、[図面管理0.9.4](plugins/packages/drawing-manager/0.9.4/README.md)を個別配布しています。最低対応版は更新済みの本体2.5.0で、本体2.6.1でも利用できます。
+配布物はOpenConcept開発プロジェクトのDistから取得し、検証済みの内容のまま掲載しています。本体は `core/3.0.0/`、独立プラグインは `plugins/packages/<plugin-id>/<version>/` に配置します。旧配布物は開発側のアーカイブとGit履歴に保持します。
 
-The [official plugin directory](plugins/) and [catalog](plugins/catalog.json) distribute [Drawing Manager 0.9.4](plugins/packages/drawing-manager/0.9.4/README.md) separately. Its minimum supported application is the updated 2.5.0 release; it also supports 2.6.1.
-
-本体2.6.1では図面管理を同梱せず、「設定 > プラグイン > 公式ダウンロード」から追加します。ダウンロード直後は無効です。有効化すると図面管理メニューが表示されます。既存の図面管理は、プラグイン一覧の「UpDate」から更新できます。V2.6.1を利用中なら、今回のプラグイン更新に本体の更新は不要です。
-
-Application 2.6.1 distributes Drawing Manager separately. Add it in Settings > Plugins > Official downloads, then enable it to show the drawing menu. Downloads are initially disabled. On Core V2.6.1, use UpDate in the plugin list to update an existing Drawing Manager installation without updating the application.
-
-本体2.6.1の公式カタログとパッケージの取得先は、このリポジトリの`main/plugins/`内に固定しています。環境変数で別の配布元へ変更することはできません。HTTPSとSHA-256で取得先・ファイルの一致を確認します。発行者の電子署名検証は実装していません。
-
-Application 2.6.1 pins its official catalog and package URLs to this repository under `main/plugins/`. Environment variables cannot select a different publisher. HTTPS and SHA-256 check the source connection and file integrity; publisher-signature verification is not implemented.
+Distributions are copied unchanged from the development project's verified Dist artifacts. Current Core packages are under `core/3.0.0/`, and standalone plugins under `plugins/packages/<plugin-id>/<version>/`. Earlier artifacts remain in the development archive and Git history.
 
 ## ライセンス / License
 
-OpenConceptには独自の「OpenConcept 利用許諾条件 第1.1版」が適用されます。公開ソースであることは、任意のライセンスで利用できることを意味しません。全文を確認してください。
+OpenConceptには独自の「OpenConcept 利用許諾条件 第1.1版」が適用されます。全文を確認してください。第三者資産には、それぞれのライセンスが適用されます。
 
-OpenConcept is distributed under the custom OpenConcept License Terms, Version 1.1. Public source availability does not grant use under an arbitrary license. Please read the full terms.
+OpenConcept is distributed under the custom OpenConcept License Terms, Version 1.1. Please read the full terms. Bundled third-party assets retain their respective licenses.
 
-- 日本語原文 / Japanese original: [Markdown](LICENSE.ja.md) / [TXT](LICENSE.ja.txt)
+- 日本語原文：[Markdown](LICENSE.ja.md) / [TXT](LICENSE.ja.txt)
 - English translation: [Markdown](LICENSE.en.md) / [TXT](LICENSE.en.txt)
-
-同梱された第三者資産には、それぞれのライセンスが適用されます。
-
-Bundled third-party assets retain their respective licenses.

@@ -1,0 +1,26 @@
+{
+    "name": "한국어",
+    "messages": {
+        "plugin.name": "번역 제공자",
+        "plugin.description": "OpenAI 또는 OpenAI 호환 API를 Core 번역 기능에 연결합니다.",
+        "provider.name": "번역 제공자",
+        "provider.description": "서버에 구성된 제공자로 구조화된 텍스트 구간을 번역합니다.",
+        "error.caBundle": "OPENCONCEPT_CA_BUNDLE에 지정된 CA 인증서를 읽을 수 없습니다.",
+        "error.translationKey": "번역 공급자의 API 키 또는 인증 설정이 없습니다.",
+        "error.translationTest": "번역 공급자 연결 테스트를 실행할 수 없습니다.",
+        "error.segmentCount": "번역 세그먼트 수가 허용 범위를 벗어났습니다.",
+        "error.segmentId": "번역 세그먼트 ID가 올바르지 않습니다.",
+        "error.segmentFormat": "번역 세그먼트 형식이 올바르지 않습니다.",
+        "error.segmentRetry": "AI 번역 응답의 세그먼트 ID를 확인하지 못했습니다. 자동 재시도도 실패했습니다.",
+        "error.translationFailed": "AI 번역을 완료하지 못했습니다.",
+        "error.translationResponse": "번역 공급자 API에서 해석할 수 없는 응답을 받았습니다.",
+        "error.translationApiError": "번역 공급자 API 오류: {details}",
+        "error.translationIncomplete": "번역 공급자 API 응답이 완료되지 않았습니다.",
+        "error.translationStructured": "번역 공급자 API의 구조화된 출력이 올바르지 않습니다.",
+        "error.translationJson": "AI 번역의 구조화된 출력이 올바르지 않습니다.",
+        "error.translationSegment": "번역 공급자 API의 세그먼트 형식이 올바르지 않습니다.",
+        "error.segmentDuplicate": "번역 공급자 API가 중복된 세그먼트 ID를 반환했습니다.",
+        "error.translationCurl": "번역 공급자 플러그인에는 PHP cURL 확장이 필요합니다.",
+        "error.translationConnect": "번역 공급자 API에 연결할 수 없습니다: {details}"
+    }
+}

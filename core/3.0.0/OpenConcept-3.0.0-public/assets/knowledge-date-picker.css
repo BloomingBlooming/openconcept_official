@@ -1,0 +1,19 @@
+.knowledge-date-field { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+.knowledge-date-input { display: flex; align-items: stretch; gap: 4px; }
+.knowledge-date-input input { min-width: 0; }
+.knowledge-date-input button { display: flex; align-items: center; justify-content: center; padding: 8px; flex: 0 0 36px; }
+.knowledge-calendar { position: fixed; z-index: 1000; width: 316px; max-width: calc(100vw - 16px); max-height: calc(100vh - 16px); overflow: auto; padding: 14px; border: 1px solid var(--line, #cbd5cd); border-radius: 12px; background: var(--paper, #fff); color: var(--ink, #25322d); box-shadow: 0 8px 30px #0003; }
+.knowledge-calendar[hidden] { display: none; }
+.knowledge-calendar-header { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 12px; }
+.knowledge-calendar-header strong { font-size: 15px; text-align: center; }
+.knowledge-calendar button { color: inherit; background: var(--paper, #fff); border-color: var(--line, #cbd5cd); }
+.knowledge-calendar button:hover { background: var(--canvas, #edf3ec); }
+.knowledge-calendar-header button { padding: 4px 12px; font-size: 22px; }
+.knowledge-calendar-grid [role="row"] { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 2px; }
+.knowledge-calendar-grid [role="columnheader"] { text-align: center; font-size: 11px; padding: 5px 0; color: var(--muted, #657367); }
+.knowledge-calendar-grid button { width: 100%; min-height: 34px; padding: 4px 0; border-color: transparent; font-size: 13px; }
+.knowledge-calendar-grid [aria-selected="true"] button { background: #27644b; color: #fff; }
+.knowledge-calendar-grid [aria-current="date"] { border-color: #7fae94; font-weight: 700; }
+.knowledge-calendar-footer { display: flex; align-items: center; gap: 6px; margin-top: 12px; }
+.knowledge-calendar-footer button { font-size: 12px; padding: 7px 10px; }
+.knowledge-calendar-footer button:last-child { margin-left: auto; }

@@ -1,0 +1,16 @@
+{
+    "Administrator access required.": "error.adminRequired",
+    "Review result unavailable.": "error.reviewUnavailable",
+    "Review has already changed. Reopen it.": "error.reviewChanged",
+    "Unknown review action.": "error.reviewUnknown",
+    "No extracted text is available. Replace the file before registration.": "error.reviewNoText",
+    "Unknown settings action.": "error.settingsUnknown",
+    "Invalid list cursor.": "error.listCursor",
+    "Invalid connection setting.": "error.connectionSetting",
+    "Invalid connection value.": "error.connectionValue",
+    "A valid HTTPS provider URL is required.": "error.httpsUrl",
+    "OpenAI requires its official Responses API endpoint.": "error.officialEndpoint",
+    "Invalid processing limit: {setting}": "error.processingLimit",
+    "Invalid API credential.": "error.apiCredential",
+    "shared_connection_unavailable": "error.sharedUnavailable"
+}

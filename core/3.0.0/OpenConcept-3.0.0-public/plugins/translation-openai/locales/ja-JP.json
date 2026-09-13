@@ -1,0 +1,26 @@
+{
+    "name": "日本語",
+    "messages": {
+        "plugin.name": "翻訳プロバイダー",
+        "plugin.description": "OpenAIまたはOpenAI互換APIをCoreの翻訳機能へ接続します。",
+        "provider.name": "翻訳プロバイダー",
+        "provider.description": "サーバーに設定されたプロバイダーで構造化テキストを翻訳します。",
+        "error.caBundle": "OPENCONCEPT_CA_BUNDLEで指定したCA証明書を読み込めません。",
+        "error.translationKey": "翻訳プロバイダーのAPIキーまたは認証設定が不足しています。",
+        "error.translationTest": "翻訳プロバイダーの接続テストを実行できません。",
+        "error.segmentCount": "翻訳segment数が範囲外です。",
+        "error.segmentId": "翻訳segment IDが正しくありません。",
+        "error.segmentFormat": "翻訳segmentの形式が正しくありません。",
+        "error.segmentRetry": "AI翻訳の応答でsegment IDを確認できませんでした。自動再試行にも失敗しました。",
+        "error.translationFailed": "AI翻訳を完了できませんでした。",
+        "error.translationResponse": "翻訳プロバイダーAPIから解釈できない応答を受信しました。",
+        "error.translationApiError": "翻訳プロバイダーAPI error: {details}",
+        "error.translationIncomplete": "翻訳プロバイダーAPIの応答が完了しませんでした。",
+        "error.translationStructured": "翻訳プロバイダーAPIの構造化出力が正しくありません。",
+        "error.translationJson": "AI翻訳の構造化出力が正しくありません。",
+        "error.translationSegment": "翻訳プロバイダーAPIのsegment形式が正しくありません。",
+        "error.segmentDuplicate": "翻訳プロバイダーAPIがsegment IDを重複して返しました。",
+        "error.translationCurl": "翻訳プロバイダープラグインにはPHP cURL拡張が必要です。",
+        "error.translationConnect": "翻訳プロバイダーAPIへ接続できません: {details}"
+    }
+}

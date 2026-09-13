@@ -1,0 +1,26 @@
+{
+    "name": "日本語",
+    "messages": {
+        "answer.insufficient": "登録データだけでは回答できません。",
+        "answer.pageInsufficient": "このページの内容だけでは回答できません。",
+        "summary.question": "このページを要約する",
+        "summary.prompt": "「{title}」の内容を簡潔に要約してください。重要な目的、決定事項、手順、期限、注意点があれば整理して示してください。",
+        "basis.general_knowledge": "私の知っている一般的な知識から回答しました。アプリの登録データや表示中のページを根拠にした回答ではありません。",
+        "basis.registered_data": "アプリに登録されているデータを根拠に回答しました。回答欄の「参照元」から確認できます。",
+        "basis.current_page": "回答時に表示されていたページの内容だけを根拠に回答しました。一般知識は混ぜていません。",
+        "basis.unavailable": "直前の回答には、回答を支えられる十分な根拠がありませんでした。",
+        "source.pageSummary": "現在の正本ページ本文から作成した要約用チャンクです。",
+        "source.pageImage": "ページ画像",
+        "source.pageImageNumber": "ページ画像 {number}",
+        "source.imageSummary": "現在表示中の正本ページに配置された画像です。",
+        "source.fileNumber": "ファイル #{number}",
+        "source.linkedFile": "リンクされたファイル",
+        "source.fileSummary": "質問内のリンクから権限を確認して添付したファイルです。",
+        "source.emptyBody": "（このページの本文は空です）",
+        "source.originalBodyNumber": "正本本文 {number}",
+        "source.imageReference": "画像参照: {reference}",
+        "source.filename": "ファイル名: {name}",
+        "source.caption": "説明: {caption}",
+        "source.fileReference": "添付ファイル参照: {reference}"
+    }
+}

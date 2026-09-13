@@ -1,0 +1,50 @@
+{
+  "version": "3.0.0",
+  "artifacts": [
+    {
+      "package": "OpenConcept-3.0.0-public",
+      "zipSha256": "94449ea89a6c80302dcfbf591d46dbbbf0939e8b9b9f990f16b19c3d3b7084bc",
+      "zipBytes": 1853768,
+      "fileCount": 348,
+      "manifestSha256": "24a31957243895aaf8f7fe31d1c473115efd9c9910182aa98c982b0bab337392",
+      "allZipFilesVerified": true,
+      "allExpandedFilesVerified": true
+    },
+    {
+      "package": "OpenConcept-3.0.0-upgrade-from-2.4.1",
+      "zipSha256": "1d82525c05c743f7f0f4839c1ca1a827792c5c6199b37b4a95685369fdf8439a",
+      "zipBytes": 1235482,
+      "fileCount": 206,
+      "manifestSha256": "377149bb7eeba7eed8f49b323b9f34158e7dbf1dade30654facac603e793bbaa",
+      "allZipFilesVerified": true,
+      "allExpandedFilesVerified": true
+    },
+    {
+      "package": "OpenConcept-3.0.0-upgrade-from-2.5.0",
+      "zipSha256": "8456b050d8e51ac18dec2b134d6b3b0c4950bf102d52c14d7aa5cc65371b40fd",
+      "zipBytes": 1018623,
+      "fileCount": 150,
+      "manifestSha256": "f5ebd8ad65a06a2eb9b3cae78dad28e00d4f669ed3b52abbac282c9773a43d02",
+      "allZipFilesVerified": true,
+      "allExpandedFilesVerified": true
+    },
+    {
+      "package": "OpenConcept-3.0.0-upgrade-from-2.6.0",
+      "zipSha256": "ab02555ba7f49129cb9b1e2e8b53856c36ff76679cadd4ee0b5a4419de6668dc",
+      "zipBytes": 968655,
+      "fileCount": 139,
+      "manifestSha256": "76434a289e8395024eec84fb2f2a8f74d3df6bc9ef125280ff919700e70f5c3e",
+      "allZipFilesVerified": true,
+      "allExpandedFilesVerified": true
+    },
+    {
+      "package": "OpenConcept-3.0.0-upgrade-from-2.6.1",
+      "zipSha256": "b789dae4cb73d75d79f6de52dcda42650e727d34d031af0b778b8726e1e23c56",
+      "zipBytes": 882519,
+      "fileCount": 118,
+      "manifestSha256": "fcacda0815860986f859a1943fdf6c7a46736dd0c6072bd4a0a08865480cd9a7",
+      "allZipFilesVerified": true,
+      "allExpandedFilesVerified": true
+    }
+  ]
+}
